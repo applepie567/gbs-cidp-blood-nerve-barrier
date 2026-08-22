@@ -1,0 +1,25 @@
+{
+  "title": "Myeloid–blood–nerve barrier–Schwann cell circuit in GBS and CIDP",
+  "description": "Versioned analysis workflows, aggregate source data, and publication figures supporting a cross-platform multi-omics study of acute Guillain–Barré syndrome, chronic inflammatory demyelinating polyradiculoneuropathy, and the human blood–nerve barrier.",
+  "upload_type": "software",
+  "creators": [
+    {"name": "Feng, Yuan"},
+    {"name": "Feng, Fang"},
+    {"name": "Ma, Shuxiao"},
+    {"name": "Feng, Shuman"},
+    {"name": "Jiang, Chao"},
+    {"name": "Hao, Yibin"}
+  ],
+  "keywords": [
+    "Guillain-Barre syndrome",
+    "chronic inflammatory demyelinating polyradiculoneuropathy",
+    "blood-nerve barrier",
+    "single-nucleus RNA sequencing",
+    "transcriptomics",
+    "proteomics",
+    "cell-cell communication"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "version": "1.0.0"
+}
