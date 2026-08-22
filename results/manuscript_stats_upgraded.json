@@ -1,0 +1,707 @@
+{
+  "direct_human_resources": [
+    "GSE304871",
+    "PRJNA1293757",
+    "GSE211225",
+    "GSE31014",
+    "GBS-Proteomics",
+    "GSE285983",
+    "GSE107574"
+  ],
+  "direct_human_resource_count": 7,
+  "gse211225_design": {
+    "acute": 6,
+    "postacute": 10,
+    "healthy": 6,
+    "paired": false
+  },
+  "gse211225_acute_vs_hc": {
+    "CXCL8_CXCR1_2": {
+      "delta": 0.7225135680746445,
+      "hedges_g": 1.2495713770194623,
+      "permutation_p": 0.0389610389610389,
+      "fdr": 0.0454545454545454
+    },
+    "LIF_LIFR_IL6ST": {
+      "delta": 0.8803768607412878,
+      "hedges_g": 2.193899016551549,
+      "permutation_p": 0.0021645021645021,
+      "fdr": 0.0075757575757575
+    },
+    "Complement": {
+      "delta": 0.5941645530396562,
+      "hedges_g": 2.4875321333096894,
+      "permutation_p": 0.0021645021645021,
+      "fdr": 0.0075757575757575
+    },
+    "Fc_receptor": {
+      "delta": 0.6830841774174201,
+      "hedges_g": 1.3553135270779009,
+      "permutation_p": 0.0216450216450216,
+      "fdr": 0.0378787878787878
+    },
+    "Transendothelial_migration": {
+      "delta": 0.2180521182964062,
+      "hedges_g": 0.9231847966859392,
+      "permutation_p": 0.1255411255411255,
+      "fdr": 0.1255411255411255
+    },
+    "Interferon_JAK_STAT": {
+      "delta": 0.6739705544092147,
+      "hedges_g": 1.073728510692789,
+      "permutation_p": 0.0346320346320346,
+      "fdr": 0.0454545454545454
+    },
+    "Inflammatory_monocyte": {
+      "delta": 0.9405794320646144,
+      "hedges_g": 1.9318959720517768,
+      "permutation_p": 0.0064935064935064,
+      "fdr": 0.0151515151515151
+    }
+  },
+  "gse211225_acute_vs_postacute": {
+    "CXCL8_CXCR1_2": {
+      "delta": 0.6755555922013865,
+      "hedges_g": 0.714771673669443,
+      "permutation_p": 0.1644605394605394,
+      "fdr": 0.1644605394605394
+    },
+    "LIF_LIFR_IL6ST": {
+      "delta": 0.4455908556253923,
+      "hedges_g": 0.9333428008115092,
+      "permutation_p": 0.079045954045954,
+      "fdr": 0.1106643356643356
+    },
+    "Complement": {
+      "delta": 0.58839772076625,
+      "hedges_g": 1.347121379293097,
+      "permutation_p": 0.0174825174825174,
+      "fdr": 0.0407925407925407
+    },
+    "Fc_receptor": {
+      "delta": 0.8623594444414582,
+      "hedges_g": 1.2315994325678017,
+      "permutation_p": 0.0264735264735264,
+      "fdr": 0.0463286713286713
+    },
+    "Transendothelial_migration": {
+      "delta": 0.475530197705006,
+      "hedges_g": 1.5851414211292922,
+      "permutation_p": 0.0063686313686313,
+      "fdr": 0.0236013986013986
+    },
+    "Interferon_JAK_STAT": {
+      "delta": 0.4785729922553928,
+      "hedges_g": 0.7974322036269286,
+      "permutation_p": 0.1166333666333666,
+      "fdr": 0.136072261072261
+    },
+    "Inflammatory_monocyte": {
+      "delta": 1.148129455745683,
+      "hedges_g": 1.6772002360452696,
+      "permutation_p": 0.0067432567432567,
+      "fdr": 0.0236013986013986
+    }
+  },
+  "prjna1293757_qc_retained_cells": 57714,
+  "gbs_proteomics": {
+    "design": {
+      "acute": 20,
+      "paired_recovery_1y": 20,
+      "healthy": 15
+    },
+    "paired_effects": {
+      "CXCL8_CXCR1_2": {
+        "delta": 0.642546224521594,
+        "dz": 0.4196643528119314,
+        "paired_t_p": 0.0759902462040177,
+        "fdr": 0.2073579810450128
+      },
+      "LIF_LIFR_IL6ST": {
+        "delta": 0.0017964986338392,
+        "dz": 0.0093012673427215,
+        "paired_t_p": 0.9672543510376144,
+        "fdr": 0.9672543510376144
+      },
+      "Complement": {
+        "delta": -0.1165471424502734,
+        "dz": -0.3135953327091823,
+        "paired_t_p": 0.1769118068030866,
+        "fdr": 0.2803510602113464
+      },
+      "Fc_receptor": {
+        "delta": 0.0378276157890573,
+        "dz": 0.0804439199614636,
+        "paired_t_p": 0.722997209145257,
+        "fdr": 0.8434967440027998
+      },
+      "Transendothelial_migration": {
+        "delta": 0.1482081274585924,
+        "dz": 0.4009822261644419,
+        "paired_t_p": 0.0888677061621483,
+        "fdr": 0.2073579810450128
+      },
+      "Interferon_JAK_STAT": {
+        "delta": 0.3677992552214917,
+        "dz": 0.5859983404003005,
+        "paired_t_p": 0.0168257952840799,
+        "fdr": 0.1177805669885594
+      },
+      "Inflammatory_monocyte": {
+        "delta": 0.1047293633473884,
+        "dz": 0.2967162180412983,
+        "paired_t_p": 0.2002507572938188,
+        "fdr": 0.2803510602113464
+      }
+    }
+  },
+  "cidp_macrophage_fc_receptor": {
+    "delta_z": -0.6728671731309646,
+    "p": 0.001087436576734,
+    "fdr": 0.0086994926138723
+  },
+  "normal_bnb_anchor": {
+    "CLDN5": {
+      "LCM_median_fpkm": 13.275,
+      "cultured_EC_median_fpkm": 362.05
+    },
+    "OCLN": {
+      "LCM_median_fpkm": 11.75,
+      "cultured_EC_median_fpkm": 1.445
+    },
+    "TJP1": {
+      "LCM_median_fpkm": 65.0,
+      "cultured_EC_median_fpkm": 32.645
+    },
+    "CDH5": {
+      "LCM_median_fpkm": 22.205,
+      "cultured_EC_median_fpkm": 340.115
+    },
+    "VWF": {
+      "LCM_median_fpkm": 60.725,
+      "cultured_EC_median_fpkm": 757.5799999999999
+    },
+    "LIFR": {
+      "LCM_median_fpkm": 19.815,
+      "cultured_EC_median_fpkm": 2.33
+    },
+    "IL6ST": {
+      "LCM_median_fpkm": 36.61,
+      "cultured_EC_median_fpkm": 48.955
+    },
+    "ICAM1": {
+      "LCM_median_fpkm": 7.630000000000001,
+      "cultured_EC_median_fpkm": 32.935
+    },
+    "VCAM1": {
+      "LCM_median_fpkm": 0.515,
+      "cultured_EC_median_fpkm": 0.355
+    },
+    "C3": {
+      "LCM_median_fpkm": 83.78999999999999,
+      "cultured_EC_median_fpkm": 2.235
+    }
+  },
+  "oep_cd16_complement_gsea": {
+    "dataset": "OEP002315/OEP002701",
+    "cell_subset": "CD16+ monocytes KEGG",
+    "pathway_id": "hsa04610",
+    "description": "Complement and coagulation cascades",
+    "NES": 2.18386682506203,
+    "pvalue": 1.16032393449261e-05,
+    "p_adjust": 0.0036666236329966,
+    "source_level": "author-supplied supplementary GSEA result"
+  },
+  "effect_matrix_rows": [
+    {
+      "cohort": "GSE304871 CD11b+",
+      "contrast": "acute GBS vs HC",
+      "module": "CXCL8-CXCR1/2",
+      "effect": 2.393806440109773,
+      "p": 0.2,
+      "fdr": 1.0,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE304871 CD11b+",
+      "contrast": "acute GBS vs HC",
+      "module": "LIF/OSM-gp130",
+      "effect": 0.5356629149437174,
+      "p": 0.8,
+      "fdr": 1.0,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE304871 CD11b+",
+      "contrast": "acute GBS vs HC",
+      "module": "Complement",
+      "effect": -0.530837657636217,
+      "p": 0.8,
+      "fdr": 1.0,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE304871 CD11b+",
+      "contrast": "acute GBS vs HC",
+      "module": "Fc receptor",
+      "effect": -0.3566266415168384,
+      "p": 1.0,
+      "fdr": 1.0,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE304871 CD11b+",
+      "contrast": "acute GBS vs HC",
+      "module": "Transmigration",
+      "effect": 0.3930711757833824,
+      "p": 1.0,
+      "fdr": 1.0,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE304871 CD11b+",
+      "contrast": "acute GBS vs HC",
+      "module": "IFN-JAK-STAT",
+      "effect": -0.0114156358756537,
+      "p": 1.0,
+      "fdr": 1.0,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE304871 CD11b+",
+      "contrast": "acute GBS vs HC",
+      "module": "Inflammatory monocyte",
+      "effect": 0.7497712724432761,
+      "p": 0.4,
+      "fdr": 1.0,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "PRJNA1293757 monocyte",
+      "contrast": "acute GBS vs HC",
+      "module": "CXCL8-CXCR1/2",
+      "effect": 1.9733768305862749,
+      "p": 0.1,
+      "fdr": 0.35,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human scRNA pseudobulk"
+    },
+    {
+      "cohort": "PRJNA1293757 monocyte",
+      "contrast": "acute GBS vs HC",
+      "module": "LIF/OSM-gp130",
+      "effect": -0.583769704158711,
+      "p": 0.4,
+      "fdr": 0.7,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human scRNA pseudobulk"
+    },
+    {
+      "cohort": "PRJNA1293757 monocyte",
+      "contrast": "acute GBS vs HC",
+      "module": "Complement",
+      "effect": 0.5036217353866437,
+      "p": 0.5,
+      "fdr": 0.7,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human scRNA pseudobulk"
+    },
+    {
+      "cohort": "PRJNA1293757 monocyte",
+      "contrast": "acute GBS vs HC",
+      "module": "Fc receptor",
+      "effect": -3.888691522021692,
+      "p": 0.1,
+      "fdr": 0.35,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human scRNA pseudobulk"
+    },
+    {
+      "cohort": "PRJNA1293757 monocyte",
+      "contrast": "acute GBS vs HC",
+      "module": "Transmigration",
+      "effect": -0.5212872707493132,
+      "p": 0.5,
+      "fdr": 0.7,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human scRNA pseudobulk"
+    },
+    {
+      "cohort": "PRJNA1293757 monocyte",
+      "contrast": "acute GBS vs HC",
+      "module": "IFN-JAK-STAT",
+      "effect": -0.1020013289107978,
+      "p": 1.0,
+      "fdr": 1.0,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human scRNA pseudobulk"
+    },
+    {
+      "cohort": "PRJNA1293757 monocyte",
+      "contrast": "acute GBS vs HC",
+      "module": "Inflammatory monocyte",
+      "effect": -0.4004202513963161,
+      "p": 0.6,
+      "fdr": 0.7000000000000001,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human scRNA pseudobulk"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute GBS vs HC",
+      "module": "CXCL8-CXCR1/2",
+      "effect": 1.2495713770194623,
+      "p": 0.0389610389610389,
+      "fdr": 0.0454545454545454,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute GBS vs HC",
+      "module": "LIF/OSM-gp130",
+      "effect": 2.193899016551549,
+      "p": 0.0021645021645021,
+      "fdr": 0.0075757575757575,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute GBS vs HC",
+      "module": "Complement",
+      "effect": 2.4875321333096894,
+      "p": 0.0021645021645021,
+      "fdr": 0.0075757575757575,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute GBS vs HC",
+      "module": "Fc receptor",
+      "effect": 1.3553135270779009,
+      "p": 0.0216450216450216,
+      "fdr": 0.0378787878787878,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute GBS vs HC",
+      "module": "Transmigration",
+      "effect": 0.9231847966859392,
+      "p": 0.1255411255411255,
+      "fdr": 0.1255411255411255,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute GBS vs HC",
+      "module": "IFN-JAK-STAT",
+      "effect": 1.073728510692789,
+      "p": 0.0346320346320346,
+      "fdr": 0.0454545454545454,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute GBS vs HC",
+      "module": "Inflammatory monocyte",
+      "effect": 1.9318959720517768,
+      "p": 0.0064935064935064,
+      "fdr": 0.0151515151515151,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute vs post-acute GBS",
+      "module": "CXCL8-CXCR1/2",
+      "effect": 0.714771673669443,
+      "p": 0.1644605394605394,
+      "fdr": 0.1644605394605394,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute vs post-acute GBS",
+      "module": "LIF/OSM-gp130",
+      "effect": 0.9333428008115092,
+      "p": 0.079045954045954,
+      "fdr": 0.1106643356643356,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute vs post-acute GBS",
+      "module": "Complement",
+      "effect": 1.347121379293097,
+      "p": 0.0174825174825174,
+      "fdr": 0.0407925407925407,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute vs post-acute GBS",
+      "module": "Fc receptor",
+      "effect": 1.2315994325678017,
+      "p": 0.0264735264735264,
+      "fdr": 0.0463286713286713,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute vs post-acute GBS",
+      "module": "Transmigration",
+      "effect": 1.5851414211292922,
+      "p": 0.0063686313686313,
+      "fdr": 0.0236013986013986,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute vs post-acute GBS",
+      "module": "IFN-JAK-STAT",
+      "effect": 0.7974322036269286,
+      "p": 0.1166333666333666,
+      "fdr": 0.136072261072261,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE211225 whole blood",
+      "contrast": "acute vs post-acute GBS",
+      "module": "Inflammatory monocyte",
+      "effect": 1.6772002360452696,
+      "p": 0.0067432567432567,
+      "fdr": 0.0236013986013986,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human transcriptome"
+    },
+    {
+      "cohort": "GSE31014 leukocytes",
+      "contrast": "GBS vs HC",
+      "module": "CXCL8-CXCR1/2",
+      "effect": 0.7568439405395496,
+      "p": 0.1491841491841491,
+      "fdr": 0.2088578088578088,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human microarray"
+    },
+    {
+      "cohort": "GSE31014 leukocytes",
+      "contrast": "GBS vs HC",
+      "module": "LIF/OSM-gp130",
+      "effect": -0.7780536910218081,
+      "p": 0.1462703962703962,
+      "fdr": 0.2088578088578088,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human microarray"
+    },
+    {
+      "cohort": "GSE31014 leukocytes",
+      "contrast": "GBS vs HC",
+      "module": "Complement",
+      "effect": 0.4696277168991227,
+      "p": 0.3560606060606061,
+      "fdr": 0.3560606060606061,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human microarray"
+    },
+    {
+      "cohort": "GSE31014 leukocytes",
+      "contrast": "GBS vs HC",
+      "module": "Fc receptor",
+      "effect": 0.9533355129217568,
+      "p": 0.0833333333333333,
+      "fdr": 0.1944444444444444,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human microarray"
+    },
+    {
+      "cohort": "GSE31014 leukocytes",
+      "contrast": "GBS vs HC",
+      "module": "Transmigration",
+      "effect": 0.949040765315782,
+      "p": 0.081002331002331,
+      "fdr": 0.1944444444444444,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human microarray"
+    },
+    {
+      "cohort": "GSE31014 leukocytes",
+      "contrast": "GBS vs HC",
+      "module": "IFN-JAK-STAT",
+      "effect": 0.652085394338612,
+      "p": 0.2348484848484848,
+      "fdr": 0.273989898989899,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human microarray"
+    },
+    {
+      "cohort": "GSE31014 leukocytes",
+      "contrast": "GBS vs HC",
+      "module": "Inflammatory monocyte",
+      "effect": 1.1665835465330172,
+      "p": 0.0349650349650349,
+      "fdr": 0.1944444444444444,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human microarray"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute GBS vs HC",
+      "module": "CXCL8-CXCR1/2",
+      "effect": 0.6264069432786408,
+      "p": 0.0449774478108088,
+      "fdr": 0.0827090350471653,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute GBS vs HC",
+      "module": "LIF/OSM-gp130",
+      "effect": 1.0113155094881094,
+      "p": 0.0077538956357814,
+      "fdr": 0.0271386347252352,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute GBS vs HC",
+      "module": "Complement",
+      "effect": 0.2789384381220471,
+      "p": 0.4044345878699121,
+      "fdr": 0.4718403525148975,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute GBS vs HC",
+      "module": "Fc receptor",
+      "effect": -0.0915076455830471,
+      "p": 0.7910424564074244,
+      "fdr": 0.7910424564074244,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute GBS vs HC",
+      "module": "Transmigration",
+      "effect": 0.6907382571679151,
+      "p": 0.0472623057412373,
+      "fdr": 0.0827090350471653,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute GBS vs HC",
+      "module": "IFN-JAK-STAT",
+      "effect": 0.2798722380563025,
+      "p": 0.4034466260119601,
+      "fdr": 0.4718403525148975,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute GBS vs HC",
+      "module": "Inflammatory monocyte",
+      "effect": 1.1384365745816702,
+      "p": 0.002522426483169,
+      "fdr": 0.0176569853821833,
+      "effect_metric": "Hedges g",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute vs paired 1-y recovery",
+      "module": "CXCL8-CXCR1/2",
+      "effect": 0.4196643528119314,
+      "p": 0.0759902462040177,
+      "fdr": 0.2073579810450128,
+      "effect_metric": "paired dz",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute vs paired 1-y recovery",
+      "module": "LIF/OSM-gp130",
+      "effect": 0.0093012673427215,
+      "p": 0.9672543510376144,
+      "fdr": 0.9672543510376144,
+      "effect_metric": "paired dz",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute vs paired 1-y recovery",
+      "module": "Complement",
+      "effect": -0.3135953327091823,
+      "p": 0.1769118068030866,
+      "fdr": 0.2803510602113464,
+      "effect_metric": "paired dz",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute vs paired 1-y recovery",
+      "module": "Fc receptor",
+      "effect": 0.0804439199614636,
+      "p": 0.722997209145257,
+      "fdr": 0.8434967440027998,
+      "effect_metric": "paired dz",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute vs paired 1-y recovery",
+      "module": "Transmigration",
+      "effect": 0.4009822261644419,
+      "p": 0.0888677061621483,
+      "fdr": 0.2073579810450128,
+      "effect_metric": "paired dz",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute vs paired 1-y recovery",
+      "module": "IFN-JAK-STAT",
+      "effect": 0.5859983404003005,
+      "p": 0.0168257952840799,
+      "fdr": 0.1177805669885594,
+      "effect_metric": "paired dz",
+      "evidence": "direct human proteome; preprint"
+    },
+    {
+      "cohort": "GBS-Proteomics plasma",
+      "contrast": "acute vs paired 1-y recovery",
+      "module": "Inflammatory monocyte",
+      "effect": 0.2967162180412983,
+      "p": 0.2002507572938188,
+      "fdr": 0.2803510602113464,
+      "effect_metric": "paired dz",
+      "evidence": "direct human proteome; preprint"
+    }
+  ]
+}

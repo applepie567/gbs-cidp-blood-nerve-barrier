@@ -1,0 +1,179 @@
+datasets:
+  - id: GSE211225
+    role: primary_GBS_acute_and_postacute_blood
+    evidence_tier: direct_human_reanalysis
+    access: public
+    material: human_whole_blood
+    assay: bulk_RNA_expression
+    size: 6_acute_10_postacute_6_controls
+    pairing: cross_sectional_not_paired
+    use: [acute_vs_control, acute_vs_postacute, postacute_vs_control]
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE211225
+
+  - id: GSE31014
+    role: independent_GBS_leukocyte_validation
+    evidence_tier: direct_human_reanalysis
+    access: public
+    material: peripheral_blood_leukocytes
+    assay: GPL96_microarray
+    size: 7_GBS_7_controls
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31014
+
+  - id: GSE285983
+    role: primary_tissue_discovery
+    access: public
+    material: human_sural_nerve
+    assay: snRNA-seq
+    size: 37_donors_365708_nuclei
+    key_groups:
+      CIDP: 9
+      CIAP: 11
+      control: 4
+      vasculitic_neuropathy: 5
+    phenotypes:
+      - diagnosis
+      - INCAT
+      - disease_duration
+      - center
+      - age
+      - sex
+      - immunosuppressants
+      - IVIg_response_not_longitudinal_exposure
+    use:
+      - BNB_endothelium
+      - perineurium
+      - endoneurial_macrophages
+      - Schwann_cell_states
+      - same_tissue_ligand_receptor_analysis
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285983
+
+  - id: GSE304872
+    role: same_study_support_resource
+    evidence_tier: not_counted_as_independent_direct_resource
+    access: public
+    material: human_PBMC
+    assay: scRNA-seq
+    stage: early_untreated_AIDP_GBS
+    use:
+      - monocyte_and_T_cell_states
+      - circulating_ligand_sources
+      - cross_tissue_potential_against_GSE285983
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304872
+
+  - id: GSE304871
+    role: GBS_early_untreated_blood_validation
+    evidence_tier: direct_human_reanalysis
+    access: public
+    material: sorted_human_PBMC_subsets
+    assay: bulk_RNA-seq
+    stage: early_untreated_AIDP_GBS
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+
+  - id: PRJNA1293757
+    role: independent_GBS_acute_validation
+    evidence_tier: direct_human_reanalysis
+    access: public
+    material: human_PBMC
+    assay: scRNA-seq
+    size: 3_GBS_2_controls_57714_QC_retained_cells
+    stage: acute_treatment_naive_AIDP
+    url: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1293757
+
+  - id: SciRep_2023_AIDP_peak_late
+    role: GBS_peak_to_convalescent_validation
+    evidence_tier: external_author_supplied_GSEA
+    access: supplementary_tables_only
+    material: human_PBMC
+    assay: scRNA-seq
+    size: 3_peak_2_late_3_controls
+    note: OEP002315_OEP002701_individual_matrix_not_in_accessible_package
+    url: https://www.nature.com/articles/s41598-023-32427-5
+
+  - id: EGAD00001015725
+    role: CIDP_single_cell_enhancement
+    access: managed_EGA
+    material: human_immune_cells
+    assay: single_cell_sequencing
+    action: submit_data_access_request_only_after_user_authorization
+    url: https://ega-archive.org/datasets/EGAD00001015725
+
+  - id: CIDP_activity_Olink_2024
+    role: CIDP_active_inactive_longitudinal_validation
+    access: reasonable_request
+    material: serum
+    assay: Olink_1472_proteins
+    size: 106_CIDP_patients
+    strata:
+      - induction_treatment
+      - maintenance_withdrawal
+      - remission
+    url: https://doi.org/10.1136/jnnp-2023-332398
+
+  - id: CIDP_IVIg_transcriptome_2016
+    role: CIDP_pre_post_IVIg_signature_validation
+    access: publication_level_no_public_raw_matrix_found
+    material: whole_blood
+    assay: Illumina_microarray
+    size: 11_paired_patients
+    timing: pre_IVIg_and_3_weeks_post_IVIg
+    url: https://doi.org/10.1097/MD.0000000000003370
+
+  - id: GBS_CIDP_CSF_Olink_2023
+    role: protein_bridge_validation
+    access: article_and_supplement
+    material: CSF_and_plasma
+    assay: Olink_and_ELISA
+    key_axis: CXCL8_IL8
+    url: https://doi.org/10.3389/fimmu.2023.1241199
+
+  - id: GBS_longitudinal_proteomics_2026_preprint
+    role: GBS_acute_recovery_validation
+    evidence_tier: direct_human_reanalysis_preprint
+    access: public_GitHub_matrix
+    material: paired_serum
+    assay: aptamer_proteomics_over_6500_proteins
+    size: 20_GBS_acute_and_1_year_15_controls
+    pairing: 20_matched_acute_to_1_year
+    repository: https://github.com/NeRveLabBCN/GBS-Proteomics
+    url: https://doi.org/10.64898/2026.05.23.26353948
+
+  - id: GSE107574
+    role: normal_human_BNB_identity_anchor
+    evidence_tier: direct_descriptive_human_anchor
+    access: public
+    material: endoneurial_microvessels_and_cultured_endoneurial_EC
+    assay: bulk_RNA_seq
+    size: 4_LCM_microvessels_2_cultured_EC
+    caution: preparation_and_culture_are_confounded_not_a_disease_contrast
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107574
+
+  - id: GSE133750
+    role: EAN_phase_mechanism
+    evidence_tier: direct_animal_reanalysis
+    access: public
+    material: rat_sciatic_nerve
+    assay: bulk_RNA_seq
+    size: control_early_peak_late_n3_each
+    caution: animal_mechanism_not_human_validation
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133750
+
+  - id: CIDP_2026_stable_treated_scRNA
+    role: stable_treated_CIDP_publication_support
+    evidence_tier: publication_level
+    access: publication_and_KSX_accessions
+    material: human_peripheral_immune_cells
+    assay: integrated_flow_and_scRNA_seq
+    size: 20_stable_treated_CIDP_20_controls_scRNA_subset_2_vs_2
+    caution: not_active_untreated_or_paired_IVIg_response
+    url: https://doi.org/10.3389/fimmu.2026.1888882
+
+  - id: CIDP_IgG_PnMEC_2026
+    role: BNB_functional_mechanistic_validation
+    access: article_and_supplement_no_raw_expression_matrix
+    material: human_peripheral_nerve_microvascular_endothelial_cells
+    assay: RNA-seq_high_content_imaging_permeability
+    key_findings:
+      - CCL20_TNF_ICAM1_typical_CIDP
+      - VCAM1_NFkB_CSF2_multifocal_CIDP
+      - reduced_CLDN5_multifocal_CIDP
+    url: https://doi.org/10.3390/ijms27021088

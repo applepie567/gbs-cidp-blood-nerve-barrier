@@ -1,0 +1,4 @@
+role,accession,disease_stage,biospecimen,biological_replicates,analysis,source_url
+Primary acute immune-source dataset,GSE304871,Early untreated AIDP-variant GBS,"Peripheral blood; FACS-sorted CD11b+, CD4+, CD8+ cells",CD11b: 2 GBS/3 HC; CD4: 3/3; CD8: 2/3,"Patient-level log2(nTPM+1), prespecified modules and Hedges g",https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+Primary target-organ dataset,GSE285983,Cross-sectional CIDP nerve biopsy,Human sural nerve single-nucleus RNA-seq,9 CIDP; 11 CIAP; 4 trauma-graft controls; 37 total donors,Patient-level targeted pseudobulk; CIDP-vs-CIAP primary contrast,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285983
+External phase/treatment validation,Published cohorts,GBS pre/post treatment; CIDP active/inactive and IVIg response,"CSF, serum, whole blood and cultured PnMECs",Study-specific,Directional triangulation only; no unreported individual-level data pooled,https://doi.org/10.3389/fimmu.2023.1241199
