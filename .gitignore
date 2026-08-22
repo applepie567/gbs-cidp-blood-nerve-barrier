@@ -1,0 +1,14 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+data/raw/
+data/interim/
+*.h5
+*.h5ad
+*.rds
+*.RData
+*.tar
+*.tar.gz
+*.zip
+*.inspect.ndjson
