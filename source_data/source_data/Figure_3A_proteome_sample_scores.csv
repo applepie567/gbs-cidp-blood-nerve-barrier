@@ -1,0 +1,386 @@
+sample,condition,matching_ID,module,score_z,module_label
+1,Healthy_Control,,CXCL8_CXCR1_2,-0.5090913499019496,CXCL8–CXCR1/2
+2,GBS_Acute,17.0,CXCL8_CXCR1_2,-0.1098926968054901,CXCL8–CXCR1/2
+3,GBS_Recovery,18.0,CXCL8_CXCR1_2,-0.1302892022705244,CXCL8–CXCR1/2
+4,GBS_Acute,20.0,CXCL8_CXCR1_2,-0.4794299383881606,CXCL8–CXCR1/2
+5,Healthy_Control,,CXCL8_CXCR1_2,-0.7779612030870126,CXCL8–CXCR1/2
+6,GBS_Recovery,1.0,CXCL8_CXCR1_2,-0.4315162905438922,CXCL8–CXCR1/2
+7,GBS_Acute,5.0,CXCL8_CXCR1_2,0.1339805793524528,CXCL8–CXCR1/2
+8,Healthy_Control,,CXCL8_CXCR1_2,-0.2489121762096908,CXCL8–CXCR1/2
+9,GBS_Recovery,14.0,CXCL8_CXCR1_2,-0.3651164090256939,CXCL8–CXCR1/2
+10,GBS_Recovery,8.0,CXCL8_CXCR1_2,-0.2999635973278337,CXCL8–CXCR1/2
+11,GBS_Acute,18.0,CXCL8_CXCR1_2,5.762661830684418,CXCL8–CXCR1/2
+12,GBS_Recovery,3.0,CXCL8_CXCR1_2,-0.6681367852663831,CXCL8–CXCR1/2
+13,Healthy_Control,,CXCL8_CXCR1_2,-0.5426443845535813,CXCL8–CXCR1/2
+14,GBS_Recovery,9.0,CXCL8_CXCR1_2,-0.3973966008821941,CXCL8–CXCR1/2
+15,Healthy_Control,,CXCL8_CXCR1_2,-0.7337283129785434,CXCL8–CXCR1/2
+16,Healthy_Control,,CXCL8_CXCR1_2,0.0065357426549063,CXCL8–CXCR1/2
+17,GBS_Recovery,19.0,CXCL8_CXCR1_2,-0.5192404765211951,CXCL8–CXCR1/2
+18,GBS_Acute,13.0,CXCL8_CXCR1_2,-0.6354337366346299,CXCL8–CXCR1/2
+19,Healthy_Control,,CXCL8_CXCR1_2,1.1662981669129315,CXCL8–CXCR1/2
+20,Healthy_Control,,CXCL8_CXCR1_2,-0.3806187805334873,CXCL8–CXCR1/2
+21,GBS_Recovery,2.0,CXCL8_CXCR1_2,-0.1950910774201955,CXCL8–CXCR1/2
+22,Healthy_Control,,CXCL8_CXCR1_2,-0.4978385139434658,CXCL8–CXCR1/2
+23,Healthy_Control,,CXCL8_CXCR1_2,0.0236523501813577,CXCL8–CXCR1/2
+24,GBS_Acute,16.0,CXCL8_CXCR1_2,-0.0942823707650051,CXCL8–CXCR1/2
+25,GBS_Acute,9.0,CXCL8_CXCR1_2,0.4045906398440576,CXCL8–CXCR1/2
+26,Healthy_Control,,CXCL8_CXCR1_2,-0.6482872691315774,CXCL8–CXCR1/2
+27,Healthy_Control,,CXCL8_CXCR1_2,-0.2865852908465172,CXCL8–CXCR1/2
+28,GBS_Acute,3.0,CXCL8_CXCR1_2,-0.2477234075666418,CXCL8–CXCR1/2
+29,GBS_Recovery,16.0,CXCL8_CXCR1_2,-0.2031797175071454,CXCL8–CXCR1/2
+30,GBS_Acute,14.0,CXCL8_CXCR1_2,3.0787727250704706,CXCL8–CXCR1/2
+31,GBS_Recovery,12.0,CXCL8_CXCR1_2,0.5281716055822167,CXCL8–CXCR1/2
+32,GBS_Recovery,10.0,CXCL8_CXCR1_2,0.0455592735981702,CXCL8–CXCR1/2
+33,GBS_Recovery,17.0,CXCL8_CXCR1_2,-0.4177956444030011,CXCL8–CXCR1/2
+34,GBS_Acute,19.0,CXCL8_CXCR1_2,1.348693340495052,CXCL8–CXCR1/2
+35,Healthy_Control,,CXCL8_CXCR1_2,-0.5042571204422095,CXCL8–CXCR1/2
+36,GBS_Acute,12.0,CXCL8_CXCR1_2,-0.3387484344147061,CXCL8–CXCR1/2
+37,Healthy_Control,,CXCL8_CXCR1_2,-0.6811164704596296,CXCL8–CXCR1/2
+38,GBS_Acute,10.0,CXCL8_CXCR1_2,0.1286616479014814,CXCL8–CXCR1/2
+39,GBS_Recovery,15.0,CXCL8_CXCR1_2,0.1257034059255523,CXCL8–CXCR1/2
+40,Healthy_Control,,CXCL8_CXCR1_2,-0.1030368520493443,CXCL8–CXCR1/2
+41,GBS_Acute,1.0,CXCL8_CXCR1_2,-0.4147832097749109,CXCL8–CXCR1/2
+42,GBS_Acute,7.0,CXCL8_CXCR1_2,0.1359763035273507,CXCL8–CXCR1/2
+43,GBS_Acute,6.0,CXCL8_CXCR1_2,-0.1045433848106756,CXCL8–CXCR1/2
+44,GBS_Recovery,13.0,CXCL8_CXCR1_2,-0.3108366012814497,CXCL8–CXCR1/2
+45,GBS_Acute,8.0,CXCL8_CXCR1_2,0.0133971646744663,CXCL8–CXCR1/2
+46,GBS_Recovery,6.0,CXCL8_CXCR1_2,0.5674865244748093,CXCL8–CXCR1/2
+47,GBS_Acute,11.0,CXCL8_CXCR1_2,0.3491837141662655,CXCL8–CXCR1/2
+48,GBS_Recovery,7.0,CXCL8_CXCR1_2,-0.1874518694627787,CXCL8–CXCR1/2
+49,GBS_Recovery,4.0,CXCL8_CXCR1_2,-0.4921215175448267,CXCL8–CXCR1/2
+50,GBS_Recovery,20.0,CXCL8_CXCR1_2,-0.678896204923394,CXCL8–CXCR1/2
+51,GBS_Acute,15.0,CXCL8_CXCR1_2,0.4197906575498328,CXCL8–CXCR1/2
+52,GBS_Acute,2.0,CXCL8_CXCR1_2,-0.1925398286806008,CXCL8–CXCR1/2
+53,GBS_Acute,4.0,CXCL8_CXCR1_2,-0.3740736180152211,CXCL8–CXCR1/2
+54,GBS_Recovery,11.0,CXCL8_CXCR1_2,0.1150312702764814,CXCL8–CXCR1/2
+55,GBS_Recovery,5.0,CXCL8_CXCR1_2,-0.1515865984987974,CXCL8–CXCR1/2
+1,Healthy_Control,,LIF_LIFR_IL6ST,-0.3520405105014907,LIF/OSM–gp130
+2,GBS_Acute,17.0,LIF_LIFR_IL6ST,-0.1029202977354829,LIF/OSM–gp130
+3,GBS_Recovery,18.0,LIF_LIFR_IL6ST,0.0971816240743915,LIF/OSM–gp130
+4,GBS_Acute,20.0,LIF_LIFR_IL6ST,0.0985590694134813,LIF/OSM–gp130
+5,Healthy_Control,,LIF_LIFR_IL6ST,0.2055479287267543,LIF/OSM–gp130
+6,GBS_Recovery,1.0,LIF_LIFR_IL6ST,0.1341648046632202,LIF/OSM–gp130
+7,GBS_Acute,5.0,LIF_LIFR_IL6ST,0.1730725229764842,LIF/OSM–gp130
+8,Healthy_Control,,LIF_LIFR_IL6ST,0.166889665104032,LIF/OSM–gp130
+9,GBS_Recovery,14.0,LIF_LIFR_IL6ST,0.0837459589490835,LIF/OSM–gp130
+10,GBS_Recovery,8.0,LIF_LIFR_IL6ST,-0.118096456674208,LIF/OSM–gp130
+11,GBS_Acute,18.0,LIF_LIFR_IL6ST,0.0744395598632683,LIF/OSM–gp130
+12,GBS_Recovery,3.0,LIF_LIFR_IL6ST,0.0689224580622665,LIF/OSM–gp130
+13,Healthy_Control,,LIF_LIFR_IL6ST,-0.3117372938685884,LIF/OSM–gp130
+14,GBS_Recovery,9.0,LIF_LIFR_IL6ST,0.1597134027361519,LIF/OSM–gp130
+15,Healthy_Control,,LIF_LIFR_IL6ST,-0.6327236048816304,LIF/OSM–gp130
+16,Healthy_Control,,LIF_LIFR_IL6ST,-0.5611772175115282,LIF/OSM–gp130
+17,GBS_Recovery,19.0,LIF_LIFR_IL6ST,0.0570774887149485,LIF/OSM–gp130
+18,GBS_Acute,13.0,LIF_LIFR_IL6ST,0.2039165934310989,LIF/OSM–gp130
+19,Healthy_Control,,LIF_LIFR_IL6ST,-0.1284684669327886,LIF/OSM–gp130
+20,Healthy_Control,,LIF_LIFR_IL6ST,-0.3454737979918258,LIF/OSM–gp130
+21,GBS_Recovery,2.0,LIF_LIFR_IL6ST,0.0540647127425898,LIF/OSM–gp130
+22,Healthy_Control,,LIF_LIFR_IL6ST,-0.856367729874405,LIF/OSM–gp130
+23,Healthy_Control,,LIF_LIFR_IL6ST,0.4443575361441548,LIF/OSM–gp130
+24,GBS_Acute,16.0,LIF_LIFR_IL6ST,0.4335691701804537,LIF/OSM–gp130
+25,GBS_Acute,9.0,LIF_LIFR_IL6ST,0.1370836304744069,LIF/OSM–gp130
+26,Healthy_Control,,LIF_LIFR_IL6ST,0.0329174322890099,LIF/OSM–gp130
+27,Healthy_Control,,LIF_LIFR_IL6ST,-0.5247693119258299,LIF/OSM–gp130
+28,GBS_Acute,3.0,LIF_LIFR_IL6ST,0.4687707890470475,LIF/OSM–gp130
+29,GBS_Recovery,16.0,LIF_LIFR_IL6ST,0.4844699034269679,LIF/OSM–gp130
+30,GBS_Acute,14.0,LIF_LIFR_IL6ST,0.0806952408625737,LIF/OSM–gp130
+31,GBS_Recovery,12.0,LIF_LIFR_IL6ST,0.0818349361253936,LIF/OSM–gp130
+32,GBS_Recovery,10.0,LIF_LIFR_IL6ST,-0.0858757409277028,LIF/OSM–gp130
+33,GBS_Recovery,17.0,LIF_LIFR_IL6ST,-0.122987677265509,LIF/OSM–gp130
+34,GBS_Acute,19.0,LIF_LIFR_IL6ST,-0.2071579049718066,LIF/OSM–gp130
+35,Healthy_Control,,LIF_LIFR_IL6ST,-0.0377621094969576,LIF/OSM–gp130
+36,GBS_Acute,12.0,LIF_LIFR_IL6ST,0.0189220952869553,LIF/OSM–gp130
+37,Healthy_Control,,LIF_LIFR_IL6ST,-0.0118040650776858,LIF/OSM–gp130
+38,GBS_Acute,10.0,LIF_LIFR_IL6ST,-0.3833595427854099,LIF/OSM–gp130
+39,GBS_Recovery,15.0,LIF_LIFR_IL6ST,-0.1516573324300227,LIF/OSM–gp130
+40,Healthy_Control,,LIF_LIFR_IL6ST,-0.7946857922821853,LIF/OSM–gp130
+41,GBS_Acute,1.0,LIF_LIFR_IL6ST,0.2464751185302471,LIF/OSM–gp130
+42,GBS_Acute,7.0,LIF_LIFR_IL6ST,-0.2368296032827154,LIF/OSM–gp130
+43,GBS_Acute,6.0,LIF_LIFR_IL6ST,0.4351597943809853,LIF/OSM–gp130
+44,GBS_Recovery,13.0,LIF_LIFR_IL6ST,-0.0803115245164509,LIF/OSM–gp130
+45,GBS_Acute,8.0,LIF_LIFR_IL6ST,-0.1989212470836895,LIF/OSM–gp130
+46,GBS_Recovery,6.0,LIF_LIFR_IL6ST,0.1652031690002345,LIF/OSM–gp130
+47,GBS_Acute,11.0,LIF_LIFR_IL6ST,0.4635664956830426,LIF/OSM–gp130
+48,GBS_Recovery,7.0,LIF_LIFR_IL6ST,-0.3640260816494401,LIF/OSM–gp130
+49,GBS_Recovery,4.0,LIF_LIFR_IL6ST,0.450997743463788,LIF/OSM–gp130
+50,GBS_Recovery,20.0,LIF_LIFR_IL6ST,0.1285103726230347,LIF/OSM–gp130
+51,GBS_Acute,15.0,LIF_LIFR_IL6ST,-0.3977909880676473,LIF/OSM–gp130
+52,GBS_Acute,2.0,LIF_LIFR_IL6ST,0.0744303519637953,LIF/OSM–gp130
+53,GBS_Acute,4.0,LIF_LIFR_IL6ST,0.4899328072118616,LIF/OSM–gp130
+54,GBS_Recovery,11.0,LIF_LIFR_IL6ST,0.7846200237718983,LIF/OSM–gp130
+55,GBS_Recovery,5.0,LIF_LIFR_IL6ST,0.0081318978115296,LIF/OSM–gp130
+1,Healthy_Control,,Complement,-1.102074819485633,Complement
+2,GBS_Acute,17.0,Complement,-0.2971926770645985,Complement
+3,GBS_Recovery,18.0,Complement,0.314734322393658,Complement
+4,GBS_Acute,20.0,Complement,-0.4893469475534518,Complement
+5,Healthy_Control,,Complement,0.4345543656554274,Complement
+6,GBS_Recovery,1.0,Complement,-0.1679788939666301,Complement
+7,GBS_Acute,5.0,Complement,-1.035752526787077,Complement
+8,Healthy_Control,,Complement,0.463398376220155,Complement
+9,GBS_Recovery,14.0,Complement,-0.0562602232952536,Complement
+10,GBS_Recovery,8.0,Complement,-0.027495999228451,Complement
+11,GBS_Acute,18.0,Complement,0.234577615139814,Complement
+12,GBS_Recovery,3.0,Complement,-0.1108005545279764,Complement
+13,Healthy_Control,,Complement,0.1861012231019868,Complement
+14,GBS_Recovery,9.0,Complement,0.0436089304952922,Complement
+15,Healthy_Control,,Complement,-0.0541720664406666,Complement
+16,Healthy_Control,,Complement,-0.2715565835232523,Complement
+17,GBS_Recovery,19.0,Complement,0.3300647232577151,Complement
+18,GBS_Acute,13.0,Complement,0.4929557477299773,Complement
+19,Healthy_Control,,Complement,0.1370776106670666,Complement
+20,Healthy_Control,,Complement,-0.1900249523810346,Complement
+21,GBS_Recovery,2.0,Complement,0.2514629164621519,Complement
+22,Healthy_Control,,Complement,-0.4549100917338065,Complement
+23,Healthy_Control,,Complement,-0.6881625790948295,Complement
+24,GBS_Acute,16.0,Complement,0.4731058925119927,Complement
+25,GBS_Acute,9.0,Complement,0.0702246871119754,Complement
+26,Healthy_Control,,Complement,0.0227287041836767,Complement
+27,Healthy_Control,,Complement,-0.2644051511610659,Complement
+28,GBS_Acute,3.0,Complement,0.6330401386000962,Complement
+29,GBS_Recovery,16.0,Complement,0.7523504079996326,Complement
+30,GBS_Acute,14.0,Complement,0.1887159568017479,Complement
+31,GBS_Recovery,12.0,Complement,-0.0819701000406148,Complement
+32,GBS_Recovery,10.0,Complement,0.3336203454766459,Complement
+33,GBS_Recovery,17.0,Complement,0.1832602137726395,Complement
+34,GBS_Acute,19.0,Complement,0.0886313165590455,Complement
+35,Healthy_Control,,Complement,-0.0724996344894539,Complement
+36,GBS_Acute,12.0,Complement,0.3209187975293083,Complement
+37,Healthy_Control,,Complement,-0.1529338527905045,Complement
+38,GBS_Acute,10.0,Complement,-0.0955042249887176,Complement
+39,GBS_Recovery,15.0,Complement,-0.0879311922088739,Complement
+40,Healthy_Control,,Complement,0.0479815512643281,Complement
+41,GBS_Acute,1.0,Complement,-0.6356845756369832,Complement
+42,GBS_Acute,7.0,Complement,0.0304386004576682,Complement
+43,GBS_Acute,6.0,Complement,0.2492660660351177,Complement
+44,GBS_Recovery,13.0,Complement,0.4982412586586093,Complement
+45,GBS_Acute,8.0,Complement,-0.0181606748649305,Complement
+46,GBS_Recovery,6.0,Complement,0.0919577652910155,Complement
+47,GBS_Acute,11.0,Complement,0.0947602578438889,Complement
+48,GBS_Recovery,7.0,Complement,-0.0539635229651059,Complement
+49,GBS_Recovery,4.0,Complement,5.9369642325377e-05,Complement
+50,GBS_Recovery,20.0,Complement,0.0412776156878347,Complement
+51,GBS_Acute,15.0,Complement,-0.2164442993236205,Complement
+52,GBS_Acute,2.0,Complement,0.4121611999289501,Complement
+53,GBS_Acute,4.0,Complement,-0.6867328245290855,Complement
+54,GBS_Recovery,11.0,Complement,0.2192100965177391,Complement
+55,GBS_Recovery,5.0,Complement,-0.3285271049157678,Complement
+1,Healthy_Control,,Fc_receptor,0.5928068339321854,Fc receptor
+2,GBS_Acute,17.0,Fc_receptor,-0.130064377119893,Fc receptor
+3,GBS_Recovery,18.0,Fc_receptor,0.0140025795542773,Fc receptor
+4,GBS_Acute,20.0,Fc_receptor,-0.7271283391392546,Fc receptor
+5,Healthy_Control,,Fc_receptor,-0.1213524810632928,Fc receptor
+6,GBS_Recovery,1.0,Fc_receptor,0.0233370178986955,Fc receptor
+7,GBS_Acute,5.0,Fc_receptor,1.0437834786501623,Fc receptor
+8,Healthy_Control,,Fc_receptor,0.2931084831750994,Fc receptor
+9,GBS_Recovery,14.0,Fc_receptor,-0.6072017361570706,Fc receptor
+10,GBS_Recovery,8.0,Fc_receptor,-0.0977526000818699,Fc receptor
+11,GBS_Acute,18.0,Fc_receptor,0.6345921003977399,Fc receptor
+12,GBS_Recovery,3.0,Fc_receptor,-0.1887440816526062,Fc receptor
+13,Healthy_Control,,Fc_receptor,-0.1144108304838102,Fc receptor
+14,GBS_Recovery,9.0,Fc_receptor,-0.0600881652373535,Fc receptor
+15,Healthy_Control,,Fc_receptor,-0.0390385433159502,Fc receptor
+16,Healthy_Control,,Fc_receptor,-0.2386895343511815,Fc receptor
+17,GBS_Recovery,19.0,Fc_receptor,-0.0279335582501383,Fc receptor
+18,GBS_Acute,13.0,Fc_receptor,-0.1367792638967844,Fc receptor
+19,Healthy_Control,,Fc_receptor,-0.3795089557517193,Fc receptor
+20,Healthy_Control,,Fc_receptor,-0.1545901491069192,Fc receptor
+21,GBS_Recovery,2.0,Fc_receptor,0.0313516700734873,Fc receptor
+22,Healthy_Control,,Fc_receptor,-0.4060736428293933,Fc receptor
+23,Healthy_Control,,Fc_receptor,-0.1392255888594168,Fc receptor
+24,GBS_Acute,16.0,Fc_receptor,0.224079815373106,Fc receptor
+25,GBS_Acute,9.0,Fc_receptor,-0.0502138104815589,Fc receptor
+26,Healthy_Control,,Fc_receptor,-0.3242167802536073,Fc receptor
+27,Healthy_Control,,Fc_receptor,-0.0820049697879234,Fc receptor
+28,GBS_Acute,3.0,Fc_receptor,-0.1013689523998691,Fc receptor
+29,GBS_Recovery,16.0,Fc_receptor,0.5201808357883673,Fc receptor
+30,GBS_Acute,14.0,Fc_receptor,0.1730518803522498,Fc receptor
+31,GBS_Recovery,12.0,Fc_receptor,0.4344831291244882,Fc receptor
+32,GBS_Recovery,10.0,Fc_receptor,0.3175512688449442,Fc receptor
+33,GBS_Recovery,17.0,Fc_receptor,-0.3340196863889141,Fc receptor
+34,GBS_Acute,19.0,Fc_receptor,-0.38009337335465,Fc receptor
+35,Healthy_Control,,Fc_receptor,-0.213254381083218,Fc receptor
+36,GBS_Acute,12.0,Fc_receptor,0.4326659833811124,Fc receptor
+37,Healthy_Control,,Fc_receptor,1.7584755796277285,Fc receptor
+38,GBS_Acute,10.0,Fc_receptor,0.6636501426580089,Fc receptor
+39,GBS_Recovery,15.0,Fc_receptor,-0.9141096636187596,Fc receptor
+40,Healthy_Control,,Fc_receptor,0.2843295181277032,Fc receptor
+41,GBS_Acute,1.0,Fc_receptor,-0.1919610409993755,Fc receptor
+42,GBS_Acute,7.0,Fc_receptor,0.1478068392298452,Fc receptor
+43,GBS_Acute,6.0,Fc_receptor,0.4053075306994059,Fc receptor
+44,GBS_Recovery,13.0,Fc_receptor,-0.2686016566665106,Fc receptor
+45,GBS_Acute,8.0,Fc_receptor,-0.2984700612425002,Fc receptor
+46,GBS_Recovery,6.0,Fc_receptor,0.2379825388295871,Fc receptor
+47,GBS_Acute,11.0,Fc_receptor,-0.2253592067421352,Fc receptor
+48,GBS_Recovery,7.0,Fc_receptor,0.1786800557023509,Fc receptor
+49,GBS_Recovery,4.0,Fc_receptor,0.1539426802668966,Fc receptor
+50,GBS_Recovery,20.0,Fc_receptor,-0.039683424532105,Fc receptor
+51,GBS_Acute,15.0,Fc_receptor,-0.3017665576385029,Fc receptor
+52,GBS_Acute,2.0,Fc_receptor,-0.609830196920156,Fc receptor
+53,GBS_Acute,4.0,Fc_receptor,-0.5518037119045291,Fc receptor
+54,GBS_Recovery,11.0,Fc_receptor,-0.1724464338124727,Fc receptor
+55,GBS_Recovery,5.0,Fc_receptor,0.0626157934359812,Fc receptor
+1,Healthy_Control,,Transendothelial_migration,-0.5357929085164038,Transendothelial migration
+2,GBS_Acute,17.0,Transendothelial_migration,-0.1927432506545763,Transendothelial migration
+3,GBS_Recovery,18.0,Transendothelial_migration,-0.0159711121643929,Transendothelial migration
+4,GBS_Acute,20.0,Transendothelial_migration,-0.2912630579906002,Transendothelial migration
+5,Healthy_Control,,Transendothelial_migration,0.4077909943107725,Transendothelial migration
+6,GBS_Recovery,1.0,Transendothelial_migration,0.1791905484402716,Transendothelial migration
+7,GBS_Acute,5.0,Transendothelial_migration,0.8118820379002104,Transendothelial migration
+8,Healthy_Control,,Transendothelial_migration,0.1359210084727561,Transendothelial migration
+9,GBS_Recovery,14.0,Transendothelial_migration,-0.0385176934743472,Transendothelial migration
+10,GBS_Recovery,8.0,Transendothelial_migration,0.0570692330840168,Transendothelial migration
+11,GBS_Acute,18.0,Transendothelial_migration,0.987504830340746,Transendothelial migration
+12,GBS_Recovery,3.0,Transendothelial_migration,-0.1775796639466865,Transendothelial migration
+13,Healthy_Control,,Transendothelial_migration,-0.6854393069602605,Transendothelial migration
+14,GBS_Recovery,9.0,Transendothelial_migration,0.1973330495716317,Transendothelial migration
+15,Healthy_Control,,Transendothelial_migration,-0.2679410384914394,Transendothelial migration
+16,Healthy_Control,,Transendothelial_migration,-0.0583889257950286,Transendothelial migration
+17,GBS_Recovery,19.0,Transendothelial_migration,-0.4309578216571189,Transendothelial migration
+18,GBS_Acute,13.0,Transendothelial_migration,0.0683057956053472,Transendothelial migration
+19,Healthy_Control,,Transendothelial_migration,-0.0072611195669572,Transendothelial migration
+20,Healthy_Control,,Transendothelial_migration,0.0271427507021952,Transendothelial migration
+21,GBS_Recovery,2.0,Transendothelial_migration,0.0110174741425547,Transendothelial migration
+22,Healthy_Control,,Transendothelial_migration,-0.2380905983779056,Transendothelial migration
+23,Healthy_Control,,Transendothelial_migration,0.1392474770861422,Transendothelial migration
+24,GBS_Acute,16.0,Transendothelial_migration,0.1472209057767554,Transendothelial migration
+25,GBS_Acute,9.0,Transendothelial_migration,0.2398030068954142,Transendothelial migration
+26,Healthy_Control,,Transendothelial_migration,0.4856868232389733,Transendothelial migration
+27,Healthy_Control,,Transendothelial_migration,-0.6321875953966855,Transendothelial migration
+28,GBS_Acute,3.0,Transendothelial_migration,-0.2534066175495579,Transendothelial migration
+29,GBS_Recovery,16.0,Transendothelial_migration,0.0311309478682031,Transendothelial migration
+30,GBS_Acute,14.0,Transendothelial_migration,0.495690588388811,Transendothelial migration
+31,GBS_Recovery,12.0,Transendothelial_migration,0.1089017570071319,Transendothelial migration
+32,GBS_Recovery,10.0,Transendothelial_migration,-0.0318456404780983,Transendothelial migration
+33,GBS_Recovery,17.0,Transendothelial_migration,-0.3552335877825658,Transendothelial migration
+34,GBS_Acute,19.0,Transendothelial_migration,0.1037799914921632,Transendothelial migration
+35,Healthy_Control,,Transendothelial_migration,-0.2000429651018679,Transendothelial migration
+36,GBS_Acute,12.0,Transendothelial_migration,0.1460414877374865,Transendothelial migration
+37,Healthy_Control,,Transendothelial_migration,-0.1664873456700968,Transendothelial migration
+38,GBS_Acute,10.0,Transendothelial_migration,-0.0687453465120621,Transendothelial migration
+39,GBS_Recovery,15.0,Transendothelial_migration,-0.0916051803850121,Transendothelial migration
+40,Healthy_Control,,Transendothelial_migration,-0.2160144308289567,Transendothelial migration
+41,GBS_Acute,1.0,Transendothelial_migration,0.3253118370161326,Transendothelial migration
+42,GBS_Acute,7.0,Transendothelial_migration,0.0564594915896709,Transendothelial migration
+43,GBS_Acute,6.0,Transendothelial_migration,0.2233113908868935,Transendothelial migration
+44,GBS_Recovery,13.0,Transendothelial_migration,-0.0080843485773723,Transendothelial migration
+45,GBS_Acute,8.0,Transendothelial_migration,-0.0961427475903405,Transendothelial migration
+46,GBS_Recovery,6.0,Transendothelial_migration,0.1661982842512256,Transendothelial migration
+47,GBS_Acute,11.0,Transendothelial_migration,-0.0160197253210785,Transendothelial migration
+48,GBS_Recovery,7.0,Transendothelial_migration,-0.1679229706819985,Transendothelial migration
+49,GBS_Recovery,4.0,Transendothelial_migration,0.4292906092090254,Transendothelial migration
+50,GBS_Recovery,20.0,Transendothelial_migration,-0.1465042087007955,Transendothelial migration
+51,GBS_Acute,15.0,Transendothelial_migration,-0.2164941648803023,Transendothelial migration
+52,GBS_Acute,2.0,Transendothelial_migration,-0.2205901682333948,Transendothelial migration
+53,GBS_Acute,4.0,Transendothelial_migration,0.1381035801355882,Transendothelial migration
+54,GBS_Recovery,11.0,Transendothelial_migration,-0.0425535217208202,Transendothelial migration
+55,GBS_Recovery,5.0,Transendothelial_migration,-0.2495088381433943,Transendothelial migration
+1,Healthy_Control,,Interferon_JAK_STAT,0.3707866135230471,Interferon/JAK–STAT
+2,GBS_Acute,17.0,Interferon_JAK_STAT,-0.0414250095571428,Interferon/JAK–STAT
+3,GBS_Recovery,18.0,Interferon_JAK_STAT,-0.3580303772655792,Interferon/JAK–STAT
+4,GBS_Acute,20.0,Interferon_JAK_STAT,-0.2230327931771362,Interferon/JAK–STAT
+5,Healthy_Control,,Interferon_JAK_STAT,0.2989136787597732,Interferon/JAK–STAT
+6,GBS_Recovery,1.0,Interferon_JAK_STAT,-0.1265652143154421,Interferon/JAK–STAT
+7,GBS_Acute,5.0,Interferon_JAK_STAT,2.1176802939371138,Interferon/JAK–STAT
+8,Healthy_Control,,Interferon_JAK_STAT,-0.0936375479323249,Interferon/JAK–STAT
+9,GBS_Recovery,14.0,Interferon_JAK_STAT,-0.2048314128234,Interferon/JAK–STAT
+10,GBS_Recovery,8.0,Interferon_JAK_STAT,-0.2743537056760616,Interferon/JAK–STAT
+11,GBS_Acute,18.0,Interferon_JAK_STAT,1.0644548583190605,Interferon/JAK–STAT
+12,GBS_Recovery,3.0,Interferon_JAK_STAT,-0.3835218163162194,Interferon/JAK–STAT
+13,Healthy_Control,,Interferon_JAK_STAT,-0.6320819750326923,Interferon/JAK–STAT
+14,GBS_Recovery,9.0,Interferon_JAK_STAT,0.1048668238089419,Interferon/JAK–STAT
+15,Healthy_Control,,Interferon_JAK_STAT,-0.5816012151303934,Interferon/JAK–STAT
+16,Healthy_Control,,Interferon_JAK_STAT,-0.3109088208639991,Interferon/JAK–STAT
+17,GBS_Recovery,19.0,Interferon_JAK_STAT,-0.3425948430359113,Interferon/JAK–STAT
+18,GBS_Acute,13.0,Interferon_JAK_STAT,-0.1202241258809021,Interferon/JAK–STAT
+19,Healthy_Control,,Interferon_JAK_STAT,0.3504781434668318,Interferon/JAK–STAT
+20,Healthy_Control,,Interferon_JAK_STAT,-0.0603556873225423,Interferon/JAK–STAT
+21,GBS_Recovery,2.0,Interferon_JAK_STAT,-0.2996133770468027,Interferon/JAK–STAT
+22,Healthy_Control,,Interferon_JAK_STAT,-0.5835411860669752,Interferon/JAK–STAT
+23,Healthy_Control,,Interferon_JAK_STAT,0.1872114462440778,Interferon/JAK–STAT
+24,GBS_Acute,16.0,Interferon_JAK_STAT,-0.1936194987929014,Interferon/JAK–STAT
+25,GBS_Acute,9.0,Interferon_JAK_STAT,0.7922144172491199,Interferon/JAK–STAT
+26,Healthy_Control,,Interferon_JAK_STAT,0.7358420512595762,Interferon/JAK–STAT
+27,Healthy_Control,,Interferon_JAK_STAT,-0.5144052339736653,Interferon/JAK–STAT
+28,GBS_Acute,3.0,Interferon_JAK_STAT,0.5274547515097693,Interferon/JAK–STAT
+29,GBS_Recovery,16.0,Interferon_JAK_STAT,-0.1552882334891974,Interferon/JAK–STAT
+30,GBS_Acute,14.0,Interferon_JAK_STAT,0.4504906340447056,Interferon/JAK–STAT
+31,GBS_Recovery,12.0,Interferon_JAK_STAT,0.3929984185935277,Interferon/JAK–STAT
+32,GBS_Recovery,10.0,Interferon_JAK_STAT,-0.1889023602571163,Interferon/JAK–STAT
+33,GBS_Recovery,17.0,Interferon_JAK_STAT,-0.1771481489367878,Interferon/JAK–STAT
+34,GBS_Acute,19.0,Interferon_JAK_STAT,0.0268048765185504,Interferon/JAK–STAT
+35,Healthy_Control,,Interferon_JAK_STAT,-0.3085378148322518,Interferon/JAK–STAT
+36,GBS_Acute,12.0,Interferon_JAK_STAT,0.08338910074541,Interferon/JAK–STAT
+37,Healthy_Control,,Interferon_JAK_STAT,1.3578875257609535,Interferon/JAK–STAT
+38,GBS_Acute,10.0,Interferon_JAK_STAT,-0.2469166106203888,Interferon/JAK–STAT
+39,GBS_Recovery,15.0,Interferon_JAK_STAT,-0.2575710517823759,Interferon/JAK–STAT
+40,Healthy_Control,,Interferon_JAK_STAT,-0.0153353822170304,Interferon/JAK–STAT
+41,GBS_Acute,1.0,Interferon_JAK_STAT,-0.1627535383051415,Interferon/JAK–STAT
+42,GBS_Acute,7.0,Interferon_JAK_STAT,0.2638673308840905,Interferon/JAK–STAT
+43,GBS_Acute,6.0,Interferon_JAK_STAT,-0.3669285755406555,Interferon/JAK–STAT
+44,GBS_Recovery,13.0,Interferon_JAK_STAT,-0.3269316176679979,Interferon/JAK–STAT
+45,GBS_Acute,8.0,Interferon_JAK_STAT,-0.2253039618925361,Interferon/JAK–STAT
+46,GBS_Recovery,6.0,Interferon_JAK_STAT,-0.1755102990631124,Interferon/JAK–STAT
+47,GBS_Acute,11.0,Interferon_JAK_STAT,-0.2212464728085987,Interferon/JAK–STAT
+48,GBS_Recovery,7.0,Interferon_JAK_STAT,-0.0231545419656812,Interferon/JAK–STAT
+49,GBS_Recovery,4.0,Interferon_JAK_STAT,-0.2356998565246757,Interferon/JAK–STAT
+50,GBS_Recovery,20.0,Interferon_JAK_STAT,-0.2406540714127915,Interferon/JAK–STAT
+51,GBS_Acute,15.0,Interferon_JAK_STAT,0.2914700660401697,Interferon/JAK–STAT
+52,GBS_Acute,2.0,Interferon_JAK_STAT,-0.1137450802052543,Interferon/JAK–STAT
+53,GBS_Acute,4.0,Interferon_JAK_STAT,-0.1249954080735909,Interferon/JAK–STAT
+54,GBS_Recovery,11.0,Interferon_JAK_STAT,-0.2433890944985189,Interferon/JAK–STAT
+55,GBS_Recovery,5.0,Interferon_JAK_STAT,-0.2624550703608919,Interferon/JAK–STAT
+1,Healthy_Control,,Inflammatory_monocyte,-0.7011378591419667,Inflammatory monocyte
+2,GBS_Acute,17.0,Inflammatory_monocyte,-0.0637684205233252,Inflammatory monocyte
+3,GBS_Recovery,18.0,Inflammatory_monocyte,0.4773553263051079,Inflammatory monocyte
+4,GBS_Acute,20.0,Inflammatory_monocyte,0.1430748088667411,Inflammatory monocyte
+5,Healthy_Control,,Inflammatory_monocyte,0.1881120813800924,Inflammatory monocyte
+6,GBS_Recovery,1.0,Inflammatory_monocyte,-0.015758745905842,Inflammatory monocyte
+7,GBS_Acute,5.0,Inflammatory_monocyte,0.8277723564126191,Inflammatory monocyte
+8,Healthy_Control,,Inflammatory_monocyte,0.1734030546545745,Inflammatory monocyte
+9,GBS_Recovery,14.0,Inflammatory_monocyte,-0.2446113602976271,Inflammatory monocyte
+10,GBS_Recovery,8.0,Inflammatory_monocyte,-0.1525129203532728,Inflammatory monocyte
+11,GBS_Acute,18.0,Inflammatory_monocyte,1.3080726572554164,Inflammatory monocyte
+12,GBS_Recovery,3.0,Inflammatory_monocyte,-0.3103696503886481,Inflammatory monocyte
+13,Healthy_Control,,Inflammatory_monocyte,-0.8209340047658077,Inflammatory monocyte
+14,GBS_Recovery,9.0,Inflammatory_monocyte,0.3294435665600035,Inflammatory monocyte
+15,Healthy_Control,,Inflammatory_monocyte,-0.8564897916949241,Inflammatory monocyte
+16,Healthy_Control,,Inflammatory_monocyte,-0.369059411475906,Inflammatory monocyte
+17,GBS_Recovery,19.0,Inflammatory_monocyte,-0.110683405511723,Inflammatory monocyte
+18,GBS_Acute,13.0,Inflammatory_monocyte,-0.1300485613270146,Inflammatory monocyte
+19,Healthy_Control,,Inflammatory_monocyte,-0.3559018256035196,Inflammatory monocyte
+20,Healthy_Control,,Inflammatory_monocyte,-0.4434107289253386,Inflammatory monocyte
+21,GBS_Recovery,2.0,Inflammatory_monocyte,0.3404577493429736,Inflammatory monocyte
+22,Healthy_Control,,Inflammatory_monocyte,-0.2706630166901672,Inflammatory monocyte
+23,Healthy_Control,,Inflammatory_monocyte,-0.3085346573119402,Inflammatory monocyte
+24,GBS_Acute,16.0,Inflammatory_monocyte,0.011342380717273,Inflammatory monocyte
+25,GBS_Acute,9.0,Inflammatory_monocyte,0.1778004553182027,Inflammatory monocyte
+26,Healthy_Control,,Inflammatory_monocyte,0.4197805365521322,Inflammatory monocyte
+27,Healthy_Control,,Inflammatory_monocyte,-0.9584168440927346,Inflammatory monocyte
+28,GBS_Acute,3.0,Inflammatory_monocyte,0.0263101093232616,Inflammatory monocyte
+29,GBS_Recovery,16.0,Inflammatory_monocyte,-0.0505111417688683,Inflammatory monocyte
+30,GBS_Acute,14.0,Inflammatory_monocyte,0.0858204153341222,Inflammatory monocyte
+31,GBS_Recovery,12.0,Inflammatory_monocyte,0.5148493981906008,Inflammatory monocyte
+32,GBS_Recovery,10.0,Inflammatory_monocyte,-0.1345957641010091,Inflammatory monocyte
+33,GBS_Recovery,17.0,Inflammatory_monocyte,0.0240051142963062,Inflammatory monocyte
+34,GBS_Acute,19.0,Inflammatory_monocyte,0.2479442373646639,Inflammatory monocyte
+35,Healthy_Control,,Inflammatory_monocyte,-0.2549307109035796,Inflammatory monocyte
+36,GBS_Acute,12.0,Inflammatory_monocyte,-0.0255866718275302,Inflammatory monocyte
+37,Healthy_Control,,Inflammatory_monocyte,0.3878911794716992,Inflammatory monocyte
+38,GBS_Acute,10.0,Inflammatory_monocyte,-0.1311309494375116,Inflammatory monocyte
+39,GBS_Recovery,15.0,Inflammatory_monocyte,-0.0044929395440634,Inflammatory monocyte
+40,Healthy_Control,,Inflammatory_monocyte,-0.3176479024316732,Inflammatory monocyte
+41,GBS_Acute,1.0,Inflammatory_monocyte,-0.3528096348563141,Inflammatory monocyte
+42,GBS_Acute,7.0,Inflammatory_monocyte,0.0765622704211269,Inflammatory monocyte
+43,GBS_Acute,6.0,Inflammatory_monocyte,0.1908904726340103,Inflammatory monocyte
+44,GBS_Recovery,13.0,Inflammatory_monocyte,-0.0753538834354288,Inflammatory monocyte
+45,GBS_Acute,8.0,Inflammatory_monocyte,-0.0799191968675635,Inflammatory monocyte
+46,GBS_Recovery,6.0,Inflammatory_monocyte,0.2946704722067705,Inflammatory monocyte
+47,GBS_Acute,11.0,Inflammatory_monocyte,-0.0574594294555599,Inflammatory monocyte
+48,GBS_Recovery,7.0,Inflammatory_monocyte,-0.2497434514292331,Inflammatory monocyte
+49,GBS_Recovery,4.0,Inflammatory_monocyte,0.2427575760485435,Inflammatory monocyte
+50,GBS_Recovery,20.0,Inflammatory_monocyte,0.6064663442689879,Inflammatory monocyte
+51,GBS_Acute,15.0,Inflammatory_monocyte,0.2399617267276125,Inflammatory monocyte
+52,GBS_Acute,2.0,Inflammatory_monocyte,0.3756835292878812,Inflammatory monocyte
+53,GBS_Acute,4.0,Inflammatory_monocyte,0.4207510285952782,Inflammatory monocyte
+54,GBS_Recovery,11.0,Inflammatory_monocyte,-0.3446299864118106,Inflammatory monocyte
+55,GBS_Recovery,5.0,Inflammatory_monocyte,0.0599340189438543,Inflammatory monocyte
