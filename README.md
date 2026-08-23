@@ -1,5 +1,7 @@
 # Myeloid–blood–nerve barrier–Schwann cell circuit in GBS and CIDP
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22067878.svg)](https://doi.org/10.5281/zenodo.22067878)
+
 Reproducibility repository for the manuscript:
 
 > **Cross-platform multi-omics analysis maps a myeloid–blood–nerve barrier–Schwann cell circuit across Guillain–Barré syndrome and CIDP**
@@ -64,7 +66,12 @@ The participant or tissue donor is the unit of inference. Cells and nuclei are n
 
 ## Citation
 
-Please cite the archived release using the metadata in `CITATION.cff`. The permanent Zenodo DOI will be added after the verified `v1.0.0` release has been archived.
+Please cite the archived v1.0.0 release using DOI
+[`10.5281/zenodo.22067879`](https://doi.org/10.5281/zenodo.22067879).
+The concept DOI
+[`10.5281/zenodo.22067878`](https://doi.org/10.5281/zenodo.22067878)
+always resolves to the latest archived version. Citation metadata are also
+provided in `CITATION.cff`.
 
 ## Licenses
 
