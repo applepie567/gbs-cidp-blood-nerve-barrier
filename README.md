@@ -64,7 +64,7 @@ The participant or tissue donor is the unit of inference. Cells and nuclei are n
 
 ## Citation
 
-Please cite the archived release using the metadata in `CITATION.cff`. The permanent Zenodo DOI will be inserted after the release metadata and author details have been approved.
+Please cite the archived release using the metadata in `CITATION.cff`. The permanent Zenodo DOI will be added after the verified `v1.0.0` release has been archived.
 
 ## Licenses
 
@@ -74,4 +74,7 @@ Please cite the archived release using the metadata in `CITATION.cff`. The perma
 
 ## Contact
 
-Corresponding-author email addresses and institutional details will be added after author confirmation and before the public release.
+Correspondence:
+
+- Yibin Hao, Department of Neurology, Henan Provincial People’s Hospital, People’s Hospital of Zhengzhou University, Zhengzhou 450003, China. Email: haoyibin999@163.com
+- Chao Jiang, Department of Neurology, Henan Provincial People’s Hospital, People’s Hospital of Zhengzhou University, Zhengzhou 450003, China. Email: chaoj@zzu.edu.cn

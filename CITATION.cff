@@ -3,7 +3,7 @@ message: "If you use this code or aggregate source data, please cite the archive
 title: "Myeloid–blood–nerve barrier–Schwann cell circuit in GBS and CIDP"
 type: software
 version: 1.0.0
-date-released: 2026-08-22
+date-released: 2026-08-23
 authors:
   - family-names: Feng
     given-names: Yuan
@@ -15,8 +15,10 @@ authors:
     given-names: Shuman
   - family-names: Jiang
     given-names: Chao
+    affiliation: "Department of Neurology, Henan Provincial People’s Hospital, People’s Hospital of Zhengzhou University"
   - family-names: Hao
     given-names: Yibin
+    affiliation: "Department of Neurology, Henan Provincial People’s Hospital, People’s Hospital of Zhengzhou University"
 license: MIT
 repository-code: "https://github.com/applepie567/gbs-cidp-blood-nerve-barrier"
 keywords:
