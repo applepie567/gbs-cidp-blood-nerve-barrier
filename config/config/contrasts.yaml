@@ -1,0 +1,89 @@
+definitions:
+  BBB:
+    compartment: central_nervous_system
+    label_rule: never_apply_to_peripheral_nerve_endothelium
+  BNB_endothelium:
+    compartment: peripheral_nerve_endoneurial_microvessels
+    GSE285983_cluster: ven_capEC2
+    markers: [ABCB1, SLC1A1, GJA1, MFSD2A, PECAM1, EGFL7]
+  perineurial_barrier:
+    compartment: peripheral_nerve_perineurium
+    GSE285983_clusters: [periC1, periC2, periC3]
+    markers: [CLDN1, SLC2A1, KRT19, CXCL14]
+    rule: analyze_separately_from_BNB_endothelium
+
+primary_contrasts:
+  - name: CIDP_vs_CIAP_in_nerve
+    dataset: GSE285983
+    purpose: immune_specific_tissue_difference_against_diseased_nerve_control
+    model: patient_pseudobulk_with_age_sex_center_covariates
+
+  - name: CIDP_vs_CTRL_in_nerve
+    dataset: GSE285983
+    purpose: disease_vs_reference_nerve
+    model: exploratory_unadjusted_and_Essen_only_sensitivity
+    caution: strong_sex_and_center_imbalance
+
+  - name: GBS_acute_vs_control
+    datasets: [GSE211225, GSE31014, GSE304871, PRJNA1293757, GBS_longitudinal_proteomics_2026_preprint]
+    purpose: circulating_acute_immune_program
+    rule: analyze_each_platform_separately_no_numeric_pooling
+
+  - name: GBS_acute_vs_postacute_cross_sectional
+    dataset: GSE211225
+    purpose: phase_associated_blood_program
+    caution: groups_are_unpaired_do_not_call_within_patient_recovery
+
+  - name: GBS_acute_vs_recovery
+    datasets: [GBS_longitudinal_proteomics_2026_preprint]
+    purpose: resolve_acute_to_repair_transition
+    model: paired_within_patient_acute_vs_1_year
+    caution: preprint_evidence_and_no_paired_module_FDR_below_0_05
+
+  - name: AIDP_peak_late_external_support
+    dataset: SciRep_2023_AIDP_peak_late
+    purpose: external_monocyte_pathway_triangulation
+    caution: author_supplied_GSEA_only
+
+  - name: normal_BNB_identity
+    dataset: GSE107574
+    purpose: define_peripheral_endoneurial_microvascular_identity
+    model: descriptive_medians_only
+    caution: not_disease_contrast_and_not_BBB
+
+  - name: EAN_peak_vs_control
+    dataset: GSE133750
+    purpose: peripheral_nerve_mechanism_support
+    caution: rat_n3_per_group_not_human_validation
+
+  - name: CIDP_active_vs_inactive
+    dataset: CIDP_activity_Olink_2024
+    purpose: chronic_activity_axis
+    clinical_definition: objective_change_in_I_RODS_plus_grip_or_MRC
+    caution: raw_access_by_reasonable_request
+
+  - name: CIDP_pre_vs_post_IVIg
+    datasets: [CIDP_IVIg_transcriptome_2016, CIDP_activity_Olink_2024]
+    purpose: treatment_response_axis
+    model: paired_or_patient_random_intercept
+    caution: do_not_treat_IVIg_response_label_as_a_pre_post_measurement
+
+communication_rules:
+  same_tissue:
+    dataset: GSE285983
+    allowed_term: cell_cell_communication
+  cross_tissue:
+    source: GBS_or_CIDP_blood
+    target: GSE285983_nerve_reference
+    allowed_term: ligand_receptor_potential
+    forbidden_claim: directly_observed_cell_cell_communication
+
+prespecified_axes:
+  - CXCL8_CXCR1_CXCR2
+  - LIF_LIFR_IL6ST
+  - complement
+  - Fc_receptors_and_FcRn
+  - leukocyte_transendothelial_migration
+  - BNB_tight_junction_and_transcytosis
+  - macrophage_lipid_phagocytosis
+  - Schwann_myelin_damage_repair
