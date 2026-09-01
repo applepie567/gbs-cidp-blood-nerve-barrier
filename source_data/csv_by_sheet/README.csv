@@ -1,0 +1,9 @@
+Item,Specification
+Archive title,"Immune compartmentalization across blood, cerebrospinal fluid and peripheral nerve in Guillain-Barré syndrome and CIDP"
+Package version,2.0.0
+Revision date,2026-09-01
+Scope,Published human datasets only. Preprint-associated GSE304871 and longitudinal GBS serum proteomics are excluded.
+Primary-data policy,Repository accession numbers are provided. Full primary sequencing and mass-spectrometry files are not redistributed.
+Replacement CSF resource,PXD002911 and peer-reviewed GBS CSF studies listed in CSF_published_evidence.
+GitHub repository,https://github.com/applepie567/gbs-cidp-blood-nerve-barrier
+Zenodo release,Create version 2.0.0 in the existing Zenodo record. The new version DOI is assigned when the release is published.

@@ -1,0 +1,7 @@
+program,studies,resources,evidence_rows,inference_levels
+Complement,1,Article-level public results,1,Published differential-protein result
+Local inflammation,3,Article and supplementary results | Article-level public results | PXD002911,4,Published differential-protein result | Published participant-level comparison | Study-reported annotation
+Protein accumulation,2,Article table 1 | PXD002911,4,Published participant-level comparison | Study-reported group result
+Protein handling and neural structure,1,Article-level public results,2,Published discovery result | Published validation result
+Reference,1,PXD002911,1,Study-reported group result
+Structural proteolysis,1,PXD002911,2,Study-reported annotation | Study-reported group result

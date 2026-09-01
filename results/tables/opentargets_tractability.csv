@@ -1,0 +1,309 @@
+gene,evidence_tier,modality,tractability_bucket,supported,drug_or_clinical_candidate_count,source,retrieval_date
+CDH4,CIDP,SM,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,SM,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,SM,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,SM,Structure with Ligand,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,SM,High-Quality Ligand,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,SM,High-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,SM,Med-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,SM,Druggable Family,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,AB,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,AB,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,AB,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,AB,UniProt loc high conf,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,AB,GO CC high conf,True,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,AB,UniProt loc med conf,True,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,AB,UniProt SigP or TMHMM,True,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,AB,GO CC med conf,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,AB,Human Protein Atlas loc,True,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,PR,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,PR,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,PR,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,PR,Literature,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,PR,UniProt Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,PR,Database Ubiquitination,True,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,PR,Half-life Data,True,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,PR,Small Molecule Binder,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,OC,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,OC,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+CDH4,CIDP,OC,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000179242,2026-08-31
+DIRAS1,CIDP,SM,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,SM,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,SM,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,SM,Structure with Ligand,True,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,SM,High-Quality Ligand,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,SM,High-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,SM,Med-Quality Pocket,True,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,SM,Druggable Family,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,AB,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,AB,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,AB,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,AB,UniProt loc high conf,True,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,AB,GO CC high conf,True,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,AB,UniProt loc med conf,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,AB,UniProt SigP or TMHMM,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,AB,GO CC med conf,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,AB,Human Protein Atlas loc,True,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,PR,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,PR,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,PR,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,PR,Literature,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,PR,UniProt Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,PR,Database Ubiquitination,True,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,PR,Half-life Data,True,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,PR,Small Molecule Binder,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,OC,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,OC,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+DIRAS1,CIDP,OC,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176490,2026-08-31
+GNG7,CIDP,SM,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,SM,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,SM,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,SM,Structure with Ligand,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,SM,High-Quality Ligand,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,SM,High-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,SM,Med-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,SM,Druggable Family,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,AB,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,AB,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,AB,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,AB,UniProt loc high conf,True,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,AB,GO CC high conf,True,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,AB,UniProt loc med conf,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,AB,UniProt SigP or TMHMM,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,AB,GO CC med conf,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,AB,Human Protein Atlas loc,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,PR,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,PR,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,PR,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,PR,Literature,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,PR,UniProt Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,PR,Database Ubiquitination,True,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,PR,Half-life Data,True,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,PR,Small Molecule Binder,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,OC,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,OC,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+GNG7,CIDP,OC,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000176533,2026-08-31
+SLC39A3,CIDP,SM,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,SM,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,SM,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,SM,Structure with Ligand,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,SM,High-Quality Ligand,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,SM,High-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,SM,Med-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,SM,Druggable Family,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,AB,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,AB,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,AB,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,AB,UniProt loc high conf,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,AB,GO CC high conf,True,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,AB,UniProt loc med conf,True,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,AB,UniProt SigP or TMHMM,True,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,AB,GO CC med conf,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,AB,Human Protein Atlas loc,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,PR,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,PR,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,PR,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,PR,Literature,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,PR,UniProt Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,PR,Database Ubiquitination,True,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,PR,Half-life Data,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,PR,Small Molecule Binder,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,OC,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,OC,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+SLC39A3,CIDP,OC,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000141873,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,SM,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,SM,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,SM,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,SM,Structure with Ligand,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,SM,High-Quality Ligand,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,SM,High-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,SM,Med-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,SM,Druggable Family,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,AB,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,AB,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,AB,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,AB,UniProt loc high conf,True,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,AB,GO CC high conf,True,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,AB,UniProt loc med conf,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,AB,UniProt SigP or TMHMM,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,AB,GO CC med conf,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,AB,Human Protein Atlas loc,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,PR,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,PR,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,PR,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,PR,Literature,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,PR,UniProt Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,PR,Database Ubiquitination,True,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,PR,Half-life Data,True,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,PR,Small Molecule Binder,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,OC,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,OC,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+DGKQ,Inflammatory_polyneuropathy,OC,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000145214,2026-08-31
+GLDC,Inflammatory_polyneuropathy,SM,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,SM,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,SM,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,SM,Structure with Ligand,True,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,SM,High-Quality Ligand,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,SM,High-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,SM,Med-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,SM,Druggable Family,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,AB,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,AB,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,AB,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,AB,UniProt loc high conf,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,AB,GO CC high conf,True,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,AB,UniProt loc med conf,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,AB,UniProt SigP or TMHMM,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,AB,GO CC med conf,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,AB,Human Protein Atlas loc,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,PR,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,PR,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,PR,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,PR,Literature,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,PR,UniProt Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,PR,Database Ubiquitination,True,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,PR,Half-life Data,True,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,PR,Small Molecule Binder,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,OC,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,OC,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+GLDC,Inflammatory_polyneuropathy,OC,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000178445,2026-08-31
+IDUA,Inflammatory_polyneuropathy,SM,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,SM,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,SM,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,SM,Structure with Ligand,True,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,SM,High-Quality Ligand,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,SM,High-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,SM,Med-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,SM,Druggable Family,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,AB,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,AB,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,AB,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,AB,UniProt loc high conf,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,AB,GO CC high conf,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,AB,UniProt loc med conf,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,AB,UniProt SigP or TMHMM,True,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,AB,GO CC med conf,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,AB,Human Protein Atlas loc,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,PR,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,PR,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,PR,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,PR,Literature,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,PR,UniProt Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,PR,Database Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,PR,Half-life Data,True,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,PR,Small Molecule Binder,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,OC,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,OC,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+IDUA,Inflammatory_polyneuropathy,OC,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127415,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,SM,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,SM,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,SM,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,SM,Structure with Ligand,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,SM,High-Quality Ligand,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,SM,High-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,SM,Med-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,SM,Druggable Family,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,AB,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,AB,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,AB,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,AB,UniProt loc high conf,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,AB,GO CC high conf,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,AB,UniProt loc med conf,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,AB,UniProt SigP or TMHMM,True,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,AB,GO CC med conf,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,AB,Human Protein Atlas loc,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,PR,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,PR,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,PR,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,PR,Literature,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,PR,UniProt Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,PR,Database Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,PR,Half-life Data,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,PR,Small Molecule Binder,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,OC,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,OC,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+SLAMF9,Inflammatory_polyneuropathy,OC,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000162723,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,SM,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,SM,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,SM,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,SM,Structure with Ligand,True,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,SM,High-Quality Ligand,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,SM,High-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,SM,Med-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,SM,Druggable Family,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,AB,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,AB,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,AB,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,AB,UniProt loc high conf,True,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,AB,GO CC high conf,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,AB,UniProt loc med conf,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,AB,UniProt SigP or TMHMM,True,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,AB,GO CC med conf,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,AB,Human Protein Atlas loc,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,PR,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,PR,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,PR,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,PR,Literature,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,PR,UniProt Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,PR,Database Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,PR,Half-life Data,True,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,PR,Small Molecule Binder,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,OC,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,OC,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+TMEM175,Inflammatory_polyneuropathy,OC,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000127419,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,SM,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,SM,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,SM,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,SM,Structure with Ligand,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,SM,High-Quality Ligand,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,SM,High-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,SM,Med-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,SM,Druggable Family,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,AB,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,AB,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,AB,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,AB,UniProt loc high conf,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,AB,GO CC high conf,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,AB,UniProt loc med conf,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,AB,UniProt SigP or TMHMM,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,AB,GO CC med conf,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,AB,Human Protein Atlas loc,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,PR,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,PR,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,PR,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,PR,Literature,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,PR,UniProt Ubiquitination,True,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,PR,Database Ubiquitination,True,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,PR,Half-life Data,True,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,PR,Small Molecule Binder,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,OC,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,OC,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+DCTN1,Inflammatory_polyneuropathy,OC,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000204843,2026-08-31
+ME1,Inflammatory_polyneuropathy,SM,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,SM,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,SM,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,SM,Structure with Ligand,True,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,SM,High-Quality Ligand,True,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,SM,High-Quality Pocket,True,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,SM,Med-Quality Pocket,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,SM,Druggable Family,True,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,AB,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,AB,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,AB,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,AB,UniProt loc high conf,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,AB,GO CC high conf,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,AB,UniProt loc med conf,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,AB,UniProt SigP or TMHMM,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,AB,GO CC med conf,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,AB,Human Protein Atlas loc,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,PR,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,PR,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,PR,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,PR,Literature,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,PR,UniProt Ubiquitination,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,PR,Database Ubiquitination,True,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,PR,Half-life Data,True,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,PR,Small Molecule Binder,True,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,OC,Approved Drug,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,OC,Advanced Clinical,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31
+ME1,Inflammatory_polyneuropathy,OC,Phase 1 Clinical,False,0,https://platform.opentargets.org/target/ENSG00000065833,2026-08-31

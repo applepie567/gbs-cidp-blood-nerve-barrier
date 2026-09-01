@@ -1,0 +1,10 @@
+Group or comparison,Data type,Reported count or percentage,Unit,Published interpretation,Inference level,Source URL
+AIDP,Proteome,1402.0,identified proteins,Broadly increased CSF protein representation,Group-level reported result,https://doi.org/10.1074/mcp.M115.056036
+Control,Proteome,1103.0,identified proteins,Reference proteome,Group-level reported result,https://doi.org/10.1074/mcp.M115.056036
+AIDP,Peptidome,2355.0,peptide fragments,Fragments related to 795 proteins,Group-level reported result,https://doi.org/10.1074/mcp.M115.056036
+Multiple sclerosis,Peptidome,1066.0,peptide fragments,Inflammatory CNS comparator,Group-level reported result,https://doi.org/10.1074/mcp.M115.056036
+Control,Peptidome,774.0,peptide fragments,Reference peptidome,Group-level reported result,https://doi.org/10.1074/mcp.M115.056036
+AIDP-control,Proteome overlap,67.0,percent,Substantial protein-presence overlap,Group-level reported result,https://doi.org/10.1074/mcp.M115.056036
+AIDP-control,Peptidome overlap,21.5,percent,Peptide fragmentation more disease-discriminating,Group-level reported result,https://doi.org/10.1074/mcp.M115.056036
+AIDP overrepresentation,Functional annotation,,not applicable,Antibacterial and antiviral defense,Study-reported pathway interpretation,https://doi.org/10.1074/mcp.M115.056036
+AIDP differential fragments,Functional annotation,,not applicable,Axonal-domain and node-of-Ranvier protein degradation,Study-reported pathway interpretation,https://doi.org/10.1074/mcp.M115.056036

@@ -1,0 +1,31 @@
+{
+  "release": "2.0.0",
+  "workbook_sheets": 19,
+  "missing_required_sheets": [],
+  "publication_figures": 5,
+  "publication_tables": 3,
+  "figure_dimensions": {
+    "Figure_1_study_design.png": [
+      5175,
+      2892
+    ],
+    "Figure_2_acute_GBS_blood.png": [
+      5419,
+      2373
+    ],
+    "Figure_3_GBS_CSF.png": [
+      3778,
+      2334
+    ],
+    "Figure_4_CIDP_peripheral_nerve.png": [
+      2047,
+      1521
+    ],
+    "Figure_5_cross_compartment_genetic_anchoring.png": [
+      5381,
+      3415
+    ]
+  },
+  "forbidden_content_hits": [],
+  "workbook_sha256": "bb3895f5c0e4b15dc58779f0c31ea22a93ccc9501f636fe8b3bc76408aa7a02c"
+}

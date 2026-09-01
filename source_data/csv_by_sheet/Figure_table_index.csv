@@ -1,0 +1,9 @@
+Figure,Panel or table,Source worksheet,Scope note
+Figure 1,Published-data study design and integrated compartment model,Datasets; Blood_meta; CSF_published_evidence; Cross_compartment_map; CIDP_genetic_evidence,Combines the former design and terminal conceptual model
+Figure 2,Acute-GBS blood discovery and replication,Blood_cohort_effects; Blood_meta,Cohort effects and random-effects synthesis
+Figure 3,Formally published GBS CSF evidence,CSF_PXD002911; CSF_published_evidence,Study-level triangulation without participant-level pooling
+Figure 4,"CIDP nerve barrier, immune and repair programs",CIDP_expression; CIDP_module_effects; CIDP_cell_fractions; CIDP_clinical,Donor-resolved nerve analysis
+Figure 5,"Cross-compartment programs, nerve localization, genetic evidence and tractability",Cross_compartment_map; CIDP_genetic_evidence; Genetic_celltype_summary; OpenTargets_tractability,"Four panels separate cross-compartment evidence, nerve localization, published genetics and tractability"
+Table 1,Datasets and analytical roles,Datasets,Peer-reviewed human resources
+Table 2,Cross-cohort acute GBS program synthesis,Blood_meta,Participant-level effects and uncertainty
+Table 3,Cross-compartment evidence map,Cross_compartment_map,Evidence classes remain anatomically distinct

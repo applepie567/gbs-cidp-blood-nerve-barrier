@@ -1,0 +1,7 @@
+﻿Resource,Material,Participants or samples,Analytical role
+GSE211225,Whole-blood transcriptomics,"6 acute GBS, 10 post-acute, 6 controls",Primary participant-level blood effects
+GSE31014,Leukocyte microarray,"7 GBS, 7 controls",Independent blood direction check
+PRJNA1293757,PBMC single-cell RNA sequencing,"3 AIDP, 2 controls",Monocyte localization and direction check
+PXD002911,CSF proteo-peptidomics,"AIDP/GBS, MS and controls, with pooled discovery material",Group-level CSF identification and pathway evidence
+GSE285983,Sural-nerve single-nucleus RNA sequencing,"9 CIDP, 11 CIAP in focused comparison",Donor-resolved nerve cell-state localization
+GSE107574,Human endoneurial endothelial transcriptomics,Cultured cells and microvessels,Normal BNB reference

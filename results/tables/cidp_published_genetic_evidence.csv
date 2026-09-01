@@ -1,0 +1,5 @@
+gene,phenotype,discovery_method,variant_or_locus,effect,p_value,MR_beta,MR_q_value,coloc_PP_H4,published_tissue_context,source
+CDH4,CIDP in women,"Genome-wide significant locus, nearest gene",rs80339443 at 20q13.33,"OR 4.37, 95% CI 2.61-7.33",1.49e-08,,,,Variant lies within a CDH4 intron,https://doi.org/10.1016/j.xhgg.2024.100317
+DIRAS1,CIDP,Mendelian randomization and colocalization,19:2437651-2937651,Lower genetically predicted expression associated with higher risk,,-0.45,0.00789,0.94,"Macrophage, naive B cell, monocyte and cardiac tissues",https://doi.org/10.1016/j.xhgg.2024.100317
+GNG7,CIDP,Mendelian randomization and colocalization,19:2437651-2937651,Lower genetically predicted expression associated with higher risk,,-2.11,0.00789,0.93,"Naive B cell, macrophage, monocyte, muscle and spleen",https://doi.org/10.1016/j.xhgg.2024.100317
+SLC39A3,CIDP,Mendelian randomization and colocalization,19:2437651-2937651,Lower genetically predicted expression associated with higher risk,,-1.42,0.0085,0.87,Monocyte,https://doi.org/10.1016/j.xhgg.2024.100317

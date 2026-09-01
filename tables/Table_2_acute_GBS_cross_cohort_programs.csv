@@ -1,0 +1,8 @@
+﻿Program,Summary Hedges g,95% CI lower,95% CI upper,Hartung-Knapp P,"I², %","Cohorts, n"
+CXCL8–CXCR1/2,1.075,-0.634,2.785,0.114,0.0,3
+LIF/OSM–gp130,0.271,-3.978,4.519,0.810,81.2,3
+Complement,1.111,-1.728,3.950,0.234,57.2,3
+Fc receptor,0.288,-5.510,6.086,0.851,72.7,3
+Transendothelial migration,0.694,-0.958,2.347,0.212,1.1,3
+Interferon/JAK–STAT,0.677,-0.943,2.297,0.214,0.0,3
+Inflammatory monocyte,1.026,-1.702,3.754,0.247,49.5,3

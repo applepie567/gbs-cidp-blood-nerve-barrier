@@ -1,0 +1,23 @@
+Delete the following obsolete or duplicated paths from the GitHub main branch before uploading version 2.0.0.
+
+analysis/02_gbs_sorted_bulk.py
+analysis/03_manuscript_tables_figures.py
+analysis/06_gbs_longitudinal_proteomics.py
+analysis/07_bnb_ean_external_validation.py
+analysis/08_integrate_upgrade_figures.py
+analysis/09_generate_final_figures.py
+analysis/__pycache__/
+analysis/analysis/
+config/config/
+data/data/
+docs/Manuscript_FBCNS_submission_v8_2026-08-23.docx
+docs/study_protocol.md
+figures/figures/
+metadata/metadata/
+results/results/
+scripts/scripts/
+source_data/source_data/
+submission/
+
+Delete the old contents of figures/, results/ and source_data/ that are not present in the version 2.0.0 upload package. The new package contains the complete replacement contents for these directories.
+

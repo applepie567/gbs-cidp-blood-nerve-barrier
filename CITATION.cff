@@ -1,14 +1,13 @@
 cff-version: 1.2.0
-message: "If you use this code or aggregate source data, please cite the archived software release and the associated article."
-title: "Myeloid–blood–nerve barrier–Schwann cell circuit in GBS and CIDP"
+message: "Please cite the associated article and the archived version of this repository."
+title: "Immune compartmentalization across blood, cerebrospinal fluid and peripheral nerve in Guillain-Barré syndrome and CIDP"
+version: 2.0.0
+date-released: 2026-09-01
 type: software
-version: 1.0.0
-date-released: 2026-08-23
-doi: 10.5281/zenodo.22067879
-url: "https://doi.org/10.5281/zenodo.22067879"
 authors:
   - family-names: Feng
     given-names: Yuan
+    orcid: "https://orcid.org/0000-0002-1839-1316"
   - family-names: Feng
     given-names: Fang
   - family-names: Ma
@@ -17,35 +16,15 @@ authors:
     given-names: Shuman
   - family-names: Jiang
     given-names: Chao
-    affiliation: "Department of Neurology, Henan Provincial People’s Hospital, People’s Hospital of Zhengzhou University"
   - family-names: Hao
     given-names: Yibin
-    affiliation: "Department of Neurology, Henan Provincial People’s Hospital, People’s Hospital of Zhengzhou University"
-license: MIT
 repository-code: "https://github.com/applepie567/gbs-cidp-blood-nerve-barrier"
+license: MIT
 keywords:
   - Guillain-Barre syndrome
   - chronic inflammatory demyelinating polyradiculoneuropathy
+  - cerebrospinal fluid
   - blood-nerve barrier
   - single-nucleus RNA sequencing
-  - transcriptomics
-  - proteomics
-  - cell-cell communication
-preferred-citation:
-  type: article
-  title: "Cross-platform multi-omics analysis maps a myeloid–blood–nerve barrier–Schwann cell circuit across Guillain–Barré syndrome and CIDP"
-  authors:
-    - family-names: Feng
-      given-names: Yuan
-    - family-names: Feng
-      given-names: Fang
-    - family-names: Ma
-      given-names: Shuxiao
-    - family-names: Feng
-      given-names: Shuman
-    - family-names: Jiang
-      given-names: Chao
-    - family-names: Hao
-      given-names: Yibin
-  journal: "Fluids and Barriers of the CNS"
-  status: unpublished
+  - genetic anchoring
+

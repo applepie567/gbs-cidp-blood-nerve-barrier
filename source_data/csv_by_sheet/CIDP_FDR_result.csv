@@ -1,0 +1,2 @@
+Comparison,Cell group,Program,n case,n reference,Mean z case,Mean z reference,Delta mean z,P value,FDR,Conclusion
+CIDP_vs_CIAP,Macrophage,Fc_receptor,9,11,-0.4116770666748427,0.2611901064561218,-0.6728671731309646,0.001087436576734,0.0086994926138723,Retained FDR-controlled result

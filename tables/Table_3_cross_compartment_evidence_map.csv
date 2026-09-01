@@ -1,0 +1,7 @@
+﻿Program,Blood evidence,CSF evidence,Peripheral-nerve evidence,Interpretation
+CXCL8 recruitment,Positive in 3/3 cohorts. Whole-blood FDR<0.05,Innate immune/cytokine context reported,Myeloid localization and endothelial trafficking context,Shared recruitment hypothesis
+Complement,Positive in 3/3 cohorts. Whole-blood FDR<0.01,Broad protein accumulation and innate-defense representation,Macrophage localization,Humoral amplification across compartments
+Fc receptor,Whole-blood FDR<0.05. Mixed pooled direction,Not directly evaluated,Macrophage module FDR=0.0087,Strongest controlled nerve result
+Interferon response,Whole-blood FDR<0.05. Mixed pooled direction,Antiviral-defense representation reported,"Macrophage, endothelial and Schwann states",Compartment-dependent response
+Endothelial adhesion,Positive blood direction,Not directly evaluated,BNB endothelial ICAM1/VCAM1 localization,BNB receiver/localization hypothesis
+Schwann repair,Not evaluated,Axonal-domain peptide degradation reported,Repair/stress programs localized to Schwann cells,Structural injury-to-repair hypothesis

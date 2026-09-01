@@ -1,0 +1,12 @@
+Resource,Compartment,Material,Participants or samples,Analytical role,Peer-reviewed source,Data URL
+GSE211225,Blood,Whole-blood transcriptomics,"6 acute GBS, 10 post-acute, 6 controls",Primary participant-level blood effects,"Lima et al., J Peripher Nerv Syst, 2025",https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE211225
+GSE31014,Blood,Leukocyte microarray,"7 GBS, 7 controls",Independent direction check,"Chang et al., PLoS One, 2012",https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31014
+PRJNA1293757,Blood,PBMC single-cell RNA sequencing,"3 AIDP, 2 controls",Monocyte localization and direction check,"Shi et al., Sci Data, 2026",https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1293757
+PXD002911,CSF,Proteo-peptidomics,"AIDP/GBS, MS and controls; pooled discovery material",Group-level identification and pathway evidence,"Ziganshin et al., Mol Cell Proteomics, 2016",https://www.ebi.ac.uk/pride/archive/projects/PXD002911
+GSE285983,Peripheral nerve,Sural-nerve single-nucleus RNA sequencing,"9 CIDP, 11 CIAP in focused comparison",Donor-resolved cell-state localization,"Heming et al., Nat Commun, 2025",https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285983
+GSE107574,Peripheral nerve/BNB,Human endoneurial endothelial transcriptomics,Cultured cells and microvessels,Normal BNB reference,"Palladino et al., Sci Rep, 2017",https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107574
+D'Aguanno 2010,CSF,2D electrophoresis and MALDI-TOF/TOF,"GBS, MS and healthy controls",Independent complement evidence,"D'Aguanno et al., Neurosci Lett, 2010",https://pubmed.ncbi.nlm.nih.gov/20801190/
+Ding 2022,CSF,TMT proteomics and ELISA validation,"10 GBS and 10 NND discovery, 40 GBS and 40 NND validation",Independent protein-handling evidence,"Ding et al., Eur J Neurol, 2022",https://doi.org/10.1111/ene.15213
+Sun 2025,CSF,Olink inflammation panel,23 GBS and 14 NND,Independent local-inflammation evidence,"Sun et al., J Inflamm Res, 2025",https://doi.org/10.2147/JIR.S507515
+Du 2024,Genetics,"CIDP GWAS, MR and colocalization","516 CIDP cases and 403,545 controls",Published genetic anchoring,"Du et al., HGG Advances, 2024",https://doi.org/10.1016/j.xhgg.2024.100317
+Open Targets,Therapeutic tractability,Target and clinical-candidate database,Public release accessed 2026-08-31,Drug and modality evidence,Open Targets Platform,https://platform.opentargets.org/

@@ -1,0 +1,33 @@
+release: 2.0.0
+datasets:
+  - id: GSE211225
+    compartment: blood
+    assay: whole-blood RNA sequencing
+    analysis: participant-level cohort analysis
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE211225
+  - id: GSE31014
+    compartment: blood
+    assay: peripheral-blood leukocyte microarray
+    analysis: participant-level cohort analysis
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31014
+  - id: PRJNA1293757
+    compartment: blood
+    assay: PBMC single-cell RNA sequencing
+    analysis: biological-sample pseudobulk
+    url: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1293757
+  - id: PXD002911
+    compartment: cerebrospinal fluid
+    assay: proteome and endogenous peptidome
+    analysis: study-reported group-level evidence
+    url: https://www.ebi.ac.uk/pride/archive/projects/PXD002911
+  - id: GSE285983
+    compartment: peripheral nerve
+    assay: sural-nerve single-nucleus RNA sequencing
+    analysis: donor-level pseudobulk and cell localization
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285983
+  - id: GSE107574
+    compartment: blood-nerve barrier
+    assay: human endoneurial endothelial transcriptome
+    analysis: descriptive identity reference
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107574
+
