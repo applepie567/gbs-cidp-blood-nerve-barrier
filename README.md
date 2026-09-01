@@ -55,9 +55,10 @@ The historical v1.0.0 archive is available at:
 
 https://doi.org/10.5281/zenodo.22067879
 
-The version-specific DOI for v2.0.0 should be added here after the revised Zenodo version is published.
+The published v2.0.0 archive is available at:
+
+https://doi.org/10.5281/zenodo.22226674
 
 ## Licensing
 
 Code is released under the MIT License. Derived and aggregated source data are released under CC BY 4.0. The original public datasets remain subject to their repository and study-specific terms.
-
