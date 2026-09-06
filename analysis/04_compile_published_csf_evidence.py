@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export the published GBS CSF evidence used in manuscript version 2.0.0.
+"""Export the published GBS CSF evidence used in manuscript v36.
 
 This script preserves the inference level supplied by each publication. It does
 not create participant-level observations from group-level published results.
@@ -9,14 +9,14 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKBOOK = ROOT / "source_data/Additional_file_1_source_data_v2.0.0.xlsx"
+SRC = ROOT / "source_data"
 OUT = ROOT / "results/tables"
 
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    pxd = pd.read_excel(WORKBOOK, sheet_name="CSF_PXD002911")
-    evidence = pd.read_excel(WORKBOOK, sheet_name="CSF_published_evidence")
+    pxd = pd.read_csv(SRC / "CSF_PXD002911.csv")
+    evidence = pd.read_csv(SRC / "CSF_published_evidence.csv")
 
     required = {
         "study", "resource", "cohort", "platform", "feature", "result",

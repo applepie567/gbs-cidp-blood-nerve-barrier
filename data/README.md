@@ -1,17 +1,9 @@
-# Primary-data locations
+# Original inputs and local intermediates
 
-Large primary files are not stored in this repository. The analysis scripts expect the following local structure:
+Original filenames, accession numbers, source URLs and processing scripts are listed in `metadata/original_input_files.csv` and the `Input_files` sheet of Additional file 1. Sources are also summarized in `config/datasets.yaml` and `metadata/data_source_urls.csv`.
 
-```text
-data/raw/
-├── GSE211225/
-├── GSE31014/
-├── PRJNA1293757/
-├── GSE285983/
-└── GSE107574/
-```
+Primary pipelines expect inputs under `data/raw/GSE211225/`, `data/raw/GSE31014/`, `data/raw/PRJNA1293757/` and `data/raw/GSE285983/`. Follow the exact filenames and archive-member paths in the input register. GSE107574 is a published BNB reference; a separately processed file is not documented in the supplied package.
 
-The source repository URLs and analytical roles are defined in `config/datasets.yaml` and `metadata/data_source_urls.csv`.
+Participant and donor expression/clinical intermediates are regenerated locally and omitted from the public package. See `metadata/data_reconstruction.csv` for omitted files and reconstruction requirements. The supplied genetic scripts start from a precomputed donor-cell table and do not provide its raw-matrix reconstruction.
 
-PXD002911 and the additional published CSF studies are compiled at their reported inference level in the source workbook. The release does not generate patient-level CSF observations from published group summaries.
-
+The public workflow uses aggregate tables and published coefficients. Primary pipelines were not rerun for this documentary update. Original download dates and input checksums were not recorded, so none are invented here.

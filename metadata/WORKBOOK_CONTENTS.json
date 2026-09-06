@@ -1,0 +1,152 @@
+[
+  {
+    "sheet": "README",
+    "csv": "source_data/README.csv",
+    "data_rows": 18
+  },
+  {
+    "sheet": "Figure_table_index",
+    "csv": "source_data/Figure_table_index.csv",
+    "data_rows": 21
+  },
+  {
+    "sheet": "Input_files",
+    "csv": "metadata/original_input_files.csv",
+    "data_rows": 19
+  },
+  {
+    "sheet": "Data_reconstruction",
+    "csv": "metadata/data_reconstruction.csv",
+    "data_rows": 6
+  },
+  {
+    "sheet": "Blood_cohort_effects",
+    "csv": "source_data/Blood_cohort_effects.csv",
+    "data_rows": 21
+  },
+  {
+    "sheet": "Blood_meta",
+    "csv": "source_data/Blood_meta.csv",
+    "data_rows": 7
+  },
+  {
+    "sheet": "CIDP_FDR_result",
+    "csv": "source_data/CIDP_FDR_result.csv",
+    "data_rows": 1
+  },
+  {
+    "sheet": "CIDP_cell_fractions",
+    "csv": "source_data/CIDP_cell_fractions.csv",
+    "data_rows": 12
+  },
+  {
+    "sheet": "CIDP_clinical",
+    "csv": "source_data/CIDP_clinical.csv",
+    "data_rows": 15
+  },
+  {
+    "sheet": "CIDP_expression",
+    "csv": "source_data/CIDP_expression.csv",
+    "data_rows": 91
+  },
+  {
+    "sheet": "CIDP_genetic_evidence",
+    "csv": "source_data/CIDP_genetic_evidence.csv",
+    "data_rows": 4
+  },
+  {
+    "sheet": "CIDP_module_effects",
+    "csv": "source_data/CIDP_module_effects.csv",
+    "data_rows": 80
+  },
+  {
+    "sheet": "CSF_Kmezic_published_coefficien",
+    "csv": "source_data/CSF_Kmezic_published_coefficients.csv",
+    "data_rows": 8
+  },
+  {
+    "sheet": "CSF_PXD002911",
+    "csv": "source_data/CSF_PXD002911.csv",
+    "data_rows": 9
+  },
+  {
+    "sheet": "CSF_published_evidence",
+    "csv": "source_data/CSF_published_evidence.csv",
+    "data_rows": 14
+  },
+  {
+    "sheet": "Cross_compartment_map",
+    "csv": "source_data/Cross_compartment_map.csv",
+    "data_rows": 6
+  },
+  {
+    "sheet": "Datasets",
+    "csv": "source_data/Datasets.csv",
+    "data_rows": 12
+  },
+  {
+    "sheet": "Figure_2C_leave_one_cohort_out",
+    "csv": "source_data/Figure_2C_leave_one_cohort_out.csv",
+    "data_rows": 21
+  },
+  {
+    "sheet": "Figure_3C_coverage",
+    "csv": "source_data/Figure_3C_coverage.csv",
+    "data_rows": 5
+  },
+  {
+    "sheet": "Figure_5D_genetic_expression_co",
+    "csv": "source_data/Figure_5D_genetic_expression_contrasts.csv",
+    "data_rows": 40
+  },
+  {
+    "sheet": "Genetic_CIDP_vs_CIAP",
+    "csv": "source_data/Genetic_CIDP_vs_CIAP.csv",
+    "data_rows": 165
+  },
+  {
+    "sheet": "Genetic_celltype_summary",
+    "csv": "source_data/Genetic_celltype_summary.csv",
+    "data_rows": 330
+  },
+  {
+    "sheet": "CSF_adjusted_meta",
+    "csv": "results/tables/csf_kmezic_adjusted_meta.csv",
+    "data_rows": 8
+  },
+  {
+    "sheet": "Genetic_bootstrap",
+    "csv": "results/tables/genetic_cell_localization_bootstrap.csv",
+    "data_rows": 60
+  },
+  {
+    "sheet": "Published_nerve_evidence",
+    "csv": "results/tables/cidp_external_nerve_validation.csv",
+    "data_rows": 4
+  },
+  {
+    "sheet": "Donor_correlations",
+    "csv": "results/tables/cidp_donor_module_correlations.csv",
+    "data_rows": 10
+  },
+  {
+    "sheet": "Clinical_correlations_FDR",
+    "csv": "results/tables/cidp_clinical_correlations_with_fdr.csv",
+    "data_rows": 15
+  },
+  {
+    "sheet": "Table_1",
+    "csv": "tables/Table_1_manuscript.csv",
+    "data_rows": 8
+  },
+  {
+    "sheet": "Table_2",
+    "csv": "tables/Table_2_manuscript.csv",
+    "data_rows": 7
+  },
+  {
+    "sheet": "Table_3",
+    "csv": "tables/Table_3_manuscript.csv",
+    "data_rows": 6
+  }
+]

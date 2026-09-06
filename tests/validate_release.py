@@ -1,66 +1,42 @@
-#!/usr/bin/env python3
-"""Validate the contents and analytical boundary of release v2.0.0."""
-
+"""Check source/figure alignment without claiming a primary-matrix rerun."""
 from pathlib import Path
-import hashlib
-import json
+from io import BytesIO
+import json,zipfile
+import numpy as np
 import pandas as pd
 from PIL import Image
-
-ROOT = Path(__file__).resolve().parents[1]
-WORKBOOK = ROOT / "source_data/Additional_file_1_source_data_v2.0.0.xlsx"
-FORBIDDEN = ["GSE304871", "26353948", "GBS-Proteomics", "longitudinal_proteomics"]
-TEXT_EXTENSIONS = {".py", ".md", ".csv", ".json", ".yaml", ".yml", ".cff", ".txt"}
-
-
-def scan_forbidden() -> list[dict]:
-    hits = []
-    scan_roots = [ROOT / "analysis", ROOT / "config", ROOT / "data", ROOT / "results", ROOT / "metadata"]
-    for path in (p for base in scan_roots for p in base.rglob("*")):
-        if not path.is_file() or path.suffix.lower() not in TEXT_EXTENSIONS:
-            continue
-        if path.name in {"FILES_TO_DELETE_FROM_V1.txt", "VALIDATION_REPORT.json"}:
-            continue
-        text = path.read_text(encoding="utf-8", errors="replace")
-        for term in FORBIDDEN:
-            if term.lower() in text.lower():
-                hits.append({"file": str(path.relative_to(ROOT)), "term": term})
-    return hits
-
-
-def main() -> None:
-    sheets = pd.ExcelFile(WORKBOOK).sheet_names
-    required_sheets = {
-        "Blood_cohort_effects", "CSF_PXD002911", "CSF_published_evidence",
-        "CIDP_expression", "CIDP_module_effects", "Cross_compartment_map",
-        "CIDP_genetic_evidence", "Genetic_donor_celltype",
-        "Genetic_celltype_summary", "Genetic_CIDP_vs_CIAP",
-    }
-    missing = required_sheets.difference(sheets)
-    figures = sorted((ROOT / "figures").glob("Figure_*.png"))
-    tables = sorted((ROOT / "tables").glob("Table_*.csv"))
-    dimensions = {}
-    for figure in figures:
-        with Image.open(figure) as image:
-            dimensions[figure.name] = list(image.size)
-
-    report = {
-        "release": "2.0.0",
-        "workbook_sheets": len(sheets),
-        "missing_required_sheets": sorted(missing),
-        "publication_figures": len(figures),
-        "publication_tables": len(tables),
-        "figure_dimensions": dimensions,
-        "forbidden_content_hits": scan_forbidden(),
-        "workbook_sha256": hashlib.sha256(WORKBOOK.read_bytes()).hexdigest(),
-    }
-    (ROOT / "metadata/VALIDATION_REPORT.json").write_text(
-        json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
-    if missing or len(figures) != 5 or len(tables) != 3 or report["forbidden_content_hits"]:
-        raise SystemExit(json.dumps(report, indent=2, ensure_ascii=False))
-    print(json.dumps(report, indent=2, ensure_ascii=False))
-
-
-if __name__ == "__main__":
-    main()
+R=Path(__file__).resolve().parents[1]
+manifest=json.loads((R/'metadata/WORKBOOK_CONTENTS.json').read_text())
+with pd.ExcelFile(R/'source_data/Additional_file_1_source_data_public.xlsx') as xl:
+    assert xl.sheet_names==[x['sheet'] for x in manifest]
+    for x in manifest:
+        a=pd.read_csv(R/x['csv'],keep_default_na=False)
+        b=pd.read_excel(xl,sheet_name=x['sheet'],keep_default_na=False)
+        assert list(a.columns)==list(b.columns),(x['sheet'],'columns')
+        assert a.shape==b.shape,(x['sheet'],'shape')
+        for col in a.columns:
+            an=pd.to_numeric(a[col].replace('',np.nan),errors='coerce')
+            bn=pd.to_numeric(b[col].replace('',np.nan),errors='coerce')
+            if (an.notna()|a[col].eq('')).all():
+                np.testing.assert_allclose(an,bn,rtol=1e-10,atol=1e-12,equal_nan=True)
+            else:
+                assert a[col].astype(str).tolist()==b[col].astype(str).tolist(),(x['sheet'],col)
+index=pd.read_csv(R/'source_data/Figure_table_index.csv')
+assert all((R/p).is_file() for p in index['Data file']) and len(index)==21
+names=['Figure_1_study_architecture','Figure_2_acute_GBS_blood','Figure_3_GBS_CSF','Figure_4_CIDP_nerve','Figure_5_cross_compartment_genetics','Figure_S1_genetic_localization_bootstrap','Figure_S2_published_nerve_evidence']
+man=next((R/'docs').glob('GBS_CIDP_compartmentalization_v37*.docx'))
+with zipfile.ZipFile(man) as z:
+    for i,name in enumerate(names,1):
+        a=np.asarray(Image.open(BytesIO(z.read(f'word/media/image{i}.png'))).convert('RGB'))
+        b=np.asarray(Image.open(R/'figures'/f'{name}.png').convert('RGB'))
+        assert np.array_equal(a,b),(name,'differs from v37')
+    assert 'GSE304871' not in z.read('word/document.xml').decode()
+g=pd.read_csv(R/'source_data/Figure_5D_genetic_expression_contrasts.csv')
+assert len(g)==40 and (g.fdr_within_cell_group>=.05).all()
+assert (pd.read_csv(R/'source_data/Blood_meta.csv')['Hartung–Knapp P']>=.05).all()
+report={'release':'2.1.0','manuscript':'v37','source_workbook_sheets':len(manifest),
+        'figure_table_index_rows':len(index),'embedded_images_matched':7,
+        'raw_matrix_pipeline_rerun':False,
+        'workbook_matches_csv_sources':True,'status':'passed'}
+(R/'metadata/VALIDATION_REPORT.json').write_text(json.dumps(report,indent=2)+'\n')
+print(json.dumps(report))

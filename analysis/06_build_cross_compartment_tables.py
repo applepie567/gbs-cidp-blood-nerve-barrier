@@ -5,15 +5,14 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKBOOK = ROOT / "source_data/Additional_file_1_source_data_v2.0.0.xlsx"
+SRC = ROOT / "source_data"
 OUT = ROOT / "results/tables"
 
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    mapping = pd.read_excel(WORKBOOK, sheet_name="Cross_compartment_map")
-    blood = pd.read_excel(WORKBOOK, sheet_name="Blood_cohort_effects")
-    figure_index = pd.read_excel(WORKBOOK, sheet_name="Figure_table_index")
+    mapping = pd.read_csv(SRC / "Cross_compartment_map.csv")
+    blood = pd.read_csv(SRC / "Blood_cohort_effects.csv")
 
     required = {
         "Program", "Blood evidence", "CSF evidence",
@@ -25,7 +24,6 @@ def main() -> None:
 
     mapping.to_csv(OUT / "cross_compartment_evidence_map.csv", index=False)
     blood.to_csv(OUT / "blood_cohort_effects.csv", index=False)
-    figure_index.to_csv(OUT / "figure_table_source_index.csv", index=False)
 
     positive = (
         blood.assign(positive=blood["Positive direction"].astype(str).str.lower().eq("yes"))

@@ -1,4 +1,4 @@
-release: 2.0.0
+release: 2.1.0
 datasets:
   - id: GSE211225
     compartment: blood
@@ -31,3 +31,13 @@ datasets:
     analysis: descriptive identity reference
     url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107574
 
+  - id: Kmezic_2023
+    compartment: cerebrospinal fluid
+    assay: Olink proximity extension assay
+    analysis: synthesis of published adjusted coefficients and standard errors
+    url: https://doi.org/10.3389/fimmu.2023.1241199
+  - id: PXD056286
+    compartment: peripheral nerve
+    assay: published histology and proteomics
+    analysis: published observations and calculated Wilson interval
+    url: https://doi.org/10.1007/s00401-025-02936-w

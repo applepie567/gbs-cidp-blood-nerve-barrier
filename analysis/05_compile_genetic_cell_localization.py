@@ -5,24 +5,22 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKBOOK = ROOT / "source_data/Additional_file_1_source_data_v2.0.0.xlsx"
+SRC = ROOT / "source_data"
 OUT = ROOT / "results/tables"
 
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    genetic = pd.read_excel(WORKBOOK, sheet_name="CIDP_genetic_evidence")
-    donor = pd.read_excel(WORKBOOK, sheet_name="Genetic_donor_celltype")
-    summary = pd.read_excel(WORKBOOK, sheet_name="Genetic_celltype_summary")
-    contrast = pd.read_excel(WORKBOOK, sheet_name="Genetic_CIDP_vs_CIAP")
-    tractability = pd.read_excel(WORKBOOK, sheet_name="OpenTargets_tractability")
+    genetic = pd.read_csv(SRC / "CIDP_genetic_evidence.csv")
+    donor = pd.read_csv(SRC / "Genetic_donor_celltype.csv")
+    summary = pd.read_csv(SRC / "Genetic_celltype_summary.csv")
+    contrast = pd.read_csv(SRC / "Genetic_CIDP_vs_CIAP.csv")
 
     for name, frame in {
         "genetic": genetic,
         "donor": donor,
         "summary": summary,
         "contrast": contrast,
-        "tractability": tractability,
     }.items():
         if "gene" not in frame.columns:
             raise ValueError(f"The {name} table does not contain a gene column")
@@ -42,7 +40,6 @@ def main() -> None:
     donor.to_csv(OUT / "genetic_donor_celltype.csv", index=False)
     summary.to_csv(OUT / "genetic_celltype_summary.csv", index=False)
     contrast.to_csv(OUT / "genetic_cidp_vs_ciap.csv", index=False)
-    tractability.to_csv(OUT / "opentargets_tractability.csv", index=False)
     donor_counts.to_csv(OUT / "genetic_celltype_priority_summary.csv", index=False)
 
     primary = set(genetic["gene"].dropna().astype(str))

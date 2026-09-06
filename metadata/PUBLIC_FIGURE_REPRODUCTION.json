@@ -1,0 +1,9 @@
+{
+  "release": "2.1.0",
+  "manuscript": "v37",
+  "main_figures_regenerated": 5,
+  "all_seven_PNGs_match_manuscript": true,
+  "raw_matrix_pipeline_rerun": false,
+  "figure_4A_uses_preserved_raster_interior": true,
+  "supplementary_PNGs_preserved": true
+}

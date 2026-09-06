@@ -1,8 +1,13 @@
-resource,compartment,assay,analysis_role,url
-GSE211225,blood,whole-blood RNA sequencing,participant-level cohort analysis,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE211225
-GSE31014,blood,peripheral-blood leukocyte microarray,participant-level cohort analysis,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31014
-PRJNA1293757,blood,PBMC single-cell RNA sequencing,biological-sample pseudobulk,https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1293757
-PXD002911,cerebrospinal fluid,proteome and endogenous peptidome,study-reported group-level evidence,https://www.ebi.ac.uk/pride/archive/projects/PXD002911
-GSE285983,peripheral nerve,sural-nerve single-nucleus RNA sequencing,donor-level pseudobulk and cell localization,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285983
-GSE107574,blood-nerve barrier,human endoneurial endothelial transcriptome,descriptive identity reference,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107574
-
+Resource,Analytical role,Data URL
+GSE211225,Primary participant-level blood effects,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE211225
+GSE31014,Independent direction check,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31014
+PRJNA1293757,Monocyte localization and direction check,https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1293757
+PXD002911,Group-level identification and pathway evidence,https://www.ebi.ac.uk/pride/archive/projects/PXD002911
+GSE285983,Donor-resolved cell-state localization,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285983
+GSE107574,Normal BNB reference,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107574
+D'Aguanno 2010,Independent complement evidence,https://pubmed.ncbi.nlm.nih.gov/20801190/
+Ding 2022,Independent protein-handling evidence,https://doi.org/10.1111/ene.15213
+Sun 2025,Independent local-inflammation evidence,https://doi.org/10.2147/JIR.S507515
+Du 2024,Published genetic anchoring,https://doi.org/10.1016/j.xhgg.2024.100317
+Kmezic 2023,Synthesis of published adjusted coefficients and standard errors,https://doi.org/10.3389/fimmu.2023.1241199
+PXD056286,Published observations and recalculated Wilson interval,https://doi.org/10.1007/s00401-025-02936-w

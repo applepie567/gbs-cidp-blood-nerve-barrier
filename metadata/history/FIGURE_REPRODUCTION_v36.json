@@ -1,0 +1,17 @@
+{
+  "manuscript": "v36",
+  "main_figures_pixel_identical": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "supplementary_images_preserved": [
+    "S1",
+    "S2"
+  ],
+  "figure4A_interior": "retained raster plot asset",
+  "appendix_pages_visually_reviewed": 3,
+  "workbook_sheets_visually_reviewed": 30
+}

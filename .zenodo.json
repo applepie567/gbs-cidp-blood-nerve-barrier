@@ -1,6 +1,6 @@
 {
   "title": "Immune compartmentalization across blood, cerebrospinal fluid and peripheral nerve in Guillain-Barré syndrome and CIDP",
-  "description": "Version 2.0.0 analysis code, derived source data, figures, tables and reproducibility materials for a compartment-resolved study of GBS and CIDP.",
+  "description": "Public aggregate-data release accompanying manuscript v37. Includes analysis scripts, cohort-level blood synthesis and leave-one-cohort-out estimates, pooling of published adjusted CSF coefficients, aggregate CIDP nerve expression and correlation results, published genetic evidence with localization summaries and bootstrap intervals, five main figures, two supplementary figures, three manuscript tables, a 30-sheet workbook and 19 original-input source records. Individual donor and participant intermediates are not redistributed in this release. The default workflow verifies calculations supported by the supplied aggregate tables and renders the five main figures. Full donor-level recalculation requires locally reconstructed inputs; the supplied genetic scripts require a precomputed donor-cell table whose raw reconstruction is not included. Code is MIT; project-derived data and figures are CC BY 4.0 under LICENSE-DATA. External source materials retain their original terms.",
   "creators": [
     {
       "name": "Feng, Yuan",
@@ -32,5 +32,5 @@
   ],
   "license": "MIT",
   "upload_type": "software",
-  "version": "2.0.0"
+  "version": "2.1.0"
 }

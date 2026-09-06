@@ -9,4 +9,5 @@ D'Aguanno 2010,CSF,2D electrophoresis and MALDI-TOF/TOF,"GBS, MS and healthy con
 Ding 2022,CSF,TMT proteomics and ELISA validation,"10 GBS and 10 NND discovery, 40 GBS and 40 NND validation",Independent protein-handling evidence,"Ding et al., Eur J Neurol, 2022",https://doi.org/10.1111/ene.15213
 Sun 2025,CSF,Olink inflammation panel,23 GBS and 14 NND,Independent local-inflammation evidence,"Sun et al., J Inflamm Res, 2025",https://doi.org/10.2147/JIR.S507515
 Du 2024,Genetics,"CIDP GWAS, MR and colocalization","516 CIDP cases and 403,545 controls",Published genetic anchoring,"Du et al., HGG Advances, 2024",https://doi.org/10.1016/j.xhgg.2024.100317
-Open Targets,Therapeutic tractability,Target and clinical-candidate database,Public release accessed 2026-08-31,Drug and modality evidence,Open Targets Platform,https://platform.opentargets.org/
+Kmezic 2023,CSF,Olink proteomics,Discovery 6 GBS and 20 controls. Replication 6 GBS and 6 controls,Synthesis of published adjusted coefficients and standard errors,"Kmezic et al., Front Immunol, 2023",https://doi.org/10.3389/fimmu.2023.1241199
+PXD056286,Peripheral nerve,Published histology and proteomics,55 biopsies from CIDP or its variants,Published observations and recalculated Wilson interval,"Stascheit et al., Acta Neuropathol, 2025",https://doi.org/10.1007/s00401-025-02936-w

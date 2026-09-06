@@ -1,11 +1,9 @@
 cff-version: 1.2.0
 message: "Please cite the associated article and the archived version of this repository."
 title: "Immune compartmentalization across blood, cerebrospinal fluid and peripheral nerve in Guillain-Barré syndrome and CIDP"
-version: 2.0.0
-date-released: 2026-09-01
+version: 2.1.0
+date-released: 2026-09-06
 type: software
-doi: 10.5281/zenodo.22226674
-url: "https://doi.org/10.5281/zenodo.22226674"
 authors:
   - family-names: Feng
     given-names: Yuan

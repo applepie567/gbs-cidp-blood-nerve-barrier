@@ -1,16 +1,16 @@
-# Release metadata checklist
+# Release checks
 
-Complete these items before making the repository public or publishing the Zenodo record:
+Run from the repository root:
 
-- [x] Confirm the spelling and order of all six authors.
-- [ ] Add author ORCID identifiers to `CITATION.cff` and `.zenodo.json` where available.
-- [x] Confirm both institutional affiliations and department names.
-- [x] Add corresponding-author email addresses.
-- [x] Confirm the repository owner and final public repository name.
-- [x] Confirm MIT licensing for code and CC BY 4.0 licensing for repository-authored aggregate data/documentation.
-- [x] Confirm that no restricted or identifiable participant-level files are present.
-- [ ] Run a clean-environment reproduction check or document any source-data access limitations.
-- [ ] Reserve or mint the Zenodo DOI.
-- [ ] Add the DOI to `CITATION.cff`, `README.md`, manuscript, title page, and cover letter.
-- [ ] Create GitHub release `v1.0.0` from the verified commit.
-- [ ] Have the corresponding author approve the final Zenodo metadata and click **Publish**.
+```bash
+python analysis/run_v2_release.py
+python analysis/render_current_figures.py
+python tests/validate_release.py
+python tests/validate_public_distribution.py
+```
+
+The first command checks aggregate-supported calculations and workbook/figure alignment. Rendering regenerates five main figures. The next validation compares all seven figure PNGs with manuscript v37 and checks all 30 workbook sheets against their CSV sources. The distribution check requires omitted individual-level intermediates to be absent.
+
+Full donor recalculation is available separately with `--with-local-donor-tables` after reconstructing required local inputs. It is not part of public aggregate verification and was not run for this update.
+
+`metadata/SHA256SUMS.txt` lists distributed files. These hashes describe the release package, not the original database downloads. Historical v36 reports are in `metadata/history/`; current reports state their own computational scope.

@@ -1,9 +1,0 @@
-axis,acute_GBS_CD11b_ligand,acute_GBS_delta_log2_nTPM,acute_GBS_hedges_g,CIDP_nerve_sender,CIDP_nerve_receptors,CIDP_nerve_receiver,CIDP_mean_receptor_log2CPM,interpretation
-CXCL8-CXCR1/2,CXCL8,0.5396474607323123,1.816817145114636,Macrophage,CXCR1;CXCR2,Granulocyte,3.836274313282317,"Expression-supported, hypothesis-generating; not a causal interaction estimate"
-LIF-LIFR-gp130,LIF,0.7361162075668384,0.5335988906392566,Macrophage,LIFR;IL6ST,BNB_EC,9.861210926168882,"Expression-supported, hypothesis-generating; not a causal interaction estimate"
-OSM-OSMR-gp130,OSM,1.94242666138296,1.5685884943772106,Macrophage,OSMR;IL6ST,BNB_EC,8.344402730185713,"Expression-supported, hypothesis-generating; not a causal interaction estimate"
-CCL2-CCR2,CCL2,0.5571374089982157,1.3139879139592574,Macrophage,CCR2,Macrophage,2.366668909832464,"Expression-supported, hypothesis-generating; not a causal interaction estimate"
-CCL20-CCR6,CCL20,0.1580345730721823,1.219588608557025,BNB_EC,CCR6,T_NK,4.194325240282578,"Expression-supported, hypothesis-generating; not a causal interaction estimate"
-C3-C3AR1,C3,0.3318454269310269,3.134312748657336,Macrophage,C3AR1,Macrophage,6.0512056370007885,"Expression-supported, hypothesis-generating; not a causal interaction estimate"
-C5-C5AR1,C5,-0.5460203898039637,-0.3264421359412149,Macrophage,C5AR1,Macrophage,5.726487364005743,"Expression-supported, hypothesis-generating; not a causal interaction estimate"
-SELP-SELPLG,SELP,,,BNB_EC,SELPLG,Macrophage,3.8652970279269945,"Expression-supported, hypothesis-generating; not a causal interaction estimate"

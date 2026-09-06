@@ -1,64 +1,60 @@
-# Immune compartmentalization across blood, CSF and peripheral nerve in GBS and CIDP
-
-This repository contains the Python analysis workflow, derived source data, figures and reproducibility materials for:
+# GBS and CIDP immune compartmentalization
 
 **Immune compartmentalization across blood, cerebrospinal fluid and peripheral nerve in Guillain-Barré syndrome and CIDP**
 
-Version 2.0.0 restructures the study around three biological compartments:
+Version **2.1.0** accompanies manuscript **v37**, with final figures, aggregate results and original-file access information.
 
-- acute GBS blood transcriptomes
-- published GBS cerebrospinal-fluid proteomic evidence
-- CIDP sural-nerve single-nucleus profiles and blood-nerve barrier localization
+## Current materials
 
-Published CIDP genetic evidence is anchored to donor-resolved peripheral-nerve and blood-nerve barrier cell types. The genetic analysis prioritizes gene-cell combinations for functional validation and is not presented as direct drug-target discovery.
+| Material | Location |
+|---|---|
+| Manuscript v37 | `docs/GBS_CIDP_compartmentalization_v37_data_availability_2026-09-06.docx` |
+| Five main figures and two supplementary figures | `figures/` |
+| Three manuscript tables | `tables/` |
+| Additional file 1: 30-sheet public workbook | `source_data/Additional_file_1_source_data_public.xlsx` |
+| Additional file 2: reproducibility and source appendix | `docs/Additional_file_2_reproducibility_and_sources_public.docx` |
+| Nineteen original-input/source records | `metadata/original_input_files.csv` |
+| Local reconstruction requirements | `metadata/data_reconstruction.csv` |
+| Figure/table source index | `source_data/Figure_table_index.csv` |
+| Recorded reproduction environment | `metadata/REPRODUCTION_ENVIRONMENT.json` |
 
-## Repository contents
+## Run with the public aggregate tables
 
-- `analysis/01_cidp_nerve_pseudobulk.py` performs donor-level targeted pseudobulk analysis of GSE285983.
-- `analysis/02_prjna1293757_pseudobulk.py` performs biological-sample pseudobulk analysis of PRJNA1293757.
-- `analysis/03_gbs_blood_crosscohort.py` analyzes GSE211225 and GSE31014.
-- `analysis/04_compile_published_csf_evidence.py` compiles the published CSF evidence while preserving its original inference level.
-- `analysis/05_compile_genetic_cell_localization.py` exports CIDP genetic evidence and donor-resolved cell localization.
-- `analysis/06_build_cross_compartment_tables.py` builds the blood-CSF-peripheral-nerve evidence map.
-- `analysis/07_export_workbook_sheets.py` exports every source-workbook sheet as CSV.
-- `analysis/run_v2_release.py` runs the release-level compilation and validation steps.
-- `source_data/` contains the complete machine-readable source workbook and individual CSV sheets.
-- `figures/` contains the five publication figures at their original embedded resolution.
-- `tables/` contains machine-readable versions of Tables 1–3.
-- `docs/` contains the manuscript and reproducibility appendix.
-- `metadata/` contains dataset URLs, release notes, checksums and validation results.
-
-## Reproduce the release-level outputs
-
-Install Python 3.12 or later and the listed dependencies:
+Use Python 3.12 and the recorded dependencies:
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-reproduction.txt
 python analysis/run_v2_release.py
+python analysis/render_current_figures.py
+python tests/validate_release.py
 ```
 
-This command exports the published CSF evidence, genetic localization tables, cross-compartment tables and all workbook sheets, then validates the release contents.
+The default workflow recalculates blood random-effects synthesis and leave-one-cohort-out estimates, CSF coefficient pooling, the interval for the published 52/55 biopsy count, and multiple-testing corrections from supplied aggregate P values. It compares these calculations with the frozen results. It checks all workbook sheets against their CSV sources and all seven figure PNGs against manuscript v37. The five main figures can be rendered from the supplied aggregate inputs.
 
-The raw-data scripts require public repository files under `data/raw/`. Download instructions and expected paths are provided in `data/README.md`. Large primary sequencing and mass-spectrometry files are not redistributed.
+Genetic localization summaries and bootstrap intervals, nerve contrasts and correlation estimates remain frozen results. Checking their P-value corrections does not rerun donor-level tests, correlations or bootstrap resampling. Figure 4A uses its verified raster interior in `analysis/assets/figure4_localization_reference.png`; its labels and remaining panels are drawn by code. Supplementary PNGs are preserved from the manuscript with their aggregate numerical inputs. Other rendering environments may produce pixel differences.
 
-## Statistical units
+## Recalculate from local donor tables
 
-Blood cohorts are analyzed at the participant or biological-sample level. CIDP nerve analyses aggregate nuclei to donor-level pseudobulk profiles. CSF evidence retains the inference level reported in each publication and does not convert group-level findings into participant-level observations.
+Individual donor/participant intermediates and JSON files containing sample-level measurements are omitted from this version. The workbook retains 28 original aggregate/documentation sheets and adds `Input_files` and `Data_reconstruction`; it excludes `CIDP_donor_heterogeneity` and `Genetic_donor_celltype`.
 
-## Data and code availability
+Download original inputs using the source records. Primary pipelines are `01_cidp_nerve_pseudobulk.py`, `02_prjna1293757_pseudobulk.py` and `03_gbs_blood_crosscohort.py`; broader dependencies are in `requirements.txt`. GSE285983 processing reconstructs targeted expression, module scores and cell fractions locally. The five selected CIDP module scores must then be pivoted into the donor-by-module correlation input.
 
-The current repository is:
+The supplied genetic compilation and bootstrap scripts require the precomputed `Genetic_donor_celltype.csv`. They do not reconstruct that table from raw matrices. Exact end-to-end genetic reproduction requires the original intermediate or a separately implemented and validated reconstruction. After all required local donor inputs exist, run:
 
-https://github.com/applepie567/gbs-cidp-blood-nerve-barrier
+```bash
+python analysis/run_v2_release.py --with-local-donor-tables
+```
 
-The historical v1.0.0 archive is available at:
+This option checks required files before beginning. Local individual-level outputs are excluded by `.gitignore`. Primary matrices were not rerun for this update. Original download dates and input checksums were not recorded, so no retrospective values are assigned.
 
-https://doi.org/10.5281/zenodo.22067879
+## Evidence and interpretation
 
-The published v2.0.0 archive is available at:
+Blood synthesis uses three cohorts and modified Hartung–Knapp scaling bounded below by one. CIDP nerve analyses use donors as the units of inference; reported module contrasts are unadjusted for age, sex and center. CSF pooling uses published adjusted coefficients rather than new participant-level CSF observations. Genetic association estimates are attributed to Du et al. 2024, and tissue observations to Stascheit et al. 2025. Cross-compartment comparisons use independent cohorts and do not establish temporal progression from GBS to CIDP or causal drug targets.
 
-https://doi.org/10.5281/zenodo.22226674
+## Versions and citation
 
-## Licensing
+The preceding published archive is [v2.0.0, DOI 10.5281/zenodo.22226674](https://doi.org/10.5281/zenodo.22226674). It predates the extended analyses and revised attachments. This DOI is not the archive identifier for v2.1.0; the new DOI will be recorded after publication of the new Zenodo version.
 
-Code is released under the MIT License. Derived and aggregated source data are released under CC BY 4.0. The original public datasets remain subject to their repository and study-specific terms.
+Older tags and archives remain historical records. This update removes obsolete preprint outputs and individual-level copies from the current branch without rewriting repository history or earlier archives. See `metadata/RELEASE_NOTES_v2.1.0.md` and `metadata/PUBLIC_DISTRIBUTION.json`.
+
+Code is MIT licensed. Project-derived data and figures are CC BY 4.0 under `LICENSE-DATA`. External datasets and publications retain their original terms and citation requirements.
