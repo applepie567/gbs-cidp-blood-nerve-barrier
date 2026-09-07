@@ -1,0 +1,19 @@
+disease,characteristic,value
+CIAP,Donors,11.0
+CIAP,Sex: male,7.0
+CIAP,Sex: female,4.0
+CIAP,Center: Essen,1.0
+CIAP,Center: Münster,6.0
+CIAP,Center: Würzburg,4.0
+CIAP,Age mean in years,60.0
+CIAP,Macrophage nuclei minimum,184.0
+CIAP,Macrophage nuclei maximum,526.0
+CIDP,Donors,9.0
+CIDP,Sex: male,9.0
+CIDP,Sex: female,0.0
+CIDP,Center: Essen,5.0
+CIDP,Center: Münster,1.0
+CIDP,Center: Würzburg,3.0
+CIDP,Age mean in years,61.77777777777778
+CIDP,Macrophage nuclei minimum,43.0
+CIDP,Macrophage nuclei maximum,1047.0

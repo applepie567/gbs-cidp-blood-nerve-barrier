@@ -1,0 +1,26 @@
+{
+  "scope": "release integrity and publication metadata checks",
+  "status": "passed",
+  "docx_changed_paragraphs": {
+    "GBS_CIDP_v41_strengthened.docx": [
+      97
+    ],
+    "supplementary/Supplementary_Methods_v41.docx": [
+      49
+    ]
+  },
+  "public_workbook_sheets": 49,
+  "private_named_files_absent": true,
+  "science_recalculated_during_sync": false,
+  "prior_file_manifest_checks": {
+    "entries": 131,
+    "mismatches": 0
+  },
+  "zip_rebuilt_from_verified_directory": true,
+  "figure_repair": "The empty Supplementary Figure 3 PDF was regenerated from the existing script and aggregate inputs. The regenerated PNG was byte identical to the existing PNG. All PDF and raster files passed format checks.",
+  "render_qa": {
+    "main_pages": 32,
+    "methods_pages": 10,
+    "changed_pages_reviewed": true
+  }
+}

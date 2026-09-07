@@ -1,0 +1,23 @@
+annotation,n_case,n_reference,eligible
+Original macrophages,9,11,True
+Original Macro2,9,11,True
+Refined macrophages,9,11,True
+Refined Macro2,3,6,True
+Refined Macro3,3,2,False
+Refined Macro4,3,3,True
+Refined Macro5,2,1,False
+Refined Macro6,5,6,True
+Refined Macro7,3,3,True
+Refined Macro8,4,4,True
+Refined Macro9,5,5,True
+Refined Macro12,3,5,True
+Refined Macro13,2,4,False
+Refined Macro14,4,5,True
+Refined Macro15,3,5,True
+Refined Macro11,1,3,False
+Refined Macro1,0,2,False
+Refined Macro18,1,1,False
+Refined Macro10,2,0,False
+Refined Macro16,2,0,False
+Refined Macro17,1,0,False
+Original Macro1,0,0,False

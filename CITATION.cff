@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "Please cite the associated article and the archived version of this repository."
-title: "Immune compartmentalization across blood, cerebrospinal fluid and peripheral nerve in Guillain-Barré syndrome and CIDP"
-version: 2.1.0
+title: "Immune gene expression across blood, cerebrospinal fluid and nerve in inflammatory neuropathies"
+version: 2.2.0
 date-released: 2026-09-07
-doi: "10.5281/zenodo.22561445"
+doi: "10.5281/zenodo.22636223"
 type: software
 authors:
   - family-names: Feng

@@ -1,6 +1,6 @@
 {
-  "title": "Immune compartmentalization across blood, cerebrospinal fluid and peripheral nerve in Guillain-Barré syndrome and CIDP",
-  "description": "Public aggregate-data release accompanying manuscript v37. Includes analysis scripts, cohort-level blood synthesis and leave-one-cohort-out estimates, pooling of published adjusted CSF coefficients, aggregate CIDP nerve expression and correlation results, published genetic evidence with localization summaries and bootstrap intervals, five main figures, two supplementary figures, three manuscript tables, a 30-sheet workbook and 19 original-input source records. Individual donor and participant intermediates are not redistributed in this release. The default workflow verifies calculations supported by the supplied aggregate tables and renders the five main figures. Full donor-level recalculation requires locally reconstructed inputs; the supplied genetic scripts require a precomputed donor-cell table whose raw reconstruction is not included. Code is MIT; project-derived data and figures are CC BY 4.0 under LICENSE-DATA. External source materials retain their original terms.",
+  "title": "Immune gene expression across blood, cerebrospinal fluid and nerve in inflammatory neuropathies",
+  "description": "Public aggregate materials for manuscript v41. Includes the revised manuscript, five main figures, four supplementary figures, three tables, a 49 worksheet workbook, methods, scripts and source access records. Corrects CSF synthesis and adds exploratory Fc sensitivity analyses and annotation reaggregation. The Fc association attenuates with broader multiplicity correction and composition adjustment. No independent external validation or functional experiment was completed. Individual donor intermediates and the private author archive are excluded. Code is MIT licensed. Project derived data and figures are CC BY 4.0. External source materials retain their original terms.",
   "creators": [
     {
       "name": "Feng, Yuan",
@@ -32,5 +32,14 @@
   ],
   "license": "MIT",
   "upload_type": "software",
-  "version": "2.1.0"
+  "version": "2.2.0",
+  "doi": "10.5281/zenodo.22636223",
+  "publication_date": "2026-09-07",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/tree/v2.2.0",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
 }

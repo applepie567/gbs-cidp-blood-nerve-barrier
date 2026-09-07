@@ -1,9 +1,0 @@
-Resource,Material,Participants or samples,Analytical role
-GSE211225,Whole blood transcriptomics,"6 acute GBS, 10 postacute, 6 controls",Primary blood effects for individual participants
-GSE31014,Leukocyte microarray,"7 GBS, 7 controls",Independent assessment of blood effect direction
-PRJNA1293757,PBMC single cell RNA sequencing,"3 AIDP, 2 controls",Monocyte localization and assessment of effect direction
-PXD002911,CSF proteomics and peptidomics,"GBS (AIDP), MS and controls, with pooled discovery material",Published CSF identifications and functional annotations
-GSE285983,Sural nerve single nucleus RNA sequencing,"9 CIDP, 11 CIAP in focused comparison","Donor gene module scores, cell fractions and expression localization"
-GSE107574,Human endoneurial endothelial transcriptomics,Cultured cells and microvessels,Normal BNB reference
-Kmezic et al. 2023,CSF Olink proteomics,Discovery: 6 GBS and 20 controls. Replication: 6 GBS and 6 controls,New synthesis of published adjusted coefficients and standard errors
-PXD056286,Sural nerve histology and proteomics,55 biopsies from CIDP or its variants,Published tissue observations and calculated Wilson interval
