@@ -53,7 +53,9 @@ Blood synthesis uses three cohorts and modified Hartung–Knapp scaling bounded 
 
 ## Versions and citation
 
-The preceding published archive is [v2.0.0, DOI 10.5281/zenodo.22226674](https://doi.org/10.5281/zenodo.22226674). It predates the extended analyses and revised attachments. This DOI is not the archive identifier for v2.1.0; the new DOI will be recorded after publication of the new Zenodo version.
+The current published archive is [v2.1.0, DOI 10.5281/zenodo.22561445](https://doi.org/10.5281/zenodo.22561445), published on 7 September 2026. The [GitHub v2.1.0 release](https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/releases/tag/v2.1.0) provides the identical public ZIP. The archived package and tag preserve commit `9682d3374020af5cc6c236613abf3355630024ef`; this subsequent citation update records the issued DOI.
+
+The preceding archive, [v2.0.0, DOI 10.5281/zenodo.22226674](https://doi.org/10.5281/zenodo.22226674), predates the extended analyses and revised attachments.
 
 Older tags and archives remain historical records. This update removes obsolete preprint outputs and individual-level copies from the current branch without rewriting repository history or earlier archives. See `metadata/RELEASE_NOTES_v2.1.0.md` and `metadata/PUBLIC_DISTRIBUTION.json`.
 
