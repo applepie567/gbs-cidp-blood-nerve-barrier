@@ -61,14 +61,14 @@ def save(f,n,name):
 def figure1():
     f=plt.figure(figsize=(7.5,7.05));ax=f.add_axes([0,0,1,1]);ax.set_axis_off()
     header(f,.02,.967,'A','Data sources and analytical roles')
-    cards=[(.035,.695,TEAL,'Acute GBS blood','Cross-cohort consistency',
+    cards=[(.035,.695,TEAL,'Acute GBS blood','Blood cohort comparison',
             'GSE211225 · whole blood\nGSE31014 · leukocytes\nPRJNA1293757 · PBMC'),
            (.52,.695,ORANGE,'GBS CSF','Published proteomic evidence',
             'PXD002911 · proteo-peptidomics\nComplement proteomics\nTMT and Olink studies'),
-           (.035,.442,PURPLE,'CIDP peripheral nerve','Donor-resolved cell states',
+           (.035,.442,PURPLE,'CIDP peripheral nerve','Expression by donor and cell',
             'GSE285983 · sural nerve\nGSE107574 · published reference\nCIDP versus CIAP'),
            (.52,.442,BLUE,'CIDP genetics','Published genetic evidence',
-            'Female-stratified GWAS\nMR and colocalization\nCell-context localization')]
+            'GWAS in women\nMR and colocalization\nCandidate gene expression')]
     for x,y,c,title,sub,body in cards:
         w=.445;h=.225
         ax.add_patch(FancyBboxPatch((x,y),w,h,boxstyle='round,pad=0.008,rounding_size=.012',
@@ -78,11 +78,11 @@ def figure1():
         ax.text(x+.020,y+h-.029,title,va='center',fontsize=12,fontweight='bold',color=INK)
         ax.text(x+.020,y+.141,sub,va='center',fontsize=10.5,fontweight='bold',color=INK)
         ax.text(x+.020,y+.108,body,va='top',fontsize=10.5,linespacing=1.55,color=INK)
-    header(f,.02,.380,'B','Complementary evidence layers')
+    header(f,.02,.380,'B','Complementary analyses')
     stages=[('Consistency','Recurrent\nblood effects','CXCL8 and\ncomplement\ngene modules',TEAL),
-            ('Triangulation','Independent\nCSF studies','Inflammation\nand structural\nproteolysis',ORANGE),
-            ('Localization','Cell state and\ndonor level','BNB, macrophage\nand Schwann\nremodeling',PURPLE),
-            ('Anchoring','Genetic\nevidence','Cell contexts of\nCIDP risk\ngenes',BLUE)]
+            ('CSF proteins','Independent\nCSF studies','Inflammation\nand structural\nproteolysis',ORANGE),
+            ('Localization','Cell state and\ndonor level','Endothelial, immune\nand Schwann cell\nexpression',PURPLE),
+            ('Candidate genes','Genetic\nevidence','Cellular expression\nof candidate\ngenes',BLUE)]
     for i,(title,sub,out,c) in enumerate(stages):
         x=.035+i*.244;w=.207
         ax.add_patch(FancyBboxPatch((x,.193),w,.151,boxstyle='round,pad=.006,rounding_size=.010',

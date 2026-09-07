@@ -1,6 +1,6 @@
 {
-  "title": "Immune gene expression across blood, cerebrospinal fluid and nerve in inflammatory neuropathies",
-  "description": "Public aggregate materials for manuscript v41. Includes the revised manuscript, five main figures, four supplementary figures, three tables, a 49 worksheet workbook, methods, scripts and source access records. Corrects CSF synthesis and adds exploratory Fc sensitivity analyses and annotation reaggregation. The Fc association attenuates with broader multiplicity correction and composition adjustment. No independent external validation or functional experiment was completed. Individual donor intermediates and the private author archive are excluded. Code is MIT licensed. Project derived data and figures are CC BY 4.0. External source materials retain their original terms.",
+  "title": "Immune gene and protein profiles across blood, cerebrospinal fluid and peripheral nerve in inflammatory neuropathies",
+  "description": "Public aggregate materials accompanying the Human Genomics submission manuscript v42. Version 2.3.0 includes the revised manuscript with five embedded main figures and three editable tables, updated figure labels and legends, the edited graphical abstract, four supplementary figures, a 49 worksheet aggregate data workbook, supplementary methods, analysis and plotting scripts, and database access documentation. The analysis results are unchanged from version 2.2.0. Code is MIT licensed. Project derived data and figures are CC BY 4.0. External source materials retain their original terms.",
   "creators": [
     {
       "name": "Feng, Yuan",
@@ -32,12 +32,12 @@
   ],
   "license": "MIT",
   "upload_type": "software",
-  "version": "2.2.0",
-  "doi": "10.5281/zenodo.22636223",
+  "version": "2.3.0",
+  "doi": "10.5281/zenodo.22641099",
   "publication_date": "2026-09-07",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/tree/v2.2.0",
+      "identifier": "https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/tree/v2.3.0",
       "relation": "isSupplementTo",
       "resource_type": "software"
     }

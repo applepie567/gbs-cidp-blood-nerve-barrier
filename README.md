@@ -1,13 +1,14 @@
-# Immune gene expression across blood, cerebrospinal fluid and nerve in inflammatory neuropathies
+# Immune gene and protein profiles across blood, cerebrospinal fluid and peripheral nerve in inflammatory neuropathies
 
-Release **v2.2.0** accompanies manuscript **v41** (7 September 2026).
+Release **v2.3.0** accompanies the Human Genomics submission manuscript **v42** (7 September 2026).
 
-Archive: [DOI 10.5281/zenodo.22636223](https://doi.org/10.5281/zenodo.22636223). GitHub: [v2.2.0 release](https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/releases/tag/v2.2.0).
+Archive: [DOI 10.5281/zenodo.22641099](https://doi.org/10.5281/zenodo.22641099). GitHub: [v2.3.0 release](https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/releases/tag/v2.3.0).
 
 | Material | Location |
 |---|---|
-| Complete manuscript with five embedded figures and three editable tables | [Word](GBS_CIDP_v41_with_figures_and_tables.docx) and [PDF](GBS_CIDP_v41_with_figures_and_tables.pdf) |
-| Text manuscript with separately supplied figures | [Word](GBS_CIDP_v41_strengthened.docx) and [PDF](GBS_CIDP_v41_strengthened.pdf) |
+| Current manuscript with five embedded figures and three editable tables | [Word](GBS_CIDP_Human_Genomics_v42.docx) and [PDF](GBS_CIDP_Human_Genomics_v42.pdf) |
+| Current graphical abstract | [PNG](graphical_abstract/GBS_CIDP_Human_Genomics_graphical_abstract.png) |
+| Historical v41 text manuscript | [Word](GBS_CIDP_v41_strengthened.docx) and [PDF](GBS_CIDP_v41_strengthened.pdf) |
 | Five main figures and Supplementary Figures 1 and 2 | `analysis_update/figures/` |
 | Supplementary Figures 3 and 4 | `strengthening_v41/figures/` |
 | Three tables | `tables/` |
@@ -16,7 +17,9 @@ Archive: [DOI 10.5281/zenodo.22636223](https://doi.org/10.5281/zenodo.22636223).
 | Original aggregate figure source tables | `analysis_update/source_data/` and `analysis_update/results/tables/` |
 | Added aggregate source tables and new input manifest | `strengthening_v41/results/` |
 | Original input file names, databases and source URLs | `metadata/original_input_files.csv` and the workbook |
-| Changes and interpretation | `metadata/RELEASE_NOTES_v2.2.0.md` |
+| Changes and interpretation | `metadata/RELEASE_NOTES_v2.3.0.md` |
+
+The v42 manuscript supersedes the v41 manuscript files retained in this repository. The v41 supplementary workbook and figures continue to accompany v42. Supplementary Methods retains its v41 filename, with the archive links updated. Analysis results are unchanged from v2.2.0.
 
 ## Reproduction
 

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-09-06T22:41:11.910458</dc:date>
+    <dc:date>2026-09-07T06:19:02.508816</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ Q 14.58 36.5472 14.58 42.6384
 L 14.58 152.7876 
 Q 14.58 158.8788 21.06 158.8788 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #ffffff; stroke: #158795; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #ffffff; stroke: #158795; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 23.22 71.5716 
@@ -53,7 +53,7 @@ Q 18.9 40.608 18.9 44.6688
 L 18.9 67.5108 
 Q 18.9 71.5716 23.22 71.5716 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #158795; opacity: 0.13"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #158795; opacity: 0.13"/>
    </g>
    <g id="patch_4">
     <path d="M 282.96 158.8788 
@@ -66,7 +66,7 @@ Q 276.48 36.5472 276.48 42.6384
 L 276.48 152.7876 
 Q 276.48 158.8788 282.96 158.8788 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #ffffff; stroke: #d98223; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #ffffff; stroke: #d98223; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 285.12 71.5716 
@@ -79,7 +79,7 @@ Q 280.8 40.608 280.8 44.6688
 L 280.8 67.5108 
 Q 280.8 71.5716 285.12 71.5716 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #d98223; opacity: 0.13"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #d98223; opacity: 0.13"/>
    </g>
    <g id="patch_6">
     <path d="M 21.06 287.3016 
@@ -92,7 +92,7 @@ Q 14.58 164.97 14.58 171.0612
 L 14.58 281.2104 
 Q 14.58 287.3016 21.06 287.3016 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #ffffff; stroke: #8061a8; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #ffffff; stroke: #8061a8; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 23.22 199.9944 
@@ -105,7 +105,7 @@ Q 18.9 169.0308 18.9 173.0916
 L 18.9 195.9336 
 Q 18.9 199.9944 23.22 199.9944 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #8061a8; opacity: 0.13"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #8061a8; opacity: 0.13"/>
    </g>
    <g id="patch_8">
     <path d="M 282.96 287.3016 
@@ -118,7 +118,7 @@ Q 276.48 164.97 276.48 171.0612
 L 276.48 281.2104 
 Q 276.48 287.3016 282.96 287.3016 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #ffffff; stroke: #367aad; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #ffffff; stroke: #367aad; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
     <path d="M 285.12 199.9944 
@@ -131,7 +131,7 @@ Q 280.8 169.0308 280.8 173.0916
 L 280.8 195.9336 
 Q 280.8 199.9944 285.12 199.9944 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #367aad; opacity: 0.13"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #367aad; opacity: 0.13"/>
    </g>
    <g id="patch_10">
     <path d="M 21.06 412.6788 
@@ -144,7 +144,7 @@ Q 15.66 329.94 15.66 335.016
 L 15.66 407.6028 
 Q 15.66 412.6788 21.06 412.6788 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #ffffff; stroke: #158795; stroke-width: 1.3; stroke-linejoin: miter"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #ffffff; stroke: #158795; stroke-width: 1.3; stroke-linejoin: miter"/>
    </g>
    <g id="patch_11">
     <path d="M 21.06 497.9556 
@@ -157,27 +157,27 @@ Q 15.66 431.9676 15.66 437.0436
 L 15.66 492.8796 
 Q 15.66 497.9556 21.06 497.9556 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #158795; opacity: 0.13; stroke: #158795; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #158795; opacity: 0.13; stroke: #158795; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_12">
     <path d="M 74.79 417.218945 
 Q 74.79 422.324108 74.79 426.08763 
-" clip-path="url(#p4f94786aaf)" style="fill: none; stroke: #158795; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: none; stroke: #158795; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 76.79 422.08763 
 L 74.79 426.08763 
 L 72.79 422.08763 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #158795; stroke: #158795; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #158795; stroke: #158795; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_13">
     <path d="M 137.541401 371.5632 
 Q 140.672652 371.5632 142.685869 371.5632 
-" clip-path="url(#p4f94786aaf)" style="fill: none; stroke: #555555; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: none; stroke: #555555; stroke-linecap: round"/>
     <path d="M 139.085869 369.7632 
 L 142.685869 371.5632 
 L 139.085869 373.3632 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #555555; stroke: #555555; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #555555; stroke: #555555; stroke-linecap: round"/>
    </g>
    <g id="patch_14">
     <path d="M 152.82 412.6788 
@@ -190,7 +190,7 @@ Q 147.42 329.94 147.42 335.016
 L 147.42 407.6028 
 Q 147.42 412.6788 152.82 412.6788 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #ffffff; stroke: #d98223; stroke-width: 1.3; stroke-linejoin: miter"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #ffffff; stroke: #d98223; stroke-width: 1.3; stroke-linejoin: miter"/>
    </g>
    <g id="patch_15">
     <path d="M 152.82 497.9556 
@@ -203,27 +203,27 @@ Q 147.42 431.9676 147.42 437.0436
 L 147.42 492.8796 
 Q 147.42 497.9556 152.82 497.9556 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #d98223; opacity: 0.13; stroke: #d98223; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #d98223; opacity: 0.13; stroke: #d98223; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_16">
     <path d="M 206.55 417.218945 
 Q 206.55 422.324108 206.55 426.08763 
-" clip-path="url(#p4f94786aaf)" style="fill: none; stroke: #d98223; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: none; stroke: #d98223; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 208.55 422.08763 
 L 206.55 426.08763 
 L 204.55 422.08763 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #d98223; stroke: #d98223; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #d98223; stroke: #d98223; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_17">
     <path d="M 269.301401 371.5632 
 Q 272.432652 371.5632 274.445869 371.5632 
-" clip-path="url(#p4f94786aaf)" style="fill: none; stroke: #555555; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: none; stroke: #555555; stroke-linecap: round"/>
     <path d="M 270.845869 369.7632 
 L 274.445869 371.5632 
 L 270.845869 373.3632 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #555555; stroke: #555555; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #555555; stroke: #555555; stroke-linecap: round"/>
    </g>
    <g id="patch_18">
     <path d="M 284.58 412.6788 
@@ -236,7 +236,7 @@ Q 279.18 329.94 279.18 335.016
 L 279.18 407.6028 
 Q 279.18 412.6788 284.58 412.6788 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #ffffff; stroke: #8061a8; stroke-width: 1.3; stroke-linejoin: miter"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #ffffff; stroke: #8061a8; stroke-width: 1.3; stroke-linejoin: miter"/>
    </g>
    <g id="patch_19">
     <path d="M 284.58 497.9556 
@@ -249,27 +249,27 @@ Q 279.18 431.9676 279.18 437.0436
 L 279.18 492.8796 
 Q 279.18 497.9556 284.58 497.9556 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #8061a8; opacity: 0.13; stroke: #8061a8; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #8061a8; opacity: 0.13; stroke: #8061a8; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_20">
     <path d="M 338.31 417.218945 
 Q 338.31 422.324108 338.31 426.08763 
-" clip-path="url(#p4f94786aaf)" style="fill: none; stroke: #8061a8; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: none; stroke: #8061a8; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 340.31 422.08763 
 L 338.31 426.08763 
 L 336.31 422.08763 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #8061a8; stroke: #8061a8; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #8061a8; stroke: #8061a8; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_21">
     <path d="M 401.061401 371.5632 
 Q 404.192652 371.5632 406.205869 371.5632 
-" clip-path="url(#p4f94786aaf)" style="fill: none; stroke: #555555; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: none; stroke: #555555; stroke-linecap: round"/>
     <path d="M 402.605869 369.7632 
 L 406.205869 371.5632 
 L 402.605869 373.3632 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #555555; stroke: #555555; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #555555; stroke: #555555; stroke-linecap: round"/>
    </g>
    <g id="patch_22">
     <path d="M 416.34 412.6788 
@@ -282,7 +282,7 @@ Q 410.94 329.94 410.94 335.016
 L 410.94 407.6028 
 Q 410.94 412.6788 416.34 412.6788 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #ffffff; stroke: #367aad; stroke-width: 1.3; stroke-linejoin: miter"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #ffffff; stroke: #367aad; stroke-width: 1.3; stroke-linejoin: miter"/>
    </g>
    <g id="patch_23">
     <path d="M 416.34 497.9556 
@@ -295,23 +295,23 @@ Q 410.94 431.9676 410.94 437.0436
 L 410.94 492.8796 
 Q 410.94 497.9556 416.34 497.9556 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #367aad; opacity: 0.13; stroke: #367aad; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #367aad; opacity: 0.13; stroke: #367aad; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_24">
     <path d="M 470.07 417.218945 
 Q 470.07 422.324108 470.07 426.08763 
-" clip-path="url(#p4f94786aaf)" style="fill: none; stroke: #367aad; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: none; stroke: #367aad; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 472.07 422.08763 
 L 470.07 426.08763 
 L 468.07 422.08763 
 z
-" clip-path="url(#p4f94786aaf)" style="fill: #367aad; stroke: #367aad; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p3ebb7ff645)" style="fill: #367aad; stroke: #367aad; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="text_1">
     <text style="font-weight: 700; font-size: 12px; font-family: 'Times New Roman'; text-anchor: start" x="29.7" y="58.018088" transform="rotate(-0 29.7 58.018088)">Acute GBS blood</text>
    </g>
    <g id="text_2">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman'; text-anchor: start" x="29.7" y="85.672064" transform="rotate(-0 29.7 85.672064)">Cross-cohort consistency</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman'; text-anchor: start" x="29.7" y="85.681908" transform="rotate(-0 29.7 85.681908)">Blood cohort comparison</text>
    </g>
    <g id="text_3">
     <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(29.7 107.288138)">GSE211225 · whole blood</text>
@@ -333,7 +333,7 @@ z
     <text style="font-weight: 700; font-size: 12px; font-family: 'Times New Roman'; text-anchor: start" x="29.7" y="186.534637" transform="rotate(-0 29.7 186.534637)">CIDP peripheral nerve</text>
    </g>
    <g id="text_8">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman'; text-anchor: start" x="29.7" y="214.022677" transform="rotate(-0 29.7 214.022677)">Donor-resolved cell states</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman'; text-anchor: start" x="29.7" y="214.094864" transform="rotate(-0 29.7 214.094864)">Expression by donor and cell</text>
    </g>
    <g id="text_9">
     <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(29.7 235.710937)">GSE285983 · sural nerve</text>
@@ -347,9 +347,9 @@ z
     <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman'; text-anchor: start" x="291.6" y="214.094864" transform="rotate(-0 291.6 214.094864)">Published genetic evidence</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(291.6 235.710937)">Female-stratified GWAS</text>
+    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(291.6 235.710937)">GWAS in women</text>
     <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(291.6 249.257906)">MR and colocalization</text>
-    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(291.6 262.804875)">Cell-context localization</text>
+    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(291.6 262.804875)">Candidate gene expression</text>
    </g>
    <g id="text_13">
     <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman'; text-anchor: middle" x="74.79" y="351.654464" transform="rotate(-0 74.79 351.654464)">Consistency</text>
@@ -364,7 +364,7 @@ z
     <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(45.775547 479.562998)">gene modules</text>
    </g>
    <g id="text_16">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman'; text-anchor: middle" x="206.55" y="351.654464" transform="rotate(-0 206.55 351.654464)">Triangulation</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman'; text-anchor: middle" x="206.55" y="351.664308" transform="rotate(-0 206.55 351.664308)">CSF proteins</text>
    </g>
    <g id="text_17">
     <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(180.601875 373.950197)">Independent</text>
@@ -383,20 +383,20 @@ z
     <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(314.546367 386.403525)">donor level</text>
    </g>
    <g id="text_21">
-    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(299.236055 455.375592)">BNB, macrophage</text>
-    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(310.17 467.484061)">and Schwann</text>
-    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(314.400352 479.572842)">remodeling</text>
+    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(294.277266 455.39528)">Endothelial, immune</text>
+    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(301.279453 467.484061)">and Schwann cell</text>
+    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(315.855586 479.572842)">expression</text>
    </g>
    <g id="text_22">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman'; text-anchor: middle" x="470.07" y="351.654464" transform="rotate(-0 470.07 351.654464)">Anchoring</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman'; text-anchor: middle" x="470.07" y="351.654464" transform="rotate(-0 470.07 351.654464)">Candidate genes</text>
    </g>
    <g id="text_23">
     <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(453.744961 373.950197)">Genetic</text>
     <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(451.414453 386.403525)">evidence</text>
    </g>
    <g id="text_24">
-    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(436.826016 455.385436)">Cell contexts of</text>
-    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(449.118398 467.474217)">CIDP risk</text>
+    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(429.391523 455.385436)">Cellular expression</text>
+    <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(444.270352 467.474217)">of candidate</text>
     <text style="font-size: 10.5px; font-family: 'Times New Roman'" transform="translate(458.115586 479.562998)">genes</text>
    </g>
   </g>
@@ -410,11 +410,11 @@ z
    <text style="font-weight: 700; font-size: 15px; font-family: 'Times New Roman'; text-anchor: start" x="10.8" y="314.712" transform="rotate(-0 10.8 314.712)">B</text>
   </g>
   <g id="text_28">
-   <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman'; text-anchor: start" x="32.4" y="314.712" transform="rotate(-0 32.4 314.712)">Complementary evidence layers</text>
+   <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman'; text-anchor: start" x="32.4" y="314.712" transform="rotate(-0 32.4 314.712)">Complementary analyses</text>
   </g>
  </g>
  <defs>
-  <clipPath id="p4f94786aaf">
+  <clipPath id="p3ebb7ff645">
    <rect x="0" y="0" width="540" height="507.6"/>
   </clipPath>
  </defs>

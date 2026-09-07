@@ -1,9 +1,14 @@
-# v41 当前修订材料
+# 公开发布包 v2.3.0
 
-完整图文稿为 GBS_CIDP_v41_with_figures_and_tables.docx，含全部 5 张主图和 3 张可编辑表格，另附同版 PDF。GBS_CIDP_v41_strengthened.docx 是主稿与图件分开组织的文字版本。原有 5 张主图位于 analysis_update/figures，新增补充图 3 和 4 位于 strengthening_v41/figures。supplementary 包含 49 张工作表的数据文件、补充方法和 4 张补充图的图注文档。tables 中表 1 和表 2 沿用已核对的 v39 版本，表 3 已更新为 v41。
+本版本对应 Human Genomics 稿件 v42，日期为 2026 年 9 月 7 日。
 
-strengthening_v41/results 是新增图片及统计表的汇总数据来源。数据库名称、原始文件名、网页地址、实际新下载日期及 SHA256 位于工作簿和新输入清单中。没有补造早期未记录的获取日期。
+- 最新完整稿件为 `GBS_CIDP_Human_Genomics_v42.docx`，包含 5 幅主图和 3 个可编辑表格，同名 PDF 供预览。
+- 最新图形摘要位于 `graphical_abstract/`，已去掉底部文字和顶部横线。
+- 补充数据、补充图和分析结果沿用 v41。补充方法中的版本链接已更新。
+- 原始数据库名称、网页地址及已记录的获取信息见 `metadata/` 和补充工作簿。
+- 保留的 v41 稿件是历史版本，本次投稿请使用 v42。
+- 公开包仅包含汇总数据、代码及来源说明，供体层面的中间文件和作者私人留档不在包内。
 
-本目录的汇总数据可用于对外修订材料。公开发布版本为 v2.2.0，对应稿件 v41。Zenodo DOI 为 https://doi.org/10.5281/zenodo.22636223，GitHub 发布页为 https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/releases/tag/v2.2.0。未完成独立外部队列验证。新的 Fc 结果在较广范围校正和组成调整中减弱，正文已按探索性关联表述。
+GitHub 发布页为 https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/releases/tag/v2.3.0。
 
-私人作者档案另含供体中间表和原有完整档案。该私人档案不作为对外发布包。
+本次 Zenodo 归档为 https://doi.org/10.5281/zenodo.22641099。

@@ -6,13 +6,23 @@
   },
   {
     "path": ".zenodo.json",
-    "bytes": 1698,
-    "sha256": "103bbc513712a6ed6c64459b54e70c736a33ab9b6f90fac7585dc8f5e6b44a7d"
+    "bytes": 1634,
+    "sha256": "d549a49b191cd3798ae4fdf184237d1bddff469612c8800fc5d0b34bafdb9864"
   },
   {
     "path": "CITATION.cff",
-    "bytes": 932,
-    "sha256": "c30218aa3392a9990efbcdd37f3cb472a9be3420db41a0bb0804b42e8d5a3215"
+    "bytes": 953,
+    "sha256": "8b702fb25be1dfdac82349676cde214988a814ef7a9382f8972a35c3154abcee"
+  },
+  {
+    "path": "GBS_CIDP_Human_Genomics_v42.docx",
+    "bytes": 1989925,
+    "sha256": "38b1798a4945b1b462fa52cfae8570ad4b1ab5a2e1d6a9cb3c300a981af7889c"
+  },
+  {
+    "path": "GBS_CIDP_Human_Genomics_v42.pdf",
+    "bytes": 1730307,
+    "sha256": "5e7d438b21969af620448c220f8311f211f5eae1adf8eedb44bd96e3b6e72759"
   },
   {
     "path": "GBS_CIDP_v41_strengthened.docx",
@@ -46,13 +56,13 @@
   },
   {
     "path": "README.md",
-    "bytes": 3582,
-    "sha256": "2d78b3afeefd29ef3567a0cc890e23afa929b31555e4d7d03625d78db4e6f932"
+    "bytes": 3981,
+    "sha256": "0c4d05a5051d9254a825839df824a03275e95b329dca92e798b4ee59f1481252"
   },
   {
     "path": "README_先读.md",
-    "bytes": 1284,
-    "sha256": "69d7e72967347c16427619e2d7f18199c3bd69fcc81213d2b8238db6b6eeb6cb"
+    "bytes": 890,
+    "sha256": "4c495fe5dff67d34b275042b118fb8ef9939bee74ff1ab213ace47e17e23ed5a"
   },
   {
     "path": "analysis_update/LICENSE",
@@ -111,8 +121,8 @@
   },
   {
     "path": "analysis_update/analysis/10_figures_1_2_5.py",
-    "bytes": 13954,
-    "sha256": "4112bf3180011141b519756b9cf7eec6a0bd2224c1f4b860db0c221b534339a8"
+    "bytes": 13959,
+    "sha256": "8597f377289abf2369407ed73002c91e927e729b99abf14bd6aa431f9a4c1c2d"
   },
   {
     "path": "analysis_update/analysis/11_figure_3.py",
@@ -166,18 +176,18 @@
   },
   {
     "path": "analysis_update/figures/Figure_1_study_architecture.pdf",
-    "bytes": 55739,
-    "sha256": "9bc75521c0f3576c75fc769320899644c44ec3251b8c71f75db58ae7d9cf9302"
+    "bytes": 56385,
+    "sha256": "a754ef3cb13de87a8008013497ff9d3aa815f4c1763132a66d114228920ca53b"
   },
   {
     "path": "analysis_update/figures/Figure_1_study_architecture.png",
-    "bytes": 379255,
-    "sha256": "c25a08817619b5254c10bbbf320a4d5c3ee9a890c3ba13eb7b57121ae2f901c5"
+    "bytes": 380884,
+    "sha256": "dca3d684e4c317352a1987d43cce4c86ea348e043c805279bf6c9e642df8d05a"
   },
   {
     "path": "analysis_update/figures/Figure_1_study_architecture.svg",
-    "bytes": 18087,
-    "sha256": "e56b8ea19569f8d05f95a9f7dac1b15adfec49f6050975e9550a9616bbb46468"
+    "bytes": 18095,
+    "sha256": "56e735fa5645c45174be61299585a6bbfb4b61ddde9ea757230a9e26761a63c4"
   },
   {
     "path": "analysis_update/figures/Figure_2_acute_GBS_blood.pdf",
@@ -465,9 +475,14 @@
     "sha256": "50cb67d9ad3068cc09742123d99e22761cc1111aea7fb72604b7c1ee684fbe1a"
   },
   {
+    "path": "graphical_abstract/GBS_CIDP_Human_Genomics_graphical_abstract.png",
+    "bytes": 1055404,
+    "sha256": "84506837bc83795ae8fa10134b9228113038f1080ddcd3f4e076b0219eed6601"
+  },
+  {
     "path": "metadata/PUBLICATION_VALIDATION.json",
-    "bytes": 824,
-    "sha256": "d1540b34471885ce4887a011575a219d8aafae7c3475beea7781b001d3fcc75e"
+    "bytes": 1111,
+    "sha256": "97bae8e58f34e2b71af2bdd9e80f72fda89ffae19c870d262180dea0dd2d3bcc"
   },
   {
     "path": "metadata/PUBLIC_WORKBOOK_AUDIT.json",
@@ -476,13 +491,18 @@
   },
   {
     "path": "metadata/RELEASE.json",
-    "bytes": 432,
-    "sha256": "d3656629a6a826685a1bff695bd4386d15353a09a8220cbbdb85aff191e1aee4"
+    "bytes": 619,
+    "sha256": "e0bb9e80d96db2badabaebf5db5e2e924497ad2b5dc8d5f2c7e6dd89aa24e11d"
   },
   {
     "path": "metadata/RELEASE_NOTES_v2.2.0.md",
     "bytes": 1655,
     "sha256": "ac5bf81fb5e70f93ed9fdac7a24994ac6e511b35919dad96703bdab606709371"
+  },
+  {
+    "path": "metadata/RELEASE_NOTES_v2.3.0.md",
+    "bytes": 1090,
+    "sha256": "e35b984ca9f45b4c3440edb53d6264f6f02c15a16879f190720cf9a0dafe2c40"
   },
   {
     "path": "metadata/data_reconstruction.csv",
@@ -691,13 +711,13 @@
   },
   {
     "path": "supplementary/Supplementary_Methods_v41.docx",
-    "bytes": 43918,
-    "sha256": "3de494b16204d58527b92555016d316db5ce32d2082606d8667108c6a21b8045"
+    "bytes": 43951,
+    "sha256": "64a588706f9e540e35929f45d65a778ade0fe682a3bb4db9361d41f1b33060fc"
   },
   {
     "path": "supplementary/Supplementary_Methods_v41.pdf",
-    "bytes": 138020,
-    "sha256": "434173f57947aa90d66d7e9193b0878226a74cff0500a7bf55e9ba090ce89b34"
+    "bytes": 137986,
+    "sha256": "a817bb2ac17ca87de196ed3c4c6ef9f4ef53383a1307101d4de507c6a2032a15"
   },
   {
     "path": "tables/Table_1_v39.docx",
