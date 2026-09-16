@@ -1,7 +1,7 @@
 program,studies,resources,evidence_rows,inference_levels
 Complement,1,Article-level public results,1,Published differential-protein result
 Local inflammation,3,Article and supplementary results | Article-level public results | PXD002911,4,Published differential-protein result | Published participant-level comparison | Study-reported annotation
-Protein accumulation,2,Article table 1 | PXD002911,4,Published participant-level comparison | Study-reported group result
+Protein accumulation,2,Article Fig. 1A and Supplementary Fig. S3 | Article table 1,4,Published concentration measurements using the Bradford assay (Fig. 1A and Supplementary Fig. S3) | Published routine clinical concentration comparison (Table 1; assay method not specified)
 Protein handling and neural structure,1,Article-level public results,2,Published discovery result | Published validation result
 Reference,1,PXD002911,1,Study-reported group result
 Structural proteolysis,1,PXD002911,2,Study-reported annotation | Study-reported group result

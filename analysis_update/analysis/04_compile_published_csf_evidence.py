@@ -19,7 +19,7 @@ def main() -> None:
     evidence = pd.read_csv(SRC / "CSF_published_evidence.csv")
 
     required = {
-        "study", "resource", "cohort", "platform", "feature", "result",
+        "study", "resource", "cohort", "assay_type", "feature", "result",
         "program", "inference_level", "source",
     }
     missing = required.difference(evidence.columns)

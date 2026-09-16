@@ -54,7 +54,7 @@ def main():
     same(bh_adjust(corr.p_value),corr.fdr_BH_10_pairs)
     clinical=pd.read_csv(OUT/'cidp_clinical_correlations_with_fdr.csv')
     same(bh_adjust(clinical.p_value),clinical.fdr_BH_15_tests)
-    report={'release':'2.1.0','manuscript':'v37','status':'passed',
+    report={'release':'2.3.1','manuscript':'revised 16 September 2026','status':'passed',
         'blood_meta_modules_recalculated':len(expected),'leave_one_cohort_out_estimates_checked':len(loco),
         'published_CSF_coefficient_pairs_pooled':len(csf),'published_52_of_55_Wilson_interval_checked':True,
         'nerve_module_P_value_corrections_checked':len(modules),
@@ -62,7 +62,7 @@ def main():
         'clinical_P_value_corrections_checked':len(clinical),
         'raw_matrix_pipeline_rerun':False,'donor_level_tests_rerun':False,
         'donor_bootstrap_rerun':False,'correlation_coefficients_recalculated':False}
-    (ROOT/'metadata/PUBLIC_SUMMARY_REPRODUCTION.json').write_text(json.dumps(report,indent=2)+'\n')
+    (ROOT.parent/'metadata/PUBLIC_SUMMARY_REPRODUCTION_v2.3.1.json').write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report))
 
 if __name__=='__main__': main()

@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="540pt" height="302.4pt" viewBox="0 0 540 302.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-16T08:25:14.803853</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 302.4 
+L 540 302.4 
+L 540 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 12.42 72.43236 
+L 113.69376 72.43236 
+L 113.69376 32.3568 
+L 12.42 32.3568 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #e9edef; stroke: #ffffff; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 113.69376 72.43236 
+L 245.81232 72.43236 
+L 245.81232 32.3568 
+L 113.69376 32.3568 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #e9edef; stroke: #ffffff; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 245.81232 72.43236 
+L 369.19152 72.43236 
+L 369.19152 32.3568 
+L 245.81232 32.3568 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #e9edef; stroke: #ffffff; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 369.19152 72.43236 
+L 526.5 72.43236 
+L 526.5 32.3568 
+L 369.19152 32.3568 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #e9edef; stroke: #ffffff; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 12.42 106.569304 
+L 113.69376 106.569304 
+L 113.69376 72.43236 
+L 12.42 72.43236 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #f5f7f8; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 113.69376 106.569304 
+L 245.81232 106.569304 
+L 245.81232 72.43236 
+L 113.69376 72.43236 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #f5f7f8; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 245.81232 106.569304 
+L 369.19152 106.569304 
+L 369.19152 72.43236 
+L 245.81232 72.43236 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #f5f7f8; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 369.19152 106.569304 
+L 526.5 106.569304 
+L 526.5 72.43236 
+L 369.19152 72.43236 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #f5f7f8; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 12.42 140.706248 
+L 113.69376 140.706248 
+L 113.69376 106.569304 
+L 12.42 106.569304 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #ffffff; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 113.69376 140.706248 
+L 245.81232 140.706248 
+L 245.81232 106.569304 
+L 113.69376 106.569304 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #ffffff; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 245.81232 140.706248 
+L 369.19152 140.706248 
+L 369.19152 106.569304 
+L 245.81232 106.569304 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #ffffff; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 369.19152 140.706248 
+L 526.5 140.706248 
+L 526.5 106.569304 
+L 369.19152 106.569304 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #ffffff; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 12.42 174.843191 
+L 113.69376 174.843191 
+L 113.69376 140.706248 
+L 12.42 140.706248 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #f5f7f8; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 113.69376 174.843191 
+L 245.81232 174.843191 
+L 245.81232 140.706248 
+L 113.69376 140.706248 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #f5f7f8; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 245.81232 174.843191 
+L 369.19152 174.843191 
+L 369.19152 140.706248 
+L 245.81232 140.706248 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #f5f7f8; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 369.19152 174.843191 
+L 526.5 174.843191 
+L 526.5 140.706248 
+L 369.19152 140.706248 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #f5f7f8; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 12.42 222.634913 
+L 113.69376 222.634913 
+L 113.69376 174.843191 
+L 12.42 174.843191 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #ffffff; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 113.69376 222.634913 
+L 245.81232 222.634913 
+L 245.81232 174.843191 
+L 113.69376 174.843191 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #ffffff; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 245.81232 222.634913 
+L 369.19152 222.634913 
+L 369.19152 174.843191 
+L 245.81232 174.843191 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #ffffff; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 369.19152 222.634913 
+L 526.5 222.634913 
+L 526.5 174.843191 
+L 369.19152 174.843191 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #ffffff; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 12.42 256.771856 
+L 113.69376 256.771856 
+L 113.69376 222.634913 
+L 12.42 222.634913 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #f5f7f8; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 113.69376 256.771856 
+L 245.81232 256.771856 
+L 245.81232 222.634913 
+L 113.69376 222.634913 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #f5f7f8; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 245.81232 256.771856 
+L 369.19152 256.771856 
+L 369.19152 222.634913 
+L 245.81232 222.634913 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #f5f7f8; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 369.19152 256.771856 
+L 526.5 256.771856 
+L 526.5 222.634913 
+L 369.19152 222.634913 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #f5f7f8; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 12.42 290.9088 
+L 113.69376 290.9088 
+L 113.69376 256.771856 
+L 12.42 256.771856 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #ffffff; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 113.69376 290.9088 
+L 245.81232 290.9088 
+L 245.81232 256.771856 
+L 113.69376 256.771856 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #ffffff; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 245.81232 290.9088 
+L 369.19152 290.9088 
+L 369.19152 256.771856 
+L 245.81232 256.771856 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #ffffff; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 369.19152 290.9088 
+L 526.5 290.9088 
+L 526.5 256.771856 
+L 369.19152 256.771856 
+z
+" clip-path="url(#pdd64e424bb)" style="fill: #ffffff; stroke: #dce1e4; stroke-width: 0.45; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="63.05688" y="54.69758" transform="rotate(-0 63.05688 54.69758)">Programme</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="54.702174" transform="rotate(-0 179.75304 54.702174)">Blood</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="54.702174" transform="rotate(-0 307.50192 54.702174)">CSF</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="54.775674" transform="rotate(-0 447.84576 54.775674)">Peripheral nerve</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif" transform="translate(18.58896 87.301682)">CXCL8</text>
+    <text style="font-size: 9px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif" transform="translate(18.58896 95.893419)">recruitment</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="79.566159" transform="rotate(-0 179.75304 79.566159)">Whole blood test</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="91.525863" transform="rotate(-0 179.75304 91.525863)">q = 0.045</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="103.452293" transform="rotate(-0 179.75304 103.452293)">Pooled P = 0.114</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="79.626277" transform="rotate(-0 307.50192 79.626277)">Published findings</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="91.504363" transform="rotate(-0 307.50192 91.504363)">Innate immune and</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="103.448262" transform="rotate(-0 307.50192 103.448262)">inflammatory proteins</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="79.630284" transform="rotate(-0 447.84576 79.630284)">Expression context</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="91.500332" transform="rotate(-0 447.84576 91.500332)">Myeloid genes and</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="103.448262" transform="rotate(-0 447.84576 103.448262)">endothelial trafficking</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start" x="18.58896" y="125.734494" transform="rotate(-0 18.58896 125.734494)">Complement</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="113.703103" transform="rotate(-0 179.75304 113.703103)">Whole blood test</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="125.64601" transform="rotate(-0 179.75304 125.64601)">q = 0.0076</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="137.589237" transform="rotate(-0 179.75304 137.589237)">Pooled P = 0.234</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="119.737185" transform="rotate(-0 307.50192 119.737185)">Published findings</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="131.615272" transform="rotate(-0 307.50192 131.615272)">Complement proteins</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="119.741193" transform="rotate(-0 447.84576 119.741193)">Expression localisation</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="131.611241" transform="rotate(-0 447.84576 131.611241)">Macrophage complement genes</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 9px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start" x="18.58896" y="159.871438" transform="rotate(-0 18.58896 159.871438)">Fc receptor</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="147.840047" transform="rotate(-0 179.75304 147.840047)">Whole blood test</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="159.778251" transform="rotate(-0 179.75304 159.778251)">q = 0.038</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="171.726181" transform="rotate(-0 179.75304 171.726181)">Mixed cohort directions</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="159.787977" transform="rotate(-0 307.50192 159.787977)">Not assessed</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="147.836039" transform="rotate(-0 447.84576 147.836039)">Macrophage test</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="159.778251" transform="rotate(-0 447.84576 159.778251)">q = 0.0087 within 8 modules</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="171.726181" transform="rotate(-0 447.84576 171.726181)">q = 0.087 across 80 tests</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 9px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif" transform="translate(18.58896 196.539902)">Interferon</text>
+    <text style="font-size: 9px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif" transform="translate(18.58896 205.131639)">response</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="184.025207" transform="rotate(-0 179.75304 184.025207)">Whole blood test</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="200.764083" transform="rotate(-0 179.75304 200.764083)">q = 0.045</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="217.469686" transform="rotate(-0 179.75304 217.469686)">Mixed cohort directions</text>
+   </g>
+   <g id="text_35">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="192.388758" transform="rotate(-0 307.50192 192.388758)">Published annotation</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="209.106134" transform="rotate(-0 307.50192 209.106134)">Antiviral defence</text>
+   </g>
+   <g id="text_37">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="184.025207" transform="rotate(-0 447.84576 184.025207)">Published atlas markers [27]</text>
+   </g>
+   <g id="text_38">
+    <!-- $\mathit{OAS1}$ and $\mathit{MX1}$ localisation -->
+    <g transform="translate(400.15876 195.166882)">
+     <text>
+      <tspan x="0" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">O</tspan>
+      <tspan x="6.227249" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">A</tspan>
+      <tspan x="11.497116" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">S</tspan>
+      <tspan x="36.828293" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">M</tspan>
+      <tspan x="44.012909" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">X</tspan>
+      <tspan x="15.809616" y="-0.796875" style="font-size: 8.6px; font-family: 'STIXGeneral'">1</tspan>
+      <tspan x="49.282776" y="-0.796875" style="font-size: 8.6px; font-family: 'STIXGeneral'">1</tspan>
+      <tspan x="20.122116" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'"> </tspan>
+      <tspan x="22.270538" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">a</tspan>
+      <tspan x="26.086151" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">n</tspan>
+      <tspan x="30.383011" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">d</tspan>
+      <tspan x="34.679871" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'"> </tspan>
+      <tspan x="53.595276" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'"> </tspan>
+      <tspan x="55.743698" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">l</tspan>
+      <tspan x="58.132751" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">o</tspan>
+      <tspan x="62.429611" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">c</tspan>
+      <tspan x="66.245224" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">a</tspan>
+      <tspan x="70.060837" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">l</tspan>
+      <tspan x="72.44989" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">i</tspan>
+      <tspan x="74.838943" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">s</tspan>
+      <tspan x="78.1819" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">a</tspan>
+      <tspan x="81.997513" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">t</tspan>
+      <tspan x="84.386566" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">i</tspan>
+      <tspan x="86.77562" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">o</tspan>
+      <tspan x="91.072479" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">n</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_39">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="206.328011" transform="rotate(-0 447.84576 206.328011)">Published PNP versus control [27]</text>
+   </g>
+   <g id="text_40">
+    <!-- Lower $\mathit{MX1}$ in nmSC -->
+    <g transform="translate(410.90876 217.469686)">
+     <text>
+      <tspan x="0" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">L</tspan>
+      <tspan x="5.250763" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">o</tspan>
+      <tspan x="9.547623" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">w</tspan>
+      <tspan x="15.752289" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">e</tspan>
+      <tspan x="19.567902" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">r</tspan>
+      <tspan x="22.429611" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'"> </tspan>
+      <tspan x="41.345016" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'"> </tspan>
+      <tspan x="43.493439" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">i</tspan>
+      <tspan x="45.882492" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">n</tspan>
+      <tspan x="50.179352" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'"> </tspan>
+      <tspan x="52.327774" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">n</tspan>
+      <tspan x="56.624634" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">m</tspan>
+      <tspan x="63.310562" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">S</tspan>
+      <tspan x="68.088669" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">C</tspan>
+      <tspan x="24.578033" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">M</tspan>
+      <tspan x="31.76265" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">X</tspan>
+      <tspan x="37.032516" y="-0.796875" style="font-size: 8.6px; font-family: 'STIXGeneral'">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 9px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif" transform="translate(18.58896 237.504234)">Endothelial</text>
+    <text style="font-size: 9px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif" transform="translate(18.58896 246.095972)">adhesion</text>
+   </g>
+   <g id="text_42">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="229.828829" transform="rotate(-0 179.75304 229.828829)">Migration module test</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="241.711619" transform="rotate(-0 179.75304 241.711619)">Whole blood q = 0.126</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="253.654846" transform="rotate(-0 179.75304 253.654846)">Mixed cohort directions</text>
+   </g>
+   <g id="text_45">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="241.716642" transform="rotate(-0 307.50192 241.716642)">Not assessed</text>
+   </g>
+   <g id="text_46">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="235.806802" transform="rotate(-0 447.84576 235.806802)">Expression localisation</text>
+   </g>
+   <g id="text_47">
+    <!-- $\mathit{ICAM1}$ and $\mathit{VCAM1}$ in BNB EC -->
+    <g transform="translate(392.03176 247.680881)">
+     <text>
+      <tspan x="0" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">I</tspan>
+      <tspan x="2.872116" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">C</tspan>
+      <tspan x="8.624985" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">A</tspan>
+      <tspan x="13.894852" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">M</tspan>
+      <tspan x="42.098145" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">V</tspan>
+      <tspan x="47.368011" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">C</tspan>
+      <tspan x="53.12088" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">A</tspan>
+      <tspan x="58.390747" y="-0.796875" style="font-style: italic; font-size: 8.6px; font-family: 'STIXGeneral'">M</tspan>
+      <tspan x="21.079468" y="-0.796875" style="font-size: 8.6px; font-family: 'STIXGeneral'">1</tspan>
+      <tspan x="65.575363" y="-0.796875" style="font-size: 8.6px; font-family: 'STIXGeneral'">1</tspan>
+      <tspan x="25.391968" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'"> </tspan>
+      <tspan x="27.54039" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">a</tspan>
+      <tspan x="31.356003" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">n</tspan>
+      <tspan x="35.652863" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">d</tspan>
+      <tspan x="39.949722" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'"> </tspan>
+      <tspan x="69.887863" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'"> </tspan>
+      <tspan x="72.036285" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">i</tspan>
+      <tspan x="74.425339" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">n</tspan>
+      <tspan x="78.722198" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'"> </tspan>
+      <tspan x="80.870621" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">B</tspan>
+      <tspan x="86.602631" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">N</tspan>
+      <tspan x="92.807297" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">B</tspan>
+      <tspan x="98.539307" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'"> </tspan>
+      <tspan x="100.687729" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">E</tspan>
+      <tspan x="105.938492" y="-0.796875" style="font-size: 8.6px; font-family: 'Nimbus Roman'">C</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 9px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif" transform="translate(18.58896 271.641178)">Schwann</text>
+    <text style="font-size: 9px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif" transform="translate(18.58896 280.232916)">repair</text>
+   </g>
+   <g id="text_49">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="179.75304" y="275.853586" transform="rotate(-0 179.75304 275.853586)">Not assessed</text>
+   </g>
+   <g id="text_50">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="263.965773" transform="rotate(-0 307.50192 263.965773)">Published findings</text>
+   </g>
+   <g id="text_51">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="275.843859" transform="rotate(-0 307.50192 275.843859)">Axonal domain peptide</text>
+   </g>
+   <g id="text_52">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="307.50192" y="287.787758" transform="rotate(-0 307.50192 287.787758)">degradation</text>
+   </g>
+   <g id="text_53">
+    <text style="font-weight: 700; font-size: 8.55px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="269.943746" transform="rotate(-0 447.84576 269.943746)">Expression localisation</text>
+   </g>
+   <g id="text_54">
+    <text style="font-size: 8.6px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="447.84576" y="281.813793" transform="rotate(-0 447.84576 281.813793)">Schwann repair and stress genes</text>
+   </g>
+  </g>
+  <g id="text_55">
+   <text style="font-weight: 700; font-size: 15px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start" x="12.42" y="15.7248" transform="rotate(-0 12.42 15.7248)">A</text>
+  </g>
+  <g id="text_56">
+   <text style="font-weight: 700; font-size: 12px; font-family: 'Nimbus Roman', 'Times New Roman', 'DejaVu Serif', serif; text-anchor: start" x="33.48" y="15.7248" transform="rotate(-0 33.48 15.7248)">Evidence types across compartments</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdd64e424bb">
+   <rect x="12.42" y="32.3568" width="514.08" height="258.552"/>
+  </clipPath>
+ </defs>
+</svg>

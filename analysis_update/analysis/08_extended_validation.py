@@ -100,13 +100,14 @@ def external_nerve_validation():
     half = z*math.sqrt(phat*(1-phat)/n + z*z/(4*n*n))/den
     rows = [
         ("C5b-9 deposition", "Endoneurial capillaries", "52/55 biopsies", phat, ctr-half, ctr+half),
-        ("C3 and C6 abundance", "Sural nerve proteome", "Increased in CIDP", np.nan, np.nan, np.nan),
+        ("C3, C5, C6 and C9 abundance", "Sural nerve proteome", "Higher C3, C5 and C9 abundance. C6 was elevated in only two CIDP cases.", np.nan, np.nan, np.nan),
         ("CD68+ macrophages", "Endoneurium", "Cellular infiltration observed", np.nan, np.nan, np.nan),
         ("CD8+ T cells", "Endoneurium", "Cellular infiltration observed", np.nan, np.nan, np.nan),
     ]
     out = pd.DataFrame(rows, columns=["feature","localization","published_result","proportion","ci_low","ci_high"])
     out["source"] = "Stascheit et al. 2025; doi:10.1007/s00401-025-02936-w; PXD056286"
     out["inference_level"] = "published external tissue observations"
+    out.loc[out.feature.eq("C3, C5, C6 and C9 abundance"), "inference_level"] = "Published proteomic observations in a subset of 9 CIDP cases and 2 controls"
     out.to_csv(OUT / "cidp_external_nerve_validation.csv", index=False)
     return out
 

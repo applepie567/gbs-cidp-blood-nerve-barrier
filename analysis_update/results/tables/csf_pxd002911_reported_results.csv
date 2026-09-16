@@ -1,5 +1,5 @@
 Group or comparison,Data type,Reported count or percentage,Unit,Published interpretation,Inference level,Source URL
-AIDP,Proteome,1402.0,identified proteins,Broadly increased CSF protein representation,Group-level reported result,https://doi.org/10.1074/mcp.M115.056036
+AIDP,Proteome,1402.0,identified proteins,Proteome identification count; not a concentration measurement,Group-level reported result,https://doi.org/10.1074/mcp.M115.056036
 Control,Proteome,1103.0,identified proteins,Reference proteome,Group-level reported result,https://doi.org/10.1074/mcp.M115.056036
 AIDP,Peptidome,2355.0,peptide fragments,Fragments related to 795 proteins,Group-level reported result,https://doi.org/10.1074/mcp.M115.056036
 Multiple sclerosis,Peptidome,1066.0,peptide fragments,Inflammatory CNS comparator,Group-level reported result,https://doi.org/10.1074/mcp.M115.056036

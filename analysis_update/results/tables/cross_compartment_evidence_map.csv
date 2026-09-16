@@ -1,7 +1,7 @@
-Program,Blood evidence,CSF evidence,Peripheral-nerve evidence,Manuscript interpretation
-CXCL8 recruitment,"Positive in all 3 cohorts, with whole blood FDR<0.05",Published innate immune and inflammatory protein findings,Myeloid localization and endothelial trafficking context,Shared recruitment hypothesis
-Complement,"Positive in all 3 cohorts, with whole blood FDR<0.01",Published complement protein findings,Macrophage localization,Humoral amplification across compartments
-Fc receptor,"Whole blood FDR<0.05, with mixed directions across cohorts",Not directly evaluated,Macrophage module FDR=0.0087,Clearest corrected difference in nerve
-Interferon response,"Whole blood FDR<0.05, with mixed directions across cohorts",Published evidence of antiviral defense,"Macrophage, endothelial and Schwann cell states",Response varies by compartment
-Endothelial adhesion,Positive blood direction,Not directly evaluated,ICAM1 and VCAM1 localization to BNB endothelial cells,BNB as a potential site of signal reception
-Schwann repair,Not evaluated,Published evidence of axonal domain peptide degradation,Repair and stress programs localized to Schwann cells,Proposed link between structural injury and repair
+Program,Blood evidence,CSF evidence,Peripheral nerve evidence,Interpretation
+CXCL8 recruitment,Positive in 3 cohorts. Pooled P = 0.114. Whole blood q < 0.05,Published innate immune and inflammatory protein findings,Myeloid localisation and endothelial trafficking context,Recurring recruitment expression
+Complement,Positive in 3 cohorts. Pooled P = 0.234. Whole blood q < 0.01,Published complement protein findings,Macrophage localisation,Complement gene and protein findings
+Fc receptor,"Whole blood q < 0.05, with mixed directions across cohorts",Not directly evaluated,Macrophage q = 0.0087 within eight modules and q = 0.087 across 80 nerve comparisons,"Lower macrophage score, attenuated after composition adjustment"
+Interferon response,"Whole blood q < 0.05, with mixed directions across cohorts",Published evidence of antiviral defence,Published OAS1 enrichment in macrophages and MX1 enrichment in arterial endothelial cells. Published lower MX1 in nonmyelinating Schwann cells in PNP versus controls [27].,"Published gene level expression context. Source atlas markers and PNP versus control results from Heming et al., Supplementary Data 3 and 9. A dedicated nerve interferon module was not tested in CIDP versus CIAP. PNP denotes polyneuropathy."
+Endothelial adhesion,"Migration module q = 0.126 in whole blood. Positive in whole blood and leukocytes, negative in monocytes",Not directly evaluated,ICAM1 and VCAM1 localisation to BNB endothelial cells,Endothelial expression of adhesion genes
+Schwann repair,Not evaluated,Published evidence of axonal domain peptide degradation,Repair and stress programmes localised to Schwann cells,Structural injury and Schwann cell repair context

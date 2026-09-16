@@ -16,7 +16,7 @@ def main() -> None:
 
     required = {
         "Program", "Blood evidence", "CSF evidence",
-        "Peripheral-nerve evidence", "Manuscript interpretation",
+        "Peripheral nerve evidence", "Interpretation",
     }
     missing = required.difference(mapping.columns)
     if missing:

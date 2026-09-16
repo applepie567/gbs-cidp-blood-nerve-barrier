@@ -156,56 +156,8 @@ CELL_LABELS=['B cell','Macrophage','BNB EC','Pericyte/VSMC','Perineurium','Endon
 GENES=['CDH4','DIRAS1','GNG7','SLC39A3']
 
 def figure5():
-    f=plt.figure(figsize=(7.5,7.75));a=f.add_axes([.22,.60,.28,.315]);b=f.add_axes([.74,.632,.215,.283])
-    cc=f.add_axes([.025,.085,.475,.365]);dd=f.add_axes([.74,.13,.215,.32])
-    header(f,.025,.955,'A','Cross-compartment evidence');header(f,.555,.955,'B','CIDP nerve localization')
-    header(f,.025,.488,'C','Published genetic evidence');header(f,.555,.488,'D','CIDP–CIAP expression')
-    states=np.array([[2,1,1],[2,1,2],[2,0,2],[2,1,2],[1,0,2],[0,1,2]])
-    a.imshow(states,cmap=ListedColormap(['#eef1f3','#f2c49c',TEAL]),vmin=0,vmax=2,aspect='auto')
-    for i in range(6):
-        for j in range(3):
-            if states[i,j]==2:a.scatter(j,i,s=52,color='white',edgecolor='white')
-            elif states[i,j]==1:a.scatter(j,i,s=52,facecolor='none',edgecolor='#303b41',linewidth=.9)
-            else:a.text(j,i,'–',ha='center',va='center',fontsize=15)
-    a.set_yticks(range(6),['CXCL8\nrecruitment','Complement','Fc receptor','Interferon\nresponse','Endothelial\nadhesion','Schwann\nrepair'],fontsize=10)
-    a.set_xticks(range(3),['Blood','CSF','Peripheral\nnerve'],fontsize=10)
-    a.set_xticks(np.arange(-.5,3),minor=True);a.set_yticks(np.arange(-.5,6),minor=True);a.grid(which='minor',color='white',lw=1.6)
-    a.tick_params(which='both',length=0);a.spines[:].set_visible(False)
-    g=pd.read_csv(SRC/'Genetic_celltype_summary.csv');g=g[(g.disease=='CIDP')&g.gene.isin(GENES)&g.cell_group.isin(CELLS)]
-    for _,r in g.iterrows():
-        b.scatter(GENES.index(r.gene),CELLS.index(r.cell_group),s=13+1.05*r.mean_percent_expressing,
-                  c=[r.mean_expression],cmap='YlOrRd',vmin=0,vmax=1.55,edgecolors='#697277',linewidth=.35)
-    b.set_ylim(9.6,-.6);b.set_xlim(-.45,3.45);b.set_yticks(range(10),CELL_LABELS,fontsize=9.5)
-    b.set_xticks(range(4),GENES,fontsize=9.7,rotation=42,ha='right',fontstyle='italic');b.tick_params(length=0);b.spines[:].set_visible(False)
-    cb=f.colorbar(plt.cm.ScalarMappable(norm=Normalize(0,1.55),cmap='YlOrRd'),cax=f.add_axes([.74,.550,.215,.011]),orientation='horizontal',ticks=[0,.5,1,1.5])
-    cb.ax.tick_params(labelsize=9,pad=1,length=2)
-    cc.set_axis_off()
-    rows=[('CDH4','GWAS in women','OR 4.37',ORANGE),
-          ('DIRAS1','MR + colocalization','β −0.45 · PP.H4 0.94',BLUE),
-          ('GNG7','MR + colocalization','β −2.11 · PP.H4 0.93',BLUE),
-          ('SLC39A3','MR + colocalization','β −1.42 · PP.H4 0.87',BLUE)]
-    for i,(gene,method,est,col) in enumerate(rows):
-        yy=.82-i*.235
-        cc.add_patch(FancyBboxPatch((.0,yy-.105),.99,.20,boxstyle='round,pad=.003,rounding_size=.013',
-                                     edgecolor='#d6dce0',facecolor='#f7f9fa',lw=.7))
-        cc.text(.04,yy+.025,gene,fontsize=11.5,fontweight='bold',fontstyle='italic',va='center')
-        cc.text(.40,yy+.030,method,fontsize=10,fontweight='bold',va='center')
-        cc.text(.40,yy-.038,est,fontsize=10,va='center')
-    dif=pd.read_csv(SRC/'Genetic_CIDP_vs_CIAP.csv');dif=dif[dif.gene.isin(GENES)&dif.cell_group.isin(CELLS)]
-    v=dif.pivot(index='cell_group',columns='gene',values='delta_mean').loc[CELLS,GENES].values
-    q=dif.pivot(index='cell_group',columns='gene',values='fdr_within_cell_group').loc[CELLS,GENES].values
-    lim=np.ceil(np.max(np.abs(v))*10)/10
-    ii=dd.imshow(v,cmap='RdBu_r',vmin=-lim,vmax=lim,aspect='auto')
-    dd.set_yticks(range(10),CELL_LABELS,fontsize=9.5);dd.set_xticks(range(4),GENES,rotation=42,ha='right',fontsize=9.7,fontstyle='italic')
-    dd.set_xticks(np.arange(-.5,4),minor=True);dd.set_yticks(np.arange(-.5,10),minor=True);dd.grid(which='minor',color='white',lw=.7)
-    dd.tick_params(which='both',length=0);dd.spines[:].set_visible(False)
-    for i,j in zip(*np.where(q<.05)):dd.text(j,i,'*',ha='center',va='center',fontsize=12)
-    cb2=f.colorbar(ii,cax=f.add_axes([.74,.025,.215,.011]),orientation='horizontal',ticks=[-lim,0,lim]);cb2.ax.tick_params(labelsize=9,pad=1,length=2)
-    audit['Figure_5D']={'source':'Genetic_CIDP_vs_CIAP.csv','genes':GENES,'cell_groups':CELLS,
-                       'n_tests_displayed':40,'FDR_significant':int((q<.05).sum()),'color_range':[-lim,lim]}
-    dif.to_csv(SRC/'Figure_5D_genetic_expression_contrasts.csv',index=False)
-    save(f,5,'cross_compartment_genetics')
-
+    from redraw_figures_4_5 import make5
+    make5()
 
 if __name__ == "__main__":
     figure1(); figure2(); figure5()
