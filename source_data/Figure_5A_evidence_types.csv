@@ -1,0 +1,19 @@
+programme,compartment,evidence_type,display_text,ordinal_evidence_rank
+CXCL8 recruitment,Blood,Whole blood test,Whole blood test | q = 0.045 | Pooled P = 0.114,not applicable
+CXCL8 recruitment,CSF,Published findings,Published findings | Innate immune and | inflammatory proteins,not applicable
+CXCL8 recruitment,Peripheral nerve,Expression context,Expression context | Myeloid genes and | endothelial trafficking,not applicable
+Complement,Blood,Whole blood test,Whole blood test | q = 0.0076 | Pooled P = 0.234,not applicable
+Complement,CSF,Published findings,Published findings | Complement proteins,not applicable
+Complement,Peripheral nerve,Expression localisation,Expression localisation | Macrophage complement genes,not applicable
+Fc receptor,Blood,Whole blood test,Whole blood test | q = 0.038 | Mixed cohort directions,not applicable
+Fc receptor,CSF,Not assessed,Not assessed,not applicable
+Fc receptor,Peripheral nerve,Macrophage test,Macrophage test | q = 0.0087 within 8 modules | q = 0.087 across 80 tests,not applicable
+Interferon response,Blood,Whole blood test,Whole blood test | q = 0.045 | Mixed cohort directions,not applicable
+Interferon response,CSF,Published annotation,Published annotation | Antiviral defence,not applicable
+Interferon response,Peripheral nerve,Published atlas markers [27],Published atlas markers [27] | OAS1 and MX1 localisation | Published PNP versus control [27] | Lower MX1 in nmSC,not applicable
+Endothelial adhesion,Blood,Migration module test,Migration module test | Whole blood q = 0.126 | Mixed cohort directions,not applicable
+Endothelial adhesion,CSF,Not assessed,Not assessed,not applicable
+Endothelial adhesion,Peripheral nerve,Expression localisation,Expression localisation | ICAM1 and VCAM1 in BNB EC,not applicable
+Schwann repair,Blood,Not assessed,Not assessed,not applicable
+Schwann repair,CSF,Published findings,Published findings | Axonal domain peptide | degradation,not applicable
+Schwann repair,Peripheral nerve,Expression localisation,Expression localisation | Schwann repair and stress genes,not applicable

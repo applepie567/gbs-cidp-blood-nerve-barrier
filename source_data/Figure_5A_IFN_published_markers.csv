@@ -1,0 +1,4 @@
+evidence_type,source_table,source_file,source_sheet,source_excel_row,gene,avg_log2FC,p_val,p_val_adj,pct.1,pct.2,percent_detected_in_cluster,percent_detected_in_other_nuclei,source_adjusted_p_below_0_05
+main_cluster_marker,Supplementary Data 3,41467_2025_62964_MOESM5_ESM.xlsx,artEC,357,MX1,1.948658955456857,0.0,0.0,0.325,0.08,32.5,8.0,True
+main_cluster_marker,Supplementary Data 3,41467_2025_62964_MOESM5_ESM.xlsx,Macro1,644,OAS1,2.220350678187535,4.119841933329263e-280,9.626010677223824e-276,0.26,0.033,26.0,3.3000000000000003,True
+main_cluster_marker,Supplementary Data 3,41467_2025_62964_MOESM5_ESM.xlsx,Macro2,469,OAS1,2.415025488192911,0.0,0.0,0.134,0.03,13.4,3.0,True
