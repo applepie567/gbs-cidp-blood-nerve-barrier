@@ -1,44 +1,38 @@
 # Immune gene and protein profiles across blood, cerebrospinal fluid and peripheral nerve in inflammatory neuropathies
 
-Release **v2.3.0** accompanies the Human Genomics submission manuscript **v42** (7 September 2026).
+Release **v2.3.1** contains the source-verified revision dated **16 September 2026**.
 
-Archive: [DOI 10.5281/zenodo.22641099](https://doi.org/10.5281/zenodo.22641099). GitHub: [v2.3.0 release](https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/releases/tag/v2.3.0).
+[GitHub release](https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/releases/tag/v2.3.1) · [Zenodo version series](https://doi.org/10.5281/zenodo.22226672)
 
-| Material | Location |
+| Material | Current location |
 |---|---|
-| Current manuscript with five embedded figures and three editable tables | [Word](GBS_CIDP_Human_Genomics_v42.docx) and [PDF](GBS_CIDP_Human_Genomics_v42.pdf) |
-| Current graphical abstract | [PNG](graphical_abstract/GBS_CIDP_Human_Genomics_graphical_abstract.png) |
-| Historical v41 text manuscript | [Word](GBS_CIDP_v41_strengthened.docx) and [PDF](GBS_CIDP_v41_strengthened.pdf) |
-| Five main figures and Supplementary Figures 1 and 2 | `analysis_update/figures/` |
+| Revised manuscript with five embedded figures and three tables | [Word](GBS_CIDP_Manuscript_v2.3.1.docx) · [PDF](GBS_CIDP_Manuscript_v2.3.1.pdf) |
+| Public source workbook (49 worksheets) | [Additional file 1](supplementary/Additional_file_1_Source_Data.xlsx) |
+| Supplementary methods | [Word](supplementary/Additional_file_2_Methods.docx) · [PDF](supplementary/Additional_file_2_Methods.pdf) |
+| Supplementary figures and legends | [Word](supplementary/Additional_file_3_Figures.docx) · [PDF](supplementary/Additional_file_3_Figures.pdf) |
+| Main figures and Supplementary Figures 1 and 2 | `analysis_update/figures/` |
 | Supplementary Figures 3 and 4 | `strengthening_v41/figures/` |
-| Three tables | `tables/` |
-| Public workbook, 49 worksheets | `supplementary/Supplementary_Data_1_v41.xlsx` |
-| Supplementary methods and figure legends | `supplementary/` |
-| Original aggregate figure source tables | `analysis_update/source_data/` and `analysis_update/results/tables/` |
-| Added aggregate source tables and new input manifest | `strengthening_v41/results/` |
-| Original input file names, databases and source URLs | `metadata/original_input_files.csv` and the workbook |
-| Changes and interpretation | `metadata/RELEASE_NOTES_v2.3.0.md` |
+| Revised Table 3 | `tables/Table_3_v2.3.1.docx` and `.csv` |
+| Aggregate plot inputs, including revised Figures 4A, 5A and 5B | `analysis_update/source_data/` |
+| Original source access records | `metadata/original_input_files.csv` and the workbook |
+| Changes and interpretation | [Release notes](metadata/RELEASE_NOTES_v2.3.1.md) |
 
-The v42 manuscript supersedes the v41 manuscript files retained in this repository. The v41 supplementary workbook and figures continue to accompany v42. Supplementary Methods retains its v41 filename, with the archive links updated. Analysis results are unchanged from v2.2.0.
+The v2.3.1 files above supersede the older v41/v42 manuscript and supplementary files retained for provenance. The revised nerve interferon entries distinguish published atlas markers from the source polyneuropathy comparison. Figure 5A reports evidence types rather than a cross-tissue evidence ranking. CSF protein identification counts are not used as evidence of concentration increases.
 
 ## Reproduction
 
-The scripts and frozen aggregate results are included. See [the v41 instructions](strengthening_v41/README.md) and Supplementary Methods for required original inputs and limitations. Supplementary Figures 3 and 4 can be regenerated from the aggregate tables:
-
 ```bash
-python strengthening_v41/plot_strengthening.py --results strengthening_v41/results --out regenerated_figures
+pip install -r analysis_update/requirements.txt
+python analysis_update/analysis/run_v231_figures.py
+python analysis_update/analysis/13_verify_public_summaries.py
 ```
 
-The plotting script requires Times New Roman and its recorded Python dependencies. Adapt font paths for a different machine. Earlier figure scripts are under `analysis_update/analysis/`, including `run_v39_figures.py`. The legacy `run_v2_release.py` refers to the older release layout and is retained for provenance, not as the current package entry point.
-
-Full donor analyses require local reconstruction from original data. The new downloader retrieves the 20 matrices used for annotation reaggregation, the annotation files and eight spatial matrices. The other 17 nerve matrices are also needed to reconstruct the original 37 donor standardisation. Full genetic localization reconstruction requires the additional intermediate described in Supplementary Methods.
+The current plotting entry point recreates Figures 3–5 and standalone revised panels from the included aggregate tables. SVG text is editable; PDF fonts are embedded. Supplementary Figures 3 and 4 retain their aggregate plotting workflow in `strengthening_v41/`. Earlier figure entry points route revised panels to the current plotting functions. Full donor analyses require the original matrices and intermediate reconstruction documented in Additional file 2.
 
 ## Interpretation and distribution
 
-The added tests are exploratory. The Fc association weakens with broader multiplicity correction and composition adjustment. No independent external cohort validation or functional experiment was completed. The spatial panel does not cover the Fc genes.
+Blood pooled effects remain non-significant. The macrophage Fc association weakens under correction across all 80 nerve comparisons (q = 0.087) and composition adjustment. No independent external validation or new functional experiment is claimed.
 
-Only aggregate results and source access documentation are redistributed. Donor expression and clinical intermediates and the private author archive are excluded. Earlier source acquisition dates were not recorded and have not been invented.
+Only aggregate results and source access documentation are redistributed. Donor expression and clinical intermediates, the private author archive and manuscript Additional file 4 are excluded from this public repository. No original acquisition dates have been invented. The manuscript is a revised research draft; final journal and institutional requirements remain the authors' responsibility.
 
-Prior release records include [the manual v2.1.0 archive](https://doi.org/10.5281/zenodo.22561445) and [its GitHub mirror](https://doi.org/10.5281/zenodo.22563142). The concept DOI [10.5281/zenodo.22226672](https://doi.org/10.5281/zenodo.22226672) represents all versions. Cite the specific version used for an analysis.
-
-Code is MIT licensed. Project derived data and figures are CC BY 4.0 under `LICENSE-DATA`. External materials retain their original terms.
+The concept DOI links the complete version series. The GitHub release page identifies the corresponding version-specific Zenodo record when available. Code is MIT licensed. Project-derived data and figures are CC BY 4.0 under `LICENSE-DATA`. External materials retain their original terms.

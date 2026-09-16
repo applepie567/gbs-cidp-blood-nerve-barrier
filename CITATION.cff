@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "Please cite the associated article and the archived version of this repository."
 title: "Immune gene and protein profiles across blood, cerebrospinal fluid and peripheral nerve in inflammatory neuropathies"
-version: 2.3.0
-date-released: 2026-09-07
-doi: "10.5281/zenodo.22641099"
+version: 2.3.1
+date-released: 2026-09-16
+doi: "10.5281/zenodo.22226672"
 type: software
 authors:
   - family-names: Feng

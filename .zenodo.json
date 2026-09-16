@@ -1,6 +1,6 @@
 {
   "title": "Immune gene and protein profiles across blood, cerebrospinal fluid and peripheral nerve in inflammatory neuropathies",
-  "description": "Public aggregate materials accompanying the Human Genomics submission manuscript v42. Version 2.3.0 includes the revised manuscript with five embedded main figures and three editable tables, updated figure labels and legends, the edited graphical abstract, four supplementary figures, a 49 worksheet aggregate data workbook, supplementary methods, analysis and plotting scripts, and database access documentation. The analysis results are unchanged from version 2.2.0. Code is MIT licensed. Project derived data and figures are CC BY 4.0. External source materials retain their original terms.",
+  "description": "Public aggregate materials for the revised manuscript dated 16 September 2026. Version 2.3.1 synchronises CSF concentration evidence and assay-type coverage, published nerve interferon and complement evidence, Table 3, revised Figures 3–5, source workbook, supplementary methods and plotting scripts. Different evidence types and correction families are stated explicitly. Supported aggregate statistical results are retained. Individual donor intermediates are excluded. Code is MIT licensed; project-derived data and figures are CC BY 4.0. External sources retain their original terms.",
   "creators": [
     {
       "name": "Feng, Yuan",
@@ -32,12 +32,11 @@
   ],
   "license": "MIT",
   "upload_type": "software",
-  "version": "2.3.0",
-  "doi": "10.5281/zenodo.22641099",
-  "publication_date": "2026-09-07",
+  "version": "2.3.1",
+  "publication_date": "2026-09-16",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/tree/v2.3.0",
+      "identifier": "https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/tree/v2.3.1",
       "relation": "isSupplementTo",
       "resource_type": "software"
     }
