@@ -2,7 +2,7 @@
 
 Release **v2.3.1** contains the source-verified revision dated **16 September 2026**.
 
-[GitHub release](https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/releases/tag/v2.3.1) · [Zenodo version series](https://doi.org/10.5281/zenodo.22226672)
+[GitHub release](https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/releases/tag/v2.3.1) · [Zenodo version series](https://doi.org/10.5281/zenodo.22803504)
 
 | Material | Current location |
 |---|---|
