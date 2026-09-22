@@ -1,0 +1,117 @@
+{
+  "score_reconstruction_max_error": 5.689893001203927e-16,
+  "original_donor_count": 37,
+  "fc_genes": [
+    "FCGR1A",
+    "FCGR2A",
+    "FCGR2B",
+    "FCGR3A",
+    "FCGR3B",
+    "FCGRT",
+    "FCER1G",
+    "TYROBP",
+    "SYK",
+    "LYN",
+    "HCK"
+  ],
+  "reference_comparisons": [
+    {
+      "case": "CIDP",
+      "reference": "CIAP",
+      "n_case": 9,
+      "n_reference": 11,
+      "mean_case": -0.41167706667484255,
+      "mean_reference": 0.26119010645612184,
+      "delta": -0.6728671731309643,
+      "bootstrap_low": -0.9872552482705683,
+      "bootstrap_high": -0.37525432719110613,
+      "p_mannwhitney_exact": 0.00035722791140747797,
+      "p_mannwhitney_original_method": 0.0010874365767340446,
+      "role": "Prior contrast",
+      "q_bh_two_reference_tests": null,
+      "q_bh_91": 0.09895672848279399
+    },
+    {
+      "case": "CIDP",
+      "reference": "CTRL",
+      "n_case": 9,
+      "n_reference": 4,
+      "mean_case": -0.41167706667484255,
+      "mean_reference": -0.010289059227010395,
+      "delta": -0.40138800744783215,
+      "bootstrap_low": -0.9009438792987424,
+      "bootstrap_high": 0.049874428854876696,
+      "p_mannwhitney_exact": 0.3300699300699301,
+      "p_mannwhitney_original_method": 0.3300699300699301,
+      "role": "Exploratory graft reference comparison",
+      "q_bh_two_reference_tests": 0.34285714285714286,
+      "q_bh_91": 1.0
+    },
+    {
+      "case": "CIAP",
+      "reference": "CTRL",
+      "n_case": 11,
+      "n_reference": 4,
+      "mean_case": 0.26119010645612184,
+      "mean_reference": -0.010289059227010395,
+      "delta": 0.27147916568313224,
+      "bootstrap_low": -0.17059466677769491,
+      "bootstrap_high": 0.6520777980638668,
+      "p_mannwhitney_exact": 0.34285714285714286,
+      "p_mannwhitney_original_method": 0.34285714285714286,
+      "role": "Exploratory graft reference comparison",
+      "q_bh_two_reference_tests": 0.34285714285714286,
+      "q_bh_91": 1.0
+    }
+  ],
+  "composition_subtypes": 18,
+  "common_eligible_subtypes": [],
+  "full_cohort_direct_standardisation_estimable": false,
+  "standardisation_not_estimated_reason": "No refined macrophage subtype has at least 20 nuclei in every one of the 20 disease donors",
+  "seed": 20260921,
+  "bootstrap_replicates": 20000,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "testing_scope": "The 91 tests extend the manuscript family. This is not an omnibus correction for every analysis in the original pipeline.",
+  "provenance": "CIDP versus CTRL was calculated in the original pipeline. This follow up reconstructs it and adds CIAP versus CTRL.",
+  "input_files": [
+    {
+      "file": "original_results/tables/gse285983_sample_targeted_expression.csv",
+      "source": "author_archive",
+      "bytes": 2532551,
+      "sha256": "2f9d1651ab3f310bda593ab3b24295bcc038ef4faeb61f74524a89d2451562b7"
+    },
+    {
+      "file": "original_results/tables/gse285983_sample_module_scores.csv",
+      "source": "author_archive",
+      "bytes": 258224,
+      "sha256": "ad81b48872352db79e5a0ac5b7f24dc2173226f09c24acafcc1acabcf05ed5f1"
+    },
+    {
+      "file": "results/private/fc_annotation_coverage.csv",
+      "source": "author_archive",
+      "bytes": 15713,
+      "sha256": "925aabd79906f4e4c04d1e52f31192adcd23e670f68bcd91f429cd77a90d1261"
+    },
+    {
+      "file": "legacy_reference/strengthening_v41/results/fc_sensitivity.csv",
+      "source": "extension",
+      "bytes": 1273,
+      "sha256": "b39a301f949e4578e70fee48555e0e235e81c636529b5a53ea999a417ffeec1b"
+    },
+    {
+      "file": "results/original_nerve_multiplicity_89.csv",
+      "source": "extension",
+      "bytes": 12376,
+      "sha256": "3f0b31c1a2e9cd8ea7ec1f31b48de03b1633c0fbeb94a78088fa016ab9e24dba"
+    },
+    {
+      "file": "results/nerve_program_contrasts.csv",
+      "source": "extension",
+      "bytes": 2282,
+      "sha256": "50975d904b242b9c561901e3d44c299185477a415e3d988ea041a58d5ef91707"
+    }
+  ]
+}

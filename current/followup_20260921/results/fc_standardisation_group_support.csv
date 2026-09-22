@@ -1,0 +1,3 @@
+disease,n_donors,donors_without_eligible_subtype,min_eligible_subtypes,max_eligible_subtypes
+CIAP,11,1,0,9
+CIDP,9,2,0,14

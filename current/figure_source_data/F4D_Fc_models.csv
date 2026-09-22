@@ -1,0 +1,4 @@
+display_model,analysis,model,delta,se_hc3,ci_low,ci_high,p_hc3,residual_df,n,n_case,n_reference,p_mannwhitney,mean_case,mean_reference,covariates,p_primary,permutations,pc1_variance_fraction,pc2_variance_fraction,n_composition_categories
+Unadjusted,All donors,,-0.6728671731309643,0.1722333449864481,-1.0347160036774317,-0.3110183425844971,0.001033822565683,18.0,20,9.0,11.0,0.001087436576734,-0.4116770666748425,0.2611901064561218,none,0.001087436576734,,,,
+Age and centre,Age and center,,-0.6895951189664895,0.1645140872102914,-1.0402485953890466,-0.3389416425439325,0.0007859582828343,15.0,20,9.0,11.0,,,,"age, center",0.0007859582828343,,,,
+"Age, centre and composition",,"Age, center and two composition principal components",-0.3097923409951747,0.3372279717448552,-1.0383290812352797,0.4187443992449302,0.3750123099272261,13.0,20,,,,,,,,,0.226937842250946,0.2050713955783131,32.0

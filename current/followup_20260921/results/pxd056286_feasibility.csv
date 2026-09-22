@@ -1,0 +1,12 @@
+check,observed,interpretation
+Database readable,Yes,SQLite schema and study metadata extracted using verified HTTP byte ranges
+Instrument runs,19,Run count is not a biological sample count
+Nonempty sample groups,0,StudyInformation.SampleGroup
+Nonempty replicate groups,0,StudyInformation.ReplicateGroup
+Study factors,0,AnalysisDefinition.StudyDefinition.Factors
+Samples with factor values,0,AnalysisDefinition sample factor values
+Protein abundance fields,Present,TargetProteins.Abundances and AbundancesNormalized are BLOB fields
+Protein quantification decoded,No,Not attempted after the biological mapping gate failed
+Disease effect estimated,No,No verified run-to-specimen-to-diagnosis mapping in the inspected metadata
+Next usable input,Sample mapping and quantitative export,"Need diagnosis, independent specimen IDs, technical replicate mapping, protein identifiers, quantitative values, and processing metadata"
+Interpretation,Candidate resource remains usable in principle,"Metadata availability, not demonstrated absence of target proteins, is the present obstacle"

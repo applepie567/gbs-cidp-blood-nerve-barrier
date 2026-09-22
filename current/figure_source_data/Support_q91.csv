@@ -1,0 +1,92 @@
+test_index,comparison,cell_group,panel,source_family,p_value,q_bh_91
+1,CIDP_vs_CIAP,Macrophage,BNB_identity_integrity,Original 80 CIDP versus CIAP module tests,0.648503379652976,1.0
+2,CIDP_vs_CIAP,Macrophage,Leukocyte_transmigration,Original 80 CIDP versus CIAP module tests,0.0185134737753539,0.434175902409834
+3,CIDP_vs_CIAP,Macrophage,CXCL8_CXCR1_2,Original 80 CIDP versus CIAP module tests,0.8790477722505494,1.0
+4,CIDP_vs_CIAP,Macrophage,LIF_LIFR,Original 80 CIDP versus CIAP module tests,0.9394400080349974,1.0
+5,CIDP_vs_CIAP,Macrophage,Complement,Original 80 CIDP versus CIAP module tests,0.8197075378297883,1.0
+6,CIDP_vs_CIAP,Macrophage,Fc_receptor,Original 80 CIDP versus CIAP module tests,0.001087436576734,0.0989567284827939
+7,CIDP_vs_CIAP,Macrophage,Macrophage_state,Original 80 CIDP versus CIAP module tests,0.033398146339218,0.434175902409834
+8,CIDP_vs_CIAP,Macrophage,Schwann_myelin_repair,Original 80 CIDP versus CIAP module tests,0.5948534237883254,1.0
+9,CIDP_vs_CIAP,T_NK,BNB_identity_integrity,Original 80 CIDP versus CIAP module tests,0.9394400080349974,1.0
+10,CIDP_vs_CIAP,T_NK,Leukocyte_transmigration,Original 80 CIDP versus CIAP module tests,0.0805687565356306,0.6624687670096685
+11,CIDP_vs_CIAP,T_NK,CXCL8_CXCR1_2,Original 80 CIDP versus CIAP module tests,0.330002503363866,1.0
+12,CIDP_vs_CIAP,T_NK,LIF_LIFR,Original 80 CIDP versus CIAP module tests,0.5948534237883254,1.0
+13,CIDP_vs_CIAP,T_NK,Complement,Original 80 CIDP versus CIAP module tests,0.4941245444092638,1.0
+14,CIDP_vs_CIAP,T_NK,Fc_receptor,Original 80 CIDP versus CIAP module tests,0.4033175651094832,1.0
+15,CIDP_vs_CIAP,T_NK,Macrophage_state,Original 80 CIDP versus CIAP module tests,0.9394400080349974,1.0
+16,CIDP_vs_CIAP,T_NK,Schwann_myelin_repair,Original 80 CIDP versus CIAP module tests,0.8197075378297883,1.0
+17,CIDP_vs_CIAP,BNB_EC,BNB_identity_integrity,Original 80 CIDP versus CIAP module tests,0.0275779915633285,0.434175902409834
+18,CIDP_vs_CIAP,BNB_EC,Leukocyte_transmigration,Original 80 CIDP versus CIAP module tests,0.4474117020093185,1.0
+19,CIDP_vs_CIAP,BNB_EC,CXCL8_CXCR1_2,Original 80 CIDP versus CIAP module tests,0.440257435859737,1.0
+20,CIDP_vs_CIAP,BNB_EC,LIF_LIFR,Original 80 CIDP versus CIAP module tests,0.7612079858009609,1.0
+21,CIDP_vs_CIAP,BNB_EC,Complement,Original 80 CIDP versus CIAP module tests,0.4941245444092638,1.0
+22,CIDP_vs_CIAP,BNB_EC,Fc_receptor,Original 80 CIDP versus CIAP module tests,0.3619347669211923,1.0
+23,CIDP_vs_CIAP,BNB_EC,Macrophage_state,Original 80 CIDP versus CIAP module tests,1.0,1.0
+24,CIDP_vs_CIAP,BNB_EC,Schwann_myelin_repair,Original 80 CIDP versus CIAP module tests,1.0,1.0
+25,CIDP_vs_CIAP,Other_EC,BNB_identity_integrity,Original 80 CIDP versus CIAP module tests,0.8197075378297883,1.0
+26,CIDP_vs_CIAP,Other_EC,Leukocyte_transmigration,Original 80 CIDP versus CIAP module tests,0.3619347669211923,1.0
+27,CIDP_vs_CIAP,Other_EC,CXCL8_CXCR1_2,Original 80 CIDP versus CIAP module tests,0.7314673432614722,1.0
+28,CIDP_vs_CIAP,Other_EC,LIF_LIFR,Original 80 CIDP versus CIAP module tests,0.0946383952870955,0.6624687670096685
+29,CIDP_vs_CIAP,Other_EC,Complement,Original 80 CIDP versus CIAP module tests,1.0,1.0
+30,CIDP_vs_CIAP,Other_EC,Fc_receptor,Original 80 CIDP versus CIAP module tests,0.1714602060643273,0.8094886571907699
+31,CIDP_vs_CIAP,Other_EC,Macrophage_state,Original 80 CIDP versus CIAP module tests,1.0,1.0
+32,CIDP_vs_CIAP,Other_EC,Schwann_myelin_repair,Original 80 CIDP versus CIAP module tests,0.9394400080349974,1.0
+33,CIDP_vs_CIAP,Pericyte,BNB_identity_integrity,Original 80 CIDP versus CIAP module tests,0.3619347669211923,1.0
+34,CIDP_vs_CIAP,Pericyte,Leukocyte_transmigration,Original 80 CIDP versus CIAP module tests,0.7040429655866594,1.0
+35,CIDP_vs_CIAP,Pericyte,CXCL8_CXCR1_2,Original 80 CIDP versus CIAP module tests,0.8190376879405,1.0
+36,CIDP_vs_CIAP,Pericyte,LIF_LIFR,Original 80 CIDP versus CIAP module tests,0.1965119202345007,0.851551654349503
+37,CIDP_vs_CIAP,Pericyte,Complement,Original 80 CIDP versus CIAP module tests,0.9394400080349974,1.0
+38,CIDP_vs_CIAP,Pericyte,Fc_receptor,Original 80 CIDP versus CIAP module tests,1.0,1.0
+39,CIDP_vs_CIAP,Pericyte,Macrophage_state,Original 80 CIDP versus CIAP module tests,0.5433269342132927,1.0
+40,CIDP_vs_CIAP,Pericyte,Schwann_myelin_repair,Original 80 CIDP versus CIAP module tests,1.0,1.0
+41,CIDP_vs_CIAP,Perineurium,BNB_identity_integrity,Original 80 CIDP versus CIAP module tests,0.1286431389530742,0.7941941759041643
+42,CIDP_vs_CIAP,Perineurium,Leukocyte_transmigration,Original 80 CIDP versus CIAP module tests,0.0682474883780012,0.6210521442398108
+43,CIDP_vs_CIAP,Perineurium,CXCL8_CXCR1_2,Original 80 CIDP versus CIAP module tests,0.1708155478642553,0.8094886571907699
+44,CIDP_vs_CIAP,Perineurium,LIF_LIFR,Original 80 CIDP versus CIAP module tests,0.0575194003956383,0.6210521442398108
+45,CIDP_vs_CIAP,Perineurium,Complement,Original 80 CIDP versus CIAP module tests,0.033398146339218,0.434175902409834
+46,CIDP_vs_CIAP,Perineurium,Fc_receptor,Original 80 CIDP versus CIAP module tests,0.1488794936994691,0.7969431721559816
+47,CIDP_vs_CIAP,Perineurium,Macrophage_state,Original 80 CIDP versus CIAP module tests,0.0226544940800893,0.434175902409834
+48,CIDP_vs_CIAP,Perineurium,Schwann_myelin_repair,Original 80 CIDP versus CIAP module tests,0.0682474883780012,0.6210521442398108
+49,CIDP_vs_CIAP,Endoneurial_stroma,BNB_identity_integrity,Original 80 CIDP versus CIAP module tests,0.1488794936994691,0.7969431721559816
+50,CIDP_vs_CIAP,Endoneurial_stroma,Leukocyte_transmigration,Original 80 CIDP versus CIAP module tests,0.4033175651094832,1.0
+51,CIDP_vs_CIAP,Endoneurial_stroma,CXCL8_CXCR1_2,Original 80 CIDP versus CIAP module tests,1.0,1.0
+52,CIDP_vs_CIAP,Endoneurial_stroma,LIF_LIFR,Original 80 CIDP versus CIAP module tests,0.7040429655866594,1.0
+53,CIDP_vs_CIAP,Endoneurial_stroma,Complement,Original 80 CIDP versus CIAP module tests,0.4474117020093185,1.0
+54,CIDP_vs_CIAP,Endoneurial_stroma,Fc_receptor,Original 80 CIDP versus CIAP module tests,0.5948534237883254,1.0
+55,CIDP_vs_CIAP,Endoneurial_stroma,Macrophage_state,Original 80 CIDP versus CIAP module tests,0.2241451540522022,0.9271458644886544
+56,CIDP_vs_CIAP,Endoneurial_stroma,Schwann_myelin_repair,Original 80 CIDP versus CIAP module tests,0.8197075378297883,1.0
+57,CIDP_vs_CIAP,Myelinating_SC,BNB_identity_integrity,Original 80 CIDP versus CIAP module tests,0.5402913746074198,1.0
+58,CIDP_vs_CIAP,Myelinating_SC,Leukocyte_transmigration,Original 80 CIDP versus CIAP module tests,0.6533789106936937,1.0
+59,CIDP_vs_CIAP,Myelinating_SC,CXCL8_CXCR1_2,Original 80 CIDP versus CIAP module tests,0.960535300044334,1.0
+60,CIDP_vs_CIAP,Myelinating_SC,LIF_LIFR,Original 80 CIDP versus CIAP module tests,0.5402913746074198,1.0
+61,CIDP_vs_CIAP,Myelinating_SC,Complement,Original 80 CIDP versus CIAP module tests,0.7750513736700824,1.0
+62,CIDP_vs_CIAP,Myelinating_SC,Fc_receptor,Original 80 CIDP versus CIAP module tests,0.1309111278962908,0.7941941759041643
+63,CIDP_vs_CIAP,Myelinating_SC,Macrophage_state,Original 80 CIDP versus CIAP module tests,0.7750513736700824,1.0
+64,CIDP_vs_CIAP,Myelinating_SC,Schwann_myelin_repair,Original 80 CIDP versus CIAP module tests,0.8382564863858263,1.0
+65,CIDP_vs_CIAP,Nonmyelinating_SC,BNB_identity_integrity,Original 80 CIDP versus CIAP module tests,1.0,1.0
+66,CIDP_vs_CIAP,Nonmyelinating_SC,Leukocyte_transmigration,Original 80 CIDP versus CIAP module tests,0.7040429655866594,1.0
+67,CIDP_vs_CIAP,Nonmyelinating_SC,CXCL8_CXCR1_2,Original 80 CIDP versus CIAP module tests,0.4456962940475105,1.0
+68,CIDP_vs_CIAP,Nonmyelinating_SC,LIF_LIFR,Original 80 CIDP versus CIAP module tests,0.0946383952870955,0.6624687670096685
+69,CIDP_vs_CIAP,Nonmyelinating_SC,Complement,Original 80 CIDP versus CIAP module tests,0.8792283946861903,1.0
+70,CIDP_vs_CIAP,Nonmyelinating_SC,Fc_receptor,Original 80 CIDP versus CIAP module tests,0.9394400080349974,1.0
+71,CIDP_vs_CIAP,Nonmyelinating_SC,Macrophage_state,Original 80 CIDP versus CIAP module tests,0.9394400080349974,1.0
+72,CIDP_vs_CIAP,Nonmyelinating_SC,Schwann_myelin_repair,Original 80 CIDP versus CIAP module tests,0.9394400080349974,1.0
+73,CIDP_vs_CIAP,Repair_damage_SC,BNB_identity_integrity,Original 80 CIDP versus CIAP module tests,0.4876683534589304,1.0
+74,CIDP_vs_CIAP,Repair_damage_SC,Leukocyte_transmigration,Original 80 CIDP versus CIAP module tests,0.2364447155723038,0.9354986572643323
+75,CIDP_vs_CIAP,Repair_damage_SC,CXCL8_CXCR1_2,Original 80 CIDP versus CIAP module tests,0.257620539316171,0.9768112115738152
+76,CIDP_vs_CIAP,Repair_damage_SC,LIF_LIFR,Original 80 CIDP versus CIAP module tests,0.7133031738784577,1.0
+77,CIDP_vs_CIAP,Repair_damage_SC,Complement,Original 80 CIDP versus CIAP module tests,0.8382564863858263,1.0
+78,CIDP_vs_CIAP,Repair_damage_SC,Fc_receptor,Original 80 CIDP versus CIAP module tests,0.9025232501776794,1.0
+79,CIDP_vs_CIAP,Repair_damage_SC,Macrophage_state,Original 80 CIDP versus CIAP module tests,0.7750513736700824,1.0
+80,CIDP_vs_CIAP,Repair_damage_SC,Schwann_myelin_repair,Original 80 CIDP versus CIAP module tests,0.3912672792826394,1.0
+81,CIDP_vs_CIAP,BNB_EC,Endothelial junctions,Nine functional programme extensions,0.4033175651094832,1.0
+82,CIDP_vs_CIAP,BNB_EC,Endothelial transport,Nine functional programme extensions,0.0275779915633285,0.434175902409834
+83,CIDP_vs_CIAP,BNB_EC,Inflammatory adhesion,Nine functional programme extensions,0.8792283946861903,1.0
+84,CIDP_vs_CIAP,Myelinating_SC,Myelin maintenance,Nine functional programme extensions,0.7750513736700824,1.0
+85,CIDP_vs_CIAP,Myelinating_SC,Injury response,Nine functional programme extensions,0.7750513736700824,1.0
+86,CIDP_vs_CIAP,Nonmyelinating_SC,Myelin maintenance,Nine functional programme extensions,0.9394400080349974,1.0
+87,CIDP_vs_CIAP,Nonmyelinating_SC,Injury response,Nine functional programme extensions,0.8792283946861903,1.0
+88,CIDP_vs_CIAP,Repair_damage_SC,Myelin maintenance,Nine functional programme extensions,0.1779095949869824,0.8094886571907699
+89,CIDP_vs_CIAP,Repair_damage_SC,Injury response,Nine functional programme extensions,0.6533789106936937,1.0
+90,CIDP_vs_CTRL,Macrophage,Fc_receptor,Focused graft reference comparisons,0.3300699300699301,1.0
+91,CIAP_vs_CTRL,Macrophage,Fc_receptor,Focused graft reference comparisons,0.3428571428571428,1.0

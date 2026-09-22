@@ -1,0 +1,4 @@
+compartment,comparison,cohorts,participants,programme_tests,source,paired_proteins,additional_comparison_estimates,CIDP,CIAP
+Blood,Acute GBS versus healthy controls,3,31.0,7.0,GSE211225; GSE31014; PRJNA1293757,,,,
+CSF,GBS versus HC; GBS versus CIDP; CIDP versus HC,2,,,https://doi.org/10.3389/fimmu.2023.1241199,11.0,16.0,,
+Peripheral nerve,CIDP versus CIAP,1,20.0,,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285983,,,9.0,11.0

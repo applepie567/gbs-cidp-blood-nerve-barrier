@@ -1,0 +1,22 @@
+Program,Omitted cohort,Summary Hedges g
+CXCL8–CXCR1/2,Whole blood,0.96701491699125
+CXCL8–CXCR1/2,Leukocytes,1.4068113612211215
+CXCL8–CXCR1/2,Monocytes,0.968414259917233
+LIF/OSM–gp130,Whole blood,-0.7277566175156166
+LIF/OSM–gp130,Leukocytes,0.8619717663719133
+LIF/OSM–gp130,Monocytes,0.6636663992087061
+Complement,Whole blood,0.4781923344932813
+Complement,Leukocytes,1.554269521957894
+Complement,Monocytes,1.3923963925372809
+Fc receptor,Whole blood,-1.1547852195327015
+Fc receptor,Leukocytes,-0.9874676268794534
+Fc receptor,Monocytes,1.1270537059749186
+Transendothelial migration,Whole blood,0.4027396534434844
+Transendothelial migration,Leukocytes,0.3749488605351497
+Transendothelial migration,Monocytes,0.9370872812539204
+Interferon/JAK–STAT,Whole blood,0.4511069647460854
+Interferon/JAK–STAT,Leukocytes,0.6747204968275093
+Interferon/JAK–STAT,Monocytes,0.8363280192781896
+Inflammatory monocyte,Whole blood,0.5482493694965656
+Inflammatory monocyte,Leukocytes,0.8386507063347497
+Inflammatory monocyte,Monocytes,1.470466552281542

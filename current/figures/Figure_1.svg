@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="540pt" height="212.4pt" viewBox="0 0 540 212.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-22T02:21:36.854669</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 212.4 
+L 540 212.4 
+L 540 -0 
+L 0 -0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 14.58 202.752 
+L 169.02 202.752 
+Q 175.5 202.752 175.5 198.9504 
+L 175.5 51.3216 
+Q 175.5 47.52 169.02 47.52 
+L 14.58 47.52 
+Q 8.1 47.52 8.1 51.3216 
+L 8.1 198.9504 
+Q 8.1 202.752 14.58 202.752 
+z
+" clip-path="url(#pb24e9ead3d)" style="fill: #f6f8f9; stroke: #d8e0e4; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 14.58 85.536 
+L 169.02 85.536 
+Q 175.5 85.536 175.5 81.7344 
+L 175.5 51.3216 
+Q 175.5 47.52 169.02 47.52 
+L 14.58 47.52 
+Q 8.1 47.52 8.1 51.3216 
+L 8.1 81.7344 
+Q 8.1 85.536 14.58 85.536 
+z
+" clip-path="url(#pb24e9ead3d)" style="fill: #367aad; stroke: #367aad; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 192.78 202.752 
+L 347.22 202.752 
+Q 353.7 202.752 353.7 198.9504 
+L 353.7 51.3216 
+Q 353.7 47.52 347.22 47.52 
+L 192.78 47.52 
+Q 186.3 47.52 186.3 51.3216 
+L 186.3 198.9504 
+Q 186.3 202.752 192.78 202.752 
+z
+" clip-path="url(#pb24e9ead3d)" style="fill: #f6f8f9; stroke: #d8e0e4; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 192.78 85.536 
+L 347.22 85.536 
+Q 353.7 85.536 353.7 81.7344 
+L 353.7 51.3216 
+Q 353.7 47.52 347.22 47.52 
+L 192.78 47.52 
+Q 186.3 47.52 186.3 51.3216 
+L 186.3 81.7344 
+Q 186.3 85.536 192.78 85.536 
+z
+" clip-path="url(#pb24e9ead3d)" style="fill: #298f87; stroke: #298f87; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 370.98 202.752 
+L 525.42 202.752 
+Q 531.9 202.752 531.9 198.9504 
+L 531.9 51.3216 
+Q 531.9 47.52 525.42 47.52 
+L 370.98 47.52 
+Q 364.5 47.52 364.5 51.3216 
+L 364.5 198.9504 
+Q 364.5 202.752 370.98 202.752 
+z
+" clip-path="url(#pb24e9ead3d)" style="fill: #f6f8f9; stroke: #d8e0e4; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 370.98 85.536 
+L 525.42 85.536 
+Q 531.9 85.536 531.9 81.7344 
+L 531.9 51.3216 
+Q 531.9 47.52 525.42 47.52 
+L 370.98 47.52 
+Q 364.5 47.52 364.5 51.3216 
+L 364.5 81.7344 
+Q 364.5 85.536 370.98 85.536 
+z
+" clip-path="url(#pb24e9ead3d)" style="fill: #d96843; stroke: #d96843; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: middle" x="270" y="15.84" transform="rotate(-0 270 15.84)">Complementary immune profiles in inflammatory neuropathies</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: middle; fill: #ffffff" x="91.8" y="69.83925" transform="rotate(-0 91.8 69.83925)">Blood</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: middle" x="91.8" y="101.376" transform="rotate(-0 91.8 101.376)">Acute GBS and healthy controls</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" transform="translate(33.500563 135.420233)">Whole blood and leukocytes</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" transform="translate(46.085 149.080536)">Monocyte pseudobulk</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" transform="translate(38.12075 162.740839)">3 cohorts, 31 participants</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" transform="translate(26.030234 176.284548)">7 modules and cohort synthesis</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: middle; fill: #ffffff" x="270" y="69.83925" transform="rotate(-0 270 69.83925)">Cerebrospinal fluid</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: middle" x="270" y="101.376" transform="rotate(-0 270 101.376)">GBS, CIDP and healthy controls</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" transform="translate(208.922172 135.47853)">Age, sex and CCL19 adjusted</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" transform="translate(202.002781 149.138833)">11 paired GBS protein estimates</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" transform="translate(201.226344 162.682542)">16 disease comparison estimates</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" transform="translate(193.126922 176.226252)">Source tests and pooling uncertainty</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: middle; fill: #ffffff" x="448.2" y="69.83925" transform="rotate(-0 448.2 69.83925)">Peripheral nerve</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 8.9px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: middle" x="448.2" y="101.376" transform="rotate(-0 448.2 101.376)">CIDP and axonal neuropathy</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" transform="translate(390.60525 135.47853)">9 CIDP and 11 CIAP donors</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" transform="translate(383.625641 149.022239)">Macrophages and endothelium</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" transform="translate(392.880109 162.682542)">Schwann cell programmes</text>
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" transform="translate(379.804953 176.342845)">Composition and donor variation</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb24e9ead3d">
+   <rect x="0" y="-0" width="540" height="316.8"/>
+  </clipPath>
+ </defs>
+</svg>

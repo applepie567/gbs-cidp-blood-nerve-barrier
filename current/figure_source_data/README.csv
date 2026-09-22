@@ -1,0 +1,13 @@
+topic,details
+Manuscript,Immune recruitment signatures and cellular context in inflammatory neuropathies
+Prepared version,"v2.4.0; 2026-09-22; prepared update, not an already published release"
+Scope,Source data for all five main figures and seven supplementary figures in the current manuscript.
+What these data are,"The exact numerical inputs or reported source estimates used for plotted points, intervals, heatmaps and counts."
+Primary raw data,"FASTQ, CellBender matrices and original proteomics acquisitions remain at their public repositories. They are not recreated in this workbook."
+Figure 1,"A study-design schematic. Its table contains design labels and counts, not experimental measurements."
+Missing values,"Blank cells mean unavailable or not applicable, not zero. Read each sheet with INDEX."
+Clinical coordinates,Figure 5 C/D contain anonymous score/INCAT pairs; no donor linkage across panels is implied by row order.
+Current correction families,"Preserve distinct q8, q80/q89 historical, q91 expanded, q9 new and q17 clinical families; they are not interchangeable."
+Protein validation,Public quantitative exports and feasibility audit are included in the GitHub ZIP. Missing reliable sample-to-diagnosis mapping prevents independent nerve validation; this is not a negative validation result.
+Reproduction,Run python current/analysis/reproduce_figures.py --out rebuilt_figures from the extracted repository root.
+Data licence,Project-derived tables and figures: CC BY 4.0. External source material retains original terms.
