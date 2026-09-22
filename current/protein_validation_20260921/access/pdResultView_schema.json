@@ -1,0 +1,1556 @@
+[
+  [
+    "table",
+    "SchemaInfo",
+    "SchemaInfo",
+    2,
+    "CREATE TABLE [SchemaInfo] (\r\n\t\t\t\t\t[Version] [int] NOT NULL,\r\n\t\t\t\t\t[Kind] [varchar] (32) NOT NULL,\t\r\n\t\t\t\t\t[Date] [datetime] NOT NULL,\r\n\t\t\t\t\t[SoftwareVersion] [varchar] (64) NOT NULL,\r\n\t\t\t\t\t[Comment] [text] NOT NULL,\r\n\t\t\t\t\tUNIQUE ([Version], [Kind])\r\n\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_SchemaInfo_1",
+    "SchemaInfo",
+    3,
+    null
+  ],
+  [
+    "table",
+    "ReportInfo",
+    "ReportInfo",
+    4,
+    "CREATE TABLE [ReportInfo](\r\n\t\t\t\t\t\t[ReportGuid] [varchar] (36) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t[ReportFileName] [varchar] NOT NULL,\r\n\t\t\t\t\t\t[ViewName] [varchar](50) NOT NULL,\r\n\t\t\t\t\t\t[ViewDescription] [text]\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DataTypeSubsets",
+    "DataTypeSubsets",
+    5,
+    "CREATE TABLE [DataTypeSubsets]\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\t[SubsetID] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t[DataTypeID] INTEGER NOT NULL,\r\n\t\t\t\t\t\t[Name] [varchar](100) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t[Description] [text],\r\n\t\t\t\t\t\t[SelectsAll] bit NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "sqlite_sequence",
+    "sqlite_sequence",
+    6,
+    "CREATE TABLE sqlite_sequence(name,seq)"
+  ],
+  [
+    "table",
+    "DataTypeSubsetDetails",
+    "DataTypeSubsetDetails",
+    7,
+    "CREATE TABLE [DataTypeSubsetDetails]\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\t[SubsetID] INTEGER NOT NULL UNIQUE,\r\n\t\t\t\t\t\t[TableName] [varchar](300) COLLATE NOCASE NOT NULL UNIQUE,\r\n\t\t\t\t\t\t[CreationHint] [text],\r\n\t\t\t\t\t\t[LastChange] [long] NOT NULL,\r\n\t\t\t\t\t\t[ItemCount] [int] DEFAULT 0\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DataTypeSubsetDetails_1",
+    "DataTypeSubsetDetails",
+    8,
+    null
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DataTypeSubsetDetails_2",
+    "DataTypeSubsetDetails",
+    9,
+    null
+  ],
+  [
+    "table",
+    "DataTypeSortedSubsets",
+    "DataTypeSortedSubsets",
+    10,
+    "CREATE TABLE [DataTypeSortedSubsets]\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\t[SubsetID] INTEGER NOT NULL,\r\n\t\t\t\t\t\t[TableName] varchar(200) UNIQUE,\r\n\t\t\t\t\t\t[SortHint] TEXT,\r\n\t\t\t\t\t\t[LastChange] [long] NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DataTypeSortedSubsets_1",
+    "DataTypeSortedSubsets",
+    11,
+    null
+  ],
+  [
+    "table",
+    "DataTypeAdditionalColumns",
+    "DataTypeAdditionalColumns",
+    12,
+    "CREATE TABLE [DataTypeAdditionalColumns]\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\t[DataTypeID] INTEGER NOT NULL,\r\n\t\t\t\t\t\t[TableName] [varchar](100) COLLATE NOCASE NOT NULL UNIQUE\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DataTypeAdditionalColumns_1",
+    "DataTypeAdditionalColumns",
+    13,
+    null
+  ],
+  [
+    "table",
+    "SettingsOwner",
+    "SettingsOwner",
+    14,
+    "CREATE TABLE [SettingsOwner]\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\t[OwnerId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t[Name] [varchar] COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\tUNIQUE(\r\n\t\t\t\t\t\t\t[Name]\r\n\t\t\t\t\t\t)\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_SettingsOwner_1",
+    "SettingsOwner",
+    15,
+    null
+  ],
+  [
+    "table",
+    "SettingsValues",
+    "SettingsValues",
+    16,
+    "CREATE TABLE [SettingsValues]\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\t[OwnerId] INTEGER NOT NULL,\r\n\t\t\t\t\t\t[Key] [varchar] COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t[Value] [varchar],\r\n\t\t\t\t\t\tUNIQUE(\r\n\t\t\t\t\t\t\t[OwnerId],\r\n\t\t\t\t\t\t\t[Key]\r\n\t\t\t\t\t\t)\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_SettingsValues_1",
+    "SettingsValues",
+    17,
+    null
+  ],
+  [
+    "table",
+    "TargetPsms_Subset_1",
+    "TargetPsms_Subset_1",
+    18,
+    "CREATE TABLE \"TargetPsms_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\"PeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetPsms_Subset_1_1",
+    "TargetPsms_Subset_1",
+    19,
+    null
+  ],
+  [
+    "table",
+    "DecoyPsms_Subset_1",
+    "DecoyPsms_Subset_1",
+    5732,
+    "CREATE TABLE \"DecoyPsms_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\"PeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DecoyPsms_Subset_1_1",
+    "DecoyPsms_Subset_1",
+    5733,
+    null
+  ],
+  [
+    "table",
+    "TargetPeptideGroups_Subset_1",
+    "TargetPeptideGroups_Subset_1",
+    5760,
+    "CREATE TABLE \"TargetPeptideGroups_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"PeptideGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetPeptideGroups_Subset_1_1",
+    "TargetPeptideGroups_Subset_1",
+    5761,
+    null
+  ],
+  [
+    "table",
+    "DecoyPeptideGroups_Subset_1",
+    "DecoyPeptideGroups_Subset_1",
+    5873,
+    "CREATE TABLE \"DecoyPeptideGroups_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"PeptideGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DecoyPeptideGroups_Subset_1_1",
+    "DecoyPeptideGroups_Subset_1",
+    5874,
+    null
+  ],
+  [
+    "table",
+    "TargetProteins_Subset_1",
+    "TargetProteins_Subset_1",
+    5876,
+    "CREATE TABLE \"TargetProteins_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"UniqueSequenceID\" int64 NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetProteins_Subset_1_1",
+    "TargetProteins_Subset_1",
+    5877,
+    null
+  ],
+  [
+    "table",
+    "DecoyProteins_Subset_1",
+    "DecoyProteins_Subset_1",
+    5901,
+    "CREATE TABLE \"DecoyProteins_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"UniqueSequenceID\" int64 NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DecoyProteins_Subset_1_1",
+    "DecoyProteins_Subset_1",
+    5902,
+    null
+  ],
+  [
+    "table",
+    "TargetProteinGroups_Subset_1",
+    "TargetProteinGroups_Subset_1",
+    5903,
+    "CREATE TABLE \"TargetProteinGroups_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"ProteinGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"ProteinGroupID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetProteinGroups_Subset_1_1",
+    "TargetProteinGroups_Subset_1",
+    5904,
+    null
+  ],
+  [
+    "table",
+    "DecoyProteinGroups_Subset_1",
+    "DecoyProteinGroups_Subset_1",
+    5916,
+    "CREATE TABLE \"DecoyProteinGroups_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"ProteinGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"ProteinGroupID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DecoyProteinGroups_Subset_1_1",
+    "DecoyProteinGroups_Subset_1",
+    5917,
+    null
+  ],
+  [
+    "table",
+    "TargetProteoformSpectrumMatchs_Subset_1",
+    "TargetProteoformSpectrumMatchs_Subset_1",
+    5918,
+    "CREATE TABLE \"TargetProteoformSpectrumMatchs_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\"ID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetProteoformSpectrumMatchs_Subset_1_1",
+    "TargetProteoformSpectrumMatchs_Subset_1",
+    5919,
+    null
+  ],
+  [
+    "table",
+    "ConsensusFeatures_Subset_1",
+    "ConsensusFeatures_Subset_1",
+    5920,
+    "CREATE TABLE \"ConsensusFeatures_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"Id\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"Id\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_ConsensusFeatures_Subset_1_1",
+    "ConsensusFeatures_Subset_1",
+    5921,
+    null
+  ],
+  [
+    "table",
+    "AnnotationProteinGroups_Subset_1",
+    "AnnotationProteinGroups_Subset_1",
+    7394,
+    "CREATE TABLE \"AnnotationProteinGroups_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"ProteinAnnotationGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"ProteinAnnotationGroupID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_AnnotationProteinGroups_Subset_1_1",
+    "AnnotationProteinGroups_Subset_1",
+    7395,
+    null
+  ],
+  [
+    "table",
+    "PathwayProteinGroups_Subset_1",
+    "PathwayProteinGroups_Subset_1",
+    7471,
+    "CREATE TABLE \"PathwayProteinGroups_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"ProteinPathwayGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"ProteinPathwayGroupID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_PathwayProteinGroups_Subset_1_1",
+    "PathwayProteinGroups_Subset_1",
+    7472,
+    null
+  ],
+  [
+    "table",
+    "WorkflowInputFiles_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc",
+    "WorkflowInputFiles_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc",
+    7484,
+    "CREATE TABLE \"WorkflowInputFiles_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"WorkflowLevel\" INTEGER NOT NULL, \"FileID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_WorkflowInputFiles_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc_Primary_WorkflowID_WorkflowLevel_FileID",
+    "WorkflowInputFiles_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc",
+    7485,
+    "CREATE INDEX \"IX_WorkflowInputFiles_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc_Primary_WorkflowID_WorkflowLevel_FileID\" ON \"WorkflowInputFiles_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"WorkflowLevel\", \"FileID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "StudyInformation_IDAsc",
+    "StudyInformation_IDAsc",
+    7486,
+    "CREATE TABLE \"StudyInformation_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_StudyInformation_IDAsc_Primary_ID",
+    "StudyInformation_IDAsc",
+    7487,
+    "CREATE INDEX \"IX_StudyInformation_IDAsc_Primary_ID\" ON \"StudyInformation_IDAsc\"(\r\n\t\t\t\t\t\t\"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AminoAcids_AminoAcidIDAsc",
+    "AminoAcids_AminoAcidIDAsc",
+    7488,
+    "CREATE TABLE \"AminoAcids_AminoAcidIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"AminoAcidID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AminoAcids_AminoAcidIDAsc_Primary_AminoAcidID",
+    "AminoAcids_AminoAcidIDAsc",
+    7489,
+    "CREATE INDEX \"IX_AminoAcids_AminoAcidIDAsc_Primary_AminoAcidID\" ON \"AminoAcids_AminoAcidIDAsc\"(\r\n\t\t\t\t\t\t\"AminoAcidID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FoundModifications_ModificationIDAsc",
+    "FoundModifications_ModificationIDAsc",
+    7491,
+    "CREATE TABLE \"FoundModifications_ModificationIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ModificationID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FoundModifications_ModificationIDAsc_Primary_ModificationID",
+    "FoundModifications_ModificationIDAsc",
+    7497,
+    "CREATE INDEX \"IX_FoundModifications_ModificationIDAsc_Primary_ModificationID\" ON \"FoundModifications_ModificationIDAsc\"(\r\n\t\t\t\t\t\t\"ModificationID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "UnknownModifications_IdAsc",
+    "UnknownModifications_IdAsc",
+    7503,
+    "CREATE TABLE \"UnknownModifications_IdAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"Id\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_UnknownModifications_IdAsc_Primary_Id",
+    "UnknownModifications_IdAsc",
+    7504,
+    "CREATE INDEX \"IX_UnknownModifications_IdAsc_Primary_Id\" ON \"UnknownModifications_IdAsc\"(\r\n\t\t\t\t\t\t\"Id\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteins_UniqueSequenceIDAsc",
+    "TargetProteins_UniqueSequenceIDAsc",
+    7505,
+    "CREATE TABLE \"TargetProteins_UniqueSequenceIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"UniqueSequenceID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteins_UniqueSequenceIDAsc_Primary_UniqueSequenceID",
+    "TargetProteins_UniqueSequenceIDAsc",
+    7580,
+    "CREATE INDEX \"IX_TargetProteins_UniqueSequenceIDAsc_Primary_UniqueSequenceID\" ON \"TargetProteins_UniqueSequenceIDAsc\"(\r\n\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteins_UniqueSequenceIDAsc",
+    "DecoyProteins_UniqueSequenceIDAsc",
+    7654,
+    "CREATE TABLE \"DecoyProteins_UniqueSequenceIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"UniqueSequenceID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteins_UniqueSequenceIDAsc_Primary_UniqueSequenceID",
+    "DecoyProteins_UniqueSequenceIDAsc",
+    7728,
+    "CREATE INDEX \"IX_DecoyProteins_UniqueSequenceIDAsc_Primary_UniqueSequenceID\" ON \"DecoyProteins_UniqueSequenceIDAsc\"(\r\n\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPsms_WorkflowIDAsc_PeptideIDAsc",
+    "TargetPsms_WorkflowIDAsc_PeptideIDAsc",
+    7801,
+    "CREATE TABLE \"TargetPsms_WorkflowIDAsc_PeptideIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"PeptideID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsms_WorkflowIDAsc_PeptideIDAsc_Primary_WorkflowID_PeptideID",
+    "TargetPsms_WorkflowIDAsc_PeptideIDAsc",
+    11759,
+    "CREATE INDEX \"IX_TargetPsms_WorkflowIDAsc_PeptideIDAsc_Primary_WorkflowID_PeptideID\" ON \"TargetPsms_WorkflowIDAsc_PeptideIDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPsms_WorkflowIDAsc_PeptideIDAsc",
+    "DecoyPsms_WorkflowIDAsc_PeptideIDAsc",
+    15707,
+    "CREATE TABLE \"DecoyPsms_WorkflowIDAsc_PeptideIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"PeptideID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPsms_WorkflowIDAsc_PeptideIDAsc_Primary_WorkflowID_PeptideID",
+    "DecoyPsms_WorkflowIDAsc_PeptideIDAsc",
+    16845,
+    "CREATE INDEX \"IX_DecoyPsms_WorkflowIDAsc_PeptideIDAsc_Primary_WorkflowID_PeptideID\" ON \"DecoyPsms_WorkflowIDAsc_PeptideIDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc",
+    "TargetProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc",
+    17978,
+    "CREATE TABLE \"TargetProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID",
+    "TargetProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc",
+    17979,
+    "CREATE INDEX \"IX_TargetProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID\" ON \"TargetProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc",
+    "DecoyProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc",
+    17980,
+    "CREATE TABLE \"DecoyProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID",
+    "DecoyProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc",
+    17982,
+    "CREATE INDEX \"IX_DecoyProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID\" ON \"DecoyProteoformSpectrumMatchs_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "MSnSpectrumInfo_WorkflowIDAsc_SpectrumIDAsc",
+    "MSnSpectrumInfo_WorkflowIDAsc_SpectrumIDAsc",
+    17983,
+    "CREATE TABLE \"MSnSpectrumInfo_WorkflowIDAsc_SpectrumIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"SpectrumID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_MSnSpectrumInfo_WorkflowIDAsc_SpectrumIDAsc_Primary_WorkflowID_SpectrumID",
+    "MSnSpectrumInfo_WorkflowIDAsc_SpectrumIDAsc",
+    21345,
+    "CREATE INDEX \"IX_MSnSpectrumInfo_WorkflowIDAsc_SpectrumIDAsc_Primary_WorkflowID_SpectrumID\" ON \"MSnSpectrumInfo_WorkflowIDAsc_SpectrumIDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"SpectrumID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "PrecursorInfoItems_WorkflowIdAsc_SpectrumIdAsc_IdAsc",
+    "PrecursorInfoItems_WorkflowIdAsc_SpectrumIdAsc_IdAsc",
+    24699,
+    "CREATE TABLE \"PrecursorInfoItems_WorkflowIdAsc_SpectrumIdAsc_IdAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowId\" INTEGER NOT NULL, \"SpectrumId\" INTEGER NOT NULL, \"Id\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_PrecursorInfoItems_WorkflowIdAsc_SpectrumIdAsc_IdAsc_Primary_WorkflowId_SpectrumId_Id",
+    "PrecursorInfoItems_WorkflowIdAsc_SpectrumIdAsc_IdAsc",
+    28286,
+    "CREATE INDEX \"IX_PrecursorInfoItems_WorkflowIdAsc_SpectrumIdAsc_IdAsc_Primary_WorkflowId_SpectrumId_Id\" ON \"PrecursorInfoItems_WorkflowIdAsc_SpectrumIdAsc_IdAsc\"(\r\n\t\t\t\t\t\t\"WorkflowId\", \"SpectrumId\", \"Id\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "MassCorrectionItems_WorkflowIdAsc_IDAsc",
+    "MassCorrectionItems_WorkflowIdAsc_IDAsc",
+    31864,
+    "CREATE TABLE \"MassCorrectionItems_WorkflowIdAsc_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowId\" INTEGER NOT NULL, \"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_MassCorrectionItems_WorkflowIdAsc_IDAsc_Primary_WorkflowId_ID",
+    "MassCorrectionItems_WorkflowIdAsc_IDAsc",
+    31865,
+    "CREATE INDEX \"IX_MassCorrectionItems_WorkflowIdAsc_IDAsc_Primary_WorkflowId_ID\" ON \"MassCorrectionItems_WorkflowIdAsc_IDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowId\", \"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "SpecializedTraceItems_WorkflowIDAsc_IDAsc",
+    "SpecializedTraceItems_WorkflowIDAsc_IDAsc",
+    31866,
+    "CREATE TABLE \"SpecializedTraceItems_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_SpecializedTraceItems_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID",
+    "SpecializedTraceItems_WorkflowIDAsc_IDAsc",
+    31867,
+    "CREATE INDEX \"IX_SpecializedTraceItems_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID\" ON \"SpecializedTraceItems_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "LcmsFeatures_WorkflowIdAsc_IdAsc",
+    "LcmsFeatures_WorkflowIdAsc_IdAsc",
+    31868,
+    "CREATE TABLE \"LcmsFeatures_WorkflowIdAsc_IdAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowId\" INTEGER NOT NULL, \"Id\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_LcmsFeatures_WorkflowIdAsc_IdAsc_Primary_WorkflowId_Id",
+    "LcmsFeatures_WorkflowIdAsc_IdAsc",
+    39780,
+    "CREATE INDEX \"IX_LcmsFeatures_WorkflowIdAsc_IdAsc_Primary_WorkflowId_Id\" ON \"LcmsFeatures_WorkflowIdAsc_IdAsc\"(\r\n\t\t\t\t\t\t\"WorkflowId\", \"Id\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPeptideGroups_PeptideGroupIDAsc",
+    "TargetPeptideGroups_PeptideGroupIDAsc",
+    47664,
+    "CREATE TABLE \"TargetPeptideGroups_PeptideGroupIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"PeptideGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPeptideGroups_PeptideGroupIDAsc_Primary_PeptideGroupID",
+    "TargetPeptideGroups_PeptideGroupIDAsc",
+    48055,
+    "CREATE INDEX \"IX_TargetPeptideGroups_PeptideGroupIDAsc_Primary_PeptideGroupID\" ON \"TargetPeptideGroups_PeptideGroupIDAsc\"(\r\n\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPeptideGroups_PeptideGroupIDAsc",
+    "DecoyPeptideGroups_PeptideGroupIDAsc",
+    48442,
+    "CREATE TABLE \"DecoyPeptideGroups_PeptideGroupIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"PeptideGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPeptideGroups_PeptideGroupIDAsc_Primary_PeptideGroupID",
+    "DecoyPeptideGroups_PeptideGroupIDAsc",
+    48766,
+    "CREATE INDEX \"IX_DecoyPeptideGroups_PeptideGroupIDAsc_Primary_PeptideGroupID\" ON \"DecoyPeptideGroups_PeptideGroupIDAsc\"(\r\n\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ConsensusFeatures_IdAsc",
+    "ConsensusFeatures_IdAsc",
+    49087,
+    "CREATE TABLE \"ConsensusFeatures_IdAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"Id\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatures_IdAsc_Primary_Id",
+    "ConsensusFeatures_IdAsc",
+    49807,
+    "CREATE INDEX \"IX_ConsensusFeatures_IdAsc_Primary_Id\" ON \"ConsensusFeatures_IdAsc\"(\r\n\t\t\t\t\t\t\"Id\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FileAlignmentResultItems_IDAsc",
+    "FileAlignmentResultItems_IDAsc",
+    50524,
+    "CREATE TABLE \"FileAlignmentResultItems_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FileAlignmentResultItems_IDAsc_Primary_ID",
+    "FileAlignmentResultItems_IDAsc",
+    50525,
+    "CREATE INDEX \"IX_FileAlignmentResultItems_IDAsc_Primary_ID\" ON \"FileAlignmentResultItems_IDAsc\"(\r\n\t\t\t\t\t\t\"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteinGroups_ProteinGroupIDAsc",
+    "TargetProteinGroups_ProteinGroupIDAsc",
+    50526,
+    "CREATE TABLE \"TargetProteinGroups_ProteinGroupIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteinGroups_ProteinGroupIDAsc_Primary_ProteinGroupID",
+    "TargetProteinGroups_ProteinGroupIDAsc",
+    50533,
+    "CREATE INDEX \"IX_TargetProteinGroups_ProteinGroupIDAsc_Primary_ProteinGroupID\" ON \"TargetProteinGroups_ProteinGroupIDAsc\"(\r\n\t\t\t\t\t\t\"ProteinGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteinGroups_ProteinGroupIDAsc",
+    "DecoyProteinGroups_ProteinGroupIDAsc",
+    50540,
+    "CREATE TABLE \"DecoyProteinGroups_ProteinGroupIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteinGroups_ProteinGroupIDAsc_Primary_ProteinGroupID",
+    "DecoyProteinGroups_ProteinGroupIDAsc",
+    50541,
+    "CREATE INDEX \"IX_DecoyProteinGroups_ProteinGroupIDAsc_Primary_ProteinGroupID\" ON \"DecoyProteinGroups_ProteinGroupIDAsc\"(\r\n\t\t\t\t\t\t\"ProteinGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AnnotatedModifications_ModificationIDAsc",
+    "AnnotatedModifications_ModificationIDAsc",
+    50542,
+    "CREATE TABLE \"AnnotatedModifications_ModificationIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ModificationID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AnnotatedModifications_ModificationIDAsc_Primary_ModificationID",
+    "AnnotatedModifications_ModificationIDAsc",
+    50543,
+    "CREATE INDEX \"IX_AnnotatedModifications_ModificationIDAsc_Primary_ModificationID\" ON \"AnnotatedModifications_ModificationIDAsc\"(\r\n\t\t\t\t\t\t\"ModificationID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AnnotationProteinGroups_ProteinAnnotationGroupIDAsc",
+    "AnnotationProteinGroups_ProteinAnnotationGroupIDAsc",
+    50544,
+    "CREATE TABLE \"AnnotationProteinGroups_ProteinAnnotationGroupIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinAnnotationGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AnnotationProteinGroups_ProteinAnnotationGroupIDAsc_Primary_ProteinAnnotationGroupID",
+    "AnnotationProteinGroups_ProteinAnnotationGroupIDAsc",
+    50582,
+    "CREATE INDEX \"IX_AnnotationProteinGroups_ProteinAnnotationGroupIDAsc_Primary_ProteinAnnotationGroupID\" ON \"AnnotationProteinGroups_ProteinAnnotationGroupIDAsc\"(\r\n\t\t\t\t\t\t\"ProteinAnnotationGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "PathwayProteinGroups_ProteinPathwayGroupIDAsc",
+    "PathwayProteinGroups_ProteinPathwayGroupIDAsc",
+    50621,
+    "CREATE TABLE \"PathwayProteinGroups_ProteinPathwayGroupIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinPathwayGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_PathwayProteinGroups_ProteinPathwayGroupIDAsc_Primary_ProteinPathwayGroupID",
+    "PathwayProteinGroups_ProteinPathwayGroupIDAsc",
+    50628,
+    "CREATE INDEX \"IX_PathwayProteinGroups_ProteinPathwayGroupIDAsc_Primary_ProteinPathwayGroupID\" ON \"PathwayProteinGroups_ProteinPathwayGroupIDAsc\"(\r\n\t\t\t\t\t\t\"ProteinPathwayGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ResultStatistics_IdAsc",
+    "ResultStatistics_IdAsc",
+    50635,
+    "CREATE TABLE \"ResultStatistics_IdAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"Id\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ResultStatistics_IdAsc_Primary_Id",
+    "ResultStatistics_IdAsc",
+    50636,
+    "CREATE INDEX \"IX_ResultStatistics_IdAsc_Primary_Id\" ON \"ResultStatistics_IdAsc\"(\r\n\t\t\t\t\t\t\"Id\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteins_Subset_1_UniqueSequenceIDAsc",
+    "TargetProteins_Subset_1_UniqueSequenceIDAsc",
+    50637,
+    "CREATE TABLE \"TargetProteins_Subset_1_UniqueSequenceIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"UniqueSequenceID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteins_Subset_1_UniqueSequenceIDAsc_Primary_UniqueSequenceID",
+    "TargetProteins_Subset_1_UniqueSequenceIDAsc",
+    50649,
+    "CREATE INDEX \"IX_TargetProteins_Subset_1_UniqueSequenceIDAsc_Primary_UniqueSequenceID\" ON \"TargetProteins_Subset_1_UniqueSequenceIDAsc\"(\r\n\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteins_Subset_1_UniqueSequenceIDAsc",
+    "DecoyProteins_Subset_1_UniqueSequenceIDAsc",
+    50661,
+    "CREATE TABLE \"DecoyProteins_Subset_1_UniqueSequenceIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"UniqueSequenceID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteins_Subset_1_UniqueSequenceIDAsc_Primary_UniqueSequenceID",
+    "DecoyProteins_Subset_1_UniqueSequenceIDAsc",
+    50662,
+    "CREATE INDEX \"IX_DecoyProteins_Subset_1_UniqueSequenceIDAsc_Primary_UniqueSequenceID\" ON \"DecoyProteins_Subset_1_UniqueSequenceIDAsc\"(\r\n\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc",
+    "TargetPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc",
+    50663,
+    "CREATE TABLE \"TargetPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"PeptideID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc_Primary_WorkflowID_PeptideID",
+    "TargetPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc",
+    53421,
+    "CREATE INDEX \"IX_TargetPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc_Primary_WorkflowID_PeptideID\" ON \"TargetPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc",
+    "DecoyPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc",
+    56172,
+    "CREATE TABLE \"DecoyPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"PeptideID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc_Primary_WorkflowID_PeptideID",
+    "DecoyPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc",
+    56186,
+    "CREATE INDEX \"IX_DecoyPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc_Primary_WorkflowID_PeptideID\" ON \"DecoyPsms_Subset_1_WorkflowIDAsc_PeptideIDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc",
+    "TargetProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc",
+    56200,
+    "CREATE TABLE \"TargetProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID",
+    "TargetProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc",
+    56202,
+    "CREATE INDEX \"IX_TargetProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID\" ON \"TargetProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteoformSpectrumMatchs_Subset_1",
+    "DecoyProteoformSpectrumMatchs_Subset_1",
+    56203,
+    "CREATE TABLE \"DecoyProteoformSpectrumMatchs_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\"ID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DecoyProteoformSpectrumMatchs_Subset_1_1",
+    "DecoyProteoformSpectrumMatchs_Subset_1",
+    56204,
+    null
+  ],
+  [
+    "table",
+    "DecoyProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc",
+    "DecoyProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc",
+    56205,
+    "CREATE TABLE \"DecoyProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID",
+    "DecoyProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc",
+    56206,
+    "CREATE INDEX \"IX_DecoyProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID\" ON \"DecoyProteoformSpectrumMatchs_Subset_1_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "LcmsFeatures_Subset_1",
+    "LcmsFeatures_Subset_1",
+    56207,
+    "CREATE TABLE \"LcmsFeatures_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"WorkflowId\" int NOT NULL, \r\n\t\t\t\t\t\"Id\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"WorkflowId\", \"Id\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_LcmsFeatures_Subset_1_1",
+    "LcmsFeatures_Subset_1",
+    56208,
+    null
+  ],
+  [
+    "table",
+    "LcmsFeatures_Subset_1_WorkflowIdAsc_IdAsc",
+    "LcmsFeatures_Subset_1_WorkflowIdAsc_IdAsc",
+    71976,
+    "CREATE TABLE \"LcmsFeatures_Subset_1_WorkflowIdAsc_IdAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowId\" INTEGER NOT NULL, \"Id\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_LcmsFeatures_Subset_1_WorkflowIdAsc_IdAsc_Primary_WorkflowId_Id",
+    "LcmsFeatures_Subset_1_WorkflowIdAsc_IdAsc",
+    79577,
+    "CREATE INDEX \"IX_LcmsFeatures_Subset_1_WorkflowIdAsc_IdAsc_Primary_WorkflowId_Id\" ON \"LcmsFeatures_Subset_1_WorkflowIdAsc_IdAsc\"(\r\n\t\t\t\t\t\t\"WorkflowId\", \"Id\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPeptideGroups_Subset_1_PeptideGroupIDAsc",
+    "TargetPeptideGroups_Subset_1_PeptideGroupIDAsc",
+    87164,
+    "CREATE TABLE \"TargetPeptideGroups_Subset_1_PeptideGroupIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"PeptideGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPeptideGroups_Subset_1_PeptideGroupIDAsc_Primary_PeptideGroupID",
+    "TargetPeptideGroups_Subset_1_PeptideGroupIDAsc",
+    87220,
+    "CREATE INDEX \"IX_TargetPeptideGroups_Subset_1_PeptideGroupIDAsc_Primary_PeptideGroupID\" ON \"TargetPeptideGroups_Subset_1_PeptideGroupIDAsc\"(\r\n\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPeptideGroups_Subset_1_PeptideGroupIDAsc",
+    "DecoyPeptideGroups_Subset_1_PeptideGroupIDAsc",
+    87275,
+    "CREATE TABLE \"DecoyPeptideGroups_Subset_1_PeptideGroupIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"PeptideGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPeptideGroups_Subset_1_PeptideGroupIDAsc_Primary_PeptideGroupID",
+    "DecoyPeptideGroups_Subset_1_PeptideGroupIDAsc",
+    87276,
+    "CREATE INDEX \"IX_DecoyPeptideGroups_Subset_1_PeptideGroupIDAsc_Primary_PeptideGroupID\" ON \"DecoyPeptideGroups_Subset_1_PeptideGroupIDAsc\"(\r\n\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ConsensusFeatures_Subset_1_IdAsc",
+    "ConsensusFeatures_Subset_1_IdAsc",
+    87278,
+    "CREATE TABLE \"ConsensusFeatures_Subset_1_IdAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"Id\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatures_Subset_1_IdAsc_Primary_Id",
+    "ConsensusFeatures_Subset_1_IdAsc",
+    87998,
+    "CREATE INDEX \"IX_ConsensusFeatures_Subset_1_IdAsc_Primary_Id\" ON \"ConsensusFeatures_Subset_1_IdAsc\"(\r\n\t\t\t\t\t\t\"Id\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteinGroups_Subset_1_ProteinGroupIDAsc",
+    "TargetProteinGroups_Subset_1_ProteinGroupIDAsc",
+    88713,
+    "CREATE TABLE \"TargetProteinGroups_Subset_1_ProteinGroupIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteinGroups_Subset_1_ProteinGroupIDAsc_Primary_ProteinGroupID",
+    "TargetProteinGroups_Subset_1_ProteinGroupIDAsc",
+    88720,
+    "CREATE INDEX \"IX_TargetProteinGroups_Subset_1_ProteinGroupIDAsc_Primary_ProteinGroupID\" ON \"TargetProteinGroups_Subset_1_ProteinGroupIDAsc\"(\r\n\t\t\t\t\t\t\"ProteinGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteinGroups_Subset_1_ProteinGroupIDAsc",
+    "DecoyProteinGroups_Subset_1_ProteinGroupIDAsc",
+    88727,
+    "CREATE TABLE \"DecoyProteinGroups_Subset_1_ProteinGroupIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteinGroups_Subset_1_ProteinGroupIDAsc_Primary_ProteinGroupID",
+    "DecoyProteinGroups_Subset_1_ProteinGroupIDAsc",
+    88728,
+    "CREATE INDEX \"IX_DecoyProteinGroups_Subset_1_ProteinGroupIDAsc_Primary_ProteinGroupID\" ON \"DecoyProteinGroups_Subset_1_ProteinGroupIDAsc\"(\r\n\t\t\t\t\t\t\"ProteinGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AnnotationProteinGroups_Subset_1_ProteinAnnotationGroupIDAsc",
+    "AnnotationProteinGroups_Subset_1_ProteinAnnotationGroupIDAsc",
+    88729,
+    "CREATE TABLE \"AnnotationProteinGroups_Subset_1_ProteinAnnotationGroupIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinAnnotationGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AnnotationProteinGroups_Subset_1_ProteinAnnotationGroupIDAsc_Primary_ProteinAnnotationGroupID",
+    "AnnotationProteinGroups_Subset_1_ProteinAnnotationGroupIDAsc",
+    88767,
+    "CREATE INDEX \"IX_AnnotationProteinGroups_Subset_1_ProteinAnnotationGroupIDAsc_Primary_ProteinAnnotationGroupID\" ON \"AnnotationProteinGroups_Subset_1_ProteinAnnotationGroupIDAsc\"(\r\n\t\t\t\t\t\t\"ProteinAnnotationGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "PathwayProteinGroups_Subset_1_ProteinPathwayGroupIDAsc",
+    "PathwayProteinGroups_Subset_1_ProteinPathwayGroupIDAsc",
+    88806,
+    "CREATE TABLE \"PathwayProteinGroups_Subset_1_ProteinPathwayGroupIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinPathwayGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_PathwayProteinGroups_Subset_1_ProteinPathwayGroupIDAsc_Primary_ProteinPathwayGroupID",
+    "PathwayProteinGroups_Subset_1_ProteinPathwayGroupIDAsc",
+    88813,
+    "CREATE INDEX \"IX_PathwayProteinGroups_Subset_1_ProteinPathwayGroupIDAsc_Primary_ProteinPathwayGroupID\" ON \"PathwayProteinGroups_Subset_1_ProteinPathwayGroupIDAsc\"(\r\n\t\t\t\t\t\t\"ProteinPathwayGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "WorkflowInputFiles_Subset_1",
+    "WorkflowInputFiles_Subset_1",
+    88820,
+    "CREATE TABLE \"WorkflowInputFiles_Subset_1\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\"WorkflowLevel\" int NOT NULL, \r\n\t\t\t\t\t\"FileID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"WorkflowID\", \"WorkflowLevel\", \"FileID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_WorkflowInputFiles_Subset_1_1",
+    "WorkflowInputFiles_Subset_1",
+    88821,
+    null
+  ],
+  [
+    "table",
+    "WorkflowInputFiles_Subset_1_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc",
+    "WorkflowInputFiles_Subset_1_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc",
+    88822,
+    "CREATE TABLE \"WorkflowInputFiles_Subset_1_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"WorkflowLevel\" INTEGER NOT NULL, \"FileID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_WorkflowInputFiles_Subset_1_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc_Primary_WorkflowID_WorkflowLevel_FileID",
+    "WorkflowInputFiles_Subset_1_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc",
+    88824,
+    "CREATE INDEX \"IX_WorkflowInputFiles_Subset_1_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc_Primary_WorkflowID_WorkflowLevel_FileID\" ON \"WorkflowInputFiles_Subset_1_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"WorkflowLevel\", \"FileID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FoundModifications_NameAsc",
+    "FoundModifications_NameAsc",
+    88825,
+    "CREATE TABLE \"FoundModifications_NameAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ModificationID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FoundModifications_NameAsc_Primary_ModificationID",
+    "FoundModifications_NameAsc",
+    88831,
+    "CREATE INDEX \"IX_FoundModifications_NameAsc_Primary_ModificationID\" ON \"FoundModifications_NameAsc\"(\r\n\t\t\t\t\t\t\"ModificationID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteins_Subset_2",
+    "TargetProteins_Subset_2",
+    88837,
+    "CREATE TABLE \"TargetProteins_Subset_2\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"UniqueSequenceID\" int64 NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetProteins_Subset_2_1",
+    "TargetProteins_Subset_2",
+    88838,
+    null
+  ],
+  [
+    "table",
+    "TargetProteins_Subset_2_SumPEPScoreDesc",
+    "TargetProteins_Subset_2_SumPEPScoreDesc",
+    88859,
+    "CREATE TABLE \"TargetProteins_Subset_2_SumPEPScoreDesc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"UniqueSequenceID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteins_Subset_2_SumPEPScoreDesc_Primary_UniqueSequenceID",
+    "TargetProteins_Subset_2_SumPEPScoreDesc",
+    88869,
+    "CREATE INDEX \"IX_TargetProteins_Subset_2_SumPEPScoreDesc_Primary_UniqueSequenceID\" ON \"TargetProteins_Subset_2_SumPEPScoreDesc\"(\r\n\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteins_Subset_1_SumPEPScoreDesc",
+    "DecoyProteins_Subset_1_SumPEPScoreDesc",
+    88879,
+    "CREATE TABLE \"DecoyProteins_Subset_1_SumPEPScoreDesc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"UniqueSequenceID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteins_Subset_1_SumPEPScoreDesc_Primary_UniqueSequenceID",
+    "DecoyProteins_Subset_1_SumPEPScoreDesc",
+    88880,
+    "CREATE INDEX \"IX_DecoyProteins_Subset_1_SumPEPScoreDesc_Primary_UniqueSequenceID\" ON \"DecoyProteins_Subset_1_SumPEPScoreDesc\"(\r\n\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPsms_Subset_1_PercolatorqValueAsc",
+    "TargetPsms_Subset_1_PercolatorqValueAsc",
+    88881,
+    "CREATE TABLE \"TargetPsms_Subset_1_PercolatorqValueAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"PeptideID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsms_Subset_1_PercolatorqValueAsc_Primary_WorkflowID_PeptideID",
+    "TargetPsms_Subset_1_PercolatorqValueAsc",
+    91639,
+    "CREATE INDEX \"IX_TargetPsms_Subset_1_PercolatorqValueAsc_Primary_WorkflowID_PeptideID\" ON \"TargetPsms_Subset_1_PercolatorqValueAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPsms_Subset_1_PercolatorqValueAsc",
+    "DecoyPsms_Subset_1_PercolatorqValueAsc",
+    94390,
+    "CREATE TABLE \"DecoyPsms_Subset_1_PercolatorqValueAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"PeptideID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPsms_Subset_1_PercolatorqValueAsc_Primary_WorkflowID_PeptideID",
+    "DecoyPsms_Subset_1_PercolatorqValueAsc",
+    94404,
+    "CREATE INDEX \"IX_DecoyPsms_Subset_1_PercolatorqValueAsc_Primary_WorkflowID_PeptideID\" ON \"DecoyPsms_Subset_1_PercolatorqValueAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "MSnSpectrumInfo_StudyFileIdAsc_RetentionTimeAsc",
+    "MSnSpectrumInfo_StudyFileIdAsc_RetentionTimeAsc",
+    94418,
+    "CREATE TABLE \"MSnSpectrumInfo_StudyFileIdAsc_RetentionTimeAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"SpectrumID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_MSnSpectrumInfo_StudyFileIdAsc_RetentionTimeAsc_Primary_WorkflowID_SpectrumID",
+    "MSnSpectrumInfo_StudyFileIdAsc_RetentionTimeAsc",
+    97781,
+    "CREATE INDEX \"IX_MSnSpectrumInfo_StudyFileIdAsc_RetentionTimeAsc_Primary_WorkflowID_SpectrumID\" ON \"MSnSpectrumInfo_StudyFileIdAsc_RetentionTimeAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"SpectrumID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "LcmsFeatures_Subset_1_ApexRTAsc",
+    "LcmsFeatures_Subset_1_ApexRTAsc",
+    101135,
+    "CREATE TABLE \"LcmsFeatures_Subset_1_ApexRTAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowId\" INTEGER NOT NULL, \"Id\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_LcmsFeatures_Subset_1_ApexRTAsc_Primary_WorkflowId_Id",
+    "LcmsFeatures_Subset_1_ApexRTAsc",
+    108737,
+    "CREATE INDEX \"IX_LcmsFeatures_Subset_1_ApexRTAsc_Primary_WorkflowId_Id\" ON \"LcmsFeatures_Subset_1_ApexRTAsc\"(\r\n\t\t\t\t\t\t\"WorkflowId\", \"Id\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPeptideGroups_Subset_1_QvalityqvalueAsc",
+    "TargetPeptideGroups_Subset_1_QvalityqvalueAsc",
+    116323,
+    "CREATE TABLE \"TargetPeptideGroups_Subset_1_QvalityqvalueAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"PeptideGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPeptideGroups_Subset_1_QvalityqvalueAsc_Primary_PeptideGroupID",
+    "TargetPeptideGroups_Subset_1_QvalityqvalueAsc",
+    116379,
+    "CREATE INDEX \"IX_TargetPeptideGroups_Subset_1_QvalityqvalueAsc_Primary_PeptideGroupID\" ON \"TargetPeptideGroups_Subset_1_QvalityqvalueAsc\"(\r\n\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPeptideGroups_Subset_1_QvalityqvalueAsc",
+    "DecoyPeptideGroups_Subset_1_QvalityqvalueAsc",
+    116434,
+    "CREATE TABLE \"DecoyPeptideGroups_Subset_1_QvalityqvalueAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"PeptideGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPeptideGroups_Subset_1_QvalityqvalueAsc_Primary_PeptideGroupID",
+    "DecoyPeptideGroups_Subset_1_QvalityqvalueAsc",
+    116435,
+    "CREATE INDEX \"IX_DecoyPeptideGroups_Subset_1_QvalityqvalueAsc_Primary_PeptideGroupID\" ON \"DecoyPeptideGroups_Subset_1_QvalityqvalueAsc\"(\r\n\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc",
+    "TargetProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc",
+    116436,
+    "CREATE TABLE \"TargetProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc_Primary_ProteinGroupID",
+    "TargetProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc",
+    116443,
+    "CREATE INDEX \"IX_TargetProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc_Primary_ProteinGroupID\" ON \"TargetProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc\"(\r\n\t\t\t\t\t\t\"ProteinGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc",
+    "DecoyProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc",
+    116450,
+    "CREATE TABLE \"DecoyProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc_Primary_ProteinGroupID",
+    "DecoyProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc",
+    116451,
+    "CREATE INDEX \"IX_DecoyProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc_Primary_ProteinGroupID\" ON \"DecoyProteinGroups_Subset_1_UniquePeptidesCountDesc_PeptideGroupCountDesc_PsmCountDesc\"(\r\n\t\t\t\t\t\t\"ProteinGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AnnotationProteinGroups_Subset_2",
+    "AnnotationProteinGroups_Subset_2",
+    116453,
+    "CREATE TABLE \"AnnotationProteinGroups_Subset_2\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"ProteinAnnotationGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"ProteinAnnotationGroupID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_AnnotationProteinGroups_Subset_2_1",
+    "AnnotationProteinGroups_Subset_2",
+    116454,
+    null
+  ],
+  [
+    "table",
+    "AnnotationProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc",
+    "AnnotationProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc",
+    116484,
+    "CREATE TABLE \"AnnotationProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinAnnotationGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AnnotationProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc_Primary_ProteinAnnotationGroupID",
+    "AnnotationProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc",
+    116499,
+    "CREATE INDEX \"IX_AnnotationProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc_Primary_ProteinAnnotationGroupID\" ON \"AnnotationProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc\"(\r\n\t\t\t\t\t\t\"ProteinAnnotationGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "PathwayProteinGroups_Subset_2",
+    "PathwayProteinGroups_Subset_2",
+    116514,
+    "CREATE TABLE \"PathwayProteinGroups_Subset_2\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"ProteinPathwayGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"ProteinPathwayGroupID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_PathwayProteinGroups_Subset_2_1",
+    "PathwayProteinGroups_Subset_2",
+    116515,
+    null
+  ],
+  [
+    "table",
+    "PathwayProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc",
+    "PathwayProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc",
+    116526,
+    "CREATE TABLE \"PathwayProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinPathwayGroupID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_PathwayProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc_Primary_ProteinPathwayGroupID",
+    "PathwayProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc",
+    116532,
+    "CREATE INDEX \"IX_PathwayProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc_Primary_ProteinPathwayGroupID\" ON \"PathwayProteinGroups_Subset_2_CoverageDesc_MasterProteinCountDesc\"(\r\n\t\t\t\t\t\t\"ProteinPathwayGroupID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ProcessingNodeCustomData_CustomDataIDAsc",
+    "ProcessingNodeCustomData_CustomDataIDAsc",
+    116538,
+    "CREATE TABLE \"ProcessingNodeCustomData_CustomDataIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"CustomDataID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ProcessingNodeCustomData_CustomDataIDAsc_Primary_CustomDataID",
+    "ProcessingNodeCustomData_CustomDataIDAsc",
+    116539,
+    "CREATE INDEX \"IX_ProcessingNodeCustomData_CustomDataIDAsc_Primary_CustomDataID\" ON \"ProcessingNodeCustomData_CustomDataIDAsc\"(\r\n\t\t\t\t\t\t\"CustomDataID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "MassSpectrumItems_WorkflowIDAsc_IDAsc",
+    "MassSpectrumItems_WorkflowIDAsc_IDAsc",
+    116540,
+    "CREATE TABLE \"MassSpectrumItems_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_MassSpectrumItems_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID",
+    "MassSpectrumItems_WorkflowIDAsc_IDAsc",
+    119779,
+    "CREATE INDEX \"IX_MassSpectrumItems_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID\" ON \"MassSpectrumItems_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "XicTraceItems_WorkflowIDAsc_IDAsc",
+    "XicTraceItems_WorkflowIDAsc_IDAsc",
+    123010,
+    "CREATE TABLE \"XicTraceItems_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_XicTraceItems_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID",
+    "XicTraceItems_WorkflowIDAsc_IDAsc",
+    148310,
+    "CREATE INDEX \"IX_XicTraceItems_WorkflowIDAsc_IDAsc_Primary_WorkflowID_ID\" ON \"XicTraceItems_WorkflowIDAsc_IDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ReferenceMassSpectrumItem_WorkflowIDAsc_PsmIDAsc",
+    "ReferenceMassSpectrumItem_WorkflowIDAsc_PsmIDAsc",
+    172485,
+    "CREATE TABLE \"ReferenceMassSpectrumItem_WorkflowIDAsc_PsmIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"PsmID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ReferenceMassSpectrumItem_WorkflowIDAsc_PsmIDAsc_Primary_WorkflowID_PsmID",
+    "ReferenceMassSpectrumItem_WorkflowIDAsc_PsmIDAsc",
+    172486,
+    "CREATE INDEX \"IX_ReferenceMassSpectrumItem_WorkflowIDAsc_PsmIDAsc_Primary_WorkflowID_PsmID\" ON \"ReferenceMassSpectrumItem_WorkflowIDAsc_PsmIDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"PsmID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "CorrectionLandmarkItems_WorkflowIdAsc_IDAsc",
+    "CorrectionLandmarkItems_WorkflowIdAsc_IDAsc",
+    172487,
+    "CREATE TABLE \"CorrectionLandmarkItems_WorkflowIdAsc_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowId\" INTEGER NOT NULL, \"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_CorrectionLandmarkItems_WorkflowIdAsc_IDAsc_Primary_WorkflowId_ID",
+    "CorrectionLandmarkItems_WorkflowIdAsc_IDAsc",
+    173666,
+    "CREATE INDEX \"IX_CorrectionLandmarkItems_WorkflowIdAsc_IDAsc_Primary_WorkflowId_ID\" ON \"CorrectionLandmarkItems_WorkflowIdAsc_IDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowId\", \"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "LcmsPeaks_WorkflowIdAsc_IdAsc",
+    "LcmsPeaks_WorkflowIdAsc_IdAsc",
+    174839,
+    "CREATE TABLE \"LcmsPeaks_WorkflowIdAsc_IdAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowId\" INTEGER NOT NULL, \"Id\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_LcmsPeaks_WorkflowIdAsc_IdAsc_Primary_WorkflowId_Id",
+    "LcmsPeaks_WorkflowIdAsc_IdAsc",
+    203246,
+    "CREATE INDEX \"IX_LcmsPeaks_WorkflowIdAsc_IdAsc_Primary_WorkflowId_Id\" ON \"LcmsPeaks_WorkflowIdAsc_IdAsc\"(\r\n\t\t\t\t\t\t\"WorkflowId\", \"Id\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ProteinIdentificationGroups_WorkflowIDAsc_ProteinIdentificationGroupIDAsc_ProcessingNodeNumberAsc",
+    "ProteinIdentificationGroups_WorkflowIDAsc_ProteinIdentificationGroupIDAsc_ProcessingNodeNumberAsc",
+    230310,
+    "CREATE TABLE \"ProteinIdentificationGroups_WorkflowIDAsc_ProteinIdentificationGroupIDAsc_ProcessingNodeNumberAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"ProteinIdentificationGroupID\" INTEGER NOT NULL, \"ProcessingNodeNumber\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteins_Subset_2_UniqueSequenceIDAsc",
+    "TargetProteins_Subset_2_UniqueSequenceIDAsc",
+    230311,
+    "CREATE TABLE \"TargetProteins_Subset_2_UniqueSequenceIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"UniqueSequenceID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteins_Subset_2_UniqueSequenceIDAsc_Primary_UniqueSequenceID",
+    "TargetProteins_Subset_2_UniqueSequenceIDAsc",
+    230321,
+    "CREATE INDEX \"IX_TargetProteins_Subset_2_UniqueSequenceIDAsc_Primary_UniqueSequenceID\" ON \"TargetProteins_Subset_2_UniqueSequenceIDAsc\"(\r\n\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ProteinIdentificationGroups_WorkflowIDAsc_ProteinIdentificationGroupIDAsc_ProcessingNodeNumberAsc_Primary_WorkflowID_ProteinIdentificationGroupID_ProcessingNodeNumber",
+    "ProteinIdentificationGroups_WorkflowIDAsc_ProteinIdentificationGroupIDAsc_ProcessingNodeNumberAsc",
+    230331,
+    "CREATE INDEX \"IX_ProteinIdentificationGroups_WorkflowIDAsc_ProteinIdentificationGroupIDAsc_ProcessingNodeNumberAsc_Primary_WorkflowID_ProteinIdentificationGroupID_ProcessingNodeNumber\" ON \"ProteinIdentificationGroups_WorkflowIDAsc_ProteinIdentificationGroupIDAsc_ProcessingNodeNumberAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"ProteinIdentificationGroupID\", \"ProcessingNodeNumber\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ConsensusFeatureRegions_IdAsc",
+    "ConsensusFeatureRegions_IdAsc",
+    230332,
+    "CREATE TABLE \"ConsensusFeatureRegions_IdAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"Id\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatureRegions_IdAsc_Primary_Id",
+    "ConsensusFeatureRegions_IdAsc",
+    230409,
+    "CREATE INDEX \"IX_ConsensusFeatureRegions_IdAsc_Primary_Id\" ON \"ConsensusFeatureRegions_IdAsc\"(\r\n\t\t\t\t\t\t\"Id\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "CorrectionCurveItems_WorkflowIdAsc_IDAsc",
+    "CorrectionCurveItems_WorkflowIdAsc_IDAsc",
+    230482,
+    "CREATE TABLE \"CorrectionCurveItems_WorkflowIdAsc_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowId\" INTEGER NOT NULL, \"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_CorrectionCurveItems_WorkflowIdAsc_IDAsc_Primary_WorkflowId_ID",
+    "CorrectionCurveItems_WorkflowIdAsc_IDAsc",
+    230483,
+    "CREATE INDEX \"IX_CorrectionCurveItems_WorkflowIdAsc_IDAsc_Primary_WorkflowId_ID\" ON \"CorrectionCurveItems_WorkflowIdAsc_IDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowId\", \"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "RetentionTimeCorrectionItems_WorkflowIdAsc_IDAsc",
+    "RetentionTimeCorrectionItems_WorkflowIdAsc_IDAsc",
+    230484,
+    "CREATE TABLE \"RetentionTimeCorrectionItems_WorkflowIdAsc_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowId\" INTEGER NOT NULL, \"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_RetentionTimeCorrectionItems_WorkflowIdAsc_IDAsc_Primary_WorkflowId_ID",
+    "RetentionTimeCorrectionItems_WorkflowIdAsc_IDAsc",
+    230485,
+    "CREATE INDEX \"IX_RetentionTimeCorrectionItems_WorkflowIdAsc_IDAsc_Primary_WorkflowId_ID\" ON \"RetentionTimeCorrectionItems_WorkflowIdAsc_IDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowId\", \"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AbundanceCorrectionItems_WorkflowIdAsc_IDAsc",
+    "AbundanceCorrectionItems_WorkflowIdAsc_IDAsc",
+    230486,
+    "CREATE TABLE \"AbundanceCorrectionItems_WorkflowIdAsc_IDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowId\" INTEGER NOT NULL, \"ID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AbundanceCorrectionItems_WorkflowIdAsc_IDAsc_Primary_WorkflowId_ID",
+    "AbundanceCorrectionItems_WorkflowIdAsc_IDAsc",
+    230487,
+    "CREATE INDEX \"IX_AbundanceCorrectionItems_WorkflowIdAsc_IDAsc_Primary_WorkflowId_ID\" ON \"AbundanceCorrectionItems_WorkflowIdAsc_IDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowId\", \"ID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FastaProteinAnnotations_ProteinAnnotationIdAsc",
+    "FastaProteinAnnotations_ProteinAnnotationIdAsc",
+    230490,
+    "CREATE TABLE \"FastaProteinAnnotations_ProteinAnnotationIdAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"ProteinAnnotationId\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FastaProteinAnnotations_ProteinAnnotationIdAsc_Primary_ProteinAnnotationId",
+    "FastaProteinAnnotations_ProteinAnnotationIdAsc",
+    235786,
+    "CREATE INDEX \"IX_FastaProteinAnnotations_ProteinAnnotationIdAsc_Primary_ProteinAnnotationId\" ON \"FastaProteinAnnotations_ProteinAnnotationIdAsc\"(\r\n\t\t\t\t\t\t\"ProteinAnnotationId\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AnnotationDescription_AnnotationDescriptionIdAsc",
+    "AnnotationDescription_AnnotationDescriptionIdAsc",
+    241070,
+    "CREATE TABLE \"AnnotationDescription_AnnotationDescriptionIdAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"AnnotationDescriptionId\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AnnotationDescription_AnnotationDescriptionIdAsc_Primary_AnnotationDescriptionId",
+    "AnnotationDescription_AnnotationDescriptionIdAsc",
+    241327,
+    "CREATE INDEX \"IX_AnnotationDescription_AnnotationDescriptionIdAsc_Primary_AnnotationDescriptionId\" ON \"AnnotationDescription_AnnotationDescriptionIdAsc\"(\r\n\t\t\t\t\t\t\"AnnotationDescriptionId\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPsms_Subset_2",
+    "TargetPsms_Subset_2",
+    241579,
+    "CREATE TABLE \"TargetPsms_Subset_2\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\"PeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetPsms_Subset_2_1",
+    "TargetPsms_Subset_2",
+    241580,
+    null
+  ],
+  [
+    "table",
+    "DecoyPsms_Subset_2",
+    "DecoyPsms_Subset_2",
+    247293,
+    "CREATE TABLE \"DecoyPsms_Subset_2\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\"PeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DecoyPsms_Subset_2_1",
+    "DecoyPsms_Subset_2",
+    247294,
+    null
+  ],
+  [
+    "table",
+    "TargetPeptideGroups_Subset_2",
+    "TargetPeptideGroups_Subset_2",
+    247322,
+    "CREATE TABLE \"TargetPeptideGroups_Subset_2\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"PeptideGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetPeptideGroups_Subset_2_1",
+    "TargetPeptideGroups_Subset_2",
+    247323,
+    null
+  ],
+  [
+    "table",
+    "DecoyPeptideGroups_Subset_2",
+    "DecoyPeptideGroups_Subset_2",
+    247435,
+    "CREATE TABLE \"DecoyPeptideGroups_Subset_2\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"PeptideGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DecoyPeptideGroups_Subset_2_1",
+    "DecoyPeptideGroups_Subset_2",
+    247436,
+    null
+  ],
+  [
+    "table",
+    "TargetProteins_Subset_3",
+    "TargetProteins_Subset_3",
+    247437,
+    "CREATE TABLE \"TargetProteins_Subset_3\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"UniqueSequenceID\" int64 NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetProteins_Subset_3_1",
+    "TargetProteins_Subset_3",
+    247438,
+    null
+  ],
+  [
+    "table",
+    "DecoyProteins_Subset_2",
+    "DecoyProteins_Subset_2",
+    247460,
+    "CREATE TABLE \"DecoyProteins_Subset_2\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"UniqueSequenceID\" int64 NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DecoyProteins_Subset_2_1",
+    "DecoyProteins_Subset_2",
+    247461,
+    null
+  ],
+  [
+    "table",
+    "TargetProteins_Subset_4",
+    "TargetProteins_Subset_4",
+    247462,
+    "CREATE TABLE \"TargetProteins_Subset_4\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"UniqueSequenceID\" int64 NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetProteins_Subset_4_1",
+    "TargetProteins_Subset_4",
+    247463,
+    null
+  ],
+  [
+    "table",
+    "TargetProteins_Subset_4_UniqueSequenceIDAsc",
+    "TargetProteins_Subset_4_UniqueSequenceIDAsc",
+    247477,
+    "CREATE TABLE \"TargetProteins_Subset_4_UniqueSequenceIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"UniqueSequenceID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteins_Subset_4_UniqueSequenceIDAsc_Primary_UniqueSequenceID",
+    "TargetProteins_Subset_4_UniqueSequenceIDAsc",
+    247484,
+    "CREATE INDEX \"IX_TargetProteins_Subset_4_UniqueSequenceIDAsc_Primary_UniqueSequenceID\" ON \"TargetProteins_Subset_4_UniqueSequenceIDAsc\"(\r\n\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPsms_Subset_3",
+    "TargetPsms_Subset_3",
+    247491,
+    "CREATE TABLE \"TargetPsms_Subset_3\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\"PeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetPsms_Subset_3_1",
+    "TargetPsms_Subset_3",
+    247492,
+    null
+  ],
+  [
+    "table",
+    "WorkflowInputFiles_Subset_2",
+    "WorkflowInputFiles_Subset_2",
+    253205,
+    "CREATE TABLE \"WorkflowInputFiles_Subset_2\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\"WorkflowLevel\" int NOT NULL, \r\n\t\t\t\t\t\"FileID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"WorkflowID\", \"WorkflowLevel\", \"FileID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_WorkflowInputFiles_Subset_2_1",
+    "WorkflowInputFiles_Subset_2",
+    253206,
+    null
+  ],
+  [
+    "table",
+    "WorkflowInputFiles_Subset_2_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc",
+    "WorkflowInputFiles_Subset_2_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc",
+    253207,
+    "CREATE TABLE \"WorkflowInputFiles_Subset_2_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowID\" INTEGER NOT NULL, \"WorkflowLevel\" INTEGER NOT NULL, \"FileID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_WorkflowInputFiles_Subset_2_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc_Primary_WorkflowID_WorkflowLevel_FileID",
+    "WorkflowInputFiles_Subset_2_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc",
+    253208,
+    "CREATE INDEX \"IX_WorkflowInputFiles_Subset_2_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc_Primary_WorkflowID_WorkflowLevel_FileID\" ON \"WorkflowInputFiles_Subset_2_WorkflowIDAsc_WorkflowLevelAsc_FileIDAsc\"(\r\n\t\t\t\t\t\t\"WorkflowID\", \"WorkflowLevel\", \"FileID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPsms_Subset_3",
+    "DecoyPsms_Subset_3",
+    253209,
+    "CREATE TABLE \"DecoyPsms_Subset_3\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\"PeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DecoyPsms_Subset_3_1",
+    "DecoyPsms_Subset_3",
+    253210,
+    null
+  ],
+  [
+    "table",
+    "TargetPeptideGroups_Subset_3",
+    "TargetPeptideGroups_Subset_3",
+    253239,
+    "CREATE TABLE \"TargetPeptideGroups_Subset_3\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"PeptideGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetPeptideGroups_Subset_3_1",
+    "TargetPeptideGroups_Subset_3",
+    253240,
+    null
+  ],
+  [
+    "table",
+    "DecoyPeptideGroups_Subset_3",
+    "DecoyPeptideGroups_Subset_3",
+    253352,
+    "CREATE TABLE \"DecoyPeptideGroups_Subset_3\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"PeptideGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DecoyPeptideGroups_Subset_3_1",
+    "DecoyPeptideGroups_Subset_3",
+    253353,
+    null
+  ],
+  [
+    "table",
+    "TargetProteins_Subset_4_SumPEPScoreDesc",
+    "TargetProteins_Subset_4_SumPEPScoreDesc",
+    253354,
+    "CREATE TABLE \"TargetProteins_Subset_4_SumPEPScoreDesc\"(\r\n\t\t\t\t\t\tPosition INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\"UniqueSequenceID\" INTEGER NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteins_Subset_4_SumPEPScoreDesc_Primary_UniqueSequenceID",
+    "TargetProteins_Subset_4_SumPEPScoreDesc",
+    253361,
+    "CREATE INDEX \"IX_TargetProteins_Subset_4_SumPEPScoreDesc_Primary_UniqueSequenceID\" ON \"TargetProteins_Subset_4_SumPEPScoreDesc\"(\r\n\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteins_Subset_5",
+    "TargetProteins_Subset_5",
+    253368,
+    "CREATE TABLE \"TargetProteins_Subset_5\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"UniqueSequenceID\" int64 NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_TargetProteins_Subset_5_1",
+    "TargetProteins_Subset_5",
+    253369,
+    null
+  ],
+  [
+    "table",
+    "DecoyProteins_Subset_3",
+    "DecoyProteins_Subset_3",
+    253391,
+    "CREATE TABLE \"DecoyProteins_Subset_3\"\r\n\t\t\t\t\t\t(\r\n\t\t\t\t\t\t\t\"UniqueSequenceID\" int64 NOT NULL,\r\n\t\t\t\t\t\t\tPRIMARY KEY (\t\t\r\n\t\t\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t\t\t)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DecoyProteins_Subset_3_1",
+    "DecoyProteins_Subset_3",
+    253392,
+    null
+  ]
+]

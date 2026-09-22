@@ -1,0 +1,12 @@
+program,gene,n_samples,samples_fpkm_above_zero,mean_fpkm,min_fpkm,max_fpkm
+Endothelial junctions,CDH5,4,4,19.1425,3.29,28.87
+Endothelial junctions,CLDN5,4,4,17.7075,2.57,41.71
+Endothelial junctions,OCLN,4,3,16.3475,0.0,41.89
+Endothelial junctions,TJP1,4,4,88.4325,15.33,208.4
+Endothelial transport,ABCB1,4,4,22.975,5.62,42.16
+Endothelial transport,MFSD2A,4,4,11.6325,2.46,28.17
+Endothelial transport,SLC1A1,4,3,2.4675,0.0,7.21
+Inflammatory adhesion,ICAM1,4,3,20.98,0.0,68.66
+Inflammatory adhesion,SELE,4,2,1.7725,0.0,7.0
+Inflammatory adhesion,SELP,4,3,1.9325,0.0,4.36
+Inflammatory adhesion,VCAM1,4,2,0.6975,0.0,1.76

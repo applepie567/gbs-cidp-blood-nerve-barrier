@@ -1,0 +1,322 @@
+[
+  [
+    1,
+    [
+      1,
+      "TargetPsms_Subset_1",
+      "Filter 'TargetPeptideSpectrumMatch' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531359088638657,
+      724277
+    ]
+  ],
+  [
+    2,
+    [
+      2,
+      "DecoyPsms_Subset_1",
+      "Filter 'DecoyPeptideSpectrumMatch' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531359109298385,
+      3329
+    ]
+  ],
+  [
+    3,
+    [
+      3,
+      "TargetPeptideGroups_Subset_1",
+      "Filter 'TargetPeptideGroup' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531359146257719,
+      20409
+    ]
+  ],
+  [
+    4,
+    [
+      4,
+      "DecoyPeptideGroups_Subset_1",
+      "Filter 'DecoyPeptideGroup' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531359155296824,
+      203
+    ]
+  ],
+  [
+    5,
+    [
+      5,
+      "TargetProteins_Subset_1",
+      "Filter 'TargetProtein' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531359166416858,
+      2703
+    ]
+  ],
+  [
+    6,
+    [
+      6,
+      "DecoyProteins_Subset_1",
+      "Filter 'DecoyProtein' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531359168310063,
+      218
+    ]
+  ],
+  [
+    7,
+    [
+      7,
+      "TargetProteinGroups_Subset_1",
+      "Filter 'TargetProteinGroup' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531359169734533,
+      2142
+    ]
+  ],
+  [
+    8,
+    [
+      8,
+      "DecoyProteinGroups_Subset_1",
+      "Filter 'DecoyProteinGroup' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531359170739382,
+      202
+    ]
+  ],
+  [
+    9,
+    [
+      9,
+      "TargetProteoformSpectrumMatchs_Subset_1",
+      "Filter 'TargetProteoformSpectrumMatch' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531360046301979,
+      0
+    ]
+  ],
+  [
+    10,
+    [
+      10,
+      "ConsensusFeatures_Subset_1",
+      "Filter 'ConsensusFeature' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531360061352353,
+      247611
+    ]
+  ],
+  [
+    11,
+    [
+      11,
+      "AnnotationProteinGroups_Subset_1",
+      "Filter 'AnnotationProteinGroup' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531360064729747,
+      14946
+    ]
+  ],
+  [
+    12,
+    [
+      12,
+      "PathwayProteinGroups_Subset_1",
+      "Filter 'PathwayProteinGroup' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531360066481429,
+      2220
+    ]
+  ],
+  [
+    13,
+    [
+      39,
+      "DecoyProteoformSpectrumMatchs_Subset_1",
+      "Filter 'DecoyProteoformSpectrumMatch' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531360246955793,
+      0
+    ]
+  ],
+  [
+    14,
+    [
+      40,
+      "LcmsFeatures_Subset_1",
+      "Filter 'LcmsFeature' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531360337688098,
+      2065287
+    ]
+  ],
+  [
+    15,
+    [
+      41,
+      "WorkflowInputFiles_Subset_1",
+      "Filter 'WorkflowInputFile' 2 NARY_AND 1 endsnotwith property 'System.String, mscorlib' 'FileName' constant 'System.String, mscorlib' 'msf' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' TRUE",
+      638531360397650048,
+      19
+    ]
+  ],
+  [
+    16,
+    [
+      42,
+      "TargetProteins_Subset_2",
+      "Filter 'TargetProtein' 2 NARY_AND 1 = FilterConditionProperties 1  'NamedComparableFilterCondition/DisplayPropertyHint' 'Master' property 'Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework' 'IsMasterProtein' constant 'Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework' 'IsMasterProtein' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531360412283409,
+      2142
+    ]
+  ],
+  [
+    17,
+    [
+      43,
+      "AnnotationProteinGroups_Subset_2",
+      "Filter 'AnnotationProteinGroup' 2 NARY_AND 1 = property 'Thermo.PD.EntityDataFramework.AnnotationLevel, Thermo.Magellan.EntityDataFramework' 'GroupAnnotationLevel' constant 'Thermo.PD.EntityDataFramework.AnnotationLevel, Thermo.Magellan.EntityDataFramework' 'LeafAnnotation' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531361165492793,
+      5680
+    ]
+  ],
+  [
+    18,
+    [
+      44,
+      "PathwayProteinGroups_Subset_2",
+      "Filter 'PathwayProteinGroup' 2 NARY_AND 1 = property 'Thermo.PD.EntityDataFramework.AnnotationLevel, Thermo.Magellan.EntityDataFramework' 'GroupPathwayLevel' constant 'Thermo.PD.EntityDataFramework.AnnotationLevel, Thermo.Magellan.EntityDataFramework' 'LeafAnnotation' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531361168724757,
+      1851
+    ]
+  ],
+  [
+    19,
+    [
+      58,
+      "TargetPsms_Subset_2",
+      "Filter 'TargetPeptideSpectrumMatch' 2 BETTEREQUAL property 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'MatchConfidence' constant 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'High' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624482059775,
+      724277
+    ]
+  ],
+  [
+    20,
+    [
+      59,
+      "DecoyPsms_Subset_2",
+      "Filter 'DecoyPeptideSpectrumMatch' 2 BETTEREQUAL property 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'MatchConfidence' constant 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'High' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624516650531,
+      3329
+    ]
+  ],
+  [
+    21,
+    [
+      60,
+      "TargetPeptideGroups_Subset_2",
+      "Filter 'TargetPeptideGroup' 2 BETTEREQUAL property 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'Confidence' constant 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'High' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624564608196,
+      20409
+    ]
+  ],
+  [
+    22,
+    [
+      61,
+      "DecoyPeptideGroups_Subset_2",
+      "Filter 'DecoyPeptideGroup' 2 BETTEREQUAL property 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'Confidence' constant 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'High' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624578408860,
+      203
+    ]
+  ],
+  [
+    23,
+    [
+      62,
+      "TargetProteins_Subset_3",
+      "Filter 'TargetProtein' 2 datadistribution_particular property 'Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework' 'ProteinFDRConfidence' constant 'Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework' 'position_id_1' Filter '7899A5F8-6954-4E95-8C2D-BB0C83221B21' 1 datadistribution_level_at_least property 'System.Nullable`1[[System.Int32, mscorlib]], mscorlib' '6AED4774-1ECD-4202-B746-B79D936A3D77' constant 'System.Nullable`1[[System.Int32, mscorlib]], mscorlib' '4' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624610311342,
+      2385
+    ]
+  ],
+  [
+    24,
+    [
+      63,
+      "DecoyProteins_Subset_2",
+      "Filter 'DecoyProtein' 2 datadistribution_particular property 'Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework' 'ProteinFDRConfidence' constant 'Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework' 'position_id_1' Filter '7899A5F8-6954-4E95-8C2D-BB0C83221B21' 1 datadistribution_level_at_least property 'System.Nullable`1[[System.Int32, mscorlib]], mscorlib' '6AED4774-1ECD-4202-B746-B79D936A3D77' constant 'System.Nullable`1[[System.Int32, mscorlib]], mscorlib' '4' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624619233294,
+      23
+    ]
+  ],
+  [
+    25,
+    [
+      64,
+      "TargetProteins_Subset_4",
+      "Filter 'TargetProtein' FilterProperties 1  'Filter/DisplayPropertyHint' 'Proteins' 2 NARY_AND 3 = FilterConditionProperties 1  'NamedComparableFilterCondition/DisplayPropertyHint' 'Master' property 'Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework' 'IsMasterProtein' constant 'Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework' 'IsMasterProtein' datadistribution_particular FilterConditionProperties 1  'NamedComparableFilterCondition/DisplayPropertyHint' 'Protein FDR Confidence' property 'Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework' 'ProteinFDRConfidence' constant 'Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework' 'position_id_1' Filter '7899A5F8-6954-4E95-8C2D-BB0C83221B21' 1 datadistribution_level_at_least property 'System.Nullable`1[[System.Int32, mscorlib]], mscorlib' '6AED4774-1ECD-4202-B746-B79D936A3D77' constant 'System.Nullable`1[[System.Int32, mscorlib]], mscorlib' '4' >= FilterConditionProperties 1  'NamedComparableFilterCondition/DisplayPropertyHint' '# Unique Peptides' property 'System.Int32, mscorlib' 'GroupUniquePeptidesCount' constant 'System.Int32, mscorlib' '2' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624629495440,
+      1470
+    ]
+  ],
+  [
+    26,
+    [
+      65,
+      "TargetPsms_Subset_3",
+      "Filter 'TargetPeptideSpectrumMatch' 2 BETTEREQUAL property 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'MatchConfidence' constant 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'Medium' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624677875145,
+      724277
+    ]
+  ],
+  [
+    27,
+    [
+      66,
+      "WorkflowInputFiles_Subset_2",
+      "Filter 'WorkflowInputFile' FilterProperties 1  'Filter/DisplayPropertyHint' 'Input Files' 2 NARY_AND 1 endsnotwith property 'System.String, mscorlib' 'FileName' constant 'System.String, mscorlib' 'msf' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' TRUE",
+      638531624679421023,
+      19
+    ]
+  ],
+  [
+    28,
+    [
+      67,
+      "DecoyPsms_Subset_3",
+      "Filter 'DecoyPeptideSpectrumMatch' 2 BETTEREQUAL property 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'MatchConfidence' constant 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'Medium' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624683061590,
+      3329
+    ]
+  ],
+  [
+    29,
+    [
+      68,
+      "TargetPeptideGroups_Subset_3",
+      "Filter 'TargetPeptideGroup' 2 BETTEREQUAL property 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'Confidence' constant 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'Medium' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624687622587,
+      20409
+    ]
+  ],
+  [
+    30,
+    [
+      69,
+      "DecoyPeptideGroups_Subset_3",
+      "Filter 'DecoyPeptideGroup' 2 BETTEREQUAL property 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'Confidence' constant 'System.Nullable`1[[Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics]], mscorlib' 'Medium' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624690043113,
+      203
+    ]
+  ],
+  [
+    31,
+    [
+      70,
+      "TargetProteins_Subset_5",
+      "Filter 'TargetProtein' 2 datadistribution_particular property 'Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework' 'ProteinFDRConfidence' constant 'Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework' 'position_id_1' Filter '7899A5F8-6954-4E95-8C2D-BB0C83221B21' 1 datadistribution_level_at_least property 'System.Nullable`1[[System.Int32, mscorlib]], mscorlib' '6AED4774-1ECD-4202-B746-B79D936A3D77' constant 'System.Nullable`1[[System.Int32, mscorlib]], mscorlib' '3' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624696684565,
+      2569
+    ]
+  ],
+  [
+    32,
+    [
+      71,
+      "DecoyProteins_Subset_3",
+      "Filter 'DecoyProtein' 2 datadistribution_particular property 'Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework' 'ProteinFDRConfidence' constant 'Thermo.Magellan.EntityDataFramework.DataDistributionValue, Thermo.Magellan.EntityDataFramework' 'position_id_1' Filter '7899A5F8-6954-4E95-8C2D-BB0C83221B21' 1 datadistribution_level_at_least property 'System.Nullable`1[[System.Int32, mscorlib]], mscorlib' '6AED4774-1ECD-4202-B746-B79D936A3D77' constant 'System.Nullable`1[[System.Int32, mscorlib]], mscorlib' '3' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531624702195771,
+      128
+    ]
+  ]
+]

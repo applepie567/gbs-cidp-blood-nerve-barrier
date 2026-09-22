@@ -1,0 +1,3 @@
+cell_group,program,model,delta,se,ci_low,ci_high,p_hc3,residual_df,estimable,q_bh_2_hc3
+Repair_damage_SC,Myelin maintenance,Age centre and repairSC fraction,0.7763300447120607,0.4837425845981446,-0.2687322728500712,1.8213923622741925,0.1325363427762678,13,True,0.2650726855525356
+Repair_damage_SC,Injury response,Age centre and repairSC fraction,0.27199164782416624,0.3910962957050221,-0.5729205310756669,1.1169038267239992,0.4990113355843429,13,True,0.4990113355843429

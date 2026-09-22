@@ -1,0 +1,16 @@
+protein,reported_cohorts,included_in_meta,reason
+SELE,2,True,Both independent coefficients available
+IL2RA,2,True,Both independent coefficients available
+CCL3,2,True,Both independent coefficients available
+CD4,1,False,One cohort coefficient unavailable
+MMP7,1,False,One cohort coefficient unavailable
+CR2,2,True,Both independent coefficients available
+CD1C,2,True,Both independent coefficients available
+THBD,2,True,Both independent coefficients available
+NRP1,2,True,Both independent coefficients available
+CD38,2,True,Both independent coefficients available
+IL3RA,1,False,One cohort coefficient unavailable
+IL6,2,True,Both independent coefficients available
+ITGAM,1,False,One cohort coefficient unavailable
+CD5,2,True,Both independent coefficients available
+IL8,2,True,Both independent coefficients available

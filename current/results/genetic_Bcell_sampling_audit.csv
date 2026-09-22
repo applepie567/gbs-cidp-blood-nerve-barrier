@@ -1,0 +1,2 @@
+disease,cell_group,n_donors,n_below_20,min_nuclei,max_nuclei,total_nuclei,interpretation
+CIDP,B,9,8,1,54,100,"Sampling audit only, not a new genetic or expression test"

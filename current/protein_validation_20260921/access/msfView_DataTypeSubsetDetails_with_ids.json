@@ -1,0 +1,372 @@
+[
+  [
+    1,
+    [
+      1,
+      "TargetPsms_Subset_1",
+      "Filter 'TargetPeptideSpectrumMatch' 2 = property 'System.Int32, mscorlib' 'IdentifyingNodeNumber' constant 'System.Int32, mscorlib' '2' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531049586268084,
+      1117789
+    ]
+  ],
+  [
+    2,
+    [
+      2,
+      "DecoyPsms_Subset_1",
+      "Filter 'DecoyPeptideSpectrumMatch' 2 = property 'System.Int32, mscorlib' 'IdentifyingNodeNumber' constant 'System.Int32, mscorlib' '2' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531049672851461,
+      1277571
+    ]
+  ],
+  [
+    3,
+    [
+      3,
+      "TargetProteoformSpectrumMatchs_Subset_1",
+      "Filter 'TargetProteoformSpectrumMatch' 2 = property 'System.Int32, mscorlib' 'IdentifyingNodeNumber' constant 'System.Int32, mscorlib' '2' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531054119687791,
+      0
+    ]
+  ],
+  [
+    4,
+    [
+      4,
+      "DecoyProteoformSpectrumMatchs_Subset_1",
+      "Filter 'DecoyProteoformSpectrumMatch' 2 = property 'System.Int32, mscorlib' 'IdentifyingNodeNumber' constant 'System.Int32, mscorlib' '2' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531054122435988,
+      0
+    ]
+  ],
+  [
+    6,
+    [
+      9,
+      "TargetPsms_Subset_3",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'IdentifyingNodeNumber' constant 'System.Int32, mscorlib' '2'",
+      638531054986810780,
+      1117789
+    ]
+  ],
+  [
+    7,
+    [
+      10,
+      "DecoyPsms_Subset_2",
+      "Filter 'DecoyPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'IdentifyingNodeNumber' constant 'System.Int32, mscorlib' '2'",
+      638531055290178860,
+      1277571
+    ]
+  ],
+  [
+    8,
+    [
+      11,
+      "TargetPsms_Subset_4",
+      "Filter 'TargetPeptideSpectrumMatch' 2 = property 'System.Int32, mscorlib' 'IdentifyingNodeNumber' constant 'System.Int32, mscorlib' '5' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531154451055385,
+      429003
+    ]
+  ],
+  [
+    9,
+    [
+      12,
+      "DecoyPsms_Subset_3",
+      "Filter 'DecoyPeptideSpectrumMatch' 2 = property 'System.Int32, mscorlib' 'IdentifyingNodeNumber' constant 'System.Int32, mscorlib' '5' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531154461643426,
+      165178
+    ]
+  ],
+  [
+    10,
+    [
+      13,
+      "TargetProteoformSpectrumMatchs_Subset_2",
+      "Filter 'TargetProteoformSpectrumMatch' 2 = property 'System.Int32, mscorlib' 'IdentifyingNodeNumber' constant 'System.Int32, mscorlib' '5' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531157377673733,
+      0
+    ]
+  ],
+  [
+    11,
+    [
+      14,
+      "DecoyProteoformSpectrumMatchs_Subset_2",
+      "Filter 'DecoyProteoformSpectrumMatch' 2 = property 'System.Int32, mscorlib' 'IdentifyingNodeNumber' constant 'System.Int32, mscorlib' '5' FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531157378727874,
+      0
+    ]
+  ],
+  [
+    12,
+    [
+      15,
+      "TargetPsms_Subset_2",
+      "Filter 'TargetPeptideSpectrumMatch' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531157959812526,
+      1546792
+    ]
+  ],
+  [
+    13,
+    [
+      16,
+      "TargetProteoformSpectrumMatchs_Subset_3",
+      "Filter 'TargetProteoformSpectrumMatch' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531158730359313,
+      0
+    ]
+  ],
+  [
+    14,
+    [
+      17,
+      "DecoyProteoformSpectrumMatchs_Subset_3",
+      "Filter 'DecoyProteoformSpectrumMatch' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531158731059557,
+      0
+    ]
+  ],
+  [
+    15,
+    [
+      18,
+      "TargetProteins_Subset_1",
+      "Filter 'TargetProtein' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531158738171156,
+      19785
+    ]
+  ],
+  [
+    16,
+    [
+      19,
+      "DecoyPsms_Subset_4",
+      "Filter 'DecoyPeptideSpectrumMatch' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531159348984284,
+      1442749
+    ]
+  ],
+  [
+    17,
+    [
+      20,
+      "DecoyProteins_Subset_1",
+      "Filter 'DecoyProtein' 2 TRUE FilterConditionProperties 1  'PredefinedProperty' 'ExcludedBy' = property 'System.Int32, mscorlib' 'ExcludedBy' constant 'System.Int32, mscorlib' '-1'",
+      638531159354493461,
+      19980
+    ]
+  ],
+  [
+    18,
+    [
+      21,
+      "TargetPsms_Subset_5",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'IdentifyingNodeNumber' constant 'System.Int32, mscorlib' '5'",
+      638531169199857452,
+      429003
+    ]
+  ],
+  [
+    19,
+    [
+      22,
+      "DecoyPsms_Subset_5",
+      "Filter 'DecoyPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'IdentifyingNodeNumber' constant 'System.Int32, mscorlib' '5'",
+      638531169226382487,
+      165178
+    ]
+  ],
+  [
+    20,
+    [
+      23,
+      "TargetPsms_Subset_6",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7529'",
+      638531212529811478,
+      57006
+    ]
+  ],
+  [
+    21,
+    [
+      24,
+      "TargetPsms_Subset_7",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7526'",
+      638531212562305166,
+      89848
+    ]
+  ],
+  [
+    22,
+    [
+      25,
+      "TargetPsms_Subset_8",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7528'",
+      638531212594407961,
+      97097
+    ]
+  ],
+  [
+    23,
+    [
+      26,
+      "TargetPsms_Subset_9",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7527'",
+      638531212627694394,
+      62656
+    ]
+  ],
+  [
+    24,
+    [
+      27,
+      "TargetPsms_Subset_10",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7531'",
+      638531216906411061,
+      82371
+    ]
+  ],
+  [
+    25,
+    [
+      28,
+      "TargetPsms_Subset_11",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7533'",
+      638531216940536101,
+      75486
+    ]
+  ],
+  [
+    26,
+    [
+      29,
+      "TargetPsms_Subset_12",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7530'",
+      638531216972408135,
+      87166
+    ]
+  ],
+  [
+    27,
+    [
+      30,
+      "TargetPsms_Subset_13",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7532'",
+      638531217002980009,
+      61192
+    ]
+  ],
+  [
+    28,
+    [
+      31,
+      "TargetPsms_Subset_14",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7537'",
+      638531221003616645,
+      81061
+    ]
+  ],
+  [
+    29,
+    [
+      32,
+      "TargetPsms_Subset_15",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7535'",
+      638531221039807980,
+      74585
+    ]
+  ],
+  [
+    30,
+    [
+      33,
+      "TargetPsms_Subset_16",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7536'",
+      638531221071219969,
+      85258
+    ]
+  ],
+  [
+    31,
+    [
+      34,
+      "TargetPsms_Subset_17",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7534'",
+      638531221102118383,
+      63119
+    ]
+  ],
+  [
+    32,
+    [
+      35,
+      "TargetPsms_Subset_18",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7541'",
+      638531224653749683,
+      84462
+    ]
+  ],
+  [
+    33,
+    [
+      36,
+      "TargetPsms_Subset_19",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7540'",
+      638531224684624266,
+      77077
+    ]
+  ],
+  [
+    34,
+    [
+      37,
+      "TargetPsms_Subset_20",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7539'",
+      638531224716145607,
+      97510
+    ]
+  ],
+  [
+    35,
+    [
+      38,
+      "TargetPsms_Subset_21",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7538'",
+      638531224748439368,
+      93095
+    ]
+  ],
+  [
+    36,
+    [
+      39,
+      "TargetPsms_Subset_22",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7542'",
+      638531227525983257,
+      90272
+    ]
+  ],
+  [
+    37,
+    [
+      40,
+      "TargetPsms_Subset_23",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7544'",
+      638531227558312663,
+      93906
+    ]
+  ],
+  [
+    38,
+    [
+      41,
+      "TargetPsms_Subset_24",
+      "Filter 'TargetPeptideSpectrumMatch' 1 = property 'System.Int32, mscorlib' 'SpectrumFileId' constant 'System.Int32, mscorlib' '7543'",
+      638531227590048405,
+      93625
+    ]
+  ]
+]

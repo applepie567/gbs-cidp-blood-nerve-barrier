@@ -1,0 +1,1983 @@
+[
+  [
+    "table",
+    "SchemaInfo",
+    "SchemaInfo",
+    2,
+    "CREATE TABLE [SchemaInfo] (\r\n\t\t\t\t\t[Version] [int] NOT NULL,\r\n\t\t\t\t\t[Kind] [varchar] (32) NOT NULL,\t\r\n\t\t\t\t\t[Date] [datetime] NOT NULL,\r\n\t\t\t\t\t[SoftwareVersion] [varchar] (64) NOT NULL,\r\n\t\t\t\t\t[Comment] [text] NOT NULL,\r\n\t\t\t\t\tUNIQUE ([Version], [Kind])\r\n\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_SchemaInfo_1",
+    "SchemaInfo",
+    3,
+    null
+  ],
+  [
+    "table",
+    "WorkflowInfo",
+    "WorkflowInfo",
+    4,
+    "CREATE TABLE [WorkflowInfo](\r\n\t\t\t\t\t\t[WorkflowGuid] [varchar] (36) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t[WorkflowState] [int] DEFAULT 0 NOT NULL)"
+  ],
+  [
+    "table",
+    "Workflows",
+    "Workflows",
+    5,
+    "CREATE TABLE [Workflows] (\r\n\t\t\t\t\t\t[WorkflowID] [int] NOT NULL,\r\n\t\t\t\t\t\t[Level] [int] NOT NULL,\r\n\t\t\t\t\t\t[WorkflowName] [varchar] (256) COLLATE NOCASE NOT NULL ,\r\n\t\t\t\t\t\t[WorkflowDescription] [varchar] (256) COLLATE NOCASE NOT NULL ,\r\n\t\t\t\t\t\t[WorkflowState] [int] DEFAULT 0 NOT NULL ,\r\n\t\t\t\t\t\t[WorkflowStartDate] [datetime] NOT NULL ,\r\n\t\t\t\t\t\t[User] [varchar] (256) COLLATE NOCASE NOT NULL ,\t\r\n\t\t\t\t\t\t[WorkflowGUID] [varchar] (36) COLLATE NOCASE NOT NULL ,\r\n\t\t\t\t\t\t[Version] [int] NOT NULL,\r\n\t\t\t\t\t\t[SoftwareVersion] [varchar] (256) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t[WorkflowXML] [ varchar] (1024) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t[MachineName] [varchar] (256) COLLATE NOCASE NOT NULL,\t\r\n\t\t\t\t\t\t[WorkflowType] [varchar] (36) COLLATE NOCASE NOT NULL,\r\n                        [Study]  [varchar] (256) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\tUNIQUE ( [WorkflowID], [Level])\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_Workflows_1",
+    "Workflows",
+    6,
+    null
+  ],
+  [
+    "table",
+    "ProcessingNodeScores",
+    "ProcessingNodeScores",
+    7,
+    "CREATE TABLE [ProcessingNodeScores] (\r\n\t\t\t\t\t\t[WorkflowID] [int] NOT NULL,\r\n\t\t\t\t\t\t[Level] [int] NOT NULL,\r\n\t\t\t\t\t\t[ScoreID] [int] NOT NULL,\r\n\t\t\t\t\t\t[ScoreName] [varchar] (50) COLLATE NOCASE NOT NULL ,\t\t\r\n\t\t\t\t\t\t[DisplayName] [varchar](256) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t[Description] [varchar](1024) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t[FormatString] [varchar](64) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t[ScoreCategory] [int] NOT NULL,\r\n\t\t\t\t\t\t[IsMainScore] [bit] NOT NULL,\r\n\t\t\t\t\t\t[ScoreGUID] [varchar] (36) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t[DataType] [varchar] (256) COLLATE NOCASE NOT NULL ,\t\t\r\n\t\t\t\t\t\t[SemanticTerms] [varchar],\r\n\t\t\t\t\t\t[NodeGuid] [varchar] (36) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t[NodeName][varchar] (50) COLLATE NOCASE NOT NULL ,\r\n\t\t\t\t\t\tUNIQUE ( [WorkflowID], [NodeGuid], [ScoreName])\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_ProcessingNodeScores_1",
+    "ProcessingNodeScores",
+    8,
+    null
+  ],
+  [
+    "table",
+    "WorkflowMessages",
+    "WorkflowMessages",
+    9,
+    "CREATE TABLE [WorkflowMessages] (\t\r\n\t\t\t\t\t\t[WorkflowID] [int] NOT NULL,\r\n\t\t\t\t\t\t[Level] [int] NOT NULL,\r\n\t\t\t\t\t\t[MessageID] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t[ProcessingNodeName] [varchar] (1024) COLLATE NOCASE NOT NULL ,\t\r\n\t\t\t\t\t\t[Time] [bigint] NOT NULL ,\r\n\t\t\t\t\t\t[MessageKind] [int] NOT NULL ,\r\n\t\t\t\t\t\t[Message] [varchar] (1024) COLLATE NOCASE NOT NULL \t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "sqlite_sequence",
+    "sqlite_sequence",
+    10,
+    "CREATE TABLE sqlite_sequence(name,seq)"
+  ],
+  [
+    "table",
+    "AnalysisDefinition",
+    "AnalysisDefinition",
+    11,
+    "CREATE TABLE [AnalysisDefinition] (\t\r\n\t\t\t\t\t\t[Version] [int] NOT NULL,\r\n\t\t\t\t\t\t[AnalysisDefinitionXML] [text] NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_WorkflowMessages_WorkflowID",
+    "WorkflowMessages",
+    12,
+    "CREATE INDEX IX_WorkflowMessages_WorkflowID ON [WorkflowMessages]\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\t[WorkflowID]\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ReportInfo",
+    "ReportInfo",
+    13,
+    "CREATE TABLE [ReportInfo](\r\n\t\t\t\t\t\t\t[Guid] [varchar] (36) COLLATE NOCASE NOT NULL\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DataTypes",
+    "DataTypes",
+    14,
+    "CREATE TABLE [DataTypes](\r\n\t\t\t\t\t\t\t[DataTypeID] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\t[Name] [varchar](50) COLLATE NOCASE NOT NULL UNIQUE,\r\n\t\t\t\t\t\t\t[TableName] [varchar](50) COLLATE NOCASE NOT NULL UNIQUE,\r\n\t\t\t\t\t\t\t[DisplayName] [varchar](256) NOT NULL,\r\n\t\t\t\t\t\t\t[Description] [varchar](1000) NULL,\r\n\t\t\t\t\t\t\t[Visibility] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[VisiblePosition] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[VisibilityStartingLayer] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[DataTypeIdentifier] [varchar](50) COLLATE NOCASE NULL,\r\n\t\t\t\t\t\t\t[Version] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[LastChange] [datetime] DEFAULT CURRENT_TIMESTAMP NOT NULL,\r\n\t\t\t\t\t\t\t[Creators] varchar(50) COLLATE NOCASE NOT NULL\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DataTypes_1",
+    "DataTypes",
+    15,
+    null
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DataTypes_2",
+    "DataTypes",
+    16,
+    null
+  ],
+  [
+    "table",
+    "DataTypesColumns",
+    "DataTypesColumns",
+    19,
+    "CREATE TABLE [DataTypesColumns](\r\n\t\t\t\t\t\t\t[ColumnID] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\t[DataTypeID] INTEGER NOT NULL,\r\n\t\t\t\t \t\t\t\r\n\t\t\t\t\t\t\t[DBColumnName] [varchar](128) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t \t\t\t[CustomDataType] [int] NOT NULL,\r\n\t\t\t\t \t\t\t[Nullable] [bool] NOT NULL,\r\n\t\t\t\t \t\t\t[ValueType] [varchar](1024) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t \t\t\t[SpecialValueType] [varchar] (200),\r\n\t\t\t\t \t\t\t[SpecialValueTypeID] [int] NOT NULL DEFAULT 0,\r\n\t\t\t\t \t\t\t[DefaultValue] NULL,\r\n\t\t\t\t \t\t\t[LastChange] [datetime] DEFAULT CURRENT_TIMESTAMP NOT NULL,\r\n\r\n\t\t\t\t \t\t\t[Creator] [int] NOT NULL,\r\n\t\t\t\t \t\t\t[Finalizer] [int] NOT NULL,\r\n\r\n\t\t\t\t \t\t\t[Property_Guid] [varchar] (36) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t \t\t\t[Property_DisplayName] [varchar](128) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t \t\t\t[Property_Description] [varchar](256) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t \t\t\t[Property_FormatString] [varchar](50) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t \t\t\t[Property_SortDirection] [int] DEFAULT 0 NOT NULL,\r\n\t\t\t\t \t\t\t[Property_SemanticDescription] [varchar](500) COLLATE NOCASE NOT NULL,\r\n\r\n\t\t\t\t \t\t\t[Grid_DataVisibility] [int] DEFAULT 0 NOT NULL,\r\n\t\t\t\t \t\t\t[Grid_VisiblePosition] [int] DEFAULT 0 NOT NULL,\r\n\t\t\t\t \t\t\t[Grid_ColumnWidth] [int] DEFAULT 0 NOT NULL,\r\n\t\t\t\t \t\t\t[Grid_GridCellControlGuid] [varchar] (36) COLLATE NOCASE,\r\n\t\t\t\t \t\t\t[Grid_TextHAlign] [int] DEFAULT 0 NOT NULL,\r\n\t\t\t\t \t\t\t[Grid_AllowEdit] [bit] NOT NULL,\r\n\t\t\t\t\t\t\t[Grid_Background] [int] NOT NULL,\r\n\r\n\t\t\t\t \t\t\t[Plot_PlotType] [int] DEFAULT 0 NOT NULL,\r\n\r\n\t\t\t\t\t\t\t[TextExport_Supported] [int] DEFAULT 0 NOT NULL\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DataTypesColumnExtendedData",
+    "DataTypesColumnExtendedData",
+    20,
+    "CREATE TABLE [DataTypesColumnExtendedData](\r\n\t\t\t\t\t\t\t[ColumnID] INTEGER,\r\n\t\t\t\t\t\t\t[Name] [varchar](50) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t\t[ValueString] [varchar],\r\n\t\t\t\t\t\t\tUnique ([ColumnID], [Name])\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DataTypesColumnExtendedData_1",
+    "DataTypesColumnExtendedData",
+    21,
+    null
+  ],
+  [
+    "table",
+    "DataTypesIDColumns",
+    "DataTypesIDColumns",
+    22,
+    "CREATE TABLE [DataTypesIDColumns](\r\n\t\t\t\t\t\t\t[ColumnID] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[Rank] [int] NOT NULL\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DataTypeColumnsCategoricalValues",
+    "DataTypeColumnsCategoricalValues",
+    23,
+    "CREATE TABLE [DataTypeColumnsCategoricalValues](\r\n\t\t\t\t\t\t\t[ColumnID] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[ValueString] varchar(100) COLLATE RTRIM NOT NULL,\r\n\t\t\t\t\t\t\t[Value] NOT NULL,\r\n\t\t\t\t\t\t\t[LastChange] [datetime] DEFAULT CURRENT_TIMESTAMP NOT NULL,\r\n\t\t\t\t\t\t\tUnique([ColumnID], [ValueString])\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DataTypeColumnsCategoricalValues_1",
+    "DataTypeColumnsCategoricalValues",
+    24,
+    null
+  ],
+  [
+    "table",
+    "ConnectedDataTypes",
+    "ConnectedDataTypes",
+    25,
+    "CREATE TABLE [ConnectedDataTypes](\t\r\n\t\t\t\t\t\t\t[DataTypeID1] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[DataTypeID2] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[ConnectedTableName] varchar(256) COLLATE NOCASE NOT NULL UNIQUE,\r\n\t\t\t\t\t\t\t[Creators] varchar(50) COLLATE NOCASE NOT NULL\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_ConnectedDataTypes_1",
+    "ConnectedDataTypes",
+    26,
+    null
+  ],
+  [
+    "table",
+    "ConnectedDataTypesColumns",
+    "ConnectedDataTypesColumns",
+    27,
+    "CREATE TABLE [ConnectedDataTypesColumns](\r\n\t\t\t\t\t\t\t[ColumnID] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\t[DataTypeID1] INTEGER NOT NULL,\r\n\t\t\t\t\t\t\t[DataTypeID2] INTEGER NOT NULL,\r\n\t\t\t\t \t\t\t\r\n\t\t\t\t\t\t\t[DBColumnName] [varchar](128) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t \t\t\t[CustomDataType] [int] NOT NULL,\r\n\t\t\t\t \t\t\t[Nullable] [bool] NOT NULL,\r\n\t\t\t\t \t\t\t[ValueType] [varchar](1024) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t \t\t\t[SpecialValueType] [varchar] (200),\r\n\t\t\t\t \t\t\t[SpecialValueTypeID] [int] NOT NULL DEFAULT 0,\r\n\t\t\t\t \t\t\t[DefaultValue] NULL,\r\n\t\t\t\t \t\t\t[LastChange] [datetime] DEFAULT CURRENT_TIMESTAMP NOT NULL,\r\n\r\n\t\t\t\t \t\t\t[Creator] [int] NOT NULL,\r\n\t\t\t\t \t\t\t[Finalizer] [int] NOT NULL,\r\n\r\n\t\t\t\t \t\t\t[Property_Guid] [varchar] (36) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t \t\t\t[Property_DisplayName] [varchar](128) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t \t\t\t[Property_Description] [varchar](256) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t \t\t\t[Property_FormatString] [varchar](50) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t \t\t\t[Property_SortDirection] [int] DEFAULT 0 NOT NULL,\r\n\t\t\t\t \t\t\t[Property_SemanticDescription] [varchar](500) COLLATE NOCASE NOT NULL,\r\n\r\n\t\t\t\t \t\t\t[Grid_DataVisibility] [int] DEFAULT 0 NOT NULL,\r\n\t\t\t\t \t\t\t[Grid_VisiblePosition] [int] DEFAULT 0 NOT NULL,\r\n\t\t\t\t \t\t\t[Grid_ColumnWidth] [int] DEFAULT 0 NOT NULL,\r\n\t\t\t\t \t\t\t[Grid_GridCellControlGuid] [varchar] (36) COLLATE NOCASE,\r\n\t\t\t\t \t\t\t[Grid_TextHAlign] [int] DEFAULT 0 NOT NULL,\r\n\t\t\t\t \t\t\t[Grid_AllowEdit] [bit] NOT NULL,\r\n\t\t\t\t\t\t\t[Grid_Background] [int] NOT NULL,\r\n\r\n\t\t\t\t \t\t\t[Plot_PlotType] [int] DEFAULT 0 NOT NULL,\r\n\r\n\t\t\t\t\t\t\t[TextExport_Supported] [int] DEFAULT 0 NOT NULL\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ConnectedDataTypesColumnExtendedData",
+    "ConnectedDataTypesColumnExtendedData",
+    29,
+    "CREATE TABLE [ConnectedDataTypesColumnExtendedData](\r\n\t\t\t\t\t\t\t[ColumnID] INTEGER,\r\n\t\t\t\t\t\t\t[Name] [varchar](50) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t\t[ValueString] [varchar],\r\n\t\t\t\t\t\t\tUnique ([ColumnID], [Name])\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_ConnectedDataTypesColumnExtendedData_1",
+    "ConnectedDataTypesColumnExtendedData",
+    30,
+    null
+  ],
+  [
+    "table",
+    "ConnectedDataTypesIDColumns",
+    "ConnectedDataTypesIDColumns",
+    31,
+    "CREATE TABLE [ConnectedDataTypesIDColumns](\r\n\t\t\t\t\t\t\t[ColumnID] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[Rank] [int] NOT NULL\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "IndirectConnectedDataTypes",
+    "IndirectConnectedDataTypes",
+    32,
+    "CREATE TABLE [IndirectConnectedDataTypes](\t\r\n\t\t\t\t\t\t\t[DataTypeID1] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[DataTypeID2] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[ConnectionPath] varchar(256) COLLATE NOCASE\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "EnumDataTypes",
+    "EnumDataTypes",
+    33,
+    "CREATE TABLE [EnumDataTypes](\r\n\t\t\t\t\t\t\t[EnumID] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\t[EnumType] [varchar](1024) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t\t[IsFlagsEnum] [int] DEFAULT 0,\r\n\r\n\t\t\t\t\t\t\t[CVReference] [varchar] (5) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t\t[CVTermId] [varchar] (16) NOT NULL,\r\n\t\t\t\t\t\t\t[CVTermName] [varchar] (128) NOT NULL,\r\n\t\t\t\t\t\t\t[CVTermDefinition] [varchar] (1024)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "EnumDataTypeValues",
+    "EnumDataTypeValues",
+    34,
+    "CREATE TABLE [EnumDataTypeValues](\r\n\t\t\t\t\t\t\t[EnumID] INTEGER NOT NULL,\r\n\t\t\t\t\t\t\t[Value] INTEGER NOT NULL,\r\n\t\t\t\t\t\t\t[DisplayName] [varchar] (50) NOT NULL,\r\n\t\t\t\t\t\t\t[Abbreviation] [varchar] (25),\r\n\r\n\t\t\t\t\t\t\t[CVReference] [varchar] (5) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t\t[CVTermId] [varchar] (16) NOT NULL,\r\n\t\t\t\t\t\t\t[CVTermName] [varchar] (128) NOT NULL,\r\n\t\t\t\t\t\t\t[CVTermDefinition] [varchar] (1024)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_EnumDataTypeValues_EnumID",
+    "EnumDataTypeValues",
+    35,
+    "CREATE INDEX [IX_EnumDataTypeValues_EnumID] ON [EnumDataTypeValues](\r\n\t\t\t\t\t\t\t[EnumID]\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DataDistributionMaps",
+    "DataDistributionMaps",
+    36,
+    "CREATE TABLE [DataDistributionMaps](\r\n\t\t\t\t\t\t\t[ID] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\t[Name] [varchar] NOT NULL,\r\n\t\t\t\t\t\t\t[SingularCategoryName] [varchar] DEFAULT 'category',\r\n\t\t\t\t\t\t\t[PluralCategoryName] [varchar] DEFAULT 'categories',\r\n\t\t\t\t\t\t\t[LevelCategoryName] [varchar] DEFAULT 'level',\r\n\t\t\t\t\t\t\t[SuppressedFilters] [varchar] DEFAULT '',\r\n\t\t\t\t\t\t\t[Description] [varchar] NOT NULL,\r\n\t\t\t\t\t\t\t[SemanticTerms] [varchar],\r\n\t\t\t\t \t\t\t[CustomDataType] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[MinimumValue] NULL,\r\n\t\t\t\t\t\t\t[MaximumValue] NULL\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DataDistributionBoxes",
+    "DataDistributionBoxes",
+    38,
+    "CREATE TABLE [DataDistributionBoxes](\r\n\t\t\t\t\t\t\t[BoxID] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\t[DataDistributionMapID] INTEGER NOT NULL,\r\n\t\t\t\t\t\t\t[Position] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[Name] [varchar] NOT NULL,\r\n\t\t\t\t\t\t\t[Description] [varchar],\r\n\t\t\t\t\t\t\t[SemanticTerms] [varchar],\r\n\t\t\t\t\t\t\t[Color] [int] DEFAULT 0,\r\n\t\t\t\t\t\t\t[IsFirstInGroup] [bool] NOT NULL\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DataDistributionBoxExtendedData",
+    "DataDistributionBoxExtendedData",
+    39,
+    "CREATE TABLE [DataDistributionBoxExtendedData](\r\n\t\t\t\t\t\t\t[BoxID] INTEGER,\r\n\t\t\t\t\t\t\t[Name] [varchar](50) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t\t[ValueString] [varchar],\r\n\t\t\t\t\t\t\tUnique ([BoxID], [Name])\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_DataDistributionBoxExtendedData_1",
+    "DataDistributionBoxExtendedData",
+    40,
+    null
+  ],
+  [
+    "table",
+    "DataDistributionLevels",
+    "DataDistributionLevels",
+    41,
+    "CREATE TABLE [DataDistributionLevels](\r\n\t\t\t\t\t\t\t[LevelID] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t\t[DataDistributionMapID] INTEGER NOT NULL,\r\n\t\t\t\t\t\t\t[Position] [int] NOT NULL,\r\n\t\t\t\t\t\t\t[Name] [varchar] NOT NULL,\r\n\t\t\t\t\t\t\t[Description] [varchar],\r\n\t\t\t\t\t\t\t[SemanticTerms] [varchar],\r\n\t\t\t\t\t\t\t[Threshold] NULL,\r\n\t\t\t\t\t\t\t[Color] [int]\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DataDistributionLevels_DataDistributionMapID",
+    "DataDistributionLevels",
+    42,
+    "CREATE INDEX [IX_DataDistributionLevels_DataDistributionMapID] ON [DataDistributionLevels](\r\n\t\t\t\t\t\t\t[DataDistributionMapID]\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "CustomDataTypes",
+    "CustomDataTypes",
+    43,
+    "CREATE TABLE [CustomDataTypes](\t\r\n\t\t\t\t\t\t\t[Value] int NOT NULL UNIQUE,\r\n\t\t\t\t\t\t\t[Name] varchar NOT NULL,\r\n\t\t\t\t\t\t\t[SystemType] varchar NOT NULL\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_CustomDataTypes_1",
+    "CustomDataTypes",
+    44,
+    null
+  ],
+  [
+    "table",
+    "SystemTypes",
+    "SystemTypes",
+    45,
+    "CREATE TABLE [SystemTypes](\r\n\t\t\t\t\t\t\t[Identifier] [varchar](1024) COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t\t[SystemType] [TEXT],\r\n\t\t\t\t\t\t\tUnique (Identifier)\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_SystemTypes_1",
+    "SystemTypes",
+    46,
+    null
+  ],
+  [
+    "table",
+    "SettingsOwner",
+    "SettingsOwner",
+    73,
+    "CREATE TABLE [SettingsOwner]\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\t[OwnerId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n\t\t\t\t\t\t[Name] [varchar] COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\tUNIQUE(\r\n\t\t\t\t\t\t\t[Name]\r\n\t\t\t\t\t\t)\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_SettingsOwner_1",
+    "SettingsOwner",
+    74,
+    null
+  ],
+  [
+    "table",
+    "SettingsValues",
+    "SettingsValues",
+    75,
+    "CREATE TABLE [SettingsValues]\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\t[OwnerId] INTEGER NOT NULL,\r\n\t\t\t\t\t\t[Key] [varchar] COLLATE NOCASE NOT NULL,\r\n\t\t\t\t\t\t[Value] [varchar],\r\n\t\t\t\t\t\tUNIQUE(\r\n\t\t\t\t\t\t\t[OwnerId],\r\n\t\t\t\t\t\t\t[Key]\r\n\t\t\t\t\t\t)\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "sqlite_autoindex_SettingsValues_1",
+    "SettingsValues",
+    76,
+    null
+  ],
+  [
+    "table",
+    "ProcessingNodeCustomData",
+    "ProcessingNodeCustomData",
+    48,
+    "CREATE TABLE \"ProcessingNodeCustomData\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"CustomDataID\" int NOT NULL, \r\n\t\t\t\t\t\t\"WorkflowID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ProcessingNodeNumber\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Name\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"DataPurpose\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"CustomDataType\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"FormatString\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ProcessingNodeName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"CustomValue\"  NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ProcessingNodeCustomData_Unique_CustomDataID",
+    "ProcessingNodeCustomData",
+    49,
+    "CREATE UNIQUE INDEX \"IX_ProcessingNodeCustomData_Unique_CustomDataID\" ON \"ProcessingNodeCustomData\"(\r\n\t\t\t\t\t\t\t\"CustomDataID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "WorkflowInputFiles",
+    "WorkflowInputFiles",
+    51,
+    "CREATE TABLE \"WorkflowInputFiles\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\t\"WorkflowLevel\" int NOT NULL, \r\n\t\t\t\t\t\t\"FileID\" int NOT NULL, \r\n\t\t\t\t\t\t\"FileName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"FileSize\" int64 NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"FileSizeUnit\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ChildWorkflowID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PhysicalFileName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"FileType\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"StudyFileID\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"CreationDate\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"RetentionTimeRange\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"InstrumentDescription\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"SoftwareRevision\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"InstrumentHardware\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t, \"RefFileID\" [varchar] (1024) COLLATE NOCASE NULL)"
+  ],
+  [
+    "index",
+    "IX_WorkflowInputFiles_Unique_WorkflowID_WorkflowLevel_FileID",
+    "WorkflowInputFiles",
+    53,
+    "CREATE UNIQUE INDEX \"IX_WorkflowInputFiles_Unique_WorkflowID_WorkflowLevel_FileID\" ON \"WorkflowInputFiles\"(\r\n\t\t\t\t\t\t\t\"WorkflowID\", \"WorkflowLevel\", \"FileID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "StudyInformation",
+    "StudyInformation",
+    64,
+    "CREATE TABLE \"StudyInformation\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"ID\" int NOT NULL, \r\n\t\t\t\t\t\t\"Sample\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"SampleIdentifier\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"StudyFileID\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"FileName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"SampleType\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SampleGroup\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ReplicateGroup\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"Ratios\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ReplicateRatios\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t, \"Checked\" int NOT NULL DEFAULT 0)"
+  ],
+  [
+    "index",
+    "IX_StudyInformation_Unique_ID",
+    "StudyInformation",
+    65,
+    "CREATE UNIQUE INDEX \"IX_StudyInformation_Unique_ID\" ON \"StudyInformation\"(\r\n\t\t\t\t\t\t\t\"ID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "StudyInformationWorkflowInputFiles",
+    "StudyInformationWorkflowInputFiles",
+    47,
+    "CREATE TABLE \"StudyInformationWorkflowInputFiles\" (\r\n\t\t\t\t\t\t\"StudyInformationID\" int NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowInputFilesWorkflowID\" int NOT NULL, \"WorkflowInputFilesWorkflowLevel\" int NOT NULL, \"WorkflowInputFilesFileID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_StudyInformationWorkflowInputFiles_Unique_StudyInformationID_WorkflowInputFilesWorkflowID_WorkflowInputFilesWorkflowLevel_WorkflowInputFilesFileID",
+    "StudyInformationWorkflowInputFiles",
+    97,
+    "CREATE UNIQUE INDEX \"IX_StudyInformationWorkflowInputFiles_Unique_StudyInformationID_WorkflowInputFilesWorkflowID_WorkflowInputFilesWorkflowLevel_WorkflowInputFilesFileID\" ON \"StudyInformationWorkflowInputFiles\"(\r\n\t\t\t\t\t\t\t\"StudyInformationID\", \"WorkflowInputFilesWorkflowID\", \"WorkflowInputFilesWorkflowLevel\", \"WorkflowInputFilesFileID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_StudyInformationWorkflowInputFiles_Primary_WorkflowInputFilesWorkflowID_WorkflowInputFilesWorkflowLevel_WorkflowInputFilesFileID",
+    "StudyInformationWorkflowInputFiles",
+    98,
+    "CREATE INDEX \"IX_StudyInformationWorkflowInputFiles_Primary_WorkflowInputFilesWorkflowID_WorkflowInputFilesWorkflowLevel_WorkflowInputFilesFileID\" ON \"StudyInformationWorkflowInputFiles\"(\r\n\t\t\t\t\t\t\t\"WorkflowInputFilesWorkflowID\", \"WorkflowInputFilesWorkflowLevel\", \"WorkflowInputFilesFileID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AminoAcids",
+    "AminoAcids",
+    143,
+    "CREATE TABLE \"AminoAcids\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"AminoAcidID\" int NOT NULL, \r\n\t\t\t\t\t\t\"Name\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"OneLetterCode\" [varchar] (1024) COLLATE NOCASE NOT NULL DEFAULT '', \r\n\t\t\t\t\t\t\"MonoisotopicMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"AverageMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ThreeLetterCode\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"SumFormula\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AminoAcids_Unique_AminoAcidID",
+    "AminoAcids",
+    144,
+    "CREATE UNIQUE INDEX \"IX_AminoAcids_Unique_AminoAcidID\" ON \"AminoAcids\"(\r\n\t\t\t\t\t\t\t\"AminoAcidID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FoundModifications",
+    "FoundModifications",
+    146,
+    "CREATE TABLE \"FoundModifications\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"ModificationID\" int NOT NULL, \r\n\t\t\t\t\t\t\"Name\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"Abbreviation\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"DeltaMonoisotopicMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"DeltaAverageMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Substitution\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"LeavingGroup\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"IsSubstitution\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PositionType\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"UnimodAccession\" int64 NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IsCrosslink\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ExtendedProperties\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FoundModifications_Unique_ModificationID",
+    "FoundModifications",
+    148,
+    "CREATE UNIQUE INDEX \"IX_FoundModifications_Unique_ModificationID\" ON \"FoundModifications\"(\r\n\t\t\t\t\t\t\t\"ModificationID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FoundModificationsAminoAcids",
+    "FoundModificationsAminoAcids",
+    149,
+    "CREATE TABLE \"FoundModificationsAminoAcids\" (\r\n\t\t\t\t\t\t\"FoundModificationsModificationID\" int NOT NULL,\r\n\t\t\t\t\t\t\"AminoAcidsAminoAcidID\" int NOT NULL\r\n\t\t\t\t\t\t, \"Classification\" int NOT NULL, \"NeutralLossID\" int NOT NULL\r\n\t\t\t\t\t, \"NeutralLossName\" [varchar] (1024) COLLATE NOCASE NULL, \"NeutralLossMass\" double NULL, \"NeutralLossAverageMass\" double NULL)"
+  ],
+  [
+    "index",
+    "IX_FoundModificationsAminoAcids_Unique_FoundModificationsModificationID_AminoAcidsAminoAcidID_Classification_NeutralLossID",
+    "FoundModificationsAminoAcids",
+    150,
+    "CREATE UNIQUE INDEX \"IX_FoundModificationsAminoAcids_Unique_FoundModificationsModificationID_AminoAcidsAminoAcidID_Classification_NeutralLossID\" ON \"FoundModificationsAminoAcids\"(\r\n\t\t\t\t\t\t\t\"FoundModificationsModificationID\", \"AminoAcidsAminoAcidID\", \"Classification\", \"NeutralLossID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FoundModificationsAminoAcids_Primary_AminoAcidsAminoAcidID",
+    "FoundModificationsAminoAcids",
+    151,
+    "CREATE INDEX \"IX_FoundModificationsAminoAcids_Primary_AminoAcidsAminoAcidID\" ON \"FoundModificationsAminoAcids\"(\r\n\t\t\t\t\t\t\t\"AminoAcidsAminoAcidID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "UnknownModifications",
+    "UnknownModifications",
+    152,
+    "CREATE TABLE \"UnknownModifications\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"Id\" int NOT NULL, \r\n\t\t\t\t\t\t\"DeltaMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Name\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_UnknownModifications_Unique_Id",
+    "UnknownModifications",
+    153,
+    "CREATE UNIQUE INDEX \"IX_UnknownModifications_Unique_Id\" ON \"UnknownModifications\"(\r\n\t\t\t\t\t\t\t\"Id\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteins",
+    "TargetProteins",
+    412,
+    "CREATE TABLE \"TargetProteins\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"UniqueSequenceID\" int64 NOT NULL, \r\n\t\t\t\t\t\t\"IsoelectricPoint\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Coverage\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Accession\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"Sequence\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"FastaTitleLines\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"Description\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"NumberOfAminoAcids\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MolecularWeight\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PsmCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PrsmCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PeptideGroupCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"UniquePeptidesCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"GroupUniquePeptidesCount\" int NOT NULL DEFAULT 0\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"CoveragebySearchEngine\" BLOB NULL, \"NumberOfPSMsbySearchEngine\" BLOB NULL, \"NumberOfPeptidesbySearchEngine\" BLOB NULL, \"ScoreSequestHT\" BLOB NULL, \"ScoreMascot\" BLOB NULL, \"SumPEPScore\" double NULL, \"ProteinFDRConfidence\" BLOB NULL, \"NumberOfDecoyProteins\" BLOB NULL, \"Expqvalue\" BLOB NULL, \"IsMasterProtein\" int NOT NULL DEFAULT 2, \"NumberOfProteinGroups\" int NOT NULL DEFAULT 0, \"ProteinGroupIDs\" [varchar] (1024) COLLATE NOCASE NULL, \"Abundances\" BLOB NULL, \"AbundancesCounts\" BLOB NULL, \"AbundancesNormalized\" BLOB NULL, \"Modifications\" [varchar] (1024) COLLATE NOCASE NULL, \"SequenceCoverage\" [varchar] (1024) COLLATE NOCASE NULL, \"AspectBiologicalProcess\" BLOB NULL, \"AspectCellularComponent\" BLOB NULL, \"AspectMolecularFunction\" BLOB NULL, \"PfamIDs\" [varchar] (1024) COLLATE NOCASE NULL, \"GOAccessions\" [varchar] (1024) COLLATE NOCASE NULL, \"EntrezGeneID\" [varchar] (1024) COLLATE NOCASE NULL, \"EnsemblGeneID\" [varchar] (1024) COLLATE NOCASE NULL, \"GeneSymbol\" [varchar] (1024) COLLATE NOCASE NULL, \"GeneID\" [varchar] (1024) COLLATE NOCASE NULL, \"WikiPathwayAccessions\" [varchar] (1024) COLLATE NOCASE NULL, \"WikiPathways\" [varchar] (1024) COLLATE NOCASE NULL, \"ReactomePathwayAccessions\" [varchar] (1024) COLLATE NOCASE NULL, \"ReactomePathwayAccessionsAll\" [varchar] (1024) COLLATE NOCASE NULL, \"ReactomePathways\" [varchar] (1024) COLLATE NOCASE NULL, \"NumberOfProteinAnnotationGroups\" int NOT NULL DEFAULT 0, \"NumberOfProteinPathwayGroups\" int NOT NULL DEFAULT 0, \"FoundinFiles\" BLOB NULL, \"FoundinSamples\" BLOB NULL, \"FoundinSampleGroups\" BLOB NULL)"
+  ],
+  [
+    "index",
+    "IX_TargetProteins_Unique_UniqueSequenceID",
+    "TargetProteins",
+    4747,
+    "CREATE UNIQUE INDEX \"IX_TargetProteins_Unique_UniqueSequenceID\" ON \"TargetProteins\"(\r\n\t\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteins",
+    "DecoyProteins",
+    4821,
+    "CREATE TABLE \"DecoyProteins\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"UniqueSequenceID\" int64 NOT NULL, \r\n\t\t\t\t\t\t\"Coverage\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Accession\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"Sequence\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"FastaTitleLines\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"Description\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"NumberOfAminoAcids\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MolecularWeight\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PsmCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PrsmCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PeptideGroupCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"UniquePeptidesCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"GroupUniquePeptidesCount\" int NOT NULL DEFAULT 0\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"ScoreSequestHT\" BLOB NULL, \"ScoreMascot\" BLOB NULL, \"SumPEPScore\" double NULL, \"ProteinFDRConfidence\" BLOB NULL, \"IsMasterProtein\" int NOT NULL DEFAULT 2, \"NumberOfProteinGroups\" int NOT NULL DEFAULT 0, \"ProteinGroupIDs\" [varchar] (1024) COLLATE NOCASE NULL)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteins_Unique_UniqueSequenceID",
+    "DecoyProteins",
+    9080,
+    "CREATE UNIQUE INDEX \"IX_DecoyProteins_Unique_UniqueSequenceID\" ON \"DecoyProteins\"(\r\n\t\t\t\t\t\t\t\"UniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "MassSpectrumItems",
+    "MassSpectrumItems",
+    9156,
+    "CREATE TABLE \"MassSpectrumItems\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\t\"ID\" int NOT NULL, \r\n\t\t\t\t\t\t\"FileID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MSOrder\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Polarity\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"RetentionTime\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ResolutionAtMass200\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ActivationType\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ScanType\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Ionization\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MassAnalyzer\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IsolationWidth\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Spectrum\" BLOB NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "XicTraceItems",
+    "XicTraceItems",
+    862485,
+    "CREATE TABLE \"XicTraceItems\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\t\"ID\" int NOT NULL, \r\n\t\t\t\t\t\t\"FileID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Trace\" BLOB NULL\r\n\t\t\t\t\t, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"GaussSmoothingPoints\" int NOT NULL DEFAULT 0)"
+  ],
+  [
+    "table",
+    "TargetPsms",
+    "TargetPsms",
+    2766273,
+    "CREATE TABLE \"TargetPsms\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\t\"PeptideID\" int NOT NULL, \r\n\t\t\t\t\t\t\"DeltaScore\" double NULL, \r\n\t\t\t\t\t\t\"ActivationTypes\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PercentIsolationInterference\" double NULL, \r\n\t\t\t\t\t\t\"IonInjectTime\" double NULL, \r\n\t\t\t\t\t\t\"Intensity\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MasterScanNumbers\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"MSOrderTypes\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IdentifyingNodeTypeName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"IdentifyingNodeName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"IdentifyingNodeNumber\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IdentifyingNodeSearchID\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"UniqueSequenceID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Sequence\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ModifiedSequence\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"PsmAmbiguity\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MatchConfidence\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Modifications\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ParentProteinCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ParentProteinAccessions\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ParentProteinDescriptions\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"DeltaCn\" double NULL, \r\n\t\t\t\t\t\t\"Rank\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SearchEngineRank\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ConcatenatedRank\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MissedCleavages\" int NULL, \r\n\t\t\t\t\t\t\"Charge\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"OriginalPrecursorCharge\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MassOverCharge\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Mass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"DeltaMassInDa\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"DeltaMassInPPM\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"TheoreticalMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IonsMatched\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"MatchedIonsCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"TotalIonsCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"RetentionTime\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"FirstScan\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"LastScan\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SpectrumFileName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"SpectrumFileId\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"StudyFileId\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"PeptidesMatched\" int NULL, \"XCorr\" double NULL, \"NCE\" double NULL, \"PercolatorqValue\" double NULL, \"PercolatorPEP\" double NULL, \"PercolatorSVMScore\" double NULL, \"IonsScore\" double NULL, \"HomologyThreshold\" int NULL, \"PrecursorAbundance\" double NULL, \"ApexRTmin\" double NULL, \"HasReliableFeature\" int NULL, \"IdentityStrict\" double NULL, \"IdentityRelaxed\" double NULL, \"ExpectationValue\" double NULL, \"AlignedmzDa\" double NULL, \"NumberOfProteinGroups\" int NOT NULL DEFAULT 0, \"BackupPSMAmbiguity\" int NOT NULL DEFAULT 0, \"MasterProteinAccessions\" [varchar] (1024) COLLATE NOCASE NULL, \"MasterProteinDescriptions\" [varchar] (1024) COLLATE NOCASE NULL, \"QuanInfo\" int NULL)"
+  ],
+  [
+    "table",
+    "DecoyPsms",
+    "DecoyPsms",
+    2847965,
+    "CREATE TABLE \"DecoyPsms\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\t\"PeptideID\" int NOT NULL, \r\n\t\t\t\t\t\t\"IdentifyingNodeTypeName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"IdentifyingNodeName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"IdentifyingNodeNumber\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IdentifyingNodeSearchID\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"UniqueSequenceID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Sequence\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ModifiedSequence\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"PsmAmbiguity\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MatchConfidence\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Modifications\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ParentProteinCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ParentProteinAccessions\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ParentProteinDescriptions\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"DeltaCn\" double NULL, \r\n\t\t\t\t\t\t\"Rank\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SearchEngineRank\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ConcatenatedRank\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MissedCleavages\" int NULL, \r\n\t\t\t\t\t\t\"Charge\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"OriginalPrecursorCharge\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MassOverCharge\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Mass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"DeltaMassInDa\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"DeltaMassInPPM\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"TheoreticalMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IonsMatched\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"MatchedIonsCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"TotalIonsCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"RetentionTime\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"FirstScan\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"LastScan\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SpectrumFileName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"SpectrumFileId\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"StudyFileId\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"DecoyPeptidesMatched\" int NULL, \"XCorr\" double NULL, \"NCE\" double NULL, \"PercolatorqValue\" double NULL, \"PercolatorPEP\" double NULL, \"PercolatorSVMScore\" double NULL, \"IonsScore\" double NULL, \"HomologyThreshold\" int NULL, \"IdentityStrict\" double NULL, \"IdentityRelaxed\" double NULL, \"ExpectationValue\" double NULL, \"NumberOfProteinGroups\" int NOT NULL DEFAULT 0)"
+  ],
+  [
+    "table",
+    "TargetProteoformSpectrumMatchs",
+    "TargetProteoformSpectrumMatchs",
+    2868035,
+    "CREATE TABLE \"TargetProteoformSpectrumMatchs\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\t\"ID\" int NOT NULL, \r\n\t\t\t\t\t\t\"ActivationTypes\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IonInjectTime\" double NULL, \r\n\t\t\t\t\t\t\"Intensity\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"RetentionTime\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"FragmentationScans\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"NumberFragmentationScans\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PrecursorScans\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"NumberPrecursorScans\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MSOrderTypes\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IdentifyingNodeTypeName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"IdentifyingNodeName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"IdentifyingNodeNumber\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IdentifyingNodeSearchID\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"UniqueSequenceID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Sequence\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ModifiedSequence\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"MatchConfidence\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Modifications\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ParentProteinCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ParentProteinAccessions\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ParentProteinDescriptions\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"Rank\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SearchEngineRank\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Charge\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"OriginalPrecursorCharge\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MassOverCharge\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"DetectedNeutralMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"TheoreticalNeutralMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"DeltaMassInDa\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"DeltaMassInPpm\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IonsMatched\" double NULL, \r\n\t\t\t\t\t\t\"MatchedIonsCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"TotalIonsCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SpectrumFileName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"SpectrumFileId\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"StudyFileId\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"NCE\" double NULL)"
+  ],
+  [
+    "table",
+    "DecoyProteoformSpectrumMatchs",
+    "DecoyProteoformSpectrumMatchs",
+    2868041,
+    "CREATE TABLE \"DecoyProteoformSpectrumMatchs\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\t\"ID\" int NOT NULL, \r\n\t\t\t\t\t\t\"IdentifyingNodeTypeName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"IdentifyingNodeName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"IdentifyingNodeNumber\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IdentifyingNodeSearchID\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"UniqueSequenceID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Sequence\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ModifiedSequence\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"MatchConfidence\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Modifications\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ParentProteinCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ParentProteinAccessions\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ParentProteinDescriptions\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"Rank\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SearchEngineRank\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Charge\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"OriginalPrecursorCharge\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MassOverCharge\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"DetectedNeutralMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"TheoreticalNeutralMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"DeltaMassInDa\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"DeltaMassInPpm\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IonsMatched\" double NULL, \r\n\t\t\t\t\t\t\"MatchedIonsCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"TotalIonsCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SpectrumFileName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"SpectrumFileId\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"StudyFileId\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"NCE\" double NULL)"
+  ],
+  [
+    "table",
+    "ReferenceMassSpectrumItem",
+    "ReferenceMassSpectrumItem",
+    2868043,
+    "CREATE TABLE \"ReferenceMassSpectrumItem\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\t\"PsmID\" int NOT NULL, \r\n\t\t\t\t\t\t\"Spectrum\" BLOB NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "MSnSpectrumInfo",
+    "MSnSpectrumInfo",
+    2868046,
+    "CREATE TABLE \"MSnSpectrumInfo\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\t\"SpectrumID\" int NOT NULL, \r\n\t\t\t\t\t\t\"SpectrumFileID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SearchID\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"CreatingProcessingNodeNumber\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"StudyFileId\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"RetentionTime\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"FirstScan\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"LastScan\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MasterScanNumbers\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"NumberOfMasterScanNumbers\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ScanNumbers\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"NumberOfScanNumbers\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MassAnalyzer\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ActivationTypes\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MSOrder\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PeptideMatchesCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ProteoformMatchesCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PercentIsolationInterference\" double NULL, \r\n\t\t\t\t\t\t\"IonInjectTime\" double NULL, \r\n\t\t\t\t\t\t\"MassOverCharge\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Mass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"OriginalPrecursorMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Charge\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"OriginalPrecursorCharge\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Intensity\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SpectrumFileName\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"NCE\" double NULL, \"NumberOfPrecursors\" int NOT NULL DEFAULT 0, \"NumberOfIdentifiedPrecursors\" int NOT NULL DEFAULT 0, \"NumberOfPeptideGroups\" int NOT NULL DEFAULT 0)"
+  ],
+  [
+    "table",
+    "PrecursorInfoItems",
+    "PrecursorInfoItems",
+    2902164,
+    "CREATE TABLE \"PrecursorInfoItems\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowId\" int NOT NULL, \r\n\t\t\t\t\t\t\"SpectrumId\" int NOT NULL, \r\n\t\t\t\t\t\t\"Id\" int NOT NULL, \r\n\t\t\t\t\t\t\"FileId\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"StudyFileId\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ScanNumbers\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"MassOverCharge\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Mass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Charge\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PercentIsolationInterference\" double NULL, \r\n\t\t\t\t\t\t\"Intensity\" double NOT NULL DEFAULT 0\r\n\t\t\t\t\t, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"NumberOfPSMs\" int NOT NULL DEFAULT 0)"
+  ],
+  [
+    "table",
+    "MassCorrectionItems",
+    "MassCorrectionItems",
+    2916985,
+    "CREATE TABLE \"MassCorrectionItems\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowId\" int NOT NULL, \r\n\t\t\t\t\t\t\"ID\" int NOT NULL, \r\n\t\t\t\t\t\t\"FileId\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"StudyFileID\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"MassOverCharges\" BLOB NULL, \r\n\t\t\t\t\t\t\"RetentionTimes\" BLOB NULL, \r\n\t\t\t\t\t\t\"DeltaMassesInPpm\" BLOB NULL, \r\n\t\t\t\t\t\t\"PredictionTolerances\" BLOB NULL, \r\n\t\t\t\t\t\t\"NumberOfLandmarks\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Rmse\" double NULL, \r\n\t\t\t\t\t\t\"AlignmentDetails\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "CorrectionLandmarkItems",
+    "CorrectionLandmarkItems",
+    2917127,
+    "CREATE TABLE \"CorrectionLandmarkItems\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowId\" int NOT NULL, \r\n\t\t\t\t\t\t\"ID\" int NOT NULL, \r\n\t\t\t\t\t\t\"RetentionTime\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"CorrectionValue\" double NOT NULL DEFAULT 0\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "SpecializedTraceItems",
+    "SpecializedTraceItems",
+    2918199,
+    "CREATE TABLE \"SpecializedTraceItems\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\t\"ID\" int NOT NULL, \r\n\t\t\t\t\t\t\"IdentifyingNodeNumber\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"StudyFileID\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"TraceType\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"CustomLabel\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"Description\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"SpectrumFileName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"FileID\" int NOT NULL DEFAULT 0\r\n\t\t\t\t\t, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"ScanFilter\" [varchar] (1024) COLLATE NOCASE NULL)"
+  ],
+  [
+    "table",
+    "LcmsFeatures",
+    "LcmsFeatures",
+    2918203,
+    "CREATE TABLE \"LcmsFeatures\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowId\" int NOT NULL, \r\n\t\t\t\t\t\t\"Id\" int NOT NULL, \r\n\t\t\t\t\t\t\"FileId\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"FileDisplayId\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"MonoisotopicMassOverCharge\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ChargeState\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ApexRT\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"LeftRT\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"RightRT\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Area\" double NULL, \r\n\t\t\t\t\t\t\"Intensity\" double NULL, \r\n\t\t\t\t\t\t\"NumberOfIsotopes\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SignalToNoise\" double NULL\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"AlignedmzDa\" double NULL, \"Intensityaligned\" double NULL, \"QuanInfo\" int NULL, \"QuanInfoDetails\" int NULL)"
+  ],
+  [
+    "table",
+    "LcmsPeaks",
+    "LcmsPeaks",
+    2947097,
+    "CREATE TABLE \"LcmsPeaks\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowId\" int NOT NULL, \r\n\t\t\t\t\t\t\"Id\" int NOT NULL, \r\n\t\t\t\t\t\t\"FileId\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"FileDisplayId\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"MassOverCharge\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ApexRT\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"LeftRT\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"RightRT\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PeakArea\" double NULL, \r\n\t\t\t\t\t\t\"PeakHeight\" double NULL, \r\n\t\t\t\t\t\t\"PeakFwhm\" double NULL, \r\n\t\t\t\t\t\t\"PeakLeftHeight\" double NULL, \r\n\t\t\t\t\t\t\"PeakRightHeight\" double NULL, \r\n\t\t\t\t\t\t\"SignalToNoise\" double NOT NULL DEFAULT 0\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"AlignedmzDa\" double NULL, \"Heightaligned\" double NULL)"
+  ],
+  [
+    "table",
+    "WorkflowInputFilesMassCorrectionItems",
+    "WorkflowInputFilesMassCorrectionItems",
+    3143443,
+    "CREATE TABLE \"WorkflowInputFilesMassCorrectionItems\" (\r\n\t\t\t\t\t\t\"WorkflowInputFilesWorkflowID\" int NOT NULL, \"WorkflowInputFilesWorkflowLevel\" int NOT NULL, \"WorkflowInputFilesFileID\" int NOT NULL,\r\n\t\t\t\t\t\t\"MassCorrectionItemsWorkflowId\" int NOT NULL, \"MassCorrectionItemsID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_WorkflowInputFilesMassCorrectionItems_Unique_WorkflowInputFilesWorkflowID_WorkflowInputFilesWorkflowLevel_WorkflowInputFilesFileID_MassCorrectionItemsWorkflowId_MassCorrectionItemsID",
+    "WorkflowInputFilesMassCorrectionItems",
+    3143444,
+    "CREATE UNIQUE INDEX \"IX_WorkflowInputFilesMassCorrectionItems_Unique_WorkflowInputFilesWorkflowID_WorkflowInputFilesWorkflowLevel_WorkflowInputFilesFileID_MassCorrectionItemsWorkflowId_MassCorrectionItemsID\" ON \"WorkflowInputFilesMassCorrectionItems\"(\r\n\t\t\t\t\t\t\t\"WorkflowInputFilesWorkflowID\", \"WorkflowInputFilesWorkflowLevel\", \"WorkflowInputFilesFileID\", \"MassCorrectionItemsWorkflowId\", \"MassCorrectionItemsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_WorkflowInputFilesMassCorrectionItems_Primary_MassCorrectionItemsWorkflowId_MassCorrectionItemsID",
+    "WorkflowInputFilesMassCorrectionItems",
+    3143446,
+    "CREATE INDEX \"IX_WorkflowInputFilesMassCorrectionItems_Primary_MassCorrectionItemsWorkflowId_MassCorrectionItemsID\" ON \"WorkflowInputFilesMassCorrectionItems\"(\r\n\t\t\t\t\t\t\t\"MassCorrectionItemsWorkflowId\", \"MassCorrectionItemsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "WorkflowInputFilesSpecializedTraceItems",
+    "WorkflowInputFilesSpecializedTraceItems",
+    3143447,
+    "CREATE TABLE \"WorkflowInputFilesSpecializedTraceItems\" (\r\n\t\t\t\t\t\t\"WorkflowInputFilesWorkflowID\" int NOT NULL, \"WorkflowInputFilesWorkflowLevel\" int NOT NULL, \"WorkflowInputFilesFileID\" int NOT NULL,\r\n\t\t\t\t\t\t\"SpecializedTraceItemsWorkflowID\" int NOT NULL, \"SpecializedTraceItemsID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_WorkflowInputFilesSpecializedTraceItems_Unique_WorkflowInputFilesWorkflowID_WorkflowInputFilesWorkflowLevel_WorkflowInputFilesFileID_SpecializedTraceItemsWorkflowID_SpecializedTraceItemsID",
+    "WorkflowInputFilesSpecializedTraceItems",
+    3143448,
+    "CREATE UNIQUE INDEX \"IX_WorkflowInputFilesSpecializedTraceItems_Unique_WorkflowInputFilesWorkflowID_WorkflowInputFilesWorkflowLevel_WorkflowInputFilesFileID_SpecializedTraceItemsWorkflowID_SpecializedTraceItemsID\" ON \"WorkflowInputFilesSpecializedTraceItems\"(\r\n\t\t\t\t\t\t\t\"WorkflowInputFilesWorkflowID\", \"WorkflowInputFilesWorkflowLevel\", \"WorkflowInputFilesFileID\", \"SpecializedTraceItemsWorkflowID\", \"SpecializedTraceItemsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_WorkflowInputFilesSpecializedTraceItems_Primary_SpecializedTraceItemsWorkflowID_SpecializedTraceItemsID",
+    "WorkflowInputFilesSpecializedTraceItems",
+    3143449,
+    "CREATE INDEX \"IX_WorkflowInputFilesSpecializedTraceItems_Primary_SpecializedTraceItemsWorkflowID_SpecializedTraceItemsID\" ON \"WorkflowInputFilesSpecializedTraceItems\"(\r\n\t\t\t\t\t\t\t\"SpecializedTraceItemsWorkflowID\", \"SpecializedTraceItemsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FoundModificationsTargetPsms",
+    "FoundModificationsTargetPsms",
+    3143450,
+    "CREATE TABLE \"FoundModificationsTargetPsms\" (\r\n\t\t\t\t\t\t\"FoundModificationsModificationID\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetPsmsWorkflowID\" int NOT NULL, \"TargetPsmsPeptideID\" int NOT NULL\r\n\t\t\t\t\t\t, \"Position\" int NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FoundModificationsTargetPsms_Unique_FoundModificationsModificationID_TargetPsmsWorkflowID_TargetPsmsPeptideID_Position",
+    "FoundModificationsTargetPsms",
+    3143451,
+    "CREATE UNIQUE INDEX \"IX_FoundModificationsTargetPsms_Unique_FoundModificationsModificationID_TargetPsmsWorkflowID_TargetPsmsPeptideID_Position\" ON \"FoundModificationsTargetPsms\"(\r\n\t\t\t\t\t\t\t\"FoundModificationsModificationID\", \"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\", \"Position\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FoundModificationsTargetPsms_Primary_TargetPsmsWorkflowID_TargetPsmsPeptideID",
+    "FoundModificationsTargetPsms",
+    3143452,
+    "CREATE INDEX \"IX_FoundModificationsTargetPsms_Primary_TargetPsmsWorkflowID_TargetPsmsPeptideID\" ON \"FoundModificationsTargetPsms\"(\r\n\t\t\t\t\t\t\t\"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FoundModificationsDecoyPsms",
+    "FoundModificationsDecoyPsms",
+    3151520,
+    "CREATE TABLE \"FoundModificationsDecoyPsms\" (\r\n\t\t\t\t\t\t\"FoundModificationsModificationID\" int NOT NULL,\r\n\t\t\t\t\t\t\"DecoyPsmsWorkflowID\" int NOT NULL, \"DecoyPsmsPeptideID\" int NOT NULL\r\n\t\t\t\t\t\t, \"Position\" int NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FoundModificationsDecoyPsms_Unique_FoundModificationsModificationID_DecoyPsmsWorkflowID_DecoyPsmsPeptideID_Position",
+    "FoundModificationsDecoyPsms",
+    3151521,
+    "CREATE UNIQUE INDEX \"IX_FoundModificationsDecoyPsms_Unique_FoundModificationsModificationID_DecoyPsmsWorkflowID_DecoyPsmsPeptideID_Position\" ON \"FoundModificationsDecoyPsms\"(\r\n\t\t\t\t\t\t\t\"FoundModificationsModificationID\", \"DecoyPsmsWorkflowID\", \"DecoyPsmsPeptideID\", \"Position\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FoundModificationsDecoyPsms_Primary_DecoyPsmsWorkflowID_DecoyPsmsPeptideID",
+    "FoundModificationsDecoyPsms",
+    3151523,
+    "CREATE INDEX \"IX_FoundModificationsDecoyPsms_Primary_DecoyPsmsWorkflowID_DecoyPsmsPeptideID\" ON \"FoundModificationsDecoyPsms\"(\r\n\t\t\t\t\t\t\t\"DecoyPsmsWorkflowID\", \"DecoyPsmsPeptideID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FoundModificationsTargetProteoformSpectrumMatchs",
+    "FoundModificationsTargetProteoformSpectrumMatchs",
+    3155195,
+    "CREATE TABLE \"FoundModificationsTargetProteoformSpectrumMatchs\" (\r\n\t\t\t\t\t\t\"FoundModificationsModificationID\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetProteoformSpectrumMatchsWorkflowID\" int NOT NULL, \"TargetProteoformSpectrumMatchsID\" int NOT NULL\r\n\t\t\t\t\t\t, \"Position\" int NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FoundModificationsTargetProteoformSpectrumMatchs_Unique_FoundModificationsModificationID_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID_Position",
+    "FoundModificationsTargetProteoformSpectrumMatchs",
+    3155196,
+    "CREATE UNIQUE INDEX \"IX_FoundModificationsTargetProteoformSpectrumMatchs_Unique_FoundModificationsModificationID_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID_Position\" ON \"FoundModificationsTargetProteoformSpectrumMatchs\"(\r\n\t\t\t\t\t\t\t\"FoundModificationsModificationID\", \"TargetProteoformSpectrumMatchsWorkflowID\", \"TargetProteoformSpectrumMatchsID\", \"Position\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FoundModificationsTargetProteoformSpectrumMatchs_Primary_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID",
+    "FoundModificationsTargetProteoformSpectrumMatchs",
+    3155197,
+    "CREATE INDEX \"IX_FoundModificationsTargetProteoformSpectrumMatchs_Primary_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID\" ON \"FoundModificationsTargetProteoformSpectrumMatchs\"(\r\n\t\t\t\t\t\t\t\"TargetProteoformSpectrumMatchsWorkflowID\", \"TargetProteoformSpectrumMatchsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FoundModificationsDecoyProteoformSpectrumMatchs",
+    "FoundModificationsDecoyProteoformSpectrumMatchs",
+    3155198,
+    "CREATE TABLE \"FoundModificationsDecoyProteoformSpectrumMatchs\" (\r\n\t\t\t\t\t\t\"FoundModificationsModificationID\" int NOT NULL,\r\n\t\t\t\t\t\t\"DecoyProteoformSpectrumMatchsWorkflowID\" int NOT NULL, \"DecoyProteoformSpectrumMatchsID\" int NOT NULL\r\n\t\t\t\t\t\t, \"Position\" int NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FoundModificationsDecoyProteoformSpectrumMatchs_Unique_FoundModificationsModificationID_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID_Position",
+    "FoundModificationsDecoyProteoformSpectrumMatchs",
+    3155199,
+    "CREATE UNIQUE INDEX \"IX_FoundModificationsDecoyProteoformSpectrumMatchs_Unique_FoundModificationsModificationID_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID_Position\" ON \"FoundModificationsDecoyProteoformSpectrumMatchs\"(\r\n\t\t\t\t\t\t\t\"FoundModificationsModificationID\", \"DecoyProteoformSpectrumMatchsWorkflowID\", \"DecoyProteoformSpectrumMatchsID\", \"Position\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FoundModificationsDecoyProteoformSpectrumMatchs_Primary_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID",
+    "FoundModificationsDecoyProteoformSpectrumMatchs",
+    3155200,
+    "CREATE INDEX \"IX_FoundModificationsDecoyProteoformSpectrumMatchs_Primary_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID\" ON \"FoundModificationsDecoyProteoformSpectrumMatchs\"(\r\n\t\t\t\t\t\t\t\"DecoyProteoformSpectrumMatchsWorkflowID\", \"DecoyProteoformSpectrumMatchsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "UnknownModificationsTargetPsms",
+    "UnknownModificationsTargetPsms",
+    3155201,
+    "CREATE TABLE \"UnknownModificationsTargetPsms\" (\r\n\t\t\t\t\t\t\"UnknownModificationsId\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetPsmsWorkflowID\" int NOT NULL, \"TargetPsmsPeptideID\" int NOT NULL\r\n\t\t\t\t\t\t, \"Position\" int NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_UnknownModificationsTargetPsms_Unique_UnknownModificationsId_TargetPsmsWorkflowID_TargetPsmsPeptideID_Position",
+    "UnknownModificationsTargetPsms",
+    3155202,
+    "CREATE UNIQUE INDEX \"IX_UnknownModificationsTargetPsms_Unique_UnknownModificationsId_TargetPsmsWorkflowID_TargetPsmsPeptideID_Position\" ON \"UnknownModificationsTargetPsms\"(\r\n\t\t\t\t\t\t\t\"UnknownModificationsId\", \"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\", \"Position\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_UnknownModificationsTargetPsms_Primary_TargetPsmsWorkflowID_TargetPsmsPeptideID",
+    "UnknownModificationsTargetPsms",
+    3155204,
+    "CREATE INDEX \"IX_UnknownModificationsTargetPsms_Primary_TargetPsmsWorkflowID_TargetPsmsPeptideID\" ON \"UnknownModificationsTargetPsms\"(\r\n\t\t\t\t\t\t\t\"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "UnknownModificationsDecoyPsms",
+    "UnknownModificationsDecoyPsms",
+    3155205,
+    "CREATE TABLE \"UnknownModificationsDecoyPsms\" (\r\n\t\t\t\t\t\t\"UnknownModificationsId\" int NOT NULL,\r\n\t\t\t\t\t\t\"DecoyPsmsWorkflowID\" int NOT NULL, \"DecoyPsmsPeptideID\" int NOT NULL\r\n\t\t\t\t\t\t, \"Position\" int NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_UnknownModificationsDecoyPsms_Unique_UnknownModificationsId_DecoyPsmsWorkflowID_DecoyPsmsPeptideID_Position",
+    "UnknownModificationsDecoyPsms",
+    3155206,
+    "CREATE UNIQUE INDEX \"IX_UnknownModificationsDecoyPsms_Unique_UnknownModificationsId_DecoyPsmsWorkflowID_DecoyPsmsPeptideID_Position\" ON \"UnknownModificationsDecoyPsms\"(\r\n\t\t\t\t\t\t\t\"UnknownModificationsId\", \"DecoyPsmsWorkflowID\", \"DecoyPsmsPeptideID\", \"Position\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_UnknownModificationsDecoyPsms_Primary_DecoyPsmsWorkflowID_DecoyPsmsPeptideID",
+    "UnknownModificationsDecoyPsms",
+    3155207,
+    "CREATE INDEX \"IX_UnknownModificationsDecoyPsms_Primary_DecoyPsmsWorkflowID_DecoyPsmsPeptideID\" ON \"UnknownModificationsDecoyPsms\"(\r\n\t\t\t\t\t\t\t\"DecoyPsmsWorkflowID\", \"DecoyPsmsPeptideID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "UnknownModificationsTargetProteoformSpectrumMatchs",
+    "UnknownModificationsTargetProteoformSpectrumMatchs",
+    3155208,
+    "CREATE TABLE \"UnknownModificationsTargetProteoformSpectrumMatchs\" (\r\n\t\t\t\t\t\t\"UnknownModificationsId\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetProteoformSpectrumMatchsWorkflowID\" int NOT NULL, \"TargetProteoformSpectrumMatchsID\" int NOT NULL\r\n\t\t\t\t\t\t, \"Position\" int NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_UnknownModificationsTargetProteoformSpectrumMatchs_Unique_UnknownModificationsId_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID_Position",
+    "UnknownModificationsTargetProteoformSpectrumMatchs",
+    3155209,
+    "CREATE UNIQUE INDEX \"IX_UnknownModificationsTargetProteoformSpectrumMatchs_Unique_UnknownModificationsId_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID_Position\" ON \"UnknownModificationsTargetProteoformSpectrumMatchs\"(\r\n\t\t\t\t\t\t\t\"UnknownModificationsId\", \"TargetProteoformSpectrumMatchsWorkflowID\", \"TargetProteoformSpectrumMatchsID\", \"Position\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_UnknownModificationsTargetProteoformSpectrumMatchs_Primary_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID",
+    "UnknownModificationsTargetProteoformSpectrumMatchs",
+    3155210,
+    "CREATE INDEX \"IX_UnknownModificationsTargetProteoformSpectrumMatchs_Primary_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID\" ON \"UnknownModificationsTargetProteoformSpectrumMatchs\"(\r\n\t\t\t\t\t\t\t\"TargetProteoformSpectrumMatchsWorkflowID\", \"TargetProteoformSpectrumMatchsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "UnknownModificationsDecoyProteoformSpectrumMatchs",
+    "UnknownModificationsDecoyProteoformSpectrumMatchs",
+    3155211,
+    "CREATE TABLE \"UnknownModificationsDecoyProteoformSpectrumMatchs\" (\r\n\t\t\t\t\t\t\"UnknownModificationsId\" int NOT NULL,\r\n\t\t\t\t\t\t\"DecoyProteoformSpectrumMatchsWorkflowID\" int NOT NULL, \"DecoyProteoformSpectrumMatchsID\" int NOT NULL\r\n\t\t\t\t\t\t, \"Position\" int NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_UnknownModificationsDecoyProteoformSpectrumMatchs_Unique_UnknownModificationsId_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID_Position",
+    "UnknownModificationsDecoyProteoformSpectrumMatchs",
+    3155212,
+    "CREATE UNIQUE INDEX \"IX_UnknownModificationsDecoyProteoformSpectrumMatchs_Unique_UnknownModificationsId_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID_Position\" ON \"UnknownModificationsDecoyProteoformSpectrumMatchs\"(\r\n\t\t\t\t\t\t\t\"UnknownModificationsId\", \"DecoyProteoformSpectrumMatchsWorkflowID\", \"DecoyProteoformSpectrumMatchsID\", \"Position\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_UnknownModificationsDecoyProteoformSpectrumMatchs_Primary_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID",
+    "UnknownModificationsDecoyProteoformSpectrumMatchs",
+    3155214,
+    "CREATE INDEX \"IX_UnknownModificationsDecoyProteoformSpectrumMatchs_Primary_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID\" ON \"UnknownModificationsDecoyProteoformSpectrumMatchs\"(\r\n\t\t\t\t\t\t\t\"DecoyProteoformSpectrumMatchsWorkflowID\", \"DecoyProteoformSpectrumMatchsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPsmsMSnSpectrumInfo",
+    "TargetPsmsMSnSpectrumInfo",
+    3155215,
+    "CREATE TABLE \"TargetPsmsMSnSpectrumInfo\" (\r\n\t\t\t\t\t\t\"TargetPsmsWorkflowID\" int NOT NULL, \"TargetPsmsPeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\"MSnSpectrumInfoWorkflowID\" int NOT NULL, \"MSnSpectrumInfoSpectrumID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsmsMSnSpectrumInfo_Unique_TargetPsmsWorkflowID_TargetPsmsPeptideID_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID",
+    "TargetPsmsMSnSpectrumInfo",
+    3155216,
+    "CREATE UNIQUE INDEX \"IX_TargetPsmsMSnSpectrumInfo_Unique_TargetPsmsWorkflowID_TargetPsmsPeptideID_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID\" ON \"TargetPsmsMSnSpectrumInfo\"(\r\n\t\t\t\t\t\t\t\"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\", \"MSnSpectrumInfoWorkflowID\", \"MSnSpectrumInfoSpectrumID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsmsMSnSpectrumInfo_Primary_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID",
+    "TargetPsmsMSnSpectrumInfo",
+    3155217,
+    "CREATE INDEX \"IX_TargetPsmsMSnSpectrumInfo_Primary_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID\" ON \"TargetPsmsMSnSpectrumInfo\"(\r\n\t\t\t\t\t\t\t\"MSnSpectrumInfoWorkflowID\", \"MSnSpectrumInfoSpectrumID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPsmsPrecursorInfoItems",
+    "TargetPsmsPrecursorInfoItems",
+    3171507,
+    "CREATE TABLE \"TargetPsmsPrecursorInfoItems\" (\r\n\t\t\t\t\t\t\"TargetPsmsWorkflowID\" int NOT NULL, \"TargetPsmsPeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\"PrecursorInfoItemsWorkflowId\" int NOT NULL, \"PrecursorInfoItemsSpectrumId\" int NOT NULL, \"PrecursorInfoItemsId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsmsPrecursorInfoItems_Unique_TargetPsmsWorkflowID_TargetPsmsPeptideID_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId",
+    "TargetPsmsPrecursorInfoItems",
+    3171508,
+    "CREATE UNIQUE INDEX \"IX_TargetPsmsPrecursorInfoItems_Unique_TargetPsmsWorkflowID_TargetPsmsPeptideID_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId\" ON \"TargetPsmsPrecursorInfoItems\"(\r\n\t\t\t\t\t\t\t\"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\", \"PrecursorInfoItemsWorkflowId\", \"PrecursorInfoItemsSpectrumId\", \"PrecursorInfoItemsId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsmsPrecursorInfoItems_Primary_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId",
+    "TargetPsmsPrecursorInfoItems",
+    3171509,
+    "CREATE INDEX \"IX_TargetPsmsPrecursorInfoItems_Primary_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId\" ON \"TargetPsmsPrecursorInfoItems\"(\r\n\t\t\t\t\t\t\t\"PrecursorInfoItemsWorkflowId\", \"PrecursorInfoItemsSpectrumId\", \"PrecursorInfoItemsId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPsmsTargetProteins",
+    "TargetPsmsTargetProteins",
+    3188605,
+    "CREATE TABLE \"TargetPsmsTargetProteins\" (\r\n\t\t\t\t\t\t\"TargetPsmsWorkflowID\" int NOT NULL, \"TargetPsmsPeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\" int64 NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t, \"SequenceinProtein\" [varchar] (1024) COLLATE NOCASE NULL, \"PositionsinProteins\" [varchar] (1024) COLLATE NOCASE NULL, \"PSMModificationPositionsinProteins\" [varchar] (1024) COLLATE NOCASE NULL, \"PSMModificationPositionsinProteinsallSites\" [varchar] (1024) COLLATE NOCASE NULL)"
+  ],
+  [
+    "index",
+    "IX_TargetPsmsTargetProteins_Unique_TargetPsmsWorkflowID_TargetPsmsPeptideID_TargetProteinsUniqueSequenceID",
+    "TargetPsmsTargetProteins",
+    3188606,
+    "CREATE UNIQUE INDEX \"IX_TargetPsmsTargetProteins_Unique_TargetPsmsWorkflowID_TargetPsmsPeptideID_TargetProteinsUniqueSequenceID\" ON \"TargetPsmsTargetProteins\"(\r\n\t\t\t\t\t\t\t\"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\", \"TargetProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsmsTargetProteins_Primary_TargetProteinsUniqueSequenceID",
+    "TargetPsmsTargetProteins",
+    3188608,
+    "CREATE INDEX \"IX_TargetPsmsTargetProteins_Primary_TargetProteinsUniqueSequenceID\" ON \"TargetPsmsTargetProteins\"(\r\n\t\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPsmsLcmsFeatures",
+    "TargetPsmsLcmsFeatures",
+    3214017,
+    "CREATE TABLE \"TargetPsmsLcmsFeatures\" (\r\n\t\t\t\t\t\t\"TargetPsmsWorkflowID\" int NOT NULL, \"TargetPsmsPeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\"LcmsFeaturesWorkflowId\" int NOT NULL, \"LcmsFeaturesId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsmsLcmsFeatures_Unique_TargetPsmsWorkflowID_TargetPsmsPeptideID_LcmsFeaturesWorkflowId_LcmsFeaturesId",
+    "TargetPsmsLcmsFeatures",
+    3214018,
+    "CREATE UNIQUE INDEX \"IX_TargetPsmsLcmsFeatures_Unique_TargetPsmsWorkflowID_TargetPsmsPeptideID_LcmsFeaturesWorkflowId_LcmsFeaturesId\" ON \"TargetPsmsLcmsFeatures\"(\r\n\t\t\t\t\t\t\t\"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\", \"LcmsFeaturesWorkflowId\", \"LcmsFeaturesId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsmsLcmsFeatures_Primary_LcmsFeaturesWorkflowId_LcmsFeaturesId",
+    "TargetPsmsLcmsFeatures",
+    3214019,
+    "CREATE INDEX \"IX_TargetPsmsLcmsFeatures_Primary_LcmsFeaturesWorkflowId_LcmsFeaturesId\" ON \"TargetPsmsLcmsFeatures\"(\r\n\t\t\t\t\t\t\t\"LcmsFeaturesWorkflowId\", \"LcmsFeaturesId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPsmsMSnSpectrumInfo",
+    "DecoyPsmsMSnSpectrumInfo",
+    3224384,
+    "CREATE TABLE \"DecoyPsmsMSnSpectrumInfo\" (\r\n\t\t\t\t\t\t\"DecoyPsmsWorkflowID\" int NOT NULL, \"DecoyPsmsPeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\"MSnSpectrumInfoWorkflowID\" int NOT NULL, \"MSnSpectrumInfoSpectrumID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPsmsMSnSpectrumInfo_Unique_DecoyPsmsWorkflowID_DecoyPsmsPeptideID_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID",
+    "DecoyPsmsMSnSpectrumInfo",
+    3224385,
+    "CREATE UNIQUE INDEX \"IX_DecoyPsmsMSnSpectrumInfo_Unique_DecoyPsmsWorkflowID_DecoyPsmsPeptideID_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID\" ON \"DecoyPsmsMSnSpectrumInfo\"(\r\n\t\t\t\t\t\t\t\"DecoyPsmsWorkflowID\", \"DecoyPsmsPeptideID\", \"MSnSpectrumInfoWorkflowID\", \"MSnSpectrumInfoSpectrumID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPsmsMSnSpectrumInfo_Primary_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID",
+    "DecoyPsmsMSnSpectrumInfo",
+    3224386,
+    "CREATE INDEX \"IX_DecoyPsmsMSnSpectrumInfo_Primary_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID\" ON \"DecoyPsmsMSnSpectrumInfo\"(\r\n\t\t\t\t\t\t\t\"MSnSpectrumInfoWorkflowID\", \"MSnSpectrumInfoSpectrumID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPsmsPrecursorInfoItems",
+    "DecoyPsmsPrecursorInfoItems",
+    3228969,
+    "CREATE TABLE \"DecoyPsmsPrecursorInfoItems\" (\r\n\t\t\t\t\t\t\"DecoyPsmsWorkflowID\" int NOT NULL, \"DecoyPsmsPeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\"PrecursorInfoItemsWorkflowId\" int NOT NULL, \"PrecursorInfoItemsSpectrumId\" int NOT NULL, \"PrecursorInfoItemsId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPsmsPrecursorInfoItems_Unique_DecoyPsmsWorkflowID_DecoyPsmsPeptideID_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId",
+    "DecoyPsmsPrecursorInfoItems",
+    3228970,
+    "CREATE UNIQUE INDEX \"IX_DecoyPsmsPrecursorInfoItems_Unique_DecoyPsmsWorkflowID_DecoyPsmsPeptideID_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId\" ON \"DecoyPsmsPrecursorInfoItems\"(\r\n\t\t\t\t\t\t\t\"DecoyPsmsWorkflowID\", \"DecoyPsmsPeptideID\", \"PrecursorInfoItemsWorkflowId\", \"PrecursorInfoItemsSpectrumId\", \"PrecursorInfoItemsId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPsmsPrecursorInfoItems_Primary_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId",
+    "DecoyPsmsPrecursorInfoItems",
+    3228971,
+    "CREATE INDEX \"IX_DecoyPsmsPrecursorInfoItems_Primary_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId\" ON \"DecoyPsmsPrecursorInfoItems\"(\r\n\t\t\t\t\t\t\t\"PrecursorInfoItemsWorkflowId\", \"PrecursorInfoItemsSpectrumId\", \"PrecursorInfoItemsId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPsmsDecoyProteins",
+    "DecoyPsmsDecoyProteins",
+    3233786,
+    "CREATE TABLE \"DecoyPsmsDecoyProteins\" (\r\n\t\t\t\t\t\t\"DecoyPsmsWorkflowID\" int NOT NULL, \"DecoyPsmsPeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\"DecoyProteinsUniqueSequenceID\" int64 NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPsmsDecoyProteins_Unique_DecoyPsmsWorkflowID_DecoyPsmsPeptideID_DecoyProteinsUniqueSequenceID",
+    "DecoyPsmsDecoyProteins",
+    3233787,
+    "CREATE UNIQUE INDEX \"IX_DecoyPsmsDecoyProteins_Unique_DecoyPsmsWorkflowID_DecoyPsmsPeptideID_DecoyProteinsUniqueSequenceID\" ON \"DecoyPsmsDecoyProteins\"(\r\n\t\t\t\t\t\t\t\"DecoyPsmsWorkflowID\", \"DecoyPsmsPeptideID\", \"DecoyProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPsmsDecoyProteins_Primary_DecoyProteinsUniqueSequenceID",
+    "DecoyPsmsDecoyProteins",
+    3233788,
+    "CREATE INDEX \"IX_DecoyPsmsDecoyProteins_Primary_DecoyProteinsUniqueSequenceID\" ON \"DecoyPsmsDecoyProteins\"(\r\n\t\t\t\t\t\t\t\"DecoyProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteoformSpectrumMatchsMSnSpectrumInfo",
+    "TargetProteoformSpectrumMatchsMSnSpectrumInfo",
+    3239088,
+    "CREATE TABLE \"TargetProteoformSpectrumMatchsMSnSpectrumInfo\" (\r\n\t\t\t\t\t\t\"TargetProteoformSpectrumMatchsWorkflowID\" int NOT NULL, \"TargetProteoformSpectrumMatchsID\" int NOT NULL,\r\n\t\t\t\t\t\t\"MSnSpectrumInfoWorkflowID\" int NOT NULL, \"MSnSpectrumInfoSpectrumID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteoformSpectrumMatchsMSnSpectrumInfo_Unique_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID",
+    "TargetProteoformSpectrumMatchsMSnSpectrumInfo",
+    3239089,
+    "CREATE UNIQUE INDEX \"IX_TargetProteoformSpectrumMatchsMSnSpectrumInfo_Unique_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID\" ON \"TargetProteoformSpectrumMatchsMSnSpectrumInfo\"(\r\n\t\t\t\t\t\t\t\"TargetProteoformSpectrumMatchsWorkflowID\", \"TargetProteoformSpectrumMatchsID\", \"MSnSpectrumInfoWorkflowID\", \"MSnSpectrumInfoSpectrumID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteoformSpectrumMatchsMSnSpectrumInfo_Primary_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID",
+    "TargetProteoformSpectrumMatchsMSnSpectrumInfo",
+    3239090,
+    "CREATE INDEX \"IX_TargetProteoformSpectrumMatchsMSnSpectrumInfo_Primary_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID\" ON \"TargetProteoformSpectrumMatchsMSnSpectrumInfo\"(\r\n\t\t\t\t\t\t\t\"MSnSpectrumInfoWorkflowID\", \"MSnSpectrumInfoSpectrumID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteoformSpectrumMatchsPrecursorInfoItems",
+    "TargetProteoformSpectrumMatchsPrecursorInfoItems",
+    3239091,
+    "CREATE TABLE \"TargetProteoformSpectrumMatchsPrecursorInfoItems\" (\r\n\t\t\t\t\t\t\"TargetProteoformSpectrumMatchsWorkflowID\" int NOT NULL, \"TargetProteoformSpectrumMatchsID\" int NOT NULL,\r\n\t\t\t\t\t\t\"PrecursorInfoItemsWorkflowId\" int NOT NULL, \"PrecursorInfoItemsSpectrumId\" int NOT NULL, \"PrecursorInfoItemsId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteoformSpectrumMatchsPrecursorInfoItems_Unique_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId",
+    "TargetProteoformSpectrumMatchsPrecursorInfoItems",
+    3239092,
+    "CREATE UNIQUE INDEX \"IX_TargetProteoformSpectrumMatchsPrecursorInfoItems_Unique_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId\" ON \"TargetProteoformSpectrumMatchsPrecursorInfoItems\"(\r\n\t\t\t\t\t\t\t\"TargetProteoformSpectrumMatchsWorkflowID\", \"TargetProteoformSpectrumMatchsID\", \"PrecursorInfoItemsWorkflowId\", \"PrecursorInfoItemsSpectrumId\", \"PrecursorInfoItemsId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteoformSpectrumMatchsPrecursorInfoItems_Primary_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId",
+    "TargetProteoformSpectrumMatchsPrecursorInfoItems",
+    3239093,
+    "CREATE INDEX \"IX_TargetProteoformSpectrumMatchsPrecursorInfoItems_Primary_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId\" ON \"TargetProteoformSpectrumMatchsPrecursorInfoItems\"(\r\n\t\t\t\t\t\t\t\"PrecursorInfoItemsWorkflowId\", \"PrecursorInfoItemsSpectrumId\", \"PrecursorInfoItemsId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteoformSpectrumMatchsTargetProteins",
+    "TargetProteoformSpectrumMatchsTargetProteins",
+    3239095,
+    "CREATE TABLE \"TargetProteoformSpectrumMatchsTargetProteins\" (\r\n\t\t\t\t\t\t\"TargetProteoformSpectrumMatchsWorkflowID\" int NOT NULL, \"TargetProteoformSpectrumMatchsID\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\" int64 NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteoformSpectrumMatchsTargetProteins_Unique_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID_TargetProteinsUniqueSequenceID",
+    "TargetProteoformSpectrumMatchsTargetProteins",
+    3239096,
+    "CREATE UNIQUE INDEX \"IX_TargetProteoformSpectrumMatchsTargetProteins_Unique_TargetProteoformSpectrumMatchsWorkflowID_TargetProteoformSpectrumMatchsID_TargetProteinsUniqueSequenceID\" ON \"TargetProteoformSpectrumMatchsTargetProteins\"(\r\n\t\t\t\t\t\t\t\"TargetProteoformSpectrumMatchsWorkflowID\", \"TargetProteoformSpectrumMatchsID\", \"TargetProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteoformSpectrumMatchsTargetProteins_Primary_TargetProteinsUniqueSequenceID",
+    "TargetProteoformSpectrumMatchsTargetProteins",
+    3239097,
+    "CREATE INDEX \"IX_TargetProteoformSpectrumMatchsTargetProteins_Primary_TargetProteinsUniqueSequenceID\" ON \"TargetProteoformSpectrumMatchsTargetProteins\"(\r\n\t\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteoformSpectrumMatchsMSnSpectrumInfo",
+    "DecoyProteoformSpectrumMatchsMSnSpectrumInfo",
+    3239098,
+    "CREATE TABLE \"DecoyProteoformSpectrumMatchsMSnSpectrumInfo\" (\r\n\t\t\t\t\t\t\"DecoyProteoformSpectrumMatchsWorkflowID\" int NOT NULL, \"DecoyProteoformSpectrumMatchsID\" int NOT NULL,\r\n\t\t\t\t\t\t\"MSnSpectrumInfoWorkflowID\" int NOT NULL, \"MSnSpectrumInfoSpectrumID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteoformSpectrumMatchsMSnSpectrumInfo_Unique_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID",
+    "DecoyProteoformSpectrumMatchsMSnSpectrumInfo",
+    3239099,
+    "CREATE UNIQUE INDEX \"IX_DecoyProteoformSpectrumMatchsMSnSpectrumInfo_Unique_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID\" ON \"DecoyProteoformSpectrumMatchsMSnSpectrumInfo\"(\r\n\t\t\t\t\t\t\t\"DecoyProteoformSpectrumMatchsWorkflowID\", \"DecoyProteoformSpectrumMatchsID\", \"MSnSpectrumInfoWorkflowID\", \"MSnSpectrumInfoSpectrumID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteoformSpectrumMatchsMSnSpectrumInfo_Primary_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID",
+    "DecoyProteoformSpectrumMatchsMSnSpectrumInfo",
+    3239100,
+    "CREATE INDEX \"IX_DecoyProteoformSpectrumMatchsMSnSpectrumInfo_Primary_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID\" ON \"DecoyProteoformSpectrumMatchsMSnSpectrumInfo\"(\r\n\t\t\t\t\t\t\t\"MSnSpectrumInfoWorkflowID\", \"MSnSpectrumInfoSpectrumID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteoformSpectrumMatchsPrecursorInfoItems",
+    "DecoyProteoformSpectrumMatchsPrecursorInfoItems",
+    3239101,
+    "CREATE TABLE \"DecoyProteoformSpectrumMatchsPrecursorInfoItems\" (\r\n\t\t\t\t\t\t\"DecoyProteoformSpectrumMatchsWorkflowID\" int NOT NULL, \"DecoyProteoformSpectrumMatchsID\" int NOT NULL,\r\n\t\t\t\t\t\t\"PrecursorInfoItemsWorkflowId\" int NOT NULL, \"PrecursorInfoItemsSpectrumId\" int NOT NULL, \"PrecursorInfoItemsId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteoformSpectrumMatchsPrecursorInfoItems_Unique_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId",
+    "DecoyProteoformSpectrumMatchsPrecursorInfoItems",
+    3239102,
+    "CREATE UNIQUE INDEX \"IX_DecoyProteoformSpectrumMatchsPrecursorInfoItems_Unique_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId\" ON \"DecoyProteoformSpectrumMatchsPrecursorInfoItems\"(\r\n\t\t\t\t\t\t\t\"DecoyProteoformSpectrumMatchsWorkflowID\", \"DecoyProteoformSpectrumMatchsID\", \"PrecursorInfoItemsWorkflowId\", \"PrecursorInfoItemsSpectrumId\", \"PrecursorInfoItemsId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteoformSpectrumMatchsPrecursorInfoItems_Primary_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId",
+    "DecoyProteoformSpectrumMatchsPrecursorInfoItems",
+    3239104,
+    "CREATE INDEX \"IX_DecoyProteoformSpectrumMatchsPrecursorInfoItems_Primary_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId\" ON \"DecoyProteoformSpectrumMatchsPrecursorInfoItems\"(\r\n\t\t\t\t\t\t\t\"PrecursorInfoItemsWorkflowId\", \"PrecursorInfoItemsSpectrumId\", \"PrecursorInfoItemsId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteoformSpectrumMatchsDecoyProteins",
+    "DecoyProteoformSpectrumMatchsDecoyProteins",
+    3239105,
+    "CREATE TABLE \"DecoyProteoformSpectrumMatchsDecoyProteins\" (\r\n\t\t\t\t\t\t\"DecoyProteoformSpectrumMatchsWorkflowID\" int NOT NULL, \"DecoyProteoformSpectrumMatchsID\" int NOT NULL,\r\n\t\t\t\t\t\t\"DecoyProteinsUniqueSequenceID\" int64 NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteoformSpectrumMatchsDecoyProteins_Unique_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID_DecoyProteinsUniqueSequenceID",
+    "DecoyProteoformSpectrumMatchsDecoyProteins",
+    3239106,
+    "CREATE UNIQUE INDEX \"IX_DecoyProteoformSpectrumMatchsDecoyProteins_Unique_DecoyProteoformSpectrumMatchsWorkflowID_DecoyProteoformSpectrumMatchsID_DecoyProteinsUniqueSequenceID\" ON \"DecoyProteoformSpectrumMatchsDecoyProteins\"(\r\n\t\t\t\t\t\t\t\"DecoyProteoformSpectrumMatchsWorkflowID\", \"DecoyProteoformSpectrumMatchsID\", \"DecoyProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteoformSpectrumMatchsDecoyProteins_Primary_DecoyProteinsUniqueSequenceID",
+    "DecoyProteoformSpectrumMatchsDecoyProteins",
+    3239107,
+    "CREATE INDEX \"IX_DecoyProteoformSpectrumMatchsDecoyProteins_Primary_DecoyProteinsUniqueSequenceID\" ON \"DecoyProteoformSpectrumMatchsDecoyProteins\"(\r\n\t\t\t\t\t\t\t\"DecoyProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "MSnSpectrumInfoPrecursorInfoItems",
+    "MSnSpectrumInfoPrecursorInfoItems",
+    3239108,
+    "CREATE TABLE \"MSnSpectrumInfoPrecursorInfoItems\" (\r\n\t\t\t\t\t\t\"MSnSpectrumInfoWorkflowID\" int NOT NULL, \"MSnSpectrumInfoSpectrumID\" int NOT NULL,\r\n\t\t\t\t\t\t\"PrecursorInfoItemsWorkflowId\" int NOT NULL, \"PrecursorInfoItemsSpectrumId\" int NOT NULL, \"PrecursorInfoItemsId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t, \"Selected\" int NOT NULL DEFAULT 0)"
+  ],
+  [
+    "index",
+    "IX_MSnSpectrumInfoPrecursorInfoItems_Unique_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId",
+    "MSnSpectrumInfoPrecursorInfoItems",
+    3239109,
+    "CREATE UNIQUE INDEX \"IX_MSnSpectrumInfoPrecursorInfoItems_Unique_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId\" ON \"MSnSpectrumInfoPrecursorInfoItems\"(\r\n\t\t\t\t\t\t\t\"MSnSpectrumInfoWorkflowID\", \"MSnSpectrumInfoSpectrumID\", \"PrecursorInfoItemsWorkflowId\", \"PrecursorInfoItemsSpectrumId\", \"PrecursorInfoItemsId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_MSnSpectrumInfoPrecursorInfoItems_Primary_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId",
+    "MSnSpectrumInfoPrecursorInfoItems",
+    3239110,
+    "CREATE INDEX \"IX_MSnSpectrumInfoPrecursorInfoItems_Primary_PrecursorInfoItemsWorkflowId_PrecursorInfoItemsSpectrumId_PrecursorInfoItemsId\" ON \"MSnSpectrumInfoPrecursorInfoItems\"(\r\n\t\t\t\t\t\t\t\"PrecursorInfoItemsWorkflowId\", \"PrecursorInfoItemsSpectrumId\", \"PrecursorInfoItemsId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "MSnSpectrumInfoLcmsPeaks",
+    "MSnSpectrumInfoLcmsPeaks",
+    3254230,
+    "CREATE TABLE \"MSnSpectrumInfoLcmsPeaks\" (\r\n\t\t\t\t\t\t\"MSnSpectrumInfoWorkflowID\" int NOT NULL, \"MSnSpectrumInfoSpectrumID\" int NOT NULL,\r\n\t\t\t\t\t\t\"LcmsPeaksWorkflowId\" int NOT NULL, \"LcmsPeaksId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_MSnSpectrumInfoLcmsPeaks_Unique_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID_LcmsPeaksWorkflowId_LcmsPeaksId",
+    "MSnSpectrumInfoLcmsPeaks",
+    3254232,
+    "CREATE UNIQUE INDEX \"IX_MSnSpectrumInfoLcmsPeaks_Unique_MSnSpectrumInfoWorkflowID_MSnSpectrumInfoSpectrumID_LcmsPeaksWorkflowId_LcmsPeaksId\" ON \"MSnSpectrumInfoLcmsPeaks\"(\r\n\t\t\t\t\t\t\t\"MSnSpectrumInfoWorkflowID\", \"MSnSpectrumInfoSpectrumID\", \"LcmsPeaksWorkflowId\", \"LcmsPeaksId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_MSnSpectrumInfoLcmsPeaks_Primary_LcmsPeaksWorkflowId_LcmsPeaksId",
+    "MSnSpectrumInfoLcmsPeaks",
+    3254233,
+    "CREATE INDEX \"IX_MSnSpectrumInfoLcmsPeaks_Primary_LcmsPeaksWorkflowId_LcmsPeaksId\" ON \"MSnSpectrumInfoLcmsPeaks\"(\r\n\t\t\t\t\t\t\t\"LcmsPeaksWorkflowId\", \"LcmsPeaksId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "MassCorrectionItemsCorrectionLandmarkItems",
+    "MassCorrectionItemsCorrectionLandmarkItems",
+    3265645,
+    "CREATE TABLE \"MassCorrectionItemsCorrectionLandmarkItems\" (\r\n\t\t\t\t\t\t\"MassCorrectionItemsWorkflowId\" int NOT NULL, \"MassCorrectionItemsID\" int NOT NULL,\r\n\t\t\t\t\t\t\"CorrectionLandmarkItemsWorkflowId\" int NOT NULL, \"CorrectionLandmarkItemsID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_MassCorrectionItemsCorrectionLandmarkItems_Unique_MassCorrectionItemsWorkflowId_MassCorrectionItemsID_CorrectionLandmarkItemsWorkflowId_CorrectionLandmarkItemsID",
+    "MassCorrectionItemsCorrectionLandmarkItems",
+    3265646,
+    "CREATE UNIQUE INDEX \"IX_MassCorrectionItemsCorrectionLandmarkItems_Unique_MassCorrectionItemsWorkflowId_MassCorrectionItemsID_CorrectionLandmarkItemsWorkflowId_CorrectionLandmarkItemsID\" ON \"MassCorrectionItemsCorrectionLandmarkItems\"(\r\n\t\t\t\t\t\t\t\"MassCorrectionItemsWorkflowId\", \"MassCorrectionItemsID\", \"CorrectionLandmarkItemsWorkflowId\", \"CorrectionLandmarkItemsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_MassCorrectionItemsCorrectionLandmarkItems_Primary_CorrectionLandmarkItemsWorkflowId_CorrectionLandmarkItemsID",
+    "MassCorrectionItemsCorrectionLandmarkItems",
+    3265647,
+    "CREATE INDEX \"IX_MassCorrectionItemsCorrectionLandmarkItems_Primary_CorrectionLandmarkItemsWorkflowId_CorrectionLandmarkItemsID\" ON \"MassCorrectionItemsCorrectionLandmarkItems\"(\r\n\t\t\t\t\t\t\t\"CorrectionLandmarkItemsWorkflowId\", \"CorrectionLandmarkItemsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "XicTraceItemsSpecializedTraceItems",
+    "XicTraceItemsSpecializedTraceItems",
+    3267594,
+    "CREATE TABLE \"XicTraceItemsSpecializedTraceItems\" (\r\n\t\t\t\t\t\t\"XicTraceItemsWorkflowID\" int NOT NULL, \"XicTraceItemsID\" int NOT NULL,\r\n\t\t\t\t\t\t\"SpecializedTraceItemsWorkflowID\" int NOT NULL, \"SpecializedTraceItemsID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_XicTraceItemsSpecializedTraceItems_Unique_XicTraceItemsWorkflowID_XicTraceItemsID_SpecializedTraceItemsWorkflowID_SpecializedTraceItemsID",
+    "XicTraceItemsSpecializedTraceItems",
+    3267595,
+    "CREATE UNIQUE INDEX \"IX_XicTraceItemsSpecializedTraceItems_Unique_XicTraceItemsWorkflowID_XicTraceItemsID_SpecializedTraceItemsWorkflowID_SpecializedTraceItemsID\" ON \"XicTraceItemsSpecializedTraceItems\"(\r\n\t\t\t\t\t\t\t\"XicTraceItemsWorkflowID\", \"XicTraceItemsID\", \"SpecializedTraceItemsWorkflowID\", \"SpecializedTraceItemsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_XicTraceItemsSpecializedTraceItems_Primary_SpecializedTraceItemsWorkflowID_SpecializedTraceItemsID",
+    "XicTraceItemsSpecializedTraceItems",
+    3267596,
+    "CREATE INDEX \"IX_XicTraceItemsSpecializedTraceItems_Primary_SpecializedTraceItemsWorkflowID_SpecializedTraceItemsID\" ON \"XicTraceItemsSpecializedTraceItems\"(\r\n\t\t\t\t\t\t\t\"SpecializedTraceItemsWorkflowID\", \"SpecializedTraceItemsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "XicTraceItemsLcmsPeaks",
+    "XicTraceItemsLcmsPeaks",
+    3267597,
+    "CREATE TABLE \"XicTraceItemsLcmsPeaks\" (\r\n\t\t\t\t\t\t\"XicTraceItemsWorkflowID\" int NOT NULL, \"XicTraceItemsID\" int NOT NULL,\r\n\t\t\t\t\t\t\"LcmsPeaksWorkflowId\" int NOT NULL, \"LcmsPeaksId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_XicTraceItemsLcmsPeaks_Unique_XicTraceItemsWorkflowID_XicTraceItemsID_LcmsPeaksWorkflowId_LcmsPeaksId",
+    "XicTraceItemsLcmsPeaks",
+    3267598,
+    "CREATE UNIQUE INDEX \"IX_XicTraceItemsLcmsPeaks_Unique_XicTraceItemsWorkflowID_XicTraceItemsID_LcmsPeaksWorkflowId_LcmsPeaksId\" ON \"XicTraceItemsLcmsPeaks\"(\r\n\t\t\t\t\t\t\t\"XicTraceItemsWorkflowID\", \"XicTraceItemsID\", \"LcmsPeaksWorkflowId\", \"LcmsPeaksId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_XicTraceItemsLcmsPeaks_Primary_LcmsPeaksWorkflowId_LcmsPeaksId",
+    "XicTraceItemsLcmsPeaks",
+    3267600,
+    "CREATE INDEX \"IX_XicTraceItemsLcmsPeaks_Primary_LcmsPeaksWorkflowId_LcmsPeaksId\" ON \"XicTraceItemsLcmsPeaks\"(\r\n\t\t\t\t\t\t\t\"LcmsPeaksWorkflowId\", \"LcmsPeaksId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "LcmsFeaturesLcmsPeaks",
+    "LcmsFeaturesLcmsPeaks",
+    3381754,
+    "CREATE TABLE \"LcmsFeaturesLcmsPeaks\" (\r\n\t\t\t\t\t\t\"LcmsFeaturesWorkflowId\" int NOT NULL, \"LcmsFeaturesId\" int NOT NULL,\r\n\t\t\t\t\t\t\"LcmsPeaksWorkflowId\" int NOT NULL, \"LcmsPeaksId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t, \"IsReference\" int NOT NULL DEFAULT 0)"
+  ],
+  [
+    "index",
+    "IX_LcmsFeaturesLcmsPeaks_Unique_LcmsFeaturesWorkflowId_LcmsFeaturesId_LcmsPeaksWorkflowId_LcmsPeaksId",
+    "LcmsFeaturesLcmsPeaks",
+    3381755,
+    "CREATE UNIQUE INDEX \"IX_LcmsFeaturesLcmsPeaks_Unique_LcmsFeaturesWorkflowId_LcmsFeaturesId_LcmsPeaksWorkflowId_LcmsPeaksId\" ON \"LcmsFeaturesLcmsPeaks\"(\r\n\t\t\t\t\t\t\t\"LcmsFeaturesWorkflowId\", \"LcmsFeaturesId\", \"LcmsPeaksWorkflowId\", \"LcmsPeaksId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_LcmsFeaturesLcmsPeaks_Primary_LcmsPeaksWorkflowId_LcmsPeaksId",
+    "LcmsFeaturesLcmsPeaks",
+    3381756,
+    "CREATE INDEX \"IX_LcmsFeaturesLcmsPeaks_Primary_LcmsPeaksWorkflowId_LcmsPeaksId\" ON \"LcmsFeaturesLcmsPeaks\"(\r\n\t\t\t\t\t\t\t\"LcmsPeaksWorkflowId\", \"LcmsPeaksId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_MassSpectrumItems_Unique_WorkflowID_ID",
+    "MassSpectrumItems",
+    3442178,
+    "CREATE UNIQUE INDEX \"IX_MassSpectrumItems_Unique_WorkflowID_ID\" ON \"MassSpectrumItems\"(\r\n\t\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_XicTraceItems_Unique_WorkflowID_ID",
+    "XicTraceItems",
+    3445408,
+    "CREATE UNIQUE INDEX \"IX_XicTraceItems_Unique_WorkflowID_ID\" ON \"XicTraceItems\"(\r\n\t\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsms_Unique_WorkflowID_PeptideID",
+    "TargetPsms",
+    3469563,
+    "CREATE UNIQUE INDEX \"IX_TargetPsms_Unique_WorkflowID_PeptideID\" ON \"TargetPsms\"(\r\n\t\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPsms_Unique_WorkflowID_PeptideID",
+    "DecoyPsms",
+    3473511,
+    "CREATE UNIQUE INDEX \"IX_DecoyPsms_Unique_WorkflowID_PeptideID\" ON \"DecoyPsms\"(\r\n\t\t\t\t\t\t\t\"WorkflowID\", \"PeptideID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteoformSpectrumMatchs_Unique_WorkflowID_ID",
+    "TargetProteoformSpectrumMatchs",
+    3474644,
+    "CREATE UNIQUE INDEX \"IX_TargetProteoformSpectrumMatchs_Unique_WorkflowID_ID\" ON \"TargetProteoformSpectrumMatchs\"(\r\n\t\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteoformSpectrumMatchs_Unique_WorkflowID_ID",
+    "DecoyProteoformSpectrumMatchs",
+    3474645,
+    "CREATE UNIQUE INDEX \"IX_DecoyProteoformSpectrumMatchs_Unique_WorkflowID_ID\" ON \"DecoyProteoformSpectrumMatchs\"(\r\n\t\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ReferenceMassSpectrumItem_Unique_WorkflowID_PsmID",
+    "ReferenceMassSpectrumItem",
+    3474646,
+    "CREATE UNIQUE INDEX \"IX_ReferenceMassSpectrumItem_Unique_WorkflowID_PsmID\" ON \"ReferenceMassSpectrumItem\"(\r\n\t\t\t\t\t\t\t\"WorkflowID\", \"PsmID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_MSnSpectrumInfo_Unique_WorkflowID_SpectrumID",
+    "MSnSpectrumInfo",
+    3474647,
+    "CREATE UNIQUE INDEX \"IX_MSnSpectrumInfo_Unique_WorkflowID_SpectrumID\" ON \"MSnSpectrumInfo\"(\r\n\t\t\t\t\t\t\t\"WorkflowID\", \"SpectrumID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_PrecursorInfoItems_Unique_WorkflowId_SpectrumId_Id",
+    "PrecursorInfoItems",
+    3478001,
+    "CREATE UNIQUE INDEX \"IX_PrecursorInfoItems_Unique_WorkflowId_SpectrumId_Id\" ON \"PrecursorInfoItems\"(\r\n\t\t\t\t\t\t\t\"WorkflowId\", \"SpectrumId\", \"Id\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_MassCorrectionItems_Unique_WorkflowId_ID",
+    "MassCorrectionItems",
+    3481579,
+    "CREATE UNIQUE INDEX \"IX_MassCorrectionItems_Unique_WorkflowId_ID\" ON \"MassCorrectionItems\"(\r\n\t\t\t\t\t\t\t\"WorkflowId\", \"ID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_CorrectionLandmarkItems_Unique_WorkflowId_ID",
+    "CorrectionLandmarkItems",
+    3481580,
+    "CREATE UNIQUE INDEX \"IX_CorrectionLandmarkItems_Unique_WorkflowId_ID\" ON \"CorrectionLandmarkItems\"(\r\n\t\t\t\t\t\t\t\"WorkflowId\", \"ID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_SpecializedTraceItems_Unique_WorkflowID_ID",
+    "SpecializedTraceItems",
+    3482075,
+    "CREATE UNIQUE INDEX \"IX_SpecializedTraceItems_Unique_WorkflowID_ID\" ON \"SpecializedTraceItems\"(\r\n\t\t\t\t\t\t\t\"WorkflowID\", \"ID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_LcmsFeatures_Unique_WorkflowId_Id",
+    "LcmsFeatures",
+    3482077,
+    "CREATE UNIQUE INDEX \"IX_LcmsFeatures_Unique_WorkflowId_Id\" ON \"LcmsFeatures\"(\r\n\t\t\t\t\t\t\t\"WorkflowId\", \"Id\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_LcmsPeaks_Unique_WorkflowId_Id",
+    "LcmsPeaks",
+    3486902,
+    "CREATE UNIQUE INDEX \"IX_LcmsPeaks_Unique_WorkflowId_Id\" ON \"LcmsPeaks\"(\r\n\t\t\t\t\t\t\t\"WorkflowId\", \"Id\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ProteinIdentificationGroups",
+    "ProteinIdentificationGroups",
+    3513966,
+    "CREATE TABLE \"ProteinIdentificationGroups\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowID\" int NOT NULL, \r\n\t\t\t\t\t\t\"ProteinIdentificationGroupID\" int NOT NULL, \r\n\t\t\t\t\t\t\"ProcessingNodeNumber\" int NOT NULL, \r\n\t\t\t\t\t\t\"GroupName\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ProteinIdentificationGroups_Unique_WorkflowID_ProteinIdentificationGroupID_ProcessingNodeNumber",
+    "ProteinIdentificationGroups",
+    3513967,
+    "CREATE UNIQUE INDEX \"IX_ProteinIdentificationGroups_Unique_WorkflowID_ProteinIdentificationGroupID_ProcessingNodeNumber\" ON \"ProteinIdentificationGroups\"(\r\n\t\t\t\t\t\t\t\"WorkflowID\", \"ProteinIdentificationGroupID\", \"ProcessingNodeNumber\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPeptideGroups",
+    "TargetPeptideGroups",
+    79,
+    "CREATE TABLE \"TargetPeptideGroups\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"PeptideGroupID\" int NOT NULL, \r\n\t\t\t\t\t\t\"Sequence\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"UniqueSequenceID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SequenceLength\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PsmAmbiguity\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PsmCount\" int NULL, \r\n\t\t\t\t\t\t\"ParentProteinCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ParentProteinAccessions\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"TheoreticalMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MissedCleavages\" int NULL\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"ConfidencebySearchEngine\" BLOB NULL, \"ChargebySearchEngine\" BLOB NULL, \"DeltaScorebySearchEngine\" BLOB NULL, \"DeltaCnbySearchEngine\" BLOB NULL, \"RankbySearchEngine\" BLOB NULL, \"SearchEngineRankbySearchEngine\" BLOB NULL, \"ConcatenatedRankbySearchEngine\" BLOB NULL, \"mzDabySearchEngine\" BLOB NULL, \"DeltaMppmbySearchEngine\" BLOB NULL, \"DeltamzDabySearchEngine\" BLOB NULL, \"RTminbySearchEngine\" BLOB NULL, \"PercolatorqValuebySearchEngine\" BLOB NULL, \"PercolatorPEPbySearchEngine\" BLOB NULL, \"PercolatorSVMScorebySearchEngine\" BLOB NULL, \"XCorrbySearchEngine\" BLOB NULL, \"IonsScorebySearchEngine\" BLOB NULL, \"Modifications\" [varchar] (1024) COLLATE NOCASE NULL, \"Modificationsallpossiblesites\" [varchar] (1024) COLLATE NOCASE NULL, \"SVM_Score\" double NULL, \"QvalityPEP\" double NULL, \"Qvalityqvalue\" double NULL, \"Confidence\" int NOT NULL DEFAULT 0, \"TopApexRTmin\" double NULL, \"NumberOfProteinGroups\" int NOT NULL DEFAULT 0, \"MasterProteinAccessions\" [varchar] (1024) COLLATE NOCASE NULL, \"MasterProteinDescriptions\" [varchar] (1024) COLLATE NOCASE NULL, \"QuanInfo\" int NULL, \"Abundances\" BLOB NULL, \"AbundancesCounts\" BLOB NULL, \"AbundancesNormalized\" BLOB NULL, \"AnnotatedSequence\" [varchar] (1024) COLLATE NOCASE NULL, \"PositionsinMasterProteins\" [varchar] (1024) COLLATE NOCASE NULL, \"ModificationsinMasterProteinsallSites\" [varchar] (1024) COLLATE NOCASE NULL, \"ModificationsinMasterProteins\" [varchar] (1024) COLLATE NOCASE NULL, \"FoundinFiles\" BLOB NULL, \"FoundinSamples\" BLOB NULL, \"FoundinSampleGroups\" BLOB NULL)"
+  ],
+  [
+    "index",
+    "IX_TargetPeptideGroups_Unique_PeptideGroupID",
+    "TargetPeptideGroups",
+    80,
+    "CREATE UNIQUE INDEX \"IX_TargetPeptideGroups_Unique_PeptideGroupID\" ON \"TargetPeptideGroups\"(\r\n\t\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPsmsTargetPeptideGroups",
+    "TargetPsmsTargetPeptideGroups",
+    81,
+    "CREATE TABLE \"TargetPsmsTargetPeptideGroups\" (\r\n\t\t\t\t\t\t\"TargetPsmsWorkflowID\" int NOT NULL, \"TargetPsmsPeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetPeptideGroupsPeptideGroupID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsmsTargetPeptideGroups_Unique_TargetPsmsWorkflowID_TargetPsmsPeptideID_TargetPeptideGroupsPeptideGroupID",
+    "TargetPsmsTargetPeptideGroups",
+    82,
+    "CREATE UNIQUE INDEX \"IX_TargetPsmsTargetPeptideGroups_Unique_TargetPsmsWorkflowID_TargetPsmsPeptideID_TargetPeptideGroupsPeptideGroupID\" ON \"TargetPsmsTargetPeptideGroups\"(\r\n\t\t\t\t\t\t\t\"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\", \"TargetPeptideGroupsPeptideGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPsmsTargetPeptideGroups_Primary_TargetPeptideGroupsPeptideGroupID",
+    "TargetPsmsTargetPeptideGroups",
+    83,
+    "CREATE INDEX \"IX_TargetPsmsTargetPeptideGroups_Primary_TargetPeptideGroupsPeptideGroupID\" ON \"TargetPsmsTargetPeptideGroups\"(\r\n\t\t\t\t\t\t\t\"TargetPeptideGroupsPeptideGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPeptideGroupsTargetProteins",
+    "TargetPeptideGroupsTargetProteins",
+    3584749,
+    "CREATE TABLE \"TargetPeptideGroupsTargetProteins\" (\r\n\t\t\t\t\t\t\"TargetPeptideGroupsPeptideGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\" int64 NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t, \"QuanUsage\" int NOT NULL DEFAULT 0, \"QuanRatioUsage\" int NOT NULL DEFAULT 0, \"SequenceinProtein\" [varchar] (1024) COLLATE NOCASE NULL, \"PositionsinProteins\" [varchar] (1024) COLLATE NOCASE NULL, \"PeptideGroupModificationsPositioninProteins\" [varchar] (1024) COLLATE NOCASE NULL, \"PeptideGroupModificationsPositioninProteinsallSites\" [varchar] (1024) COLLATE NOCASE NULL)"
+  ],
+  [
+    "index",
+    "IX_TargetPeptideGroupsTargetProteins_Unique_TargetPeptideGroupsPeptideGroupID_TargetProteinsUniqueSequenceID",
+    "TargetPeptideGroupsTargetProteins",
+    3584751,
+    "CREATE UNIQUE INDEX \"IX_TargetPeptideGroupsTargetProteins_Unique_TargetPeptideGroupsPeptideGroupID_TargetProteinsUniqueSequenceID\" ON \"TargetPeptideGroupsTargetProteins\"(\r\n\t\t\t\t\t\t\t\"TargetPeptideGroupsPeptideGroupID\", \"TargetProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPeptideGroupsTargetProteins_Primary_TargetProteinsUniqueSequenceID",
+    "TargetPeptideGroupsTargetProteins",
+    3584752,
+    "CREATE INDEX \"IX_TargetPeptideGroupsTargetProteins_Primary_TargetProteinsUniqueSequenceID\" ON \"TargetPeptideGroupsTargetProteins\"(\r\n\t\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPeptideGroups",
+    "DecoyPeptideGroups",
+    3586955,
+    "CREATE TABLE \"DecoyPeptideGroups\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"PeptideGroupID\" int NOT NULL, \r\n\t\t\t\t\t\t\"Sequence\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"UniqueSequenceID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SequenceLength\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PsmAmbiguity\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PsmCount\" int NULL, \r\n\t\t\t\t\t\t\"ParentProteinCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ParentProteinAccessions\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"TheoreticalMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MissedCleavages\" int NULL\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"ConfidencebySearchEngine\" BLOB NULL, \"ChargebySearchEngine\" BLOB NULL, \"DeltaCnbySearchEngine\" BLOB NULL, \"RankbySearchEngine\" BLOB NULL, \"SearchEngineRankbySearchEngine\" BLOB NULL, \"ConcatenatedRankbySearchEngine\" BLOB NULL, \"mzDabySearchEngine\" BLOB NULL, \"DeltaMppmbySearchEngine\" BLOB NULL, \"DeltamzDabySearchEngine\" BLOB NULL, \"RTminbySearchEngine\" BLOB NULL, \"PercolatorqValuebySearchEngine\" BLOB NULL, \"PercolatorPEPbySearchEngine\" BLOB NULL, \"PercolatorSVMScorebySearchEngine\" BLOB NULL, \"XCorrbySearchEngine\" BLOB NULL, \"IonsScorebySearchEngine\" BLOB NULL, \"Modifications\" [varchar] (1024) COLLATE NOCASE NULL, \"Modificationsallpossiblesites\" [varchar] (1024) COLLATE NOCASE NULL, \"SVM_Score\" double NULL, \"QvalityPEP\" double NULL, \"Qvalityqvalue\" double NULL, \"Confidence\" int NOT NULL DEFAULT 0, \"NumberOfProteinGroups\" int NOT NULL DEFAULT 0)"
+  ],
+  [
+    "index",
+    "IX_DecoyPeptideGroups_Unique_PeptideGroupID",
+    "DecoyPeptideGroups",
+    3586956,
+    "CREATE UNIQUE INDEX \"IX_DecoyPeptideGroups_Unique_PeptideGroupID\" ON \"DecoyPeptideGroups\"(\r\n\t\t\t\t\t\t\t\"PeptideGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPsmsDecoyPeptideGroups",
+    "DecoyPsmsDecoyPeptideGroups",
+    3586957,
+    "CREATE TABLE \"DecoyPsmsDecoyPeptideGroups\" (\r\n\t\t\t\t\t\t\"DecoyPsmsWorkflowID\" int NOT NULL, \"DecoyPsmsPeptideID\" int NOT NULL,\r\n\t\t\t\t\t\t\"DecoyPeptideGroupsPeptideGroupID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPsmsDecoyPeptideGroups_Unique_DecoyPsmsWorkflowID_DecoyPsmsPeptideID_DecoyPeptideGroupsPeptideGroupID",
+    "DecoyPsmsDecoyPeptideGroups",
+    3586958,
+    "CREATE UNIQUE INDEX \"IX_DecoyPsmsDecoyPeptideGroups_Unique_DecoyPsmsWorkflowID_DecoyPsmsPeptideID_DecoyPeptideGroupsPeptideGroupID\" ON \"DecoyPsmsDecoyPeptideGroups\"(\r\n\t\t\t\t\t\t\t\"DecoyPsmsWorkflowID\", \"DecoyPsmsPeptideID\", \"DecoyPeptideGroupsPeptideGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPsmsDecoyPeptideGroups_Primary_DecoyPeptideGroupsPeptideGroupID",
+    "DecoyPsmsDecoyPeptideGroups",
+    3586959,
+    "CREATE INDEX \"IX_DecoyPsmsDecoyPeptideGroups_Primary_DecoyPeptideGroupsPeptideGroupID\" ON \"DecoyPsmsDecoyPeptideGroups\"(\r\n\t\t\t\t\t\t\t\"DecoyPeptideGroupsPeptideGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyPeptideGroupsDecoyProteins",
+    "DecoyPeptideGroupsDecoyProteins",
+    3601738,
+    "CREATE TABLE \"DecoyPeptideGroupsDecoyProteins\" (\r\n\t\t\t\t\t\t\"DecoyPeptideGroupsPeptideGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\"DecoyProteinsUniqueSequenceID\" int64 NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPeptideGroupsDecoyProteins_Unique_DecoyPeptideGroupsPeptideGroupID_DecoyProteinsUniqueSequenceID",
+    "DecoyPeptideGroupsDecoyProteins",
+    3601740,
+    "CREATE UNIQUE INDEX \"IX_DecoyPeptideGroupsDecoyProteins_Unique_DecoyPeptideGroupsPeptideGroupID_DecoyProteinsUniqueSequenceID\" ON \"DecoyPeptideGroupsDecoyProteins\"(\r\n\t\t\t\t\t\t\t\"DecoyPeptideGroupsPeptideGroupID\", \"DecoyProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyPeptideGroupsDecoyProteins_Primary_DecoyProteinsUniqueSequenceID",
+    "DecoyPeptideGroupsDecoyProteins",
+    3601741,
+    "CREATE INDEX \"IX_DecoyPeptideGroupsDecoyProteins_Primary_DecoyProteinsUniqueSequenceID\" ON \"DecoyPeptideGroupsDecoyProteins\"(\r\n\t\t\t\t\t\t\t\"DecoyProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ConsensusFeatures",
+    "ConsensusFeatures",
+    3611102,
+    "CREATE TABLE \"ConsensusFeatures\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"Id\" int NOT NULL, \r\n\t\t\t\t\t\t\"AverageMonoisotopicMassOverCharge\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"AverageApexRT\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"LeftRT\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"RightRT\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ChargeState\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"SignalToNoise\" double NULL, \r\n\t\t\t\t\t\t\"PsmCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfIsotopes\" int NOT NULL DEFAULT 0\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"NumberOfPeptideGroups\" int NOT NULL DEFAULT 0, \"DeltaMppm\" double NOT NULL DEFAULT 0, \"DeltaApexRTmin\" double NOT NULL DEFAULT 0, \"QuanInfo\" int NULL, \"QuanInfoDetails\" int NULL, \"AbundancesperFile\" BLOB NULL, \"AbundancesCounts\" BLOB NULL, \"AbundancesOrigin\" BLOB NULL, \"AbundancesNormalized\" BLOB NULL)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatures_Unique_Id",
+    "ConsensusFeatures",
+    3611103,
+    "CREATE UNIQUE INDEX \"IX_ConsensusFeatures_Unique_Id\" ON \"ConsensusFeatures\"(\r\n\t\t\t\t\t\t\t\"Id\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ConsensusFeaturesLcmsFeatures",
+    "ConsensusFeaturesLcmsFeatures",
+    3611104,
+    "CREATE TABLE \"ConsensusFeaturesLcmsFeatures\" (\r\n\t\t\t\t\t\t\"ConsensusFeaturesId\" int NOT NULL,\r\n\t\t\t\t\t\t\"LcmsFeaturesWorkflowId\" int NOT NULL, \"LcmsFeaturesId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t, \"QuanUsage\" int NOT NULL DEFAULT 0)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeaturesLcmsFeatures_Unique_ConsensusFeaturesId_LcmsFeaturesWorkflowId_LcmsFeaturesId",
+    "ConsensusFeaturesLcmsFeatures",
+    3611105,
+    "CREATE UNIQUE INDEX \"IX_ConsensusFeaturesLcmsFeatures_Unique_ConsensusFeaturesId_LcmsFeaturesWorkflowId_LcmsFeaturesId\" ON \"ConsensusFeaturesLcmsFeatures\"(\r\n\t\t\t\t\t\t\t\"ConsensusFeaturesId\", \"LcmsFeaturesWorkflowId\", \"LcmsFeaturesId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeaturesLcmsFeatures_Primary_LcmsFeaturesWorkflowId_LcmsFeaturesId",
+    "ConsensusFeaturesLcmsFeatures",
+    3611106,
+    "CREATE INDEX \"IX_ConsensusFeaturesLcmsFeatures_Primary_LcmsFeaturesWorkflowId_LcmsFeaturesId\" ON \"ConsensusFeaturesLcmsFeatures\"(\r\n\t\t\t\t\t\t\t\"LcmsFeaturesWorkflowId\", \"LcmsFeaturesId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetPeptideGroupsConsensusFeatures",
+    "TargetPeptideGroupsConsensusFeatures",
+    3611107,
+    "CREATE TABLE \"TargetPeptideGroupsConsensusFeatures\" (\r\n\t\t\t\t\t\t\"TargetPeptideGroupsPeptideGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\"ConsensusFeaturesId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t, \"QuanUsage\" int NOT NULL DEFAULT 0)"
+  ],
+  [
+    "index",
+    "IX_TargetPeptideGroupsConsensusFeatures_Unique_TargetPeptideGroupsPeptideGroupID_ConsensusFeaturesId",
+    "TargetPeptideGroupsConsensusFeatures",
+    3611108,
+    "CREATE UNIQUE INDEX \"IX_TargetPeptideGroupsConsensusFeatures_Unique_TargetPeptideGroupsPeptideGroupID_ConsensusFeaturesId\" ON \"TargetPeptideGroupsConsensusFeatures\"(\r\n\t\t\t\t\t\t\t\"TargetPeptideGroupsPeptideGroupID\", \"ConsensusFeaturesId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetPeptideGroupsConsensusFeatures_Primary_ConsensusFeaturesId",
+    "TargetPeptideGroupsConsensusFeatures",
+    3611109,
+    "CREATE INDEX \"IX_TargetPeptideGroupsConsensusFeatures_Primary_ConsensusFeaturesId\" ON \"TargetPeptideGroupsConsensusFeatures\"(\r\n\t\t\t\t\t\t\t\"ConsensusFeaturesId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ConsensusFeatureRegions",
+    "ConsensusFeatureRegions",
+    3611111,
+    "CREATE TABLE \"ConsensusFeatureRegions\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"Id\" int NOT NULL, \r\n\t\t\t\t\t\t\"DevInfo\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"MinMassOverCharge\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MaxMassOverCharge\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"LeftRt\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"RightRt\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Duration\" int64 NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MassMatchTolerance\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ApexRTMatchTolerance\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfIsotopes\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfConsensus\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MassSpan\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ApexSpan\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfValidSinglePeaks\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfInvalidSinglePeaks\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfValidFeatures\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfInvalidFeatures\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfUsedFeatures\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfUsedSinglePeaks\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfDistinctFeatureFileLinks\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfPsms\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfSinglePsms\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfUniquePsms\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfUniquePsmFiles\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"NumberOfMultiPsmLinks\" int NOT NULL DEFAULT 0\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatureRegions_Unique_Id",
+    "ConsensusFeatureRegions",
+    3611112,
+    "CREATE UNIQUE INDEX \"IX_ConsensusFeatureRegions_Unique_Id\" ON \"ConsensusFeatureRegions\"(\r\n\t\t\t\t\t\t\t\"Id\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ConsensusFeatureRegionsConsensusFeatures",
+    "ConsensusFeatureRegionsConsensusFeatures",
+    3611113,
+    "CREATE TABLE \"ConsensusFeatureRegionsConsensusFeatures\" (\r\n\t\t\t\t\t\t\"ConsensusFeatureRegionsId\" int NOT NULL,\r\n\t\t\t\t\t\t\"ConsensusFeaturesId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatureRegionsConsensusFeatures_Unique_ConsensusFeatureRegionsId_ConsensusFeaturesId",
+    "ConsensusFeatureRegionsConsensusFeatures",
+    3611114,
+    "CREATE UNIQUE INDEX \"IX_ConsensusFeatureRegionsConsensusFeatures_Unique_ConsensusFeatureRegionsId_ConsensusFeaturesId\" ON \"ConsensusFeatureRegionsConsensusFeatures\"(\r\n\t\t\t\t\t\t\t\"ConsensusFeatureRegionsId\", \"ConsensusFeaturesId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatureRegionsConsensusFeatures_Primary_ConsensusFeaturesId",
+    "ConsensusFeatureRegionsConsensusFeatures",
+    3611115,
+    "CREATE INDEX \"IX_ConsensusFeatureRegionsConsensusFeatures_Primary_ConsensusFeaturesId\" ON \"ConsensusFeatureRegionsConsensusFeatures\"(\r\n\t\t\t\t\t\t\t\"ConsensusFeaturesId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ConsensusFeatureRegionsLcmsFeatures",
+    "ConsensusFeatureRegionsLcmsFeatures",
+    3611116,
+    "CREATE TABLE \"ConsensusFeatureRegionsLcmsFeatures\" (\r\n\t\t\t\t\t\t\"ConsensusFeatureRegionsId\" int NOT NULL,\r\n\t\t\t\t\t\t\"LcmsFeaturesWorkflowId\" int NOT NULL, \"LcmsFeaturesId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatureRegionsLcmsFeatures_Unique_ConsensusFeatureRegionsId_LcmsFeaturesWorkflowId_LcmsFeaturesId",
+    "ConsensusFeatureRegionsLcmsFeatures",
+    3611117,
+    "CREATE UNIQUE INDEX \"IX_ConsensusFeatureRegionsLcmsFeatures_Unique_ConsensusFeatureRegionsId_LcmsFeaturesWorkflowId_LcmsFeaturesId\" ON \"ConsensusFeatureRegionsLcmsFeatures\"(\r\n\t\t\t\t\t\t\t\"ConsensusFeatureRegionsId\", \"LcmsFeaturesWorkflowId\", \"LcmsFeaturesId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatureRegionsLcmsFeatures_Primary_LcmsFeaturesWorkflowId_LcmsFeaturesId",
+    "ConsensusFeatureRegionsLcmsFeatures",
+    3611118,
+    "CREATE INDEX \"IX_ConsensusFeatureRegionsLcmsFeatures_Primary_LcmsFeaturesWorkflowId_LcmsFeaturesId\" ON \"ConsensusFeatureRegionsLcmsFeatures\"(\r\n\t\t\t\t\t\t\t\"LcmsFeaturesWorkflowId\", \"LcmsFeaturesId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ConsensusFeatureRegionsLcmsPeaks",
+    "ConsensusFeatureRegionsLcmsPeaks",
+    3612818,
+    "CREATE TABLE \"ConsensusFeatureRegionsLcmsPeaks\" (\r\n\t\t\t\t\t\t\"ConsensusFeatureRegionsId\" int NOT NULL,\r\n\t\t\t\t\t\t\"LcmsPeaksWorkflowId\" int NOT NULL, \"LcmsPeaksId\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatureRegionsLcmsPeaks_Unique_ConsensusFeatureRegionsId_LcmsPeaksWorkflowId_LcmsPeaksId",
+    "ConsensusFeatureRegionsLcmsPeaks",
+    3612819,
+    "CREATE UNIQUE INDEX \"IX_ConsensusFeatureRegionsLcmsPeaks_Unique_ConsensusFeatureRegionsId_LcmsPeaksWorkflowId_LcmsPeaksId\" ON \"ConsensusFeatureRegionsLcmsPeaks\"(\r\n\t\t\t\t\t\t\t\"ConsensusFeatureRegionsId\", \"LcmsPeaksWorkflowId\", \"LcmsPeaksId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatureRegionsLcmsPeaks_Primary_LcmsPeaksWorkflowId_LcmsPeaksId",
+    "ConsensusFeatureRegionsLcmsPeaks",
+    3612820,
+    "CREATE INDEX \"IX_ConsensusFeatureRegionsLcmsPeaks_Primary_LcmsPeaksWorkflowId_LcmsPeaksId\" ON \"ConsensusFeatureRegionsLcmsPeaks\"(\r\n\t\t\t\t\t\t\t\"LcmsPeaksWorkflowId\", \"LcmsPeaksId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ConsensusFeatureRegionsTargetPsms",
+    "ConsensusFeatureRegionsTargetPsms",
+    3612821,
+    "CREATE TABLE \"ConsensusFeatureRegionsTargetPsms\" (\r\n\t\t\t\t\t\t\"ConsensusFeatureRegionsId\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetPsmsWorkflowID\" int NOT NULL, \"TargetPsmsPeptideID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatureRegionsTargetPsms_Unique_ConsensusFeatureRegionsId_TargetPsmsWorkflowID_TargetPsmsPeptideID",
+    "ConsensusFeatureRegionsTargetPsms",
+    3612822,
+    "CREATE UNIQUE INDEX \"IX_ConsensusFeatureRegionsTargetPsms_Unique_ConsensusFeatureRegionsId_TargetPsmsWorkflowID_TargetPsmsPeptideID\" ON \"ConsensusFeatureRegionsTargetPsms\"(\r\n\t\t\t\t\t\t\t\"ConsensusFeatureRegionsId\", \"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ConsensusFeatureRegionsTargetPsms_Primary_TargetPsmsWorkflowID_TargetPsmsPeptideID",
+    "ConsensusFeatureRegionsTargetPsms",
+    3612823,
+    "CREATE INDEX \"IX_ConsensusFeatureRegionsTargetPsms_Primary_TargetPsmsWorkflowID_TargetPsmsPeptideID\" ON \"ConsensusFeatureRegionsTargetPsms\"(\r\n\t\t\t\t\t\t\t\"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FileAlignmentResultItems",
+    "FileAlignmentResultItems",
+    3612826,
+    "CREATE TABLE \"FileAlignmentResultItems\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"ID\" int NOT NULL, \r\n\t\t\t\t\t\t\"WorkflowID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"FileID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"StudyFileID\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ReferenceWorkflowID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ReferenceFileID\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ReferenceStudyFileID\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"AlignmentValueType\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Description\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"NumberOfLandmarks\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Rmse\" double NULL, \r\n\t\t\t\t\t\t\"AlignmentDetails\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FileAlignmentResultItems_Unique_ID",
+    "FileAlignmentResultItems",
+    3612827,
+    "CREATE UNIQUE INDEX \"IX_FileAlignmentResultItems_Unique_ID\" ON \"FileAlignmentResultItems\"(\r\n\t\t\t\t\t\t\t\"ID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "CorrectionCurveItems",
+    "CorrectionCurveItems",
+    3612829,
+    "CREATE TABLE \"CorrectionCurveItems\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowId\" int NOT NULL, \r\n\t\t\t\t\t\t\"ID\" int NOT NULL, \r\n\t\t\t\t\t\t\"RetentionTimes\" BLOB NULL, \r\n\t\t\t\t\t\t\"CorrectionValues\" BLOB NULL, \r\n\t\t\t\t\t\t\"PredictionTolerances\" BLOB NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_CorrectionCurveItems_Unique_WorkflowId_ID",
+    "CorrectionCurveItems",
+    3612830,
+    "CREATE UNIQUE INDEX \"IX_CorrectionCurveItems_Unique_WorkflowId_ID\" ON \"CorrectionCurveItems\"(\r\n\t\t\t\t\t\t\t\"WorkflowId\", \"ID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FileAlignmentResultItemsCorrectionLandmarkItems",
+    "FileAlignmentResultItemsCorrectionLandmarkItems",
+    3612831,
+    "CREATE TABLE \"FileAlignmentResultItemsCorrectionLandmarkItems\" (\r\n\t\t\t\t\t\t\"FileAlignmentResultItemsID\" int NOT NULL,\r\n\t\t\t\t\t\t\"CorrectionLandmarkItemsWorkflowId\" int NOT NULL, \"CorrectionLandmarkItemsID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FileAlignmentResultItemsCorrectionLandmarkItems_Unique_FileAlignmentResultItemsID_CorrectionLandmarkItemsWorkflowId_CorrectionLandmarkItemsID",
+    "FileAlignmentResultItemsCorrectionLandmarkItems",
+    3612833,
+    "CREATE UNIQUE INDEX \"IX_FileAlignmentResultItemsCorrectionLandmarkItems_Unique_FileAlignmentResultItemsID_CorrectionLandmarkItemsWorkflowId_CorrectionLandmarkItemsID\" ON \"FileAlignmentResultItemsCorrectionLandmarkItems\"(\r\n\t\t\t\t\t\t\t\"FileAlignmentResultItemsID\", \"CorrectionLandmarkItemsWorkflowId\", \"CorrectionLandmarkItemsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FileAlignmentResultItemsCorrectionLandmarkItems_Primary_CorrectionLandmarkItemsWorkflowId_CorrectionLandmarkItemsID",
+    "FileAlignmentResultItemsCorrectionLandmarkItems",
+    3612834,
+    "CREATE INDEX \"IX_FileAlignmentResultItemsCorrectionLandmarkItems_Primary_CorrectionLandmarkItemsWorkflowId_CorrectionLandmarkItemsID\" ON \"FileAlignmentResultItemsCorrectionLandmarkItems\"(\r\n\t\t\t\t\t\t\t\"CorrectionLandmarkItemsWorkflowId\", \"CorrectionLandmarkItemsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FileAlignmentResultItemsCorrectionCurveItems",
+    "FileAlignmentResultItemsCorrectionCurveItems",
+    3612835,
+    "CREATE TABLE \"FileAlignmentResultItemsCorrectionCurveItems\" (\r\n\t\t\t\t\t\t\"FileAlignmentResultItemsID\" int NOT NULL,\r\n\t\t\t\t\t\t\"CorrectionCurveItemsWorkflowId\" int NOT NULL, \"CorrectionCurveItemsID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FileAlignmentResultItemsCorrectionCurveItems_Unique_FileAlignmentResultItemsID_CorrectionCurveItemsWorkflowId_CorrectionCurveItemsID",
+    "FileAlignmentResultItemsCorrectionCurveItems",
+    3612836,
+    "CREATE UNIQUE INDEX \"IX_FileAlignmentResultItemsCorrectionCurveItems_Unique_FileAlignmentResultItemsID_CorrectionCurveItemsWorkflowId_CorrectionCurveItemsID\" ON \"FileAlignmentResultItemsCorrectionCurveItems\"(\r\n\t\t\t\t\t\t\t\"FileAlignmentResultItemsID\", \"CorrectionCurveItemsWorkflowId\", \"CorrectionCurveItemsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FileAlignmentResultItemsCorrectionCurveItems_Primary_CorrectionCurveItemsWorkflowId_CorrectionCurveItemsID",
+    "FileAlignmentResultItemsCorrectionCurveItems",
+    3612837,
+    "CREATE INDEX \"IX_FileAlignmentResultItemsCorrectionCurveItems_Primary_CorrectionCurveItemsWorkflowId_CorrectionCurveItemsID\" ON \"FileAlignmentResultItemsCorrectionCurveItems\"(\r\n\t\t\t\t\t\t\t\"CorrectionCurveItemsWorkflowId\", \"CorrectionCurveItemsID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FileAlignmentResultItemsWorkflowInputFiles",
+    "FileAlignmentResultItemsWorkflowInputFiles",
+    3612838,
+    "CREATE TABLE \"FileAlignmentResultItemsWorkflowInputFiles\" (\r\n\t\t\t\t\t\t\"FileAlignmentResultItemsID\" int NOT NULL,\r\n\t\t\t\t\t\t\"WorkflowInputFilesWorkflowID\" int NOT NULL, \"WorkflowInputFilesWorkflowLevel\" int NOT NULL, \"WorkflowInputFilesFileID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FileAlignmentResultItemsWorkflowInputFiles_Unique_FileAlignmentResultItemsID_WorkflowInputFilesWorkflowID_WorkflowInputFilesWorkflowLevel_WorkflowInputFilesFileID",
+    "FileAlignmentResultItemsWorkflowInputFiles",
+    3612839,
+    "CREATE UNIQUE INDEX \"IX_FileAlignmentResultItemsWorkflowInputFiles_Unique_FileAlignmentResultItemsID_WorkflowInputFilesWorkflowID_WorkflowInputFilesWorkflowLevel_WorkflowInputFilesFileID\" ON \"FileAlignmentResultItemsWorkflowInputFiles\"(\r\n\t\t\t\t\t\t\t\"FileAlignmentResultItemsID\", \"WorkflowInputFilesWorkflowID\", \"WorkflowInputFilesWorkflowLevel\", \"WorkflowInputFilesFileID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FileAlignmentResultItemsWorkflowInputFiles_Primary_WorkflowInputFilesWorkflowID_WorkflowInputFilesWorkflowLevel_WorkflowInputFilesFileID",
+    "FileAlignmentResultItemsWorkflowInputFiles",
+    3612840,
+    "CREATE INDEX \"IX_FileAlignmentResultItemsWorkflowInputFiles_Primary_WorkflowInputFilesWorkflowID_WorkflowInputFilesWorkflowLevel_WorkflowInputFilesFileID\" ON \"FileAlignmentResultItemsWorkflowInputFiles\"(\r\n\t\t\t\t\t\t\t\"WorkflowInputFilesWorkflowID\", \"WorkflowInputFilesWorkflowLevel\", \"WorkflowInputFilesFileID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "RetentionTimeCorrectionItems",
+    "RetentionTimeCorrectionItems",
+    3614486,
+    "CREATE TABLE \"RetentionTimeCorrectionItems\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowId\" int NOT NULL, \r\n\t\t\t\t\t\t\"ID\" int NOT NULL, \r\n\t\t\t\t\t\t\"FileId\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"OriginalRts\" BLOB NULL, \r\n\t\t\t\t\t\t\"CorrectedRts\" BLOB NULL\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL)"
+  ],
+  [
+    "index",
+    "IX_RetentionTimeCorrectionItems_Unique_WorkflowId_ID",
+    "RetentionTimeCorrectionItems",
+    3614487,
+    "CREATE UNIQUE INDEX \"IX_RetentionTimeCorrectionItems_Unique_WorkflowId_ID\" ON \"RetentionTimeCorrectionItems\"(\r\n\t\t\t\t\t\t\t\"WorkflowId\", \"ID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteinGroups",
+    "TargetProteinGroups",
+    6241,
+    "CREATE TABLE \"TargetProteinGroups\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"ProteinGroupID\" int NOT NULL, \r\n\t\t\t\t\t\t\"ProteinCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"UniquePeptidesCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PeptideGroupCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PsmCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MasterProteinDescription\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"FoundinFiles\" BLOB NULL, \"FoundinSamples\" BLOB NULL, \"FoundinSampleGroups\" BLOB NULL)"
+  ],
+  [
+    "index",
+    "IX_TargetProteinGroups_Unique_ProteinGroupID",
+    "TargetProteinGroups",
+    3557363,
+    "CREATE UNIQUE INDEX \"IX_TargetProteinGroups_Unique_ProteinGroupID\" ON \"TargetProteinGroups\"(\r\n\t\t\t\t\t\t\t\"ProteinGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteinGroupsTargetProteins",
+    "TargetProteinGroupsTargetProteins",
+    3774022,
+    "CREATE TABLE \"TargetProteinGroupsTargetProteins\" (\r\n\t\t\t\t\t\t\"TargetProteinGroupsProteinGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\" int64 NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteinGroupsTargetProteins_Unique_TargetProteinGroupsProteinGroupID_TargetProteinsUniqueSequenceID",
+    "TargetProteinGroupsTargetProteins",
+    3774026,
+    "CREATE UNIQUE INDEX \"IX_TargetProteinGroupsTargetProteins_Unique_TargetProteinGroupsProteinGroupID_TargetProteinsUniqueSequenceID\" ON \"TargetProteinGroupsTargetProteins\"(\r\n\t\t\t\t\t\t\t\"TargetProteinGroupsProteinGroupID\", \"TargetProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteinGroupsTargetProteins_Primary_TargetProteinsUniqueSequenceID",
+    "TargetProteinGroupsTargetProteins",
+    3774030,
+    "CREATE INDEX \"IX_TargetProteinGroupsTargetProteins_Primary_TargetProteinsUniqueSequenceID\" ON \"TargetProteinGroupsTargetProteins\"(\r\n\t\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteinGroupsTargetPsms",
+    "TargetProteinGroupsTargetPsms",
+    3774202,
+    "CREATE TABLE \"TargetProteinGroupsTargetPsms\" (\r\n\t\t\t\t\t\t\"TargetProteinGroupsProteinGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetPsmsWorkflowID\" int NOT NULL, \"TargetPsmsPeptideID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteinGroupsTargetPsms_Unique_TargetProteinGroupsProteinGroupID_TargetPsmsWorkflowID_TargetPsmsPeptideID",
+    "TargetProteinGroupsTargetPsms",
+    3774203,
+    "CREATE UNIQUE INDEX \"IX_TargetProteinGroupsTargetPsms_Unique_TargetProteinGroupsProteinGroupID_TargetPsmsWorkflowID_TargetPsmsPeptideID\" ON \"TargetProteinGroupsTargetPsms\"(\r\n\t\t\t\t\t\t\t\"TargetProteinGroupsProteinGroupID\", \"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteinGroupsTargetPsms_Primary_TargetPsmsWorkflowID_TargetPsmsPeptideID",
+    "TargetProteinGroupsTargetPsms",
+    3774204,
+    "CREATE INDEX \"IX_TargetProteinGroupsTargetPsms_Primary_TargetPsmsWorkflowID_TargetPsmsPeptideID\" ON \"TargetProteinGroupsTargetPsms\"(\r\n\t\t\t\t\t\t\t\"TargetPsmsWorkflowID\", \"TargetPsmsPeptideID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteinGroupsTargetPeptideGroups",
+    "TargetProteinGroupsTargetPeptideGroups",
+    3787345,
+    "CREATE TABLE \"TargetProteinGroupsTargetPeptideGroups\" (\r\n\t\t\t\t\t\t\"TargetProteinGroupsProteinGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetPeptideGroupsPeptideGroupID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteinGroupsTargetPeptideGroups_Unique_TargetProteinGroupsProteinGroupID_TargetPeptideGroupsPeptideGroupID",
+    "TargetProteinGroupsTargetPeptideGroups",
+    3787347,
+    "CREATE UNIQUE INDEX \"IX_TargetProteinGroupsTargetPeptideGroups_Unique_TargetProteinGroupsProteinGroupID_TargetPeptideGroupsPeptideGroupID\" ON \"TargetProteinGroupsTargetPeptideGroups\"(\r\n\t\t\t\t\t\t\t\"TargetProteinGroupsProteinGroupID\", \"TargetPeptideGroupsPeptideGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteinGroupsTargetPeptideGroups_Primary_TargetPeptideGroupsPeptideGroupID",
+    "TargetProteinGroupsTargetPeptideGroups",
+    3787348,
+    "CREATE INDEX \"IX_TargetProteinGroupsTargetPeptideGroups_Primary_TargetPeptideGroupsPeptideGroupID\" ON \"TargetProteinGroupsTargetPeptideGroups\"(\r\n\t\t\t\t\t\t\t\"TargetPeptideGroupsPeptideGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteinGroups",
+    "DecoyProteinGroups",
+    3790058,
+    "CREATE TABLE \"DecoyProteinGroups\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"ProteinGroupID\" int NOT NULL, \r\n\t\t\t\t\t\t\"ProteinCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"UniquePeptidesCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PeptideGroupCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PsmCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MasterProteinDescription\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteinGroups_Unique_ProteinGroupID",
+    "DecoyProteinGroups",
+    3790059,
+    "CREATE UNIQUE INDEX \"IX_DecoyProteinGroups_Unique_ProteinGroupID\" ON \"DecoyProteinGroups\"(\r\n\t\t\t\t\t\t\t\"ProteinGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteinGroupsDecoyProteins",
+    "DecoyProteinGroupsDecoyProteins",
+    3790060,
+    "CREATE TABLE \"DecoyProteinGroupsDecoyProteins\" (\r\n\t\t\t\t\t\t\"DecoyProteinGroupsProteinGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\"DecoyProteinsUniqueSequenceID\" int64 NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteinGroupsDecoyProteins_Unique_DecoyProteinGroupsProteinGroupID_DecoyProteinsUniqueSequenceID",
+    "DecoyProteinGroupsDecoyProteins",
+    3790061,
+    "CREATE UNIQUE INDEX \"IX_DecoyProteinGroupsDecoyProteins_Unique_DecoyProteinGroupsProteinGroupID_DecoyProteinsUniqueSequenceID\" ON \"DecoyProteinGroupsDecoyProteins\"(\r\n\t\t\t\t\t\t\t\"DecoyProteinGroupsProteinGroupID\", \"DecoyProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteinGroupsDecoyProteins_Primary_DecoyProteinsUniqueSequenceID",
+    "DecoyProteinGroupsDecoyProteins",
+    3790062,
+    "CREATE INDEX \"IX_DecoyProteinGroupsDecoyProteins_Primary_DecoyProteinsUniqueSequenceID\" ON \"DecoyProteinGroupsDecoyProteins\"(\r\n\t\t\t\t\t\t\t\"DecoyProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteinGroupsDecoyPsms",
+    "DecoyProteinGroupsDecoyPsms",
+    3774053,
+    "CREATE TABLE \"DecoyProteinGroupsDecoyPsms\" (\r\n\t\t\t\t\t\t\"DecoyProteinGroupsProteinGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\"DecoyPsmsWorkflowID\" int NOT NULL, \"DecoyPsmsPeptideID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteinGroupsDecoyPsms_Unique_DecoyProteinGroupsProteinGroupID_DecoyPsmsWorkflowID_DecoyPsmsPeptideID",
+    "DecoyProteinGroupsDecoyPsms",
+    3774025,
+    "CREATE UNIQUE INDEX \"IX_DecoyProteinGroupsDecoyPsms_Unique_DecoyProteinGroupsProteinGroupID_DecoyPsmsWorkflowID_DecoyPsmsPeptideID\" ON \"DecoyProteinGroupsDecoyPsms\"(\r\n\t\t\t\t\t\t\t\"DecoyProteinGroupsProteinGroupID\", \"DecoyPsmsWorkflowID\", \"DecoyPsmsPeptideID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteinGroupsDecoyPsms_Primary_DecoyPsmsWorkflowID_DecoyPsmsPeptideID",
+    "DecoyProteinGroupsDecoyPsms",
+    3790072,
+    "CREATE INDEX \"IX_DecoyProteinGroupsDecoyPsms_Primary_DecoyPsmsWorkflowID_DecoyPsmsPeptideID\" ON \"DecoyProteinGroupsDecoyPsms\"(\r\n\t\t\t\t\t\t\t\"DecoyPsmsWorkflowID\", \"DecoyPsmsPeptideID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "DecoyProteinGroupsDecoyPeptideGroups",
+    "DecoyProteinGroupsDecoyPeptideGroups",
+    3790117,
+    "CREATE TABLE \"DecoyProteinGroupsDecoyPeptideGroups\" (\r\n\t\t\t\t\t\t\"DecoyProteinGroupsProteinGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\"DecoyPeptideGroupsPeptideGroupID\" int NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteinGroupsDecoyPeptideGroups_Unique_DecoyProteinGroupsProteinGroupID_DecoyPeptideGroupsPeptideGroupID",
+    "DecoyProteinGroupsDecoyPeptideGroups",
+    3790118,
+    "CREATE UNIQUE INDEX \"IX_DecoyProteinGroupsDecoyPeptideGroups_Unique_DecoyProteinGroupsProteinGroupID_DecoyPeptideGroupsPeptideGroupID\" ON \"DecoyProteinGroupsDecoyPeptideGroups\"(\r\n\t\t\t\t\t\t\t\"DecoyProteinGroupsProteinGroupID\", \"DecoyPeptideGroupsPeptideGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_DecoyProteinGroupsDecoyPeptideGroups_Primary_DecoyPeptideGroupsPeptideGroupID",
+    "DecoyProteinGroupsDecoyPeptideGroups",
+    3790119,
+    "CREATE INDEX \"IX_DecoyProteinGroupsDecoyPeptideGroups_Primary_DecoyPeptideGroupsPeptideGroupID\" ON \"DecoyProteinGroupsDecoyPeptideGroups\"(\r\n\t\t\t\t\t\t\t\"DecoyPeptideGroupsPeptideGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AbundanceCorrectionItems",
+    "AbundanceCorrectionItems",
+    3852196,
+    "CREATE TABLE \"AbundanceCorrectionItems\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"WorkflowId\" int NOT NULL, \r\n\t\t\t\t\t\t\"ID\" int NOT NULL, \r\n\t\t\t\t\t\t\"SampleId\" [varchar] (1024) COLLATE NOCASE NULL DEFAULT '00000000-0000-0000-0000-000000000000', \r\n\t\t\t\t\t\t\"Sample\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"MassOverCharges\" BLOB NULL, \r\n\t\t\t\t\t\t\"RetentionTimes\" BLOB NULL, \r\n\t\t\t\t\t\t\"CorrectionValues\" BLOB NULL, \r\n\t\t\t\t\t\t\"PredictionTolerances\" BLOB NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AbundanceCorrectionItems_Unique_WorkflowId_ID",
+    "AbundanceCorrectionItems",
+    3852197,
+    "CREATE UNIQUE INDEX \"IX_AbundanceCorrectionItems_Unique_WorkflowId_ID\" ON \"AbundanceCorrectionItems\"(\r\n\t\t\t\t\t\t\t\"WorkflowId\", \"ID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_LcmsPeaks_FileId_WorkflowId_ApexRT",
+    "LcmsPeaks",
+    3852198,
+    "CREATE INDEX \"IX_LcmsPeaks_FileId_WorkflowId_ApexRT\" ON \"LcmsPeaks\"(\r\n\t\t\t\t\t\"FileId\" ASC, \"WorkflowId\" ASC, \"ApexRT\" ASC\r\n\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "FastaProteinAnnotations",
+    "FastaProteinAnnotations",
+    3893803,
+    "CREATE TABLE \"FastaProteinAnnotations\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"ProteinAnnotationId\" int NOT NULL, \r\n\t\t\t\t\t\t\"UniqueSequenceID\" int64 NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Annotation\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"GeneOntologyType\" int NOT NULL DEFAULT 0\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_FastaProteinAnnotations_Unique_ProteinAnnotationId",
+    "FastaProteinAnnotations",
+    3893804,
+    "CREATE UNIQUE INDEX \"IX_FastaProteinAnnotations_Unique_ProteinAnnotationId\" ON \"FastaProteinAnnotations\"(\r\n\t\t\t\t\t\t\t\"ProteinAnnotationId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AnnotationDescription",
+    "AnnotationDescription",
+    3928761,
+    "CREATE TABLE \"AnnotationDescription\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"AnnotationDescriptionId\" int NOT NULL, \r\n\t\t\t\t\t\t\"Accession\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"Description\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AnnotationDescription_Unique_AnnotationDescriptionId",
+    "AnnotationDescription",
+    3928762,
+    "CREATE UNIQUE INDEX \"IX_AnnotationDescription_Unique_AnnotationDescriptionId\" ON \"AnnotationDescription\"(\r\n\t\t\t\t\t\t\t\"AnnotationDescriptionId\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AnnotatedModifications",
+    "AnnotatedModifications",
+    3930437,
+    "CREATE TABLE \"AnnotatedModifications\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"ModificationID\" int NOT NULL, \r\n\t\t\t\t\t\t\"Name\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"Abbreviation\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"DeltaMonoisotopicMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"DeltaAverageMass\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Substitution\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"LeavingGroup\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"IsSubstitution\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"PositionType\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"UnimodAccession\" int64 NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"IsCrosslink\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ExtendedProperties\" [varchar] (1024) COLLATE NOCASE NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AnnotatedModifications_Unique_ModificationID",
+    "AnnotatedModifications",
+    3930439,
+    "CREATE UNIQUE INDEX \"IX_AnnotatedModifications_Unique_ModificationID\" ON \"AnnotatedModifications\"(\r\n\t\t\t\t\t\t\t\"ModificationID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "TargetProteinsAnnotatedModifications",
+    "TargetProteinsAnnotatedModifications",
+    3930440,
+    "CREATE TABLE \"TargetProteinsAnnotatedModifications\" (\r\n\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\" int64 NOT NULL,\r\n\t\t\t\t\t\t\"AnnotatedModificationsModificationID\" int NOT NULL\r\n\t\t\t\t\t\t, \"Position\" int NOT NULL\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteinsAnnotatedModifications_Unique_TargetProteinsUniqueSequenceID_AnnotatedModificationsModificationID_Position",
+    "TargetProteinsAnnotatedModifications",
+    3930441,
+    "CREATE UNIQUE INDEX \"IX_TargetProteinsAnnotatedModifications_Unique_TargetProteinsUniqueSequenceID_AnnotatedModificationsModificationID_Position\" ON \"TargetProteinsAnnotatedModifications\"(\r\n\t\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\", \"AnnotatedModificationsModificationID\", \"Position\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_TargetProteinsAnnotatedModifications_Primary_AnnotatedModificationsModificationID",
+    "TargetProteinsAnnotatedModifications",
+    3930442,
+    "CREATE INDEX \"IX_TargetProteinsAnnotatedModifications_Primary_AnnotatedModificationsModificationID\" ON \"TargetProteinsAnnotatedModifications\"(\r\n\t\t\t\t\t\t\t\"AnnotatedModificationsModificationID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AnnotationProteinGroups",
+    "AnnotationProteinGroups",
+    3933636,
+    "CREATE TABLE \"AnnotationProteinGroups\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"ProteinAnnotationGroupID\" int NOT NULL, \r\n\t\t\t\t\t\t\"GroupAnnotationAccession\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"GroupAnnotationDescription\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"GroupAnnotationSource\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"GroupAnnotationLevel\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MasterProteinCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ProteinCount\" int NOT NULL DEFAULT 0\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"NumberOfReferenceProteins\" int NOT NULL DEFAULT 0, \"Coverage\" double NOT NULL DEFAULT 0)"
+  ],
+  [
+    "index",
+    "IX_AnnotationProteinGroups_Unique_ProteinAnnotationGroupID",
+    "AnnotationProteinGroups",
+    3933637,
+    "CREATE UNIQUE INDEX \"IX_AnnotationProteinGroups_Unique_ProteinAnnotationGroupID\" ON \"AnnotationProteinGroups\"(\r\n\t\t\t\t\t\t\t\"ProteinAnnotationGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "PathwayProteinGroups",
+    "PathwayProteinGroups",
+    3933638,
+    "CREATE TABLE \"PathwayProteinGroups\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"ProteinPathwayGroupID\" int NOT NULL, \r\n\t\t\t\t\t\t\"GroupPathwayAccession\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"GroupPathwayDescription\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"GroupPathwaySource\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"GroupPathwayLevel\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"MasterProteinCount\" int NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"ProteinCount\" int NOT NULL DEFAULT 0\r\n\t\t\t\t\t, \"ExcludedBy\" int NOT NULL DEFAULT -1, \"Checked\" int NOT NULL DEFAULT 0, \"Tags\" BLOB NULL, \"NumberOfReferenceProteins\" int NOT NULL DEFAULT 0, \"Coverage\" double NOT NULL DEFAULT 0)"
+  ],
+  [
+    "index",
+    "IX_PathwayProteinGroups_Unique_ProteinPathwayGroupID",
+    "PathwayProteinGroups",
+    3933639,
+    "CREATE UNIQUE INDEX \"IX_PathwayProteinGroups_Unique_ProteinPathwayGroupID\" ON \"PathwayProteinGroups\"(\r\n\t\t\t\t\t\t\t\"ProteinPathwayGroupID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "AnnotationProteinGroupsTargetProteins",
+    "AnnotationProteinGroupsTargetProteins",
+    3933640,
+    "CREATE TABLE \"AnnotationProteinGroupsTargetProteins\" (\r\n\t\t\t\t\t\t\"AnnotationProteinGroupsProteinAnnotationGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\" int64 NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AnnotationProteinGroupsTargetProteins_Unique_AnnotationProteinGroupsProteinAnnotationGroupID_TargetProteinsUniqueSequenceID",
+    "AnnotationProteinGroupsTargetProteins",
+    3933642,
+    "CREATE UNIQUE INDEX \"IX_AnnotationProteinGroupsTargetProteins_Unique_AnnotationProteinGroupsProteinAnnotationGroupID_TargetProteinsUniqueSequenceID\" ON \"AnnotationProteinGroupsTargetProteins\"(\r\n\t\t\t\t\t\t\t\"AnnotationProteinGroupsProteinAnnotationGroupID\", \"TargetProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_AnnotationProteinGroupsTargetProteins_Primary_TargetProteinsUniqueSequenceID",
+    "AnnotationProteinGroupsTargetProteins",
+    3933643,
+    "CREATE INDEX \"IX_AnnotationProteinGroupsTargetProteins_Primary_TargetProteinsUniqueSequenceID\" ON \"AnnotationProteinGroupsTargetProteins\"(\r\n\t\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "PathwayProteinGroupsTargetProteins",
+    "PathwayProteinGroupsTargetProteins",
+    3933644,
+    "CREATE TABLE \"PathwayProteinGroupsTargetProteins\" (\r\n\t\t\t\t\t\t\"PathwayProteinGroupsProteinPathwayGroupID\" int NOT NULL,\r\n\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\" int64 NOT NULL\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_PathwayProteinGroupsTargetProteins_Unique_PathwayProteinGroupsProteinPathwayGroupID_TargetProteinsUniqueSequenceID",
+    "PathwayProteinGroupsTargetProteins",
+    3933645,
+    "CREATE UNIQUE INDEX \"IX_PathwayProteinGroupsTargetProteins_Unique_PathwayProteinGroupsProteinPathwayGroupID_TargetProteinsUniqueSequenceID\" ON \"PathwayProteinGroupsTargetProteins\"(\r\n\t\t\t\t\t\t\t\"PathwayProteinGroupsProteinPathwayGroupID\", \"TargetProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_PathwayProteinGroupsTargetProteins_Primary_TargetProteinsUniqueSequenceID",
+    "PathwayProteinGroupsTargetProteins",
+    3933646,
+    "CREATE INDEX \"IX_PathwayProteinGroupsTargetProteins_Primary_TargetProteinsUniqueSequenceID\" ON \"PathwayProteinGroupsTargetProteins\"(\r\n\t\t\t\t\t\t\t\"TargetProteinsUniqueSequenceID\"\r\n\t\t\t\t\t\t)"
+  ],
+  [
+    "table",
+    "ResultStatistics",
+    "ResultStatistics",
+    3938962,
+    "CREATE TABLE \"ResultStatistics\"\r\n\t\t\t\t\t(\r\n\t\t\t\t\t\"Id\" int NOT NULL, \r\n\t\t\t\t\t\t\"EntityName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ColumnName\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"Name\" [varchar] (1024) COLLATE NOCASE NULL, \r\n\t\t\t\t\t\t\"ArithmeticMean\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Median\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"StandardDeviationSample\" double NULL, \r\n\t\t\t\t\t\t\"Iqr\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"CoefficientOfVariation\" double NULL, \r\n\t\t\t\t\t\t\"Sum\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Minimum\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Maximum\" double NOT NULL DEFAULT 0, \r\n\t\t\t\t\t\t\"Count\" int NOT NULL DEFAULT 0\r\n\t\t\t\t\t)"
+  ],
+  [
+    "index",
+    "IX_ResultStatistics_Unique_Id",
+    "ResultStatistics",
+    3938963,
+    "CREATE UNIQUE INDEX \"IX_ResultStatistics_Unique_Id\" ON \"ResultStatistics\"(\r\n\t\t\t\t\t\t\t\"Id\"\r\n\t\t\t\t\t\t)"
+  ]
+]

@@ -1,0 +1,20 @@
+study_id,sample,run_identifier,study_file_id,sample_group,replicate_group,ratios,replicate_ratios,diagnosis_mapping,biological_replicate_mapping,source
+1,S1,QExactiveHF02_18988_N1530,F1,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+2,S2,QExactiveHF02_18989_N241,F2,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+3,S3,QExactiveHF02_18990_N5727,F3,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+4,S4,QExactiveHF02_18991_VNP132,F4,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+5,S5,QExactiveHF02_18992_N3016,F5,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+6,S6,QExactiveHF02_18993_N24568,F6,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+7,S7,QExactiveHF02_18994_N241,F7,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+8,S8,QExactiveHF02_18995_VNP132,F8,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+9,S9,QExactiveHF02_18996_N241,F9,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+10,S10,QExactiveHF02_18997_VNP132,F10,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+11,S11,QExactiveHF02_18998_N410,F11,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+12,S12,QExactiveHF02_18999_N4144,F12,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+13,S13,QExactiveHF02_19000_VNP141,F13,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+14,S14,QExactiveHF02_19001_N3430,F14,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+15,S15,QExactiveHF02_19002_N4107,F15,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+16,S16,QExactiveHF02_19003_N2459,F16,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+17,S17,QExactiveHF02_19004_N2300,F17,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+18,S18,QExactiveHF02_19005_VNP141,F18,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult
+19,S19,QExactiveHF02_19006_VNP141,F19,,,,,Not specified,Not specified,https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult

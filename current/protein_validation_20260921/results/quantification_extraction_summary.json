@@ -1,0 +1,210 @@
+{
+  "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.pdResult",
+  "counts": {
+    "protein_records": 18630,
+    "records_with_vector": 2356,
+    "records_with_normalized_values": 2356,
+    "vector_records_unique_peptides_ge2": 1380
+  },
+  "master_status_codes_among_vectors": {
+    "2": 280,
+    "0": 1979,
+    "1": 97
+  },
+  "normalization_ratio_by_slot": [
+    {
+      "slot": "slot_01",
+      "n_pairs": 1953,
+      "minimum_ratio": 1.687749096402546,
+      "maximum_ratio": 1.6877490964025472
+    },
+    {
+      "slot": "slot_02",
+      "n_pairs": 1618,
+      "minimum_ratio": 3.543984703739618,
+      "maximum_ratio": 3.543984703739621
+    },
+    {
+      "slot": "slot_03",
+      "n_pairs": 2107,
+      "minimum_ratio": 1.61191712075959,
+      "maximum_ratio": 1.6119171207595908
+    },
+    {
+      "slot": "slot_04",
+      "n_pairs": 1098,
+      "minimum_ratio": 26.64198928607532,
+      "maximum_ratio": 26.641989286075333
+    },
+    {
+      "slot": "slot_05",
+      "n_pairs": 1942,
+      "minimum_ratio": 1.5946299189640318,
+      "maximum_ratio": 1.5946299189640334
+    },
+    {
+      "slot": "slot_06",
+      "n_pairs": 1940,
+      "minimum_ratio": 3.016195210006647,
+      "maximum_ratio": 3.0161952100066496
+    },
+    {
+      "slot": "slot_07",
+      "n_pairs": 1624,
+      "minimum_ratio": 3.481337878279024,
+      "maximum_ratio": 3.4813378782790263
+    },
+    {
+      "slot": "slot_08",
+      "n_pairs": 1415,
+      "minimum_ratio": 11.258574722175924,
+      "maximum_ratio": 11.258574722175931
+    },
+    {
+      "slot": "slot_09",
+      "n_pairs": 1602,
+      "minimum_ratio": 3.171374239002906,
+      "maximum_ratio": 3.171374239002908
+    },
+    {
+      "slot": "slot_10",
+      "n_pairs": 1416,
+      "minimum_ratio": 10.710323484430443,
+      "maximum_ratio": 10.710323484430448
+    },
+    {
+      "slot": "slot_11",
+      "n_pairs": 1895,
+      "minimum_ratio": 2.807001395613108,
+      "maximum_ratio": 2.80700139561311
+    },
+    {
+      "slot": "slot_12",
+      "n_pairs": 1716,
+      "minimum_ratio": 2.043881522119058,
+      "maximum_ratio": 2.0438815221190594
+    },
+    {
+      "slot": "slot_13",
+      "n_pairs": 2048,
+      "minimum_ratio": 1.1328264058829967,
+      "maximum_ratio": 1.1328264058829973
+    },
+    {
+      "slot": "slot_14",
+      "n_pairs": 2099,
+      "minimum_ratio": 1.033010971072668,
+      "maximum_ratio": 1.0330109710726687
+    },
+    {
+      "slot": "slot_15",
+      "n_pairs": 1691,
+      "minimum_ratio": 2.6916137300697516,
+      "maximum_ratio": 2.691613730069753
+    },
+    {
+      "slot": "slot_16",
+      "n_pairs": 1889,
+      "minimum_ratio": 1.987135932894345,
+      "maximum_ratio": 1.9871359328943465
+    },
+    {
+      "slot": "slot_17",
+      "n_pairs": 1999,
+      "minimum_ratio": 1.5658204198926315,
+      "maximum_ratio": 1.5658204198926329
+    },
+    {
+      "slot": "slot_18",
+      "n_pairs": 2019,
+      "minimum_ratio": 1.115894982523924,
+      "maximum_ratio": 1.1158949825239248
+    },
+    {
+      "slot": "slot_19",
+      "n_pairs": 2036,
+      "minimum_ratio": 1.0,
+      "maximum_ratio": 1.0
+    }
+  ],
+  "fc_records_with_quantification": [
+    {
+      "UniqueSequenceID": -7933102189800248776,
+      "Accession": "P55899",
+      "GeneSymbol": "FCGRT",
+      "Description": "IgG receptor FcRn large subunit p51 OS=Homo sapiens OX=9606 GN=FCGRT PE=1 SV=1",
+      "IsMasterProtein": 0,
+      "ExcludedBy": -1,
+      "UniquePeptidesCount": 3,
+      "GroupUniquePeptidesCount": 3,
+      "PeptideGroupCount": 3,
+      "ProteinGroupIDs": "178",
+      "ProteinFDRConfidence": "[3]",
+      "Expqvalue": "[0.0]",
+      "valid_normalized_slots": 12
+    },
+    {
+      "UniqueSequenceID": -6037965050903182039,
+      "Accession": "P08637",
+      "GeneSymbol": "FCGR3A",
+      "Description": "Low affinity immunoglobulin gamma Fc region receptor III-A OS=Homo sapiens OX=9606 GN=FCGR3A PE=1 SV=2",
+      "IsMasterProtein": 0,
+      "ExcludedBy": -1,
+      "UniquePeptidesCount": 1,
+      "GroupUniquePeptidesCount": 1,
+      "PeptideGroupCount": 2,
+      "ProteinGroupIDs": "389",
+      "ProteinFDRConfidence": "[3]",
+      "Expqvalue": "[0.0]",
+      "valid_normalized_slots": 2
+    },
+    {
+      "UniqueSequenceID": -4633912985078584352,
+      "Accession": "P07948",
+      "GeneSymbol": "LYN",
+      "Description": "Tyrosine-protein kinase Lyn OS=Homo sapiens OX=9606 GN=LYN PE=1 SV=3",
+      "IsMasterProtein": 1,
+      "ExcludedBy": -1,
+      "UniquePeptidesCount": 0,
+      "GroupUniquePeptidesCount": 1,
+      "PeptideGroupCount": 1,
+      "ProteinGroupIDs": "284",
+      "ProteinFDRConfidence": "[1]",
+      "Expqvalue": "[0.06299810246679317]",
+      "valid_normalized_slots": 19
+    },
+    {
+      "UniqueSequenceID": 3732133822757693768,
+      "Accession": "O75015",
+      "GeneSymbol": null,
+      "Description": "Low affinity immunoglobulin gamma Fc region receptor III-B OS=Homo sapiens OX=9606 GN=FCGR3B PE=1 SV=2",
+      "IsMasterProtein": 0,
+      "ExcludedBy": -1,
+      "UniquePeptidesCount": 1,
+      "GroupUniquePeptidesCount": 1,
+      "PeptideGroupCount": 2,
+      "ProteinGroupIDs": "1532",
+      "ProteinFDRConfidence": "[3]",
+      "Expqvalue": "[0.0]",
+      "valid_normalized_slots": 4
+    },
+    {
+      "UniqueSequenceID": 7495090606117370342,
+      "Accession": "P08631",
+      "GeneSymbol": "HCK",
+      "Description": "Tyrosine-protein kinase HCK OS=Homo sapiens OX=9606 GN=HCK PE=1 SV=5",
+      "IsMasterProtein": 1,
+      "ExcludedBy": -1,
+      "UniquePeptidesCount": 0,
+      "GroupUniquePeptidesCount": 1,
+      "PeptideGroupCount": 1,
+      "ProteinGroupIDs": "284",
+      "ProteinFDRConfidence": "[1]",
+      "Expqvalue": "[0.06254709871891484]",
+      "valid_normalized_slots": 19
+    }
+  ],
+  "diagnosis_assigned": false,
+  "biological_replicates_aggregated": false,
+  "disease_comparison_performed": false
+}

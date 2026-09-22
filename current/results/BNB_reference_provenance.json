@@ -1,0 +1,9 @@
+{
+  "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE107nnn/GSE107574/suppl/GSE107574_fpkm_gene_expression_values.xlsx.gz",
+  "sha256": "cf2b949bfbda4dfeea62cce351a0f4b49bbc87c681d1b012fd5457f18f23a3e3",
+  "bytes": 2720745,
+  "normal_nerve_microvessel_samples": 4,
+  "culture_conditions": 2,
+  "target_genes": 11,
+  "role": "Anatomical expression context only. No CIDP comparison or disease replication."
+}

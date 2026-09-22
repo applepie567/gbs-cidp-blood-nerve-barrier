@@ -1,0 +1,278 @@
+[
+  [
+    1,
+    [
+      null,
+      "Thermo.Magellan.BL.Data.CustomDataType, Thermo.Magellan.BL.Data",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    2,
+    [
+      null,
+      "Thermo.Magellan.Utilities.FileSizeUnit, Thermo.Magellan.Utilities",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    3,
+    [
+      null,
+      "Thermo.Magellan.StudyManagement.DataObjects.SampleType, Thermo.Magellan.StudyManagement",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    4,
+    [
+      null,
+      "Thermo.Magellan.Proteomics.AminoAcidModificationPositionType, Thermo.Magellan.Proteomics",
+      0,
+      "MS",
+      "MS:1001056",
+      "modification specificity rule",
+      "The specificity rules for the modifications applied by the search engine."
+    ]
+  ],
+  [
+    5,
+    [
+      null,
+      "Thermo.Magellan.Proteomics.AminoAcidModificationClassificationType, Thermo.Magellan.Proteomics",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    6,
+    [
+      null,
+      "Thermo.Magellan.MassSpec.MSOrderType, Thermo.Magellan.MassSpec",
+      0,
+      "MS",
+      "MS:1000511",
+      "ms level",
+      "Stages of ms achieved in a multi stage mass spectrometry experiment."
+    ]
+  ],
+  [
+    7,
+    [
+      null,
+      "Thermo.Magellan.MassSpec.PolarityType, Thermo.Magellan.MassSpec",
+      0,
+      "MS",
+      "MS:1000037",
+      "polarity",
+      "Terms to describe the polarity setting of the instrument."
+    ]
+  ],
+  [
+    8,
+    [
+      null,
+      "Thermo.Magellan.MassSpec.ActivationTypes, Thermo.Magellan.MassSpec",
+      1,
+      "MS",
+      "MS:1000044",
+      "dissociation method",
+      "Fragmentation method used for dissociation or fragmentation."
+    ]
+  ],
+  [
+    9,
+    [
+      null,
+      "Thermo.Magellan.MassSpec.ScanType, Thermo.Magellan.MassSpec",
+      0,
+      "MS",
+      "MS:1001614",
+      "ProteomeDiscoverer:Scan Type",
+      "Scan type for the precursor ion (full, Single Ion Monitoring (SIM), Single Reaction Monitoring (SRM))."
+    ]
+  ],
+  [
+    10,
+    [
+      null,
+      "Thermo.Magellan.MassSpec.IonizationType, Thermo.Magellan.MassSpec",
+      0,
+      "MS",
+      "MS:1000008",
+      "ionization type",
+      "The method by which gas phase ions are generated from the sample."
+    ]
+  ],
+  [
+    11,
+    [
+      null,
+      "Thermo.Magellan.MassSpec.MassAnalyzerType, Thermo.Magellan.MassSpec",
+      0,
+      "MS",
+      "MS:1000443",
+      "mass analyzer type",
+      "Mass analyzer separates the ions according to their mass-to-charge ratio."
+    ]
+  ],
+  [
+    12,
+    [
+      null,
+      "Thermo.PD.EntityDataFramework.PsmAmbiguity, Thermo.Magellan.EntityDataFramework",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    13,
+    [
+      null,
+      "Thermo.Magellan.Proteomics.MatchConfidence, Thermo.Magellan.Proteomics",
+      0,
+      "MS",
+      "MS:1001092",
+      "peptide identification confidence metric",
+      "Peptide identification confidence metric for a peptide (p-value, Expect value, confidence, local FDR)."
+    ]
+  ],
+  [
+    14,
+    [
+      null,
+      "Thermo.Magellan.EntityDataFramework.SpecializedTraceType, Thermo.Magellan.EntityDataFramework",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    15,
+    [
+      null,
+      "Thermo.Magellan.MassSpec.AlignedValueType, Thermo.Magellan.MassSpec",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    16,
+    [
+      null,
+      "Thermo.PD.EntityDataFramework.MasterProteinAssessment, Thermo.Magellan.EntityDataFramework",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    17,
+    [
+      null,
+      "Thermo.Magellan.ReportingNodes.QuanInfoState, Thermo.Magellan.ReportingNodes",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    18,
+    [
+      null,
+      "Thermo.Magellan.ReportingNodes.PrecursorQuanInfoState, Thermo.Magellan.ReportingNodes",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    19,
+    [
+      null,
+      "Thermo.Magellan.ReportingNodes.Quantification.UsageState, Thermo.Magellan.ReportingNodes",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    20,
+    [
+      null,
+      "Thermo.Magellan.ReportingNodes.PeptideCheckResult, Thermo.Magellan.ReportingNodes",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    21,
+    [
+      null,
+      "Thermo.Magellan.Proteomics.Annotation.GeneOntologyTypes, Thermo.Magellan.Proteomics",
+      1,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    22,
+    [
+      null,
+      "Thermo.PD.EntityDataFramework.AnnotationSource, Thermo.Magellan.EntityDataFramework",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  [
+    23,
+    [
+      null,
+      "Thermo.PD.EntityDataFramework.AnnotationLevel, Thermo.Magellan.EntityDataFramework",
+      0,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ]
+]

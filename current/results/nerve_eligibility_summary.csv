@@ -1,0 +1,11 @@
+disease,cell_group,donors,eligible_donors,nuclei_min,nuclei_max
+CIAP,BNB_EC,11,11,27,401
+CIAP,Macrophage,11,11,184,526
+CIAP,Myelinating_SC,11,10,0,580
+CIAP,Nonmyelinating_SC,11,11,109,3806
+CIAP,Repair_damage_SC,11,10,4,803
+CIDP,BNB_EC,9,9,62,577
+CIDP,Macrophage,9,9,43,1047
+CIDP,Myelinating_SC,9,9,85,871
+CIDP,Nonmyelinating_SC,9,9,784,4955
+CIDP,Repair_damage_SC,9,9,47,609

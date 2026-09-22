@@ -1,0 +1,78 @@
+{
+  "exploratory": true,
+  "source_tables": [
+    "3",
+    "4B",
+    "5",
+    "6"
+  ],
+  "unique_gbs_hc_proteins": 15,
+  "paired_proteins": 11,
+  "unpaired_proteins": [
+    "CD4",
+    "MMP7",
+    "IL3RA",
+    "ITGAM"
+  ],
+  "positive_in_both": 10,
+  "fixed_q_below_05": 10,
+  "source_q_below_05_in_both": [
+    "SELE",
+    "IL2RA",
+    "IL8"
+  ],
+  "random_ci_crosses_zero": [
+    "IL2RA",
+    "NRP1",
+    "IL6",
+    "CD5"
+  ],
+  "mhk_ci_crosses_zero": [
+    "SELE",
+    "IL2RA",
+    "CCL3",
+    "CR2",
+    "CD1C",
+    "THBD",
+    "NRP1",
+    "CD38",
+    "IL6",
+    "CD5",
+    "IL8"
+  ],
+  "source_individual_models_refit": false,
+  "il8": {
+    "protein": "IL8",
+    "source_table": "3",
+    "discovery_beta": 1.66,
+    "discovery_se": 0.415,
+    "replication_beta": 2.62,
+    "replication_se": 0.462,
+    "discovery_source_p": 0.0015,
+    "discovery_source_q": 0.0163,
+    "replication_source_p": 0.0008,
+    "replication_source_q": 0.0071,
+    "fixed_beta": 2.0886992213530253,
+    "fixed_se": 0.30873275357107527,
+    "fixed_low": 1.483594143505838,
+    "fixed_high": 2.6938042992002127,
+    "fixed_p": 1.3294540627007522e-11,
+    "random_beta": 2.1185317708333335,
+    "random_se": 0.4795196712716252,
+    "random_low": 1.1786904852624622,
+    "random_high": 3.058373056404205,
+    "random_p": 9.960510014620859e-06,
+    "mhk_se": 0.4795196712716253,
+    "mhk_low": -3.974343347367124,
+    "mhk_high": 8.21140688903379,
+    "mhk_p": 0.14170808010385239,
+    "Q": 2.3896138917050638,
+    "tau2": 0.2679655,
+    "I2_percent": 58.152235243055564,
+    "q_fixed_BH_11": 7.311997344854137e-11,
+    "q_random_BH_11": 5.478280508041473e-05,
+    "q_mhk_BH_11": 0.3981455258347254,
+    "positive_in_both": true,
+    "source_q_below_05_in_both": true
+  }
+}

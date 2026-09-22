@@ -1,0 +1,26 @@
+{
+  "figure_coverage": 12,
+  "source_tables": 32,
+  "image_hashes_matched": 12,
+  "blood_meta_programmes": 7,
+  "blood_omission_estimates": 21,
+  "CSF_pooled_proteins": 11,
+  "nerve_expanded_tests": 91,
+  "new_nerve_contrasts": 9,
+  "exact_clinical_tests": 2,
+  "permutations_per_test": 362880,
+  "published_count_check": "52/55; Wilson interval matches",
+  "independent_nerve_validation": "not performed; no disease mapping inferred",
+  "all_12_figure_scripts_executed": true,
+  "raw_input_pipeline_reexecuted_for_packaging": false,
+  "matched_rebuilt_pixels": [
+    "Figure_1",
+    "Figure_3",
+    "Figure_4",
+    "Figure_5",
+    "Supplementary_Figure_5",
+    "Supplementary_Figure_6",
+    "Supplementary_Figure_7"
+  ],
+  "other_rebuilds": "Same inputs and displayed results; installed font/layout differences. Canonical manuscript PNGs retained."
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-21",
+  "checks": {
+    "CSF_disease_comparisons.csv": true,
+    "CSF_extraction_eligibility.csv": true,
+    "CSF_summary.json": true,
+    "CSF_meta_11_proteins.csv": true,
+    "CSF_all_reported_adjusted_coefficients.csv": true,
+    "Figure_1.png": true,
+    "Figure_5.png": true,
+    "Supplementary_Figure_5.png": true,
+    "Figure_4.png": true,
+    "Figure_3.png": true,
+    "Supplementary_Figure_6.png": true,
+    "Supplementary_Figure_7.png": true,
+    "clinical_plot_data_reproduced": true,
+    "main_body_no_semicolon": true,
+    "five_main_figures": true,
+    "three_main_tables": true,
+    "seven_supplementary_figures": true,
+    "availability_version_preserved": true,
+    "extension_distinguished_from_public_archive": true
+  },
+  "visual_review": {
+    "main_document_pages": 38,
+    "methods_document_pages": 5,
+    "supplementary_figure_document_pages": 7,
+    "all_pages_reviewed": true
+  },
+  "scope": "Extension CSF and plots reproduced from packaged aggregate inputs. Raw nerve reconstruction and numerical equivalence were verified during analysis. The earlier genetic expression intermediate was not reconstructed."
+}

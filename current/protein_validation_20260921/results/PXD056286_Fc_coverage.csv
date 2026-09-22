@@ -1,0 +1,12 @@
+gene,stored_protein_records,quantified_records,retained_quantified_records,quantified_accessions,retained_accessions,maximum_quantified_run_count,maximum_retained_run_count,interpretation
+FCGR1A,1,0,0,,,0,0,No stored quantitative values for this gene. This does not establish biological absence.
+FCGR2A,1,0,0,,,0,0,No stored quantitative values for this gene. This does not establish biological absence.
+FCGR2B,1,0,0,,,0,0,No stored quantitative values for this gene. This does not establish biological absence.
+FCGR3A,1,1,0,P08637,,2,0,One group-unique peptide. Stored filter requires at least two.
+FCGR3B,1,1,0,O75015,,4,0,One group-unique peptide. Stored filter requires at least two.
+FCGRT,1,1,1,P55899,P55899,12,12,Retained. Only one component of the 11 gene Fc module.
+FCER1G,1,0,0,,,0,0,No stored quantitative values for this gene. This does not establish biological absence.
+TYROBP,1,0,0,,,0,0,No stored quantitative values for this gene. This does not establish biological absence.
+SYK,1,0,0,,,0,0,No stored quantitative values for this gene. This does not establish biological absence.
+LYN,1,1,0,P07948,,19,0,Low confidence master candidate with one group-unique peptide. LYN and HCK share protein group 284.
+HCK,1,1,0,P08631,,19,0,Low confidence master candidate with one group-unique peptide. LYN and HCK share protein group 284.

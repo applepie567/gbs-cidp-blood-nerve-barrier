@@ -1,0 +1,420 @@
+[
+  [
+    1,
+    [
+      3562,
+      0,
+      7545,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\AH_CIDP_Nerv_New control\\QExactiveHF02_18988_N1530.msf",
+      15662292992,
+      0,
+      -1287,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\AH_CIDP_Nerv_New control\\QExactiveHF02_18988_N1530.msf",
+      "MsfFile",
+      null,
+      "06/04/2024 13:42:56",
+      null,
+      null,
+      "Created with Discoverer version: 2.5.0.400",
+      null
+    ]
+  ],
+  [
+    2,
+    [
+      -1287,
+      1,
+      7526,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18988_N1530.raw",
+      1396702681,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18988_N1530.raw",
+      "XcaliburRawfile",
+      "F1",
+      "05/30/2024 02:31:52",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    3,
+    [
+      -1287,
+      1,
+      7527,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18989_N241.raw",
+      1606953278,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18989_N241.raw",
+      "XcaliburRawfile",
+      "F2",
+      "05/30/2024 05:35:46",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    4,
+    [
+      -1287,
+      1,
+      7528,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18990_N5727.raw",
+      1369503559,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18990_N5727.raw",
+      "XcaliburRawfile",
+      "F3",
+      "05/30/2024 08:39:39",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1"
+    ]
+  ],
+  [
+    5,
+    [
+      -1287,
+      1,
+      7529,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18991_VNP132.raw",
+      1694565452,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18991_VNP132.raw",
+      "XcaliburRawfile",
+      "F4",
+      "06/01/2024 09:39:16",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    6,
+    [
+      -1287,
+      1,
+      7530,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18992_N3016.raw",
+      1346863464,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18992_N3016.raw",
+      "XcaliburRawfile",
+      "F5",
+      "06/01/2024 12:43:10",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    7,
+    [
+      -1287,
+      1,
+      7531,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18993_N24568.raw",
+      1418672232,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18993_N24568.raw",
+      "XcaliburRawfile",
+      "F6",
+      "06/01/2024 15:47:04",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    8,
+    [
+      -1287,
+      1,
+      7532,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18994_N241.raw",
+      1690534138,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18994_N241.raw",
+      "XcaliburRawfile",
+      "F7",
+      "06/01/2024 18:50:58",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    9,
+    [
+      -1287,
+      1,
+      7533,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18995_VNP132.raw",
+      1467305124,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18995_VNP132.raw",
+      "XcaliburRawfile",
+      "F8",
+      "06/01/2024 21:54:54",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    10,
+    [
+      -1287,
+      1,
+      7534,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18996_N241.raw",
+      1672339092,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18996_N241.raw",
+      "XcaliburRawfile",
+      "F9",
+      "06/02/2024 00:58:46",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    11,
+    [
+      -1287,
+      1,
+      7535,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18997_VNP132.raw",
+      1462404612,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18997_VNP132.raw",
+      "XcaliburRawfile",
+      "F10",
+      "06/02/2024 04:02:40",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    12,
+    [
+      -1287,
+      1,
+      7536,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18998_N410.raw",
+      1392435480,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18998_N410.raw",
+      "XcaliburRawfile",
+      "F11",
+      "06/02/2024 07:06:33",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    13,
+    [
+      -1287,
+      1,
+      7537,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18999_N4144.raw",
+      1376363712,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_18999_N4144.raw",
+      "XcaliburRawfile",
+      "F12",
+      "06/02/2024 10:10:27",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    14,
+    [
+      -1287,
+      1,
+      7538,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19000_VNP141.raw",
+      1495026216,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19000_VNP141.raw",
+      "XcaliburRawfile",
+      "F13",
+      "06/02/2024 13:14:21",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    15,
+    [
+      -1287,
+      1,
+      7539,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19001_N3430.raw",
+      1466370019,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19001_N3430.raw",
+      "XcaliburRawfile",
+      "F14",
+      "06/02/2024 16:18:15",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    16,
+    [
+      -1287,
+      1,
+      7540,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19002_N4107.raw",
+      1391390079,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19002_N4107.raw",
+      "XcaliburRawfile",
+      "F15",
+      "06/02/2024 19:22:09",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    17,
+    [
+      -1287,
+      1,
+      7541,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19003_N2459.raw",
+      1416547673,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19003_N2459.raw",
+      "XcaliburRawfile",
+      "F16",
+      "06/02/2024 22:26:03",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    18,
+    [
+      -1287,
+      1,
+      7542,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19004_N2300.raw",
+      1390160360,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19004_N2300.raw",
+      "XcaliburRawfile",
+      "F17",
+      "06/03/2024 01:29:57",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    19,
+    [
+      -1287,
+      1,
+      7543,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19005_VNP141.raw",
+      1508415698,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19005_VNP141.raw",
+      "XcaliburRawfile",
+      "F18",
+      "06/03/2024 04:33:53",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ],
+  [
+    20,
+    [
+      -1287,
+      1,
+      7544,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19006_VNP141.raw",
+      1544618334,
+      0,
+      0,
+      "W:\\Hentschel_Andreas\\CIDP-Nerv inkl control\\CIDP-Nerv new Control 27.05.24\\QExactiveHF02_19006_VNP141.raw",
+      "XcaliburRawfile",
+      "F19",
+      "06/03/2024 07:37:47",
+      "0.01 - 120.00",
+      "Q Exactive HF Orbitrap",
+      "2.8-280502/2.8.1.2806",
+      "rev. 1",
+      "F3"
+    ]
+  ]
+]

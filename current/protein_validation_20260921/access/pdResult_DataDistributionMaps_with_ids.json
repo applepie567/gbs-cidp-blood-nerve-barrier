@@ -1,0 +1,946 @@
+[
+  [
+    1,
+    [
+      null,
+      "Tags",
+      "tag",
+      "tags",
+      "level",
+      "",
+      "Allows to tag an item",
+      "ResultItemDataPurpose/Tags",
+      5,
+      null,
+      null
+    ]
+  ],
+  [
+    2,
+    [
+      null,
+      "Confidence",
+      "Confidence",
+      "Confidence",
+      "level",
+      "",
+      "Shows distribution of Confidence",
+      "ResultItemDataPurpose/PeptideConfidence",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    3,
+    [
+      null,
+      "Charge",
+      "Charge",
+      "Charge",
+      "level",
+      "",
+      "Shows distribution of Charge",
+      "ResultItemDataPurpose/PrecursorCharge",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    4,
+    [
+      null,
+      "\u0394Score",
+      "\u0394Score",
+      "\u0394Score",
+      "level",
+      "",
+      "Shows distribution of \u0394Score",
+      "ResultItemDataPurpose/DeltaScore",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    5,
+    [
+      null,
+      "\u0394Cn",
+      "\u0394Cn",
+      "\u0394Cn",
+      "level",
+      "",
+      "Shows distribution of \u0394Cn",
+      "ResultItemDataPurpose/DeltaCn",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    6,
+    [
+      null,
+      "Rank",
+      "Rank",
+      "Rank",
+      "level",
+      "",
+      "Shows distribution of Rank",
+      "ResultItemDataPurpose/PeptideRank",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    7,
+    [
+      null,
+      "Search Engine Rank",
+      "Search Engine Rank",
+      "Search Engine Rank",
+      "level",
+      "",
+      "Shows distribution of Search Engine Rank",
+      "ResultItemDataPurpose/SearchEnginePeptideRank",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    8,
+    [
+      null,
+      "Concatenated Rank",
+      "Concatenated Rank",
+      "Concatenated Rank",
+      "level",
+      "",
+      "Shows distribution of Concatenated Rank",
+      "ResultItemDataPurpose/ConcatenatedPeptideRank",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    9,
+    [
+      null,
+      "m/z [Da]",
+      "m/z [Da]",
+      "m/z [Da]",
+      "level",
+      "",
+      "Shows distribution of m/z [Da]",
+      "ResultItemDataPurpose/MassOverCharge",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    10,
+    [
+      null,
+      "\u0394M [ppm]",
+      "\u0394M [ppm]",
+      "\u0394M [ppm]",
+      "level",
+      "",
+      "Shows distribution of \u0394M [ppm]",
+      "ResultItemDataPurpose/DeltaMassInPpm",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    11,
+    [
+      null,
+      "\u0394m/z [Da]",
+      "\u0394m/z [Da]",
+      "\u0394m/z [Da]",
+      "level",
+      "",
+      "Shows distribution of \u0394m/z [Da]",
+      "ResultItemDataPurpose/DeltaMassOverCharge",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    12,
+    [
+      null,
+      "RT [min]",
+      "RT [min]",
+      "RT [min]",
+      "level",
+      "",
+      "Shows distribution of RT [min]",
+      "ResultItemDataPurpose/RetentionTime",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    13,
+    [
+      null,
+      "Percolator q-Value",
+      "Percolator q-Value",
+      "Percolator q-Value",
+      "level",
+      "",
+      "Shows distribution of Percolator q-Value",
+      "http://thermo.magellan.com/owl/Scores/MainScore;http://thermo.magellan.com/owl/Scores/DescendingScore;http://thermo.magellan.com/owl/Scores/PercolatorQValue",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    14,
+    [
+      null,
+      "Percolator PEP",
+      "Percolator PEP",
+      "Percolator PEP",
+      "level",
+      "",
+      "Shows distribution of Percolator PEP",
+      "http://thermo.magellan.com/owl/Scores/DescendingScore;http://thermo.magellan.com/owl/Scores/PercolatorPEP",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    15,
+    [
+      null,
+      "Percolator SVMScore",
+      "Percolator SVMScore",
+      "Percolator SVMScore",
+      "level",
+      "",
+      "Shows distribution of Percolator SVMScore",
+      "http://thermo.magellan.com/owl/Scores/DescendingScore;http://thermo.magellan.com/owl/Scores/PercolatorSVMScore",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    16,
+    [
+      null,
+      "XCorr",
+      "XCorr",
+      "XCorr",
+      "level",
+      "",
+      "Shows distribution of XCorr",
+      "http://thermo.magellan.com/owl/Scores/MainScore;http://thermo.magellan.com/owl/Scores/AscendingScore;http://thermo.magellan.com/owl/Scores/IsValidationFeature;http://thermo.magellan.com/owl/Scores/SequestHtPsmScoreXcorr",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    17,
+    [
+      null,
+      "Ions Score",
+      "Ions Score",
+      "Ions Score",
+      "level",
+      "",
+      "Shows distribution of Ions Score",
+      "http://thermo.magellan.com/owl/Scores/MainScore;http://thermo.magellan.com/owl/Scores/AscendingScore;http://thermo.magellan.com/owl/Scores/IsValidationFeature;http://thermo.magellan.com/owl/Scores/MascotPsmScoreIonsScore",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    18,
+    [
+      null,
+      "Confidence",
+      "Confidence",
+      "Confidence",
+      "level",
+      "",
+      "Shows distribution of Confidence",
+      "ResultItemDataPurpose/PeptideConfidence",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    19,
+    [
+      null,
+      "Charge",
+      "Charge",
+      "Charge",
+      "level",
+      "",
+      "Shows distribution of Charge",
+      "ResultItemDataPurpose/PrecursorCharge",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    20,
+    [
+      null,
+      "\u0394Cn",
+      "\u0394Cn",
+      "\u0394Cn",
+      "level",
+      "",
+      "Shows distribution of \u0394Cn",
+      "ResultItemDataPurpose/DeltaCn",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    21,
+    [
+      null,
+      "Rank",
+      "Rank",
+      "Rank",
+      "level",
+      "",
+      "Shows distribution of Rank",
+      "ResultItemDataPurpose/PeptideRank",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    22,
+    [
+      null,
+      "Search Engine Rank",
+      "Search Engine Rank",
+      "Search Engine Rank",
+      "level",
+      "",
+      "Shows distribution of Search Engine Rank",
+      "ResultItemDataPurpose/SearchEnginePeptideRank",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    23,
+    [
+      null,
+      "Concatenated Rank",
+      "Concatenated Rank",
+      "Concatenated Rank",
+      "level",
+      "",
+      "Shows distribution of Concatenated Rank",
+      "ResultItemDataPurpose/ConcatenatedPeptideRank",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    24,
+    [
+      null,
+      "m/z [Da]",
+      "m/z [Da]",
+      "m/z [Da]",
+      "level",
+      "",
+      "Shows distribution of m/z [Da]",
+      "ResultItemDataPurpose/MassOverCharge",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    25,
+    [
+      null,
+      "\u0394M [ppm]",
+      "\u0394M [ppm]",
+      "\u0394M [ppm]",
+      "level",
+      "",
+      "Shows distribution of \u0394M [ppm]",
+      "ResultItemDataPurpose/DeltaMassInPpm",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    26,
+    [
+      null,
+      "\u0394m/z [Da]",
+      "\u0394m/z [Da]",
+      "\u0394m/z [Da]",
+      "level",
+      "",
+      "Shows distribution of \u0394m/z [Da]",
+      "ResultItemDataPurpose/DeltaMassOverCharge",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    27,
+    [
+      null,
+      "RT [min]",
+      "RT [min]",
+      "RT [min]",
+      "level",
+      "",
+      "Shows distribution of RT [min]",
+      "ResultItemDataPurpose/RetentionTime",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    28,
+    [
+      null,
+      "Percolator q-Value",
+      "Percolator q-Value",
+      "Percolator q-Value",
+      "level",
+      "",
+      "Shows distribution of Percolator q-Value",
+      "http://thermo.magellan.com/owl/Scores/MainScore;http://thermo.magellan.com/owl/Scores/DescendingScore;http://thermo.magellan.com/owl/Scores/PercolatorQValue",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    29,
+    [
+      null,
+      "Percolator PEP",
+      "Percolator PEP",
+      "Percolator PEP",
+      "level",
+      "",
+      "Shows distribution of Percolator PEP",
+      "http://thermo.magellan.com/owl/Scores/DescendingScore;http://thermo.magellan.com/owl/Scores/PercolatorPEP",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    30,
+    [
+      null,
+      "Percolator SVMScore",
+      "Percolator SVMScore",
+      "Percolator SVMScore",
+      "level",
+      "",
+      "Shows distribution of Percolator SVMScore",
+      "http://thermo.magellan.com/owl/Scores/DescendingScore;http://thermo.magellan.com/owl/Scores/PercolatorSVMScore",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    31,
+    [
+      null,
+      "XCorr",
+      "XCorr",
+      "XCorr",
+      "level",
+      "",
+      "Shows distribution of XCorr",
+      "http://thermo.magellan.com/owl/Scores/MainScore;http://thermo.magellan.com/owl/Scores/AscendingScore;http://thermo.magellan.com/owl/Scores/IsValidationFeature;http://thermo.magellan.com/owl/Scores/SequestHtPsmScoreXcorr",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    32,
+    [
+      null,
+      "Ions Score",
+      "Ions Score",
+      "Ions Score",
+      "level",
+      "",
+      "Shows distribution of Ions Score",
+      "http://thermo.magellan.com/owl/Scores/MainScore;http://thermo.magellan.com/owl/Scores/AscendingScore;http://thermo.magellan.com/owl/Scores/IsValidationFeature;http://thermo.magellan.com/owl/Scores/MascotPsmScoreIonsScore",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    33,
+    [
+      null,
+      "Coverages [%]",
+      "Coverages [%]",
+      "Coverages [%]",
+      "level",
+      "",
+      "Shows distribution of Coverages [%]",
+      "ResultItemDataPurpose/ProteinCoverage",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    34,
+    [
+      null,
+      "# PSMs",
+      "# PSMs",
+      "# PSMs",
+      "level",
+      "",
+      "Shows distribution of # PSMs",
+      "ResultItemDataPurpose/PeptideSpectrumMatchCount",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    35,
+    [
+      null,
+      "# Peptides",
+      "# Peptides",
+      "# Peptides",
+      "level",
+      "",
+      "Shows distribution of # Peptides",
+      "ResultItemDataPurpose/PeptideCount",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    36,
+    [
+      null,
+      "Score Sequest HT",
+      "Score Sequest HT",
+      "Score Sequest HT",
+      "level",
+      "",
+      "Shows distribution of Score Sequest HT",
+      "http://thermo.magellan.com/owl/Scores/MainScore;http://thermo.magellan.com/owl/Scores/AscendingScore",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    37,
+    [
+      null,
+      "Score Mascot",
+      "Score Mascot",
+      "Score Mascot",
+      "level",
+      "",
+      "Shows distribution of Score Mascot",
+      "http://thermo.magellan.com/owl/Scores/MainScore;http://thermo.magellan.com/owl/Scores/AscendingScore",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    38,
+    [
+      null,
+      "Score Sequest HT",
+      "Score Sequest HT",
+      "Score Sequest HT",
+      "level",
+      "",
+      "Shows distribution of Score Sequest HT",
+      "http://thermo.magellan.com/owl/Scores/MainScore;http://thermo.magellan.com/owl/Scores/AscendingScore",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    39,
+    [
+      null,
+      "Score Mascot",
+      "Score Mascot",
+      "Score Mascot",
+      "level",
+      "",
+      "Shows distribution of Score Mascot",
+      "http://thermo.magellan.com/owl/Scores/MainScore;http://thermo.magellan.com/owl/Scores/AscendingScore",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    40,
+    [
+      null,
+      "Protein FDR Confidence",
+      "Protein FDR Confidence",
+      "Protein FDR Confidence",
+      "level",
+      "",
+      "Shows distribution of Protein FDR Confidence",
+      "ResultItemDataPurpose/ProteinConfidence",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    41,
+    [
+      null,
+      "Protein FDR Confidence",
+      "Protein FDR Confidence",
+      "Protein FDR Confidence",
+      "level",
+      "",
+      "Shows distribution of Protein FDR Confidence",
+      "ResultItemDataPurpose/ProteinConfidence",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    42,
+    [
+      null,
+      "# Decoy Proteins",
+      "# Decoy Proteins",
+      "# Decoy Proteins",
+      "level",
+      "",
+      "Shows distribution of # Decoy Proteins",
+      "ResultItemDataPurpose/DecoyProteinCount",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    43,
+    [
+      null,
+      "Exp. q-value",
+      "Exp. q-value",
+      "Exp. q-value",
+      "level",
+      "",
+      "Shows distribution of Exp. q-value",
+      "http://thermo.magellan.com/owl/Scores/DescendingScore;http://thermo.magellan.com/owl/Scores/ExperimentalQValue",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    44,
+    [
+      null,
+      "Abundances (per File)",
+      "file",
+      "file",
+      "level",
+      "",
+      "Shows abundances of files",
+      "ResultItemDataPurpose/QuanAbundances",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    45,
+    [
+      null,
+      "Abundances Counts",
+      "file",
+      "files",
+      "level",
+      "",
+      "Shows number of abundance used for calculating file abundances",
+      "ResultItemDataPurpose/QuanAbundanceCounts",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    46,
+    [
+      null,
+      "Abundances Origin",
+      "sample",
+      "samples",
+      "level",
+      "",
+      "Shows the origin of the abundances values of the samples",
+      "ResultItemDataPurpose/QuandAbundanceOrigin",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    47,
+    [
+      null,
+      "Abundances",
+      "sample",
+      "samples",
+      "level",
+      "",
+      "Shows the  abundance values of the samples",
+      "ResultItemDataPurpose/QuanAbundances",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    48,
+    [
+      null,
+      "Abundances Counts",
+      "sample",
+      "samples",
+      "level",
+      "",
+      "Shows the number of abundance values used for calculating the sample abundance",
+      "ResultItemDataPurpose/QuanAbundanceCounts",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    49,
+    [
+      null,
+      "Abundances",
+      "sample",
+      "samples",
+      "level",
+      "",
+      "Shows the  abundance values of the samples",
+      "ResultItemDataPurpose/QuanAbundances",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    50,
+    [
+      null,
+      "Abundances Counts",
+      "sample",
+      "samples",
+      "level",
+      "",
+      "Shows the number of abundance values used for calculating the sample abundance",
+      "ResultItemDataPurpose/QuanAbundanceCounts",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    51,
+    [
+      null,
+      "Abundances (Normalized)",
+      "sample",
+      "samples",
+      "level",
+      "",
+      "Shows the normalized abundance values of the samples",
+      "ResultItemDataPurpose/QuanNormalizedAbundances",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    52,
+    [
+      null,
+      "Abundances (Normalized)",
+      "sample",
+      "samples",
+      "level",
+      "",
+      "Shows the  normalized abundance values of the samples",
+      "ResultItemDataPurpose/QuanNormalizedAbundances",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    53,
+    [
+      null,
+      "Abundances (Normalized)",
+      "sample",
+      "samples",
+      "level",
+      "",
+      "Shows the  normalized abundance values of the samples",
+      "ResultItemDataPurpose/QuanNormalizedAbundances",
+      3,
+      null,
+      null
+    ]
+  ],
+  [
+    54,
+    [
+      null,
+      "Biological Process",
+      "group",
+      "groups",
+      "level",
+      "",
+      "ProteinCenter GO BiologicalProcess",
+      "Aspects_Biological Process",
+      5,
+      null,
+      null
+    ]
+  ],
+  [
+    55,
+    [
+      null,
+      "Cellular Component",
+      "group",
+      "groups",
+      "level",
+      "",
+      "ProteinCenter GO CellularComponent",
+      "Aspects_Cellular Component",
+      5,
+      null,
+      null
+    ]
+  ],
+  [
+    56,
+    [
+      null,
+      "Molecular Function",
+      "group",
+      "groups",
+      "level",
+      "",
+      "ProteinCenter GO MolecularFunction",
+      "Aspects_Molecular Function",
+      5,
+      null,
+      null
+    ]
+  ],
+  [
+    57,
+    [
+      null,
+      "Found in Files",
+      "file",
+      "files",
+      "confidence",
+      "",
+      "Indicates in which files an identification or quantifiable signal was found",
+      "DataDistribution/FoundInFileSets",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    58,
+    [
+      null,
+      "Found in Samples",
+      "sample",
+      "samples",
+      "confidence",
+      "",
+      "Indicates in which samples an identification or quantifiable signal was found",
+      "DataDistribution/FoundInSample",
+      1,
+      null,
+      null
+    ]
+  ],
+  [
+    59,
+    [
+      null,
+      "Found in Sample Groups",
+      "sample group",
+      "sample groups",
+      "confidence",
+      "",
+      "Indicates in which sample groups an identification or quantifiable signal was found",
+      "DataDistribution/FoundInSampleGroup",
+      1,
+      null,
+      null
+    ]
+  ]
+]

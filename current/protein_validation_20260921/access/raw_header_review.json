@@ -1,0 +1,174 @@
+[
+  {
+    "run_identifier": "QExactiveHF02_18988_N1530",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18988_N1530.raw",
+    "bytes": 65536,
+    "sha256": "397f0b52750aea95916a52bab93bf1bc541306b6b8134bc33d04d8532a47356c",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_1"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_18989_N241",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18989_N241.raw",
+    "bytes": 65536,
+    "sha256": "ce5b3dcddeea855ea7c8488c9644d4075b864cab2feeaa76ffd2bb4e85d15430",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_2"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_18990_N5727",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18990_N5727.raw",
+    "bytes": 65536,
+    "sha256": "e17a708bb480854027789a04c373c07f111556dcb3582b69e844d62bb6970f35",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_3"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_18991_VNP132",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18991_VNP132.raw",
+    "bytes": 65536,
+    "sha256": "7b41788089cdddca0e8a0d33615061f16edeb419f6828b47a7c7380cb7c08ebc",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_4"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_18992_N3016",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18992_N3016.raw",
+    "bytes": 65536,
+    "sha256": "b0a8b20b9013d8f552b3b42f71f77c1b093ae1fab42e094092ef3586c0a19d01",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_5"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_18993_N24568",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18993_N24568.raw",
+    "bytes": 65536,
+    "sha256": "50379fc75b44f3fcf307bfc1ad12ff6e44e265f3d6ce38cd19df29554be579c1",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_6"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_18994_N241",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18994_N241.raw",
+    "bytes": 65536,
+    "sha256": "06f63b1297a731c83839e4ba7414dd182988c2ca7db7ecdc736c132326ca2c09",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_7"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_18995_VNP132",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18995_VNP132.raw",
+    "bytes": 65536,
+    "sha256": "faab51f26ecdebdad1fede656e7506c336af45298c1fa4a0f54173a3a10e970c",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_8"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_18996_N241",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18996_N241.raw",
+    "bytes": 65536,
+    "sha256": "da797925e418a80f4d1ba3cfeb3d896547b88b7ebda2f5cf19311091e9667394",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_9"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_18997_VNP132",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18997_VNP132.raw",
+    "bytes": 65536,
+    "sha256": "50e66e7218b7c277d3668ef4d2470314f3f96e6ce668427cb9ac465bf77227de",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_10"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_18998_N410",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18998_N410.raw",
+    "bytes": 65536,
+    "sha256": "1f899adecf098e60d51a1d6f8b7c61ec8a2c013a8b564d1ab6d2830786677e36",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_11",
+      "En43F,"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_18999_N4144",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_18999_N4144.raw",
+    "bytes": 65536,
+    "sha256": "59e1b7aa3586e1f65dfdfcc4594971f0a6eb9da5dcf005c47efed786a7b03ed3",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_12"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_19000_VNP141",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_19000_VNP141.raw",
+    "bytes": 65536,
+    "sha256": "f8f57b007183c08b5f71ab0c359c0050d0ca8b6fa8fccb6150b4efee5f99e4a4",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_13"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_19001_N3430",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_19001_N3430.raw",
+    "bytes": 65536,
+    "sha256": "409fe13c747769eb289e7f33a55f160dc6779a9d46bc9b9d06c10b51cb719046",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_14"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_19002_N4107",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_19002_N4107.raw",
+    "bytes": 65536,
+    "sha256": "fa7d22b312656cbdf611ba401b0cca7ac4d5a4bc25bd585cafebb9e3ded9efff",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_15"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_19003_N2459",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_19003_N2459.raw",
+    "bytes": 65536,
+    "sha256": "6bb6e13f8ce7bccbb828f13adfc5977e9588cc448d0c0613852280a52d08d662",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_16"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_19004_N2300",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_19004_N2300.raw",
+    "bytes": 65536,
+    "sha256": "426af44056c07b83d79017bfa4df24847d44a57510cc6eb584e6e59e2fa2596c",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_17"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_19005_VNP141",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_19005_VNP141.raw",
+    "bytes": 65536,
+    "sha256": "4a3be658c5db4b55303a2a3a370075cff1cfc5aafba3369fb9e6f539af43fd0d",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_18"
+    ]
+  },
+  {
+    "run_identifier": "QExactiveHF02_19006_VNP141",
+    "source": "https://ftp.pride.ebi.ac.uk/pride/data/archive/2025/09/PXD056286/QExactiveHF02_19006_VNP141.raw",
+    "bytes": 65536,
+    "sha256": "e7435d063ef130a3c9afe6d1180e4b5663dbfc9b46260069a4e14f8573ec7f1f",
+    "relevant_strings": [
+      "AH_CIDP_Nerv_19"
+    ]
+  }
+]

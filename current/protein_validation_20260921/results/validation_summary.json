@@ -1,0 +1,29 @@
+{
+  "protein_records_total": 18630,
+  "records_with_quantitative_values": 2356,
+  "stored_filter_records": 1470,
+  "stored_filter_records_with_values": 1460,
+  "published_protein_count": 1411,
+  "published_count_exactly_reproduced": false,
+  "instrument_runs": 19,
+  "distinct_filename_codes": 13,
+  "filename_codes_repeated": {
+    "N241": 3,
+    "VNP132": 3,
+    "VNP141": 3
+  },
+  "fc_genes_predefined": 11,
+  "fc_genes_with_quantitative_values": 5,
+  "fc_genes_retained": 1,
+  "fcg_rt_observed_runs": 12,
+  "native_filter_ID_set_identical": true,
+  "normalization_values_verified": 34107,
+  "run_mapping_matches_native_study_and_workflow_tables": true,
+  "maximum_normalization_relative_error": 6.681426575059687e-16,
+  "diagnosis_mapping_verified": false,
+  "technical_replicate_mapping_verified": false,
+  "independent_nerve_disease_validation_completed": false,
+  "python": "3.12.14",
+  "pandas": "2.2.3",
+  "numpy": "2.3.5"
+}

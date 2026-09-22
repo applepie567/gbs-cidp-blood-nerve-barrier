@@ -1,0 +1,74 @@
+[
+  {
+    "figure": "Figure_1",
+    "manuscript_file": "Manuscript_strengthened.docx",
+    "embedded_member": "word/media/image6.png",
+    "sha256": "072d4940c513f300bf160f79d77cf76fbb544b49bc9ac4b01f89ab5a10ab432c"
+  },
+  {
+    "figure": "Figure_2",
+    "manuscript_file": "Manuscript_strengthened.docx",
+    "embedded_member": "word/media/image2.png",
+    "sha256": "ec4e9cd239d29aaf14e3897452d939db0c74352d0c62304b0cdf084d8640589e"
+  },
+  {
+    "figure": "Figure_3",
+    "manuscript_file": "Manuscript_strengthened.docx",
+    "embedded_member": "word/media/image7.png",
+    "sha256": "22e210e7f0a818acf765fa7b46ce647538d9db5b77287a7d53819248daec5b07"
+  },
+  {
+    "figure": "Figure_4",
+    "manuscript_file": "Manuscript_strengthened.docx",
+    "embedded_member": "word/media/image8.png",
+    "sha256": "c640ee4c2d561f6790bfc2a2c40cbaa4d7e6d8727a6c126dfd0e46d9b785d971"
+  },
+  {
+    "figure": "Figure_5",
+    "manuscript_file": "Manuscript_strengthened.docx",
+    "embedded_member": "word/media/image9.png",
+    "sha256": "88091898b67cb5b515f15115371d82236e988ad1bf9c59e9b57ba3d230d53575"
+  },
+  {
+    "figure": "Supplementary_Figure_1",
+    "manuscript_file": "Additional_file_3_Figures_strengthened.docx",
+    "embedded_member": "word/media/image1.png",
+    "sha256": "8414ea57f8c2853fc0d208a4d7d79adeace1aa5bcb2e71ccdf907b4259fb106a"
+  },
+  {
+    "figure": "Supplementary_Figure_2",
+    "manuscript_file": "Additional_file_3_Figures_strengthened.docx",
+    "embedded_member": "word/media/image2.png",
+    "sha256": "179457b9924628af5ab2f261a2650a3a4d923655d2b5400335169c460b440006"
+  },
+  {
+    "figure": "Supplementary_Figure_3",
+    "manuscript_file": "Additional_file_3_Figures_strengthened.docx",
+    "embedded_member": "word/media/image3.png",
+    "sha256": "db58ccc2d39a2df27cf506c2ab43b286303f508e91bb1944806b5719e3602485"
+  },
+  {
+    "figure": "Supplementary_Figure_4",
+    "manuscript_file": "Additional_file_3_Figures_strengthened.docx",
+    "embedded_member": "word/media/image4.png",
+    "sha256": "0c7a8b6242d56a98959779f59c0504899f2e44a240970cd85ba17e995f4b38a6"
+  },
+  {
+    "figure": "Supplementary_Figure_5",
+    "manuscript_file": "Additional_file_3_Figures_strengthened.docx",
+    "embedded_member": "word/media/image5.png",
+    "sha256": "2122c6bc18ec90b64d158b834ffe1857d17d83601f901277c6ed19ebe752d3b5"
+  },
+  {
+    "figure": "Supplementary_Figure_6",
+    "manuscript_file": "Additional_file_3_Figures_strengthened.docx",
+    "embedded_member": "word/media/image6.png",
+    "sha256": "8d46ad0df3b7993343ba637ff2e48a19153d0be47510e905c8b9d107ab9b3fd7"
+  },
+  {
+    "figure": "Supplementary_Figure_7",
+    "manuscript_file": "Additional_file_3_Figures_strengthened.docx",
+    "embedded_member": "word/media/image7.png",
+    "sha256": "fb9b26576182779fb2f4f8b7fbfdd20dff9172af2c09065b0fa6e552d4cea614"
+  }
+]

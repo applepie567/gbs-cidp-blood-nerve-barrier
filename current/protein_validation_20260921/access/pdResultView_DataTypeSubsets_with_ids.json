@@ -1,0 +1,712 @@
+[
+  [
+    1,
+    [
+      null,
+      11,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    2,
+    [
+      null,
+      12,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    3,
+    [
+      null,
+      24,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    4,
+    [
+      null,
+      25,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    5,
+    [
+      null,
+      7,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    6,
+    [
+      null,
+      8,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    7,
+    [
+      null,
+      31,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    8,
+    [
+      null,
+      32,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    9,
+    [
+      null,
+      13,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    10,
+    [
+      null,
+      26,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    11,
+    [
+      null,
+      37,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    12,
+    [
+      null,
+      38,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    13,
+    [
+      null,
+      2,
+      "Displays all items of Input Files",
+      "Displays all items of Input Files",
+      1
+    ]
+  ],
+  [
+    14,
+    [
+      null,
+      3,
+      "Displays all items of Study Information",
+      "Displays all items of Study Information",
+      1
+    ]
+  ],
+  [
+    15,
+    [
+      null,
+      4,
+      "Displays all items of Amino Acids",
+      "Displays all items of Amino Acids",
+      1
+    ]
+  ],
+  [
+    16,
+    [
+      null,
+      5,
+      "Displays all items of Found Modifications",
+      "Displays all items of Found Modifications",
+      1
+    ]
+  ],
+  [
+    17,
+    [
+      null,
+      6,
+      "Displays all items of Unknown Modifications",
+      "Displays all items of Unknown Modifications",
+      1
+    ]
+  ],
+  [
+    18,
+    [
+      null,
+      7,
+      "Displays all items of Proteins",
+      "Displays all items of Proteins",
+      1
+    ]
+  ],
+  [
+    19,
+    [
+      null,
+      8,
+      "Displays all items of Decoy Proteins",
+      "Displays all items of Decoy Proteins",
+      1
+    ]
+  ],
+  [
+    20,
+    [
+      null,
+      11,
+      "Displays all items of PSMs",
+      "Displays all items of PSMs",
+      1
+    ]
+  ],
+  [
+    21,
+    [
+      null,
+      12,
+      "Displays all items of Decoy PSMs",
+      "Displays all items of Decoy PSMs",
+      1
+    ]
+  ],
+  [
+    22,
+    [
+      null,
+      13,
+      "Displays all items of PrSMs",
+      "Displays all items of PrSMs",
+      1
+    ]
+  ],
+  [
+    23,
+    [
+      null,
+      14,
+      "Displays all items of Decoy PrSMs",
+      "Displays all items of Decoy PrSMs",
+      1
+    ]
+  ],
+  [
+    24,
+    [
+      null,
+      16,
+      "Displays all items of MS/MS Spectrum Info",
+      "Displays all items of MS/MS Spectrum Info",
+      1
+    ]
+  ],
+  [
+    25,
+    [
+      null,
+      17,
+      "Displays all items of Precursors",
+      "Displays all items of Precursors",
+      1
+    ]
+  ],
+  [
+    26,
+    [
+      null,
+      18,
+      "Displays all items of Mass Recalibrations",
+      "Displays all items of Mass Recalibrations",
+      1
+    ]
+  ],
+  [
+    27,
+    [
+      null,
+      20,
+      "Displays all items of Specialized Traces",
+      "Displays all items of Specialized Traces",
+      1
+    ]
+  ],
+  [
+    28,
+    [
+      null,
+      21,
+      "Displays all items of LCMS Features",
+      "Displays all items of LCMS Features",
+      1
+    ]
+  ],
+  [
+    29,
+    [
+      null,
+      24,
+      "Displays all items of Peptide Groups",
+      "Displays all items of Peptide Groups",
+      1
+    ]
+  ],
+  [
+    30,
+    [
+      null,
+      25,
+      "Displays all items of Decoy Peptide Groups",
+      "Displays all items of Decoy Peptide Groups",
+      1
+    ]
+  ],
+  [
+    31,
+    [
+      null,
+      26,
+      "Displays all items of Consensus Features",
+      "Displays all items of Consensus Features",
+      1
+    ]
+  ],
+  [
+    32,
+    [
+      null,
+      28,
+      "Displays all items of File Alignments",
+      "Displays all items of File Alignments",
+      1
+    ]
+  ],
+  [
+    33,
+    [
+      null,
+      31,
+      "Displays all items of Protein Groups",
+      "Displays all items of Protein Groups",
+      1
+    ]
+  ],
+  [
+    34,
+    [
+      null,
+      32,
+      "Displays all items of Decoy Protein Groups",
+      "Displays all items of Decoy Protein Groups",
+      1
+    ]
+  ],
+  [
+    35,
+    [
+      null,
+      36,
+      "Displays all items of Annotated Modifications",
+      "Displays all items of Annotated Modifications",
+      1
+    ]
+  ],
+  [
+    36,
+    [
+      null,
+      37,
+      "Displays all items of Annotation Protein Groups",
+      "Displays all items of Annotation Protein Groups",
+      1
+    ]
+  ],
+  [
+    37,
+    [
+      null,
+      38,
+      "Displays all items of Pathway Protein Groups",
+      "Displays all items of Pathway Protein Groups",
+      1
+    ]
+  ],
+  [
+    38,
+    [
+      null,
+      39,
+      "Displays all items of Result Statistics",
+      "Displays all items of Result Statistics",
+      1
+    ]
+  ],
+  [
+    39,
+    [
+      null,
+      14,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    40,
+    [
+      null,
+      21,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    41,
+    [
+      null,
+      2,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    42,
+    [
+      null,
+      7,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    43,
+    [
+      null,
+      37,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    44,
+    [
+      null,
+      38,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    45,
+    [
+      null,
+      1,
+      "Displays all items of Node Custom Data",
+      "Displays all items of Node Custom Data",
+      1
+    ]
+  ],
+  [
+    46,
+    [
+      null,
+      9,
+      "Displays all items of Mass Spectra",
+      "Displays all items of Mass Spectra",
+      1
+    ]
+  ],
+  [
+    47,
+    [
+      null,
+      10,
+      "Displays all items of XIC Traces",
+      "Displays all items of XIC Traces",
+      1
+    ]
+  ],
+  [
+    48,
+    [
+      null,
+      15,
+      "Displays all items of Reference Mass Spectra",
+      "Displays all items of Reference Mass Spectra",
+      1
+    ]
+  ],
+  [
+    49,
+    [
+      null,
+      19,
+      "Displays all items of Correction Landmarks",
+      "Displays all items of Correction Landmarks",
+      1
+    ]
+  ],
+  [
+    50,
+    [
+      null,
+      22,
+      "Displays all items of LCMS Peaks",
+      "Displays all items of LCMS Peaks",
+      1
+    ]
+  ],
+  [
+    51,
+    [
+      null,
+      23,
+      "Displays all items of ProteinIdentificationGroups",
+      "Displays all items of ProteinIdentificationGroups",
+      1
+    ]
+  ],
+  [
+    52,
+    [
+      null,
+      27,
+      "Displays all items of Consensus Regions",
+      "Displays all items of Consensus Regions",
+      1
+    ]
+  ],
+  [
+    53,
+    [
+      null,
+      29,
+      "Displays all items of Correction Curves",
+      "Displays all items of Correction Curves",
+      1
+    ]
+  ],
+  [
+    54,
+    [
+      null,
+      30,
+      "Displays all items of RT correction factors",
+      "Displays all items of RT correction factors",
+      1
+    ]
+  ],
+  [
+    55,
+    [
+      null,
+      33,
+      "Displays all items of Abundance Corrections",
+      "Displays all items of Abundance Corrections",
+      1
+    ]
+  ],
+  [
+    56,
+    [
+      null,
+      34,
+      "Displays all items of Fasta Protein Annotations",
+      "Displays all items of Fasta Protein Annotations",
+      1
+    ]
+  ],
+  [
+    57,
+    [
+      null,
+      35,
+      "Displays all items of Annotation Descriptions",
+      "Displays all items of Annotation Descriptions",
+      1
+    ]
+  ],
+  [
+    58,
+    [
+      null,
+      11,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    59,
+    [
+      null,
+      12,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    60,
+    [
+      null,
+      24,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    61,
+    [
+      null,
+      25,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    62,
+    [
+      null,
+      7,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    63,
+    [
+      null,
+      8,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    64,
+    [
+      null,
+      7,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    65,
+    [
+      null,
+      11,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    66,
+    [
+      null,
+      2,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    67,
+    [
+      null,
+      12,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    68,
+    [
+      null,
+      24,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    69,
+    [
+      null,
+      25,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    70,
+    [
+      null,
+      7,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ],
+  [
+    71,
+    [
+      null,
+      8,
+      "Filter result of ",
+      "Filter result of ",
+      0
+    ]
+  ]
+]

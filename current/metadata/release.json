@@ -1,0 +1,13 @@
+{
+  "title": "Immune recruitment signatures and cellular context in inflammatory neuropathies",
+  "prepared_version": "2.4.0",
+  "prepared_date": "2026-09-22",
+  "publication_status": "prepared locally; no GitHub release or Zenodo deposit created",
+  "github_base_commit": "ab02ad5f361f3c0ed6dfd0dd65fffa2be7f9162e",
+  "previous_published_tag": "V2.3.1",
+  "main_figures": 5,
+  "supplementary_figures": 7,
+  "figure_source_tables": 32,
+  "primary_raw_data_redistributed": false,
+  "independent_nerve_validation": "not performed; reliable sample-to-diagnosis mapping unavailable"
+}

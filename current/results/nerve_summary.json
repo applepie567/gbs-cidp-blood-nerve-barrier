@@ -1,0 +1,22 @@
+{
+  "exploratory": true,
+  "normalisation": "log2(CPM + 0.5), gene z scores across eligible CIDP and CIAP donors",
+  "case_donors": 9,
+  "comparator_donors": 11,
+  "new_disease_tests": 9,
+  "expanded_disease_tests": 89,
+  "new_clinical_tests": 2,
+  "expanded_clinical_tests": 17,
+  "fc_reconstruction_delta": -0.6285336831572076,
+  "fc_reconstruction_p": 0.0010874365767340446,
+  "max_fc_gene_delta_error": 1.0269562977782698e-15,
+  "hdf5_backends": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/vtkmodules/libvtkhdf5-9.3.so"
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  }
+}
