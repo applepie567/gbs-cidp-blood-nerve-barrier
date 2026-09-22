@@ -1,0 +1,13 @@
+{
+  "version": "2.3.0",
+  "manuscript": "v42",
+  "date": "2026-09-07",
+  "doi": "10.5281/zenodo.22641099",
+  "concept_doi": "10.5281/zenodo.22226672",
+  "github_release": "https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/releases/tag/v2.3.0",
+  "scope": "public aggregate materials only",
+  "publication_note": "The DOI was reserved before packaging. Publication is verified separately in the synchronization receipt.",
+  "manuscript_file": "GBS_CIDP_Human_Genomics_v42.docx",
+  "analysis_results_version": "v41",
+  "graphical_abstract": "graphical_abstract/GBS_CIDP_Human_Genomics_graphical_abstract.png"
+}

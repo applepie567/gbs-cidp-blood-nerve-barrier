@@ -1,0 +1,746 @@
+{
+  "file": "Supplementary_Data_1_v41.xlsx",
+  "bytes": 165404,
+  "sha256": "661794e9d00f92d43cc2937f3031fce327daf2e49df133eba98ee0422cc63773",
+  "worksheet_count": 49,
+  "scope": "All 49 sheets inspected. Documentation, study/group summaries, contrast estimates, correlations, multiplicity corrections, eligibility counts, and source manifests. No donor-level expression or clinical records.",
+  "individual_record_header_matches": [],
+  "donor_omission_rows": "Only min/max ranges across donor omissions. Exact donor rows are absent.",
+  "center_omission_rows": "Omitted categories are research centers or genes, not individual donors.",
+  "source_identifiers": "GEO accession identifiers and matrix filenames appear only as original source references, without donor clinical measurements.",
+  "sheets": [
+    {
+      "sheet": "README",
+      "data_rows": 19,
+      "columns": [
+        "Item",
+        "Description"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Figure_table_index",
+      "data_rows": 23,
+      "columns": [
+        "Figure or table",
+        "Data file",
+        "Content",
+        "Attribution"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Input_files",
+      "data_rows": 19,
+      "columns": [
+        "Input ID",
+        "Resource / accession",
+        "Original filename or published extract",
+        "Source URL",
+        "Expected local input or extracted-results file",
+        "Processing script / use",
+        "Source and access notes"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Data_reconstruction",
+      "data_rows": 6,
+      "columns": [
+        "File / table",
+        "Public attachment status",
+        "Original input / source",
+        "Reconstruction route",
+        "Retained results / processing detail",
+        "Reproduction boundary"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Blood_cohort_effects",
+      "data_rows": 21,
+      "columns": [
+        "Cohort",
+        "Program",
+        "Hedges g",
+        "n case",
+        "n control",
+        "FDR",
+        "Variance",
+        "Positive direction"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Blood_meta",
+      "data_rows": 7,
+      "columns": [
+        "Program",
+        "Summary Hedges g",
+        "95% CI low",
+        "95% CI high",
+        "Hartung–Knapp P",
+        "Tau²",
+        "I² (%)",
+        "Cohorts",
+        "Positive cohorts",
+        "Direction concordance",
+        "Interpretation"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "CIDP_FDR_result",
+      "data_rows": 1,
+      "columns": [
+        "Comparison",
+        "Cell group",
+        "Program",
+        "n case",
+        "n reference",
+        "Mean z case",
+        "Mean z reference",
+        "Delta mean z",
+        "P value",
+        "FDR",
+        "Conclusion"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "CIDP_cell_fractions",
+      "data_rows": 12,
+      "columns": [
+        "comparison",
+        "cell_group",
+        "n_case",
+        "n_reference",
+        "mean_fraction_case",
+        "mean_fraction_reference",
+        "difference_fraction",
+        "p_value",
+        "fdr_across_cell_groups"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "CIDP_clinical",
+      "data_rows": 15,
+      "columns": [
+        "cell_group",
+        "panel",
+        "n",
+        "rho_INCAT",
+        "p_value"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "CIDP_expression",
+      "data_rows": 91,
+      "columns": [
+        "disease",
+        "cell_group",
+        "gene",
+        "n_samples",
+        "mean_log2cpm",
+        "median_log2cpm",
+        "panels"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "CIDP_genetic_evidence",
+      "data_rows": 4,
+      "columns": [
+        "gene",
+        "phenotype",
+        "discovery_method",
+        "variant_or_locus",
+        "effect",
+        "p_value",
+        "MR_beta",
+        "MR_q_value",
+        "coloc_PP_H4",
+        "published_tissue_context",
+        "source"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "CIDP_module_effects",
+      "data_rows": 80,
+      "columns": [
+        "comparison",
+        "cell_group",
+        "panel",
+        "n_case",
+        "n_reference",
+        "mean_z_case",
+        "mean_z_reference",
+        "delta_mean_z",
+        "p_value",
+        "fdr_within_celltype_comparison"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "CSF_Kmezic_published_coefficien",
+      "data_rows": 10,
+      "columns": [
+        "protein",
+        "discovery_beta",
+        "discovery_se",
+        "replication_beta",
+        "replication_se",
+        "source_table",
+        "source_url",
+        "verification_date"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "CSF_PXD002911",
+      "data_rows": 9,
+      "columns": [
+        "Group or comparison",
+        "Data type",
+        "Reported count or percentage",
+        "Unit",
+        "Published interpretation",
+        "Inference level",
+        "Source URL"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "CSF_published_evidence",
+      "data_rows": 14,
+      "columns": [
+        "study",
+        "resource",
+        "cohort",
+        "platform",
+        "feature",
+        "result",
+        "program",
+        "inference_level",
+        "source"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Cross_compartment_map",
+      "data_rows": 6,
+      "columns": [
+        "Program",
+        "Blood evidence",
+        "CSF evidence",
+        "Peripheral nerve evidence",
+        "Interpretation"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Datasets",
+      "data_rows": 12,
+      "columns": [
+        "Resource",
+        "Compartment",
+        "Material",
+        "Participants or samples",
+        "Analytical role",
+        "Peer-reviewed source",
+        "Data URL"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Figure_2C_leave_one_cohort_out",
+      "data_rows": 21,
+      "columns": [
+        "Program",
+        "Omitted cohort",
+        "Summary Hedges g"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Figure_3C_coverage",
+      "data_rows": 5,
+      "columns": [
+        "program",
+        "studies",
+        "platforms"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Figure_5D_genetic_expression_co",
+      "data_rows": 40,
+      "columns": [
+        "cell_group",
+        "gene",
+        "evidence_tier",
+        "n_CIDP",
+        "n_CIAP",
+        "mean_CIDP",
+        "mean_CIAP",
+        "delta_mean",
+        "p_value",
+        "fdr_within_cell_group"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Genetic_CIDP_vs_CIAP",
+      "data_rows": 165,
+      "columns": [
+        "cell_group",
+        "gene",
+        "evidence_tier",
+        "n_CIDP",
+        "n_CIAP",
+        "mean_CIDP",
+        "mean_CIAP",
+        "delta_mean",
+        "p_value",
+        "fdr_within_cell_group"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Genetic_celltype_summary",
+      "data_rows": 330,
+      "columns": [
+        "disease",
+        "cell_group",
+        "gene",
+        "evidence_tier",
+        "n_donors",
+        "total_nuclei",
+        "mean_expression",
+        "median_expression",
+        "mean_percent_expressing"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "CSF_adjusted_meta",
+      "data_rows": 10,
+      "columns": [
+        "protein",
+        "discovery_beta",
+        "discovery_se",
+        "replication_beta",
+        "replication_se",
+        "fixed_beta",
+        "fixed_se",
+        "ci_low",
+        "ci_high",
+        "p_value",
+        "Q",
+        "I2_percent",
+        "tau2_DL",
+        "random_beta_DL",
+        "random_ci_low",
+        "random_ci_high",
+        "direction_concordant",
+        "inference_level",
+        "fdr_BH"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Genetic_bootstrap",
+      "data_rows": 60,
+      "columns": [
+        "gene",
+        "cell_group",
+        "n_donors",
+        "mean_expression",
+        "expression_ci_low",
+        "expression_ci_high",
+        "mean_percent_expressing",
+        "detection_ci_low",
+        "detection_ci_high",
+        "bootstrap_replicates",
+        "expression_rank_within_gene"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Published_nerve_evidence",
+      "data_rows": 4,
+      "columns": [
+        "feature",
+        "localization",
+        "published_result",
+        "proportion",
+        "ci_low",
+        "ci_high",
+        "source",
+        "inference_level"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Donor_correlations",
+      "data_rows": 10,
+      "columns": [
+        "module_1",
+        "module_2",
+        "n_donors",
+        "rho",
+        "p_value",
+        "fdr_BH_10_pairs"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Clinical_correlations_FDR",
+      "data_rows": 15,
+      "columns": [
+        "cell_group",
+        "panel",
+        "n",
+        "rho_INCAT",
+        "p_value",
+        "fdr_BH_15_tests"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Table_1",
+      "data_rows": 8,
+      "columns": [
+        "Resource",
+        "Material",
+        "Participants or samples",
+        "Analytical role"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Table_2",
+      "data_rows": 7,
+      "columns": [
+        "Gene module",
+        "Summary Hedges g",
+        "95% CI lower",
+        "95% CI upper",
+        "Modified Hartung–Knapp P",
+        "I², %",
+        "Cohorts, n"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Table_3",
+      "data_rows": 6,
+      "columns": [
+        "Program",
+        "Blood evidence",
+        "CSF evidence",
+        "Peripheral nerve evidence",
+        "Interpretation"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Revision_v39",
+      "data_rows": 9,
+      "columns": [
+        "Item",
+        "Revision v39 note"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Fc_design_balance",
+      "data_rows": 18,
+      "columns": [
+        "disease",
+        "characteristic",
+        "value"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "New_input_manifest_v41",
+      "data_rows": 40,
+      "columns": [
+        "file",
+        "url",
+        "retrieved_date",
+        "status",
+        "bytes",
+        "sha256"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Fc_omission_summary",
+      "data_rows": 3,
+      "columns": [
+        "type",
+        "n_analyses",
+        "delta_min",
+        "delta_max",
+        "p_min",
+        "p_max"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Fc_component_genes",
+      "data_rows": 11,
+      "columns": [
+        "gene",
+        "delta",
+        "se_hc3",
+        "ci_low",
+        "ci_high",
+        "p_hc3",
+        "residual_df",
+        "n",
+        "n_case",
+        "n_reference",
+        "p_mannwhitney",
+        "mean_case",
+        "mean_reference",
+        "delta_z",
+        "n_case_above_zero",
+        "n_reference_above_zero",
+        "q_bh_available_genes"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Fc_gene_center_omissions",
+      "data_rows": 14,
+      "columns": [
+        "type",
+        "omitted",
+        "delta",
+        "se_hc3",
+        "ci_low",
+        "ci_high",
+        "p_hc3",
+        "residual_df",
+        "n",
+        "n_case",
+        "n_reference",
+        "p_mannwhitney",
+        "mean_case",
+        "mean_reference"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Fc_gene_coverage",
+      "data_rows": 12,
+      "columns": [
+        "gene",
+        "measured_in_nerve",
+        "included_in_original_score",
+        "measured_in_spatial"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Spatial_design_audit",
+      "data_rows": 4,
+      "columns": [
+        "disease",
+        "n_donors",
+        "n_segmented_cells",
+        "n_biological_genes",
+        "n_fc_genes"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Spatial_Fc_coverage",
+      "data_rows": 12,
+      "columns": [
+        "gene",
+        "measured_in_spatial"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Fc_annotation_sensitivity",
+      "data_rows": 12,
+      "columns": [
+        "annotation",
+        "delta",
+        "se_hc3",
+        "ci_low",
+        "ci_high",
+        "p_hc3",
+        "residual_df",
+        "n",
+        "n_case",
+        "n_reference",
+        "p_mannwhitney",
+        "mean_case",
+        "mean_reference",
+        "q_eligible_refined_subtypes",
+        "q_eligible_annotation_definitions"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Fc_sensitivity",
+      "data_rows": 6,
+      "columns": [
+        "analysis",
+        "delta",
+        "se_hc3",
+        "ci_low",
+        "ci_high",
+        "p_hc3",
+        "residual_df",
+        "n",
+        "n_case",
+        "n_reference",
+        "p_mannwhitney",
+        "mean_case",
+        "mean_reference",
+        "covariates",
+        "p_primary",
+        "permutations"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Fc_subtype_eligibility",
+      "data_rows": 22,
+      "columns": [
+        "annotation",
+        "n_case",
+        "n_reference",
+        "eligible"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "External_validation_audit",
+      "data_rows": 6,
+      "columns": [
+        "database",
+        "accession",
+        "url",
+        "role",
+        "availability",
+        "biological_unit",
+        "finding",
+        "limitation",
+        "checked_date"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Macrophage_composition",
+      "data_rows": 32,
+      "columns": [
+        "refined_annotation",
+        "delta",
+        "se_hc3",
+        "ci_low",
+        "ci_high",
+        "p_hc3",
+        "residual_df",
+        "n",
+        "n_case",
+        "n_reference",
+        "p_mannwhitney",
+        "mean_case",
+        "mean_reference",
+        "total_nuclei",
+        "q_all_refined_categories"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Fc_functional_components",
+      "data_rows": 4,
+      "columns": [
+        "component",
+        "genes",
+        "delta",
+        "se_hc3",
+        "ci_low",
+        "ci_high",
+        "p_hc3",
+        "residual_df",
+        "n",
+        "n_case",
+        "n_reference",
+        "p_mannwhitney",
+        "mean_case",
+        "mean_reference",
+        "q_bh_4"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Fc_composition_adjustment",
+      "data_rows": 1,
+      "columns": [
+        "model",
+        "delta",
+        "se_hc3",
+        "ci_low",
+        "ci_high",
+        "p_hc3",
+        "residual_df",
+        "n",
+        "pc1_variance_fraction",
+        "pc2_variance_fraction",
+        "n_composition_categories"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Spatial_module_coverage",
+      "data_rows": 8,
+      "columns": [
+        "panel",
+        "n_specified",
+        "n_measured",
+        "measured_genes",
+        "unmeasured_genes"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Nerve_global_multiplicity",
+      "data_rows": 80,
+      "columns": [
+        "comparison",
+        "cell_group",
+        "panel",
+        "n_case",
+        "n_reference",
+        "mean_z_case",
+        "mean_z_reference",
+        "delta_mean_z",
+        "p_value",
+        "fdr_within_celltype_comparison",
+        "q_bh_all_cell_module_tests"
+      ],
+      "visibility": "visible"
+    },
+    {
+      "sheet": "Revision_v41",
+      "data_rows": 12,
+      "columns": [
+        "Item",
+        "Description"
+      ],
+      "visibility": "visible"
+    }
+  ]
+}

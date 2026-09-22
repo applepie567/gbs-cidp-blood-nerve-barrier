@@ -1,0 +1,5 @@
+feature,localization,published_result,proportion,ci_low,ci_high,source,inference_level
+C5b-9 deposition,Endoneurial capillaries,52/55 biopsies,0.9454545454545454,0.8514693945594621,0.9812767844453156,Stascheit et al. 2025; doi:10.1007/s00401-025-02936-w; PXD056286,published external tissue observations
+"C3, C5, C6 and C9 abundance",Sural nerve proteome,"Higher C3, C5 and C9 abundance. C6 was elevated in only two CIDP cases.",,,,Stascheit et al. 2025; doi:10.1007/s00401-025-02936-w; PXD056286,Published proteomic observations in a subset of 9 CIDP cases and 2 controls
+CD68+ macrophages,Endoneurium,Cellular infiltration observed,,,,Stascheit et al. 2025; doi:10.1007/s00401-025-02936-w; PXD056286,published external tissue observations
+CD8+ T cells,Endoneurium,Cellular infiltration observed,,,,Stascheit et al. 2025; doi:10.1007/s00401-025-02936-w; PXD056286,published external tissue observations
