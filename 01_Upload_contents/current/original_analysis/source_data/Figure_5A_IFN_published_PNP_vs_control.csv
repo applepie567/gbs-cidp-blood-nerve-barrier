@@ -1,2 +1,0 @@
-evidence_type,source_table,source_file,source_sheet,source_excel_row,cell_type,gene,avg_logFC,p_val,p_val_adj,de_family,de_method,de_type,source_adjusted_p_below_0_05
-PNP_vs_CTRL_pseudobulk,Supplementary Data 9,41467_2025_62964_MOESM11_ESM.xlsx,nmSC,84,nmSC,MX1,-3.082810820875808,7.819830709104297e-14,4.5677586129555464e-10,pseudobulk,edgeR,LRT,True
