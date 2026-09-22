@@ -1,0 +1,5 @@
+disease,n_donors,n_segmented_cells,n_biological_genes,n_fc_genes
+CIAP,2,22659,99,0
+CIDP,2,32799,99,0
+CTRL,2,14683,99,0
+VN,2,14450,99,0
