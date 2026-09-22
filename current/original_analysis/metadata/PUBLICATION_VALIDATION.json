@@ -1,0 +1,35 @@
+{
+  "scope": "v2.3.0 publication integrity and manuscript link checks",
+  "status": "passed",
+  "manuscript": "v42",
+  "manuscript_changed_paragraphs_during_sync": [
+    97,
+    158,
+    159
+  ],
+  "public_workbook_sheets": 49,
+  "excluded_donor_intermediates_absent": true,
+  "science_recalculated_during_sync": false,
+  "analysis_results_version": "v41",
+  "render_qa": {
+    "main_pages": 34,
+    "main_pages_changed_during_sync": [
+      19,
+      26
+    ],
+    "other_32_main_page_rasters_byte_identical_to_reviewed_v42": true,
+    "main_images": 5,
+    "main_editable_tables": 3,
+    "methods_pages": 10,
+    "changed_pages_and_all_methods_pages_reviewed": true
+  },
+  "format_checks": {
+    "abstract_and_main_text_prohibited_punctuation_count": 0,
+    "main_text_font": "Times New Roman",
+    "main_text_color": "black",
+    "embedded_figure_bytes_preserved": true
+  },
+  "graphical_abstract": "Approved edited PNG without bottom caption or top horizontal line",
+  "doi": "10.5281/zenodo.22641099",
+  "github_release": "https://github.com/applepie567/gbs-cidp-blood-nerve-barrier/releases/tag/v2.3.0"
+}

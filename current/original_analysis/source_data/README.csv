@@ -1,0 +1,20 @@
+Item,Description
+Version,"Public source workbook for release v2.3.1 (16 September 2026). Updated CSF concentrations and assay-type classification, Table 3 and published nerve evidence, and figure source references."
+Table values,Research results computed by the documented Python scripts. v39 CSF inputs and results replace the earlier eight-protein extraction; numeric cells remain typed values.
+Source provenance,"Published and reanalysed evidence are distinguished in Figure_table_index. Additional aggregate CSV files for revised Figures 4A, 5A and 5B, including the two published nerve interferon extracts, accompany this 49-sheet workbook in analysis_update/source_data."
+Inferential units,Participants or tissue donors. Nuclei are not treated as independent biological replicates.
+Blood meta-analysis,DerSimonian-Laird variance with modified Hartung-Knapp scale bounded below by 1. Seven modules and three cohorts.
+Nerve comparisons,Unadjusted Mann-Whitney comparisons of donor module scores. Eight modules corrected within each cell group.
+Correlation families,Ten donor module pairs and fifteen clinical correlations receive separate BH corrections. None survive FDR 0.05.
+CSF pooling,Ten published adjusted coefficient pairs. No participant-level CSF matrix reconstructed.
+Genetics,Candidate selection from published GWAS and MR evidence. Cell localization and bootstrap do not establish causal cell types or drug targets.
+External nerve evidence,"Stascheit et al. reported C5b-9 in 52 of 55 biopsies. The proteomic subset contained 9 CIDP cases and 2 controls; C3, C5 and C9 were higher and C6 was elevated in only two CIDP cases. The current analysis calculates the biopsy proportion and Wilson interval only."
+Primary matrices,Large raw matrices are not included. See data/README.md and config/datasets.yaml.
+Repository,https://github.com/applepie567/gbs-cidp-blood-nerve-barrier
+Original inputs,"Input_files lists original filenames or published extracts, access URLs, local paths and processing scripts. Datasets lists the study-level sources."
+Public scope,"This workbook contains group-level results and source documentation. It does not contain donor-by-gene, donor-by-cell-type or donor clinical records."
+Omitted intermediate sheets,"CIDP_donor_heterogeneity and Genetic_donor_celltype are omitted from this public edition. Aggregate contrasts, correlations and bootstrap intervals are retained."
+Reconstruction,"Data_reconstruction describes the inputs and scripts needed to regenerate omitted intermediate tables, including the remaining genetic-table reconstruction gap."
+Download dates,Original download dates and checksums of the primary input files were not recorded in the supplied release package. No retrospective download date is assigned.
+Published evidence,"Published CSF concentrations, identifications and annotations are distinguished in CSF_published_evidence. Figure 3C counts unique studies and assay types within each program. Concentration measurements are one broad assay type; Bradford and routine clinical methods are described in inference_level. Protein identification counts do not establish concentration increases. Other assay workflows retain their source descriptions."
+New result tables,"See Revision_v41 and all newly appended Fc, composition, spatial and source audit worksheets."
