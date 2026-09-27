@@ -1,0 +1,8 @@
+Panel,Content,Files_in_results
+Figure 1,Study diagram,GSE304872_pseudobulk_metadata.csv; source manifests; manuscript Table 1
+Figure 3A–B,Monocyte donor scores,GSE304872_Monocyte_scores.csv; GSE304872_all_effects.csv
+Figure 3C–D,Whole PBMC donor scores,GSE304872_all_PBMC_scores.csv; GSE304872_all_effects.csv
+Figure S10A–B,Monocyte cluster contrasts,GSE304872_all_effects.csv
+Figure S10C–D,Sorted cell contrasts,GSE304871_sorted_bulk_effects.csv
+Figure S11A–B,Acute Brazilian PBMC comparison,Brazil_T0_median_ratio_scores.csv; Brazil_T0_median_ratio_effects.csv
+Figure S11C–D,Paired follow-up scores,Brazil_paired_scores.csv; Brazil_paired_effects.csv

@@ -1,0 +1,17 @@
+﻿geo_sample,library_name,donor_id,diagnosis,cell_preparation,cohort_relation,source
+GSM9158846,356-1_S1,HC3,Healthy control,CD11b,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158847,356-2_S2,HC2,Healthy control,CD11b,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158848,356-3_S3,GBS3,GBS,CD11b,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158849,356-4_S4,HC1,Healthy control,CD11b,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158850,356-5_S5,GBS1,GBS,CD11b,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158851,356-6_S6,HC3,Healthy control,CD4,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158852,356-7_S7,HC2,Healthy control,CD4,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158853,356-8_S8,GBS3,GBS,CD4,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158854,356-9_S9,HC1,Healthy control,CD4,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158855,356-10_S10,GBS1,GBS,CD4,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158856,356-11_S11,GBS4,GBS,CD4,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158857,356-12_S12,HC3,Healthy control,CD8,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158858,356-13_S13,HC2,Healthy control,CD8,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158859,356-14_S14,GBS3,GBS,CD8,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158860,356-15_S15,HC1,Healthy control,CD8,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871
+GSM9158861,356-16_S16,GBS1,GBS,CD8,same cohort as GSE304872; not an independent second cohort,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304871

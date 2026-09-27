@@ -1,0 +1,120 @@
+pseudobulk_id,donor_id,source_sample,compartment,diagnosis,cells,library_counts
+1|CD8 T,Sample_1,1,CD8 T,GBS,8759,57247228
+1|PMA,Sample_1,1,PMA,GBS,31,536633
+1|Monocyte,Sample_1,1,Monocyte,GBS,935,11733279
+1|Plasma cell,Sample_1,1,Plasma cell,GBS,6,119800
+1|cDC,Sample_1,1,cDC,GBS,45,610311
+1|B cell,Sample_1,1,B cell,GBS,587,2479884
+1|pDC,Sample_1,1,pDC,GBS,9,90243
+1|CD4 T,Sample_1,1,CD4 T,GBS,1974,7139136
+1|NKT,Sample_1,1,NKT,GBS,45,372550
+1|Platelet,Sample_1,1,Platelet,GBS,5,46582
+1|NK cell,Sample_1,1,NK cell,GBS,2107,8944644
+1|Progenitor,Sample_1,1,Progenitor,GBS,7,58377
+3|cDC,Sample_3,3,cDC,GBS,48,353351
+3|Monocyte,Sample_3,3,Monocyte,GBS,3812,24055405
+3|PMA,Sample_3,3,PMA,GBS,262,2160756
+3|Plasma cell,Sample_3,3,Plasma cell,GBS,28,273439
+3|CD8 T,Sample_3,3,CD8 T,GBS,2908,4760171
+3|Progenitor,Sample_3,3,Progenitor,GBS,26,130057
+3|Platelet,Sample_3,3,Platelet,GBS,527,654737
+3|CD4 T,Sample_3,3,CD4 T,GBS,6204,9281906
+3|NKT,Sample_3,3,NKT,GBS,33,127806
+3|B cell,Sample_3,3,B cell,GBS,2418,3275392
+3|NK cell,Sample_3,3,NK cell,GBS,536,1150127
+3|pDC,Sample_3,3,pDC,GBS,20,65563
+7|PMA,Sample_7,7,PMA,GBS,471,5157638
+7|Monocyte,Sample_7,7,Monocyte,GBS,3558,27767011
+7|Plasma cell,Sample_7,7,Plasma cell,GBS,130,1638562
+7|CD8 T,Sample_7,7,CD8 T,GBS,2754,8018416
+7|cDC,Sample_7,7,cDC,GBS,124,1158993
+7|CD4 T,Sample_7,7,CD4 T,GBS,7277,17276078
+7|Progenitor,Sample_7,7,Progenitor,GBS,29,195549
+7|B cell,Sample_7,7,B cell,GBS,1403,3184914
+7|Platelet,Sample_7,7,Platelet,GBS,208,495985
+7|pDC,Sample_7,7,pDC,GBS,101,527394
+7|NK cell,Sample_7,7,NK cell,GBS,597,1674121
+7|NKT,Sample_7,7,NKT,GBS,35,202699
+8|Monocyte,Sample_8,8,Monocyte,GBS,8310,64355514
+8|PMA,Sample_8,8,PMA,GBS,491,4842867
+8|Plasma cell,Sample_8,8,Plasma cell,GBS,11,126807
+8|cDC,Sample_8,8,cDC,GBS,122,1471636
+8|B cell,Sample_8,8,B cell,GBS,1177,4902855
+8|Progenitor,Sample_8,8,Progenitor,GBS,29,230301
+8|CD8 T,Sample_8,8,CD8 T,GBS,750,2206181
+8|pDC,Sample_8,8,pDC,GBS,43,279076
+8|Platelet,Sample_8,8,Platelet,GBS,54,101297
+8|CD4 T,Sample_8,8,CD4 T,GBS,2736,7870150
+8|NK cell,Sample_8,8,NK cell,GBS,667,2356336
+8|NKT,Sample_8,8,NKT,GBS,15,90223
+2|Monocyte,Sample_2,2,Monocyte,Control,1183,6434567
+2|cDC,Sample_2,2,cDC,Control,28,318719
+2|PMA,Sample_2,2,PMA,Control,73,431877
+2|B cell,Sample_2,2,B cell,Control,1075,3889335
+2|Platelet,Sample_2,2,Platelet,Control,61,311103
+2|NK cell,Sample_2,2,NK cell,Control,1896,7188578
+2|Plasma cell,Sample_2,2,Plasma cell,Control,13,83110
+2|NKT,Sample_2,2,NKT,Control,83,551812
+2|pDC,Sample_2,2,pDC,Control,34,237918
+2|CD8 T,Sample_2,2,CD8 T,Control,5103,13864456
+2|Progenitor,Sample_2,2,Progenitor,Control,6,29453
+2|CD4 T,Sample_2,2,CD4 T,Control,3580,9924796
+4|PMA,Sample_4,4,PMA,Control,170,1976915
+4|CD8 T,Sample_4,4,CD8 T,Control,3629,10510736
+4|Plasma cell,Sample_4,4,Plasma cell,Control,77,1020550
+4|Monocyte,Sample_4,4,Monocyte,Control,1033,9197757
+4|cDC,Sample_4,4,cDC,Control,81,845562
+4|CD4 T,Sample_4,4,CD4 T,Control,8119,20798421
+4|NKT,Sample_4,4,NKT,Control,129,767322
+4|B cell,Sample_4,4,B cell,Control,715,2015208
+4|Platelet,Sample_4,4,Platelet,Control,129,360885
+4|pDC,Sample_4,4,pDC,Control,74,422287
+4|Progenitor,Sample_4,4,Progenitor,Control,18,117316
+4|NK cell,Sample_4,4,NK cell,Control,1463,4577191
+5|cDC,Sample_5,5,cDC,Control,200,2364774
+5|Monocyte,Sample_5,5,Monocyte,Control,3761,30229727
+5|PMA,Sample_5,5,PMA,Control,279,2579437
+5|Plasma cell,Sample_5,5,Plasma cell,Control,5,54466
+5|CD8 T,Sample_5,5,CD8 T,Control,3352,8421346
+5|CD4 T,Sample_5,5,CD4 T,Control,4708,13395385
+5|pDC,Sample_5,5,pDC,Control,81,640174
+5|Progenitor,Sample_5,5,Progenitor,Control,43,298678
+5|B cell,Sample_5,5,B cell,Control,2971,8540671
+5|NK cell,Sample_5,5,NK cell,Control,893,2770040
+5|NKT,Sample_5,5,NKT,Control,32,213250
+5|Platelet,Sample_5,5,Platelet,Control,135,265040
+1|all_PBMC,Sample_1,1,all_PBMC,GBS,14510,89378667
+2|all_PBMC,Sample_2,2,all_PBMC,Control,13135,43265724
+3|all_PBMC,Sample_3,3,all_PBMC,GBS,16822,46288710
+4|all_PBMC,Sample_4,4,all_PBMC,Control,15637,52610150
+5|all_PBMC,Sample_5,5,all_PBMC,Control,16460,69772988
+7|all_PBMC,Sample_7,7,all_PBMC,GBS,16687,67297360
+8|all_PBMC,Sample_8,8,all_PBMC,GBS,14405,88833243
+1|Monocyte_cluster_3,Sample_1,1,Monocyte_cluster_3,GBS,452,6228544
+1|Monocyte_cluster_6,Sample_1,1,Monocyte_cluster_6,GBS,333,4178078
+1|Monocyte_cluster_13,Sample_1,1,Monocyte_cluster_13,GBS,92,1185553
+1|Monocyte_cluster_9,Sample_1,1,Monocyte_cluster_9,GBS,58,141104
+3|Monocyte_cluster_6,Sample_3,3,Monocyte_cluster_6,GBS,1119,8071290
+3|Monocyte_cluster_3,Sample_3,3,Monocyte_cluster_3,GBS,1836,11890321
+3|Monocyte_cluster_13,Sample_3,3,Monocyte_cluster_13,GBS,570,3750261
+3|Monocyte_cluster_9,Sample_3,3,Monocyte_cluster_9,GBS,287,343533
+7|Monocyte_cluster_6,Sample_7,7,Monocyte_cluster_6,GBS,1296,10045321
+7|Monocyte_cluster_13,Sample_7,7,Monocyte_cluster_13,GBS,239,2485275
+7|Monocyte_cluster_3,Sample_7,7,Monocyte_cluster_3,GBS,1839,14900502
+7|Monocyte_cluster_9,Sample_7,7,Monocyte_cluster_9,GBS,184,335913
+8|Monocyte_cluster_3,Sample_8,8,Monocyte_cluster_3,GBS,3164,31090605
+8|Monocyte_cluster_13,Sample_8,8,Monocyte_cluster_13,GBS,421,4669180
+8|Monocyte_cluster_6,Sample_8,8,Monocyte_cluster_6,GBS,2722,24884314
+8|Monocyte_cluster_9,Sample_8,8,Monocyte_cluster_9,GBS,2003,3711415
+2|Monocyte_cluster_3,Sample_2,2,Monocyte_cluster_3,Control,469,3735870
+2|Monocyte_cluster_13,Sample_2,2,Monocyte_cluster_13,Control,103,601234
+2|Monocyte_cluster_6,Sample_2,2,Monocyte_cluster_6,Control,304,1793625
+2|Monocyte_cluster_9,Sample_2,2,Monocyte_cluster_9,Control,307,303838
+4|Monocyte_cluster_3,Sample_4,4,Monocyte_cluster_3,Control,533,4840753
+4|Monocyte_cluster_13,Sample_4,4,Monocyte_cluster_13,Control,167,1736316
+4|Monocyte_cluster_6,Sample_4,4,Monocyte_cluster_6,Control,253,2415073
+4|Monocyte_cluster_9,Sample_4,4,Monocyte_cluster_9,Control,80,205615
+5|Monocyte_cluster_6,Sample_5,5,Monocyte_cluster_6,Control,963,9803997
+5|Monocyte_cluster_3,Sample_5,5,Monocyte_cluster_3,Control,1512,16019139
+5|Monocyte_cluster_13,Sample_5,5,Monocyte_cluster_13,Control,285,2791573
+5|Monocyte_cluster_9,Sample_5,5,Monocyte_cluster_9,Control,1001,1615018

@@ -1,0 +1,2 @@
+model,delta,se_hc3,ci_low,ci_high,p_hc3,residual_df,n,pc1_variance_fraction,pc2_variance_fraction,n_composition_categories
+"Age, center and two composition principal components",-0.3097923409951747,0.3372279717448552,-1.0383290812352797,0.41874439924493023,0.3750123099272261,13,20,0.226937842250946,0.20507139557831314,32

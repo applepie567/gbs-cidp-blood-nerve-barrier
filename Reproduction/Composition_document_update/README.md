@@ -1,0 +1,1 @@
+These scripts record the document and package assembly in the working directory used for this revision. The portable scientific reproduction scripts and all numerical inputs are in Supplementary Data 6.

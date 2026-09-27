@@ -1,0 +1,88 @@
+﻿Patient ID,Gender,Sample replicate ID,Sample ID,GBS Type,GBS Subtype,Age,Days to Walk,Condition
+1,Male,1_L005,GBS_s1,Demyelinating,AIDP,15,0,T0
+1,Male,1_L006,GBS_s1,Demyelinating,AIDP,15,0,T0
+1,Male,1_L007,GBS_s1,Demyelinating,AIDP,15,0,T0
+1,Male,1_L008,GBS_s1,Demyelinating,AIDP,15,0,T0
+2,Male,3_L005,GBS_s3,Demyelinating,AIDP,27,60,T0
+2,Male,3_L006,GBS_s3,Demyelinating,AIDP,27,60,T0
+2,Male,3_L007,GBS_s3,Demyelinating,AIDP,27,60,T0
+2,Male,3_L008,GBS_s3,Demyelinating,AIDP,27,60,T0
+11,Male,5_L005,GBS_s5,Axonal,AMAN,61,100,T0
+11,Male,5_L006,GBS_s5,Axonal,AMAN,61,100,T0
+11,Male,5_L007,GBS_s5,Axonal,AMAN,61,100,T0
+11,Male,5_L008,GBS_s5,Axonal,AMAN,61,100,T0
+3,Female,7_L005,GBS_s7,Axonal,AMAN,27,45,T0
+3,Female,7_L006,GBS_s7,Axonal,AMAN,27,45,T0
+3,Female,7_L007,GBS_s7,Axonal,AMAN,27,45,T0
+3,Female,7_L008,GBS_s7,Axonal,AMAN,27,45,T0
+4,Male,9_L005,GBS_s9,Axonal,Miller Fisher,35,0,T0
+4,Male,9_L006,GBS_s9,Axonal,Miller Fisher,35,0,T0
+4,Male,9_L007,GBS_s9,Axonal,Miller Fisher,35,0,T0
+4,Male,9_L008,GBS_s9,Axonal,Miller Fisher,35,0,T0
+5,Male,11_L005,GBS_s11,Demyelinating,AIDP,39,0,T0
+5,Male,11_L006,GBS_s11,Demyelinating,AIDP,39,0,T0
+5,Male,11_L007,GBS_s11,Demyelinating,AIDP,39,0,T0
+5,Male,11_L008,GBS_s11,Demyelinating,AIDP,39,0,T0
+6,Female,13_L005,GBS_s13,Axonal,AMAN,42,0,T0
+6,Female,13_L006,GBS_s13,Axonal,AMAN,42,0,T0
+6,Female,13_L007,GBS_s13,Axonal,AMAN,42,0,T0
+6,Female,13_L008,GBS_s13,Axonal,AMAN,42,0,T0
+12,Male,15_L005,GBS_s15,Demyelinating,AIDP,71,103,T0
+12,Male,15_L006,GBS_s15,Demyelinating,AIDP,71,103,T0
+12,Male,15_L007,GBS_s15,Demyelinating,AIDP,71,103,T0
+12,Male,15_L008,GBS_s15,Demyelinating,AIDP,71,103,T0
+7,Female,16_L005,GBS_s16,Axonal,Miller Fisher,51,10,T0
+7,Female,16_L006,GBS_s16,Axonal,Miller Fisher,51,10,T0
+7,Female,16_L007,GBS_s16,Axonal,Miller Fisher,51,10,T0
+7,Female,16_L008,GBS_s16,Axonal,Miller Fisher,51,10,T0
+8,Female,18_L005,GBS_s18,Axonal,AMAN,52,546,T0
+8,Female,18_L006,GBS_s18,Axonal,AMAN,52,546,T0
+8,Female,18_L007,GBS_s18,Axonal,AMAN,52,546,T0
+8,Female,18_L008,GBS_s18,Axonal,AMAN,52,546,T0
+9,Female,21_L005,GBS_s21,Demyelinating,AIDP,55,25,T0
+9,Female,21_L006,GBS_s21,Demyelinating,AIDP,55,25,T0
+9,Female,21_L007,GBS_s21,Demyelinating,AIDP,55,25,T0
+9,Female,21_L008,GBS_s21,Demyelinating,AIDP,55,25,T0
+10,Male,24_L005,GBS_s24,Demyelinating,AIDP,61,0,T0
+10,Male,24_L006,GBS_s24,Demyelinating,AIDP,61,0,T0
+10,Male,24_L007,GBS_s24,Demyelinating,AIDP,61,0,T0
+10,Male,24_L008,GBS_s24,Demyelinating,AIDP,61,0,T0
+Control 1,Male,25_L002,Ctr_s25, -, -,37, -,CTR
+Control 1,Male,25_L003,Ctr_s25, -, -,37, -,CTR
+Control 1,Male,25_L008,Ctr_s25, -, -,37, -,CTR
+Control 2,Male,26_L002,Ctr_s26, -, -,33, -,CTR
+Control 2,Male,26_L003,Ctr_s26, -, -,33, -,CTR
+Control 2,Male,26_L008,Ctr_s26, -, -,33, -,CTR
+Control 3,Male,27_L002,Ctr_s27, -, -,35, -,CTR
+Control 3,Male,27_L003,Ctr_s27, -, -,35, -,CTR
+Control 3,Male,27_L008,Ctr_s27, -, -,35, -,CTR
+Control 4,Female,28_L002,Ctr_s28, -, -,27, -,CTR
+Control 4,Female,28_L003,Ctr_s28, -, -,27, -,CTR
+Control 4,Female,28_L008,Ctr_s28, -, -,27, -,CTR
+Control 5,Female,29_L002,Ctr_s29, -, -,37, -,CTR
+Control 5,Female,29_L003,Ctr_s29, -, -,37, -,CTR
+Control 5,Female,29_L008,Ctr_s29, -, -,37, -,CTR
+11,Male,30_L002,GBS_s30,Axonal,AMAN,61, -,T1
+11,Male,30_L003,GBS_s30,Axonal,AMAN,61, -,T1
+11,Male,30_L008,GBS_s30,Axonal,AMAN,61, -,T1
+7,Female,31_L002,GBS_s31,Axonal,Miller Fisher,51, -,T1
+7,Female,31_L003,GBS_s31,Axonal,Miller Fisher,51, -,T1
+7,Female,31_L008,GBS_s31,Axonal,Miller Fisher,51, -,T1
+4,Male,32_L002,GBS_s32,Axonal,Miller Fisher,35, -,T1
+4,Male,32_L003,GBS_s32,Axonal,Miller Fisher,35, -,T1
+4,Male,32_L008,GBS_s32,Axonal,Miller Fisher,35, -,T1
+1,Male,33_L002,GBS_s33,Demyelinating,AIDP,15, -,T1
+1,Male,33_L003,GBS_s33,Demyelinating,AIDP,15, -,T1
+1,Male,33_L008,GBS_s33,Demyelinating,AIDP,15, -,T1
+6,Female,34_L002,GBS_s34,Axonal,AMAN,42, -,T1
+6,Female,34_L003,GBS_s34,Axonal,AMAN,42, -,T1
+6,Female,34_L008,GBS_s34,Axonal,AMAN,42, -,T1
+3,Female,35_L002,GBS_s35,Axonal,AMAN,27, -,T1
+3,Female,35_L003,GBS_s35,Axonal,AMAN,27, -,T1
+3,Female,35_L008,GBS_s35,Axonal,AMAN,27, -,T1
+8,Female,36_L002,GBS_s36,Axonal,AMAN,52, -,T1
+8,Female,36_L003,GBS_s36,Axonal,AMAN,52, -,T1
+8,Female,36_L008,GBS_s36,Axonal,AMAN,52, -,T1
+5,Male,37_L002,GBS_s37,Demyelinating,AIDP,39, -,T1
+5,Male,37_L003,GBS_s37,Demyelinating,AIDP,39, -,T1
+5,Male,37_L008,GBS_s37,Demyelinating,AIDP,39, -,T1
