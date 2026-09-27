@@ -1,0 +1,17 @@
+title,sample_id,sex,age,tissue,developmental stage,deposited_diagnosis,diagnosis,mapping_evidence,primary_eligible,exclusion_reason
+sural nerve_biopsy_diagnostic_vasculitic neuropathy 1,GSM6586606,M,65,Sural Nerve,Adult,vasculitic neuropathy,VN,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_vasculitic neuropathy 2,GSM6586607,M,60,Sural Nerve,Adult,vasculitic neuropathy,VN,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_vasculitic neuropathy 3,GSM6586608,F,72,Sural Nerve,Adult,vasculitic neuropathy,VN,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_vasculitic neuropathy 4,GSM6586609,M,65,Sural Nerve,Adult,vasculitic neuropathy,VN,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_vasculitic neuropathy 5,GSM6586610,F,78,Sural Nerve,Adult,vasculitic neuropathy,VN,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_vasculitic neuropathy 6,GSM6586611,F,61,Sural Nerve,Adult,vasculitic neuropathy,VN,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_vasculitic neuropathy 7,GSM6586612,M,58,Sural Nerve,Adult,vasculitic neuropathy,VN,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_vasculitic neuropathy 8,GSM6586613,F,70,Sural Nerve,Adult,vasculitic neuropathy,VN,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_vasculitic neuropathy 9,GSM6586614,M,78,Sural Nerve,Adult,vasculitic neuropathy,VN,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_inflammatory neuropathy 1,GSM6586615,F,51,Sural Nerve,Adult,inflammatory neuropathy,CIDP,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_inflammatory neuropathy 2,GSM6586616,M,60,Sural Nerve,Adult,inflammatory neuropathy,CIDP,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_inflammatory neuropathy 3,GSM6586617,M,72,Sural Nerve,Adult,inflammatory neuropathy,CIDP,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_inflammatory neuropathy 4,GSM6586618,M,65,Sural Nerve,Adult,inflammatory neuropathy,CIDP,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),True,
+sural nerve_biopsy_diagnostic_Lymphomatous neuropathy 1,GSM6586619,M,55,Sural Nerve,Adult,Lymphomatous neuropathy,NL,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),False,NL excluded by frozen analysis plan
+sural nerve_biopsy_diagnostic_Lymphomatous neuropathy 2,GSM6586620,M,58,Sural Nerve,Adult,Lymphomatous neuropathy,NL,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),False,NL excluded by frozen analysis plan
+sural nerve_biopsy_diagnostic_Lymphomatous neuropathy 3,GSM6586621,F,82,Sural Nerve,Adult,Lymphomatous neuropathy,NL,GEO sample labels and Cerri et al. 2022 Methods (doi:10.3389/fonc.2022.974751),False,NL excluded by frozen analysis plan

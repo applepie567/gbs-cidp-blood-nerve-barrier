@@ -1,0 +1,68 @@
+{
+  "n_donors": 37,
+  "n_nuclei": 365708,
+  "n_genes_in_rank_universe": 16633,
+  "n_frozen_markers": 20,
+  "excluded_outcome_genes": [
+    "FCGR1A",
+    "FCGR2A",
+    "FCGR2B",
+    "FCGR3A",
+    "FCGR3B",
+    "FCGRT",
+    "FCER1G",
+    "TYROBP",
+    "SYK",
+    "LYN",
+    "HCK"
+  ],
+  "gate_passed": true,
+  "primary_rho_nuclei": 0.9333807491702227,
+  "primary_rho_counts": 0.9504504504504503,
+  "interpretation": "Marker expression index; not an absolute cell fraction. Atlas benchmarking does not validate cross-platform accuracy.",
+  "external": {
+    "n_CIDP": 4,
+    "n_VN": 9,
+    "rho_index_Fc": 0.9065934065934067,
+    "max_leverage": 0.5667793874530408,
+    "models": [
+      {
+        "difference": -0.8365532097049102,
+        "hc3_se": 0.42119272224061655,
+        "ci_low": -1.7635921408951067,
+        "ci_high": 0.09048572148528633,
+        "model_p": 0.07250243518870225,
+        "residual_df": 11,
+        "model": "Unadjusted"
+      },
+      {
+        "difference": 0.20814640130760317,
+        "hc3_se": 0.5045032240432286,
+        "ci_low": -0.9159568331354501,
+        "ci_high": 1.3322496357506564,
+        "model_p": 0.6886226982262093,
+        "residual_df": 10,
+        "model": "Macrophage index adjusted"
+      },
+      {
+        "difference": 0.15061765377716776,
+        "hc3_se": 0.4049549674236917,
+        "ci_low": -0.7516782424443956,
+        "ci_high": 1.0529135499987312,
+        "model_p": 0.7177002063334517,
+        "residual_df": 10,
+        "model": "Mean probe sensitivity"
+      }
+    ],
+    "omitted_coefficient_min": 0.015972183756799596,
+    "omitted_coefficient_max": 0.6355742914393925,
+    "marker_index_CIDP_range": [
+      0.5571739914627548,
+      0.6151175374255997
+    ],
+    "marker_index_VN_range": [
+      0.5736096915769855,
+      0.6824625744002885
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+Conditional model coefficient 0.2081464 CI -0.9159568 1.33225 P 0.6886227 df 10 
+donor nucleus fraction Spearman 0.9333807 
+donor captured count fraction Spearman 0.9504505 
+centre nucleus fraction Spearman 0.9113324 
+centre captured count fraction Spearman 0.9272167 
+All conditional coefficient, interval and P-value checks passed.
