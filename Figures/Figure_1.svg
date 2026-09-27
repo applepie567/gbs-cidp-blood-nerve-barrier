@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="619.2pt" height="381.6pt" viewBox="0 0 619.2 381.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-27T19:00:27.367089</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 381.6 
+L 619.2 381.6 
+L 619.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 19.296 60.8112 
+L 198.3168 60.8112 
+Q 203.1552 60.8112 203.1552 57.8736 
+L 203.1552 24.4584 
+Q 203.1552 21.5208 198.3168 21.5208 
+L 19.296 21.5208 
+Q 14.4576 21.5208 14.4576 24.4584 
+L 14.4576 57.8736 
+Q 14.4576 60.8112 19.296 60.8112 
+z
+" clip-path="url(#p42d026e312)" style="fill: #367aad; stroke: #367aad; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 19.296 172.8072 
+L 198.3168 172.8072 
+Q 203.1552 172.8072 203.1552 169.8696 
+L 203.1552 101.5704 
+Q 203.1552 98.6328 198.3168 98.6328 
+L 19.296 98.6328 
+Q 14.4576 98.6328 14.4576 101.5704 
+L 14.4576 169.8696 
+Q 14.4576 172.8072 19.296 172.8072 
+z
+" clip-path="url(#p42d026e312)" style="fill: #f7f8fa; stroke: #ccd4db; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 19.296 259.0992 
+L 198.3168 259.0992 
+Q 203.1552 259.0992 203.1552 256.1616 
+L 203.1552 187.8624 
+Q 203.1552 184.9248 198.3168 184.9248 
+L 19.296 184.9248 
+Q 14.4576 184.9248 14.4576 187.8624 
+L 14.4576 256.1616 
+Q 14.4576 259.0992 19.296 259.0992 
+z
+" clip-path="url(#p42d026e312)" style="fill: #f7f8fa; stroke: #ccd4db; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 19.296 345.3912 
+L 198.3168 345.3912 
+Q 203.1552 345.3912 203.1552 342.4536 
+L 203.1552 274.1544 
+Q 203.1552 271.2168 198.3168 271.2168 
+L 19.296 271.2168 
+Q 14.4576 271.2168 14.4576 274.1544 
+L 14.4576 342.4536 
+Q 14.4576 345.3912 19.296 345.3912 
+z
+" clip-path="url(#p42d026e312)" style="fill: #f7f8fa; stroke: #ccd4db; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 220.0896 60.8112 
+L 399.1104 60.8112 
+Q 403.9488 60.8112 403.9488 57.8736 
+L 403.9488 24.4584 
+Q 403.9488 21.5208 399.1104 21.5208 
+L 220.0896 21.5208 
+Q 215.2512 21.5208 215.2512 24.4584 
+L 215.2512 57.8736 
+Q 215.2512 60.8112 220.0896 60.8112 
+z
+" clip-path="url(#p42d026e312)" style="fill: #298f87; stroke: #298f87; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 220.0896 172.8072 
+L 399.1104 172.8072 
+Q 403.9488 172.8072 403.9488 169.8696 
+L 403.9488 101.5704 
+Q 403.9488 98.6328 399.1104 98.6328 
+L 220.0896 98.6328 
+Q 215.2512 98.6328 215.2512 101.5704 
+L 215.2512 169.8696 
+Q 215.2512 172.8072 220.0896 172.8072 
+z
+" clip-path="url(#p42d026e312)" style="fill: #f7f8fa; stroke: #ccd4db; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 220.0896 259.0992 
+L 399.1104 259.0992 
+Q 403.9488 259.0992 403.9488 256.1616 
+L 403.9488 187.8624 
+Q 403.9488 184.9248 399.1104 184.9248 
+L 220.0896 184.9248 
+Q 215.2512 184.9248 215.2512 187.8624 
+L 215.2512 256.1616 
+Q 215.2512 259.0992 220.0896 259.0992 
+z
+" clip-path="url(#p42d026e312)" style="fill: #f7f8fa; stroke: #ccd4db; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 220.0896 345.3912 
+L 399.1104 345.3912 
+Q 403.9488 345.3912 403.9488 342.4536 
+L 403.9488 274.1544 
+Q 403.9488 271.2168 399.1104 271.2168 
+L 220.0896 271.2168 
+Q 215.2512 271.2168 215.2512 274.1544 
+L 215.2512 342.4536 
+Q 215.2512 345.3912 220.0896 345.3912 
+z
+" clip-path="url(#p42d026e312)" style="fill: #f7f8fa; stroke: #ccd4db; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 420.8832 60.8112 
+L 599.904 60.8112 
+Q 604.7424 60.8112 604.7424 57.8736 
+L 604.7424 24.4584 
+Q 604.7424 21.5208 599.904 21.5208 
+L 420.8832 21.5208 
+Q 416.0448 21.5208 416.0448 24.4584 
+L 416.0448 57.8736 
+Q 416.0448 60.8112 420.8832 60.8112 
+z
+" clip-path="url(#p42d026e312)" style="fill: #d96843; stroke: #d96843; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 420.8832 172.8072 
+L 599.904 172.8072 
+Q 604.7424 172.8072 604.7424 169.8696 
+L 604.7424 101.5704 
+Q 604.7424 98.6328 599.904 98.6328 
+L 420.8832 98.6328 
+Q 416.0448 98.6328 416.0448 101.5704 
+L 416.0448 169.8696 
+Q 416.0448 172.8072 420.8832 172.8072 
+z
+" clip-path="url(#p42d026e312)" style="fill: #f7f8fa; stroke: #ccd4db; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 420.8832 259.0992 
+L 599.904 259.0992 
+Q 604.7424 259.0992 604.7424 256.1616 
+L 604.7424 187.8624 
+Q 604.7424 184.9248 599.904 184.9248 
+L 420.8832 184.9248 
+Q 416.0448 184.9248 416.0448 187.8624 
+L 416.0448 256.1616 
+Q 416.0448 259.0992 420.8832 259.0992 
+z
+" clip-path="url(#p42d026e312)" style="fill: #f7f8fa; stroke: #ccd4db; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 420.8832 345.3912 
+L 599.904 345.3912 
+Q 604.7424 345.3912 604.7424 342.4536 
+L 604.7424 274.1544 
+Q 604.7424 271.2168 599.904 271.2168 
+L 420.8832 271.2168 
+Q 416.0448 271.2168 416.0448 274.1544 
+L 416.0448 342.4536 
+Q 416.0448 345.3912 420.8832 345.3912 
+z
+" clip-path="url(#p42d026e312)" style="fill: #f7f8fa; stroke: #ccd4db; stroke-width: 0.75; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="108.8064" y="45.02805" transform="rotate(-0 108.8064 45.02805)">Blood</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 9.1px; font-family: 'DejaVu Serif'" transform="translate(34.571728 79.135873)">Do recruitment signals recur</text>
+    <text style="font-weight: 700; font-size: 9.1px; font-family: 'DejaVu Serif'" transform="translate(45.127728 90.838189)">in independent patients?</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #367aad" x="108.8064" y="115.519819" transform="rotate(-0 108.8064 115.519819)">Initial comparison</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(77.452009 139.580664)">3 GBS cohorts</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(21.588291 151.17118)">Whole blood, leukocytes and monocytes</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 108.8064 175.542195 
+Q 108.8064 178.681941 108.8064 180.815457 
+" style="fill: none; stroke: #367aad; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 110.6064 177.215457 
+L 108.8064 180.815457 
+L 107.0064 177.215457 
+z
+" style="fill: #367aad; stroke: #367aad; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #367aad" x="108.8064" y="201.745702" transform="rotate(-0 108.8064 201.745702)">Independent monocytes</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(62.521603 220.138547)">4 GBS and 3 controls</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(26.190634 231.729062)">Same donors also assessed as PBMCs</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(47.083931 243.319578)">and sorted cell preparations</text>
+   </g>
+   <g id="patch_15">
+    <path d="M 108.8064 261.834195 
+Q 108.8064 264.973941 108.8064 267.107457 
+" style="fill: none; stroke: #367aad; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 110.6064 263.507457 
+L 108.8064 267.107457 
+L 107.0064 263.507457 
+z
+" style="fill: #367aad; stroke: #367aad; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #367aad" x="108.8064" y="288.037702" transform="rotate(-0 108.8064 288.037702)">Separate PBMC reanalysis</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(46.404666 306.430547)">12 acute GBS and 5 controls</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(50.109384 318.021062)">8 paired follow up samples</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(37.2544 329.611578)">Possible cohort overlap assessed</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="309.6" y="45.02805" transform="rotate(-0 309.6 45.02805)">Cerebrospinal fluid</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 9.1px; font-family: 'DejaVu Serif'" transform="translate(238.765031 79.135873)">Do published proteins show</text>
+    <text style="font-weight: 700; font-size: 9.1px; font-family: 'DejaVu Serif'" transform="translate(243.778563 90.708798)">related immune changes?</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #298f87" x="309.6" y="115.519819" transform="rotate(-0 309.6 115.519819)">Independent source cohorts</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(261.064422 139.641805)">2 GBS protein cohorts</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(236.066641 151.23232)">11 proteins with paired estimates</text>
+   </g>
+   <g id="patch_16">
+    <path d="M 309.6 175.542195 
+Q 309.6 178.681941 309.6 180.815457 
+" style="fill: none; stroke: #298f87; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 311.4 177.215457 
+L 309.6 180.815457 
+L 307.8 177.215457 
+z
+" style="fill: #298f87; stroke: #298f87; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #298f87" x="309.6" y="201.745702" transform="rotate(-0 309.6 201.745702)">Protein synthesis</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(230.540469 225.872664)">Source estimates and pooled effects</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(230.697016 237.46318)">Uncertainty assessed across models</text>
+   </g>
+   <g id="patch_17">
+    <path d="M 309.6 261.834195 
+Q 309.6 264.973941 309.6 267.107457 
+" style="fill: none; stroke: #298f87; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 311.4 263.507457 
+L 309.6 267.107457 
+L 307.8 263.507457 
+z
+" style="fill: #298f87; stroke: #298f87; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #298f87" x="309.6" y="288.103819" transform="rotate(-0 309.6 288.103819)">Direct disease comparisons</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(261.396328 306.369406)">16 reported estimates</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(240.066313 317.959922)">GBS, CIDP and healthy controls</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(246.420234 329.672719)">Within the replication cohort</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="510.3936" y="45.02805" transform="rotate(-0 510.3936 45.02805)">Peripheral nerve</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 9.1px; font-family: 'DejaVu Serif'" transform="translate(419.9396 79.135873)">How does macrophage composition</text>
+    <text style="font-weight: 700; font-size: 9.1px; font-family: 'DejaVu Serif'" transform="translate(425.756491 90.838189)">relate to the Fc score difference?</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #d96843" x="510.3936" y="115.453702" transform="rotate(-0 510.3936 115.453702)">Atlas macrophages</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(449.98935 139.641805)">9 CIDP and 11 CIAP donors</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(430.010475 151.23232)">State composition and Fc expression</text>
+   </g>
+   <g id="patch_18">
+    <path d="M 510.3936 175.542195 
+Q 510.3936 178.681941 510.3936 180.815457 
+" style="fill: none; stroke: #d96843; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 512.1936 177.215457 
+L 510.3936 180.815457 
+L 508.5936 177.215457 
+z
+" style="fill: #d96843; stroke: #d96843; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #d96843" x="510.3936" y="201.811819" transform="rotate(-0 510.3936 201.811819)">External whole nerve</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(454.003131 220.138547)">4 CIDP and 9 VN biopsies</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(466.981741 231.729062)">Internal atlas check</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(456.844491 243.319578)">9 CIDP and 5 VN donors</text>
+   </g>
+   <g id="patch_19">
+    <path d="M 510.3936 261.834195 
+Q 510.3936 264.973941 510.3936 267.107457 
+" style="fill: none; stroke: #d96843; stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 512.1936 263.507457 
+L 510.3936 267.107457 
+L 508.5936 263.507457 
+z
+" style="fill: #d96843; stroke: #d96843; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #d96843" x="510.3936" y="288.037702" transform="rotate(-0 510.3936 288.037702)">Macrophage marker index</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(429.655725 306.308266)">20 genes assessed in 37 atlas donors</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(448.038225 318.021062)">Donor and centre exclusions</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Serif'" transform="translate(438.126725 329.611578)">External composition adjustment</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p42d026e312">
+   <rect x="7.2" y="7.2" width="604.8" height="367.2"/>
+  </clipPath>
+ </defs>
+</svg>
