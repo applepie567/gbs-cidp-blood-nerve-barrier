@@ -1,6 +1,6 @@
 {
-  "title": "Immune recruitment signatures and cellular context in inflammatory neuropathies",
-  "description": "Current manuscript, analysis scripts, five main and seven supplementary figures, per-panel source data and public proteomics feasibility assessment. Missing sample-to-diagnosis links prevent independent nerve validation. This metadata file prepares an update; no new deposit or DOI is claimed.",
+  "title": "Immune recruitment across blood cohorts and macrophage composition in inflammatory neuropathies",
+  "description": "Final manuscript, supplementary information, analysis code and figure source data for immune recruitment across blood cohorts and macrophage composition in inflammatory neuropathies. The materials include external blood reanalyses, an independent CIDP versus vasculitic neuropathy whole-nerve comparison, and macrophage composition sensitivity analyses. There are five main figures, twelve supplementary figures and Supplementary Data 1–6. This editorial revision clarifies the analysis sequence and figure displays without changing statistical results. Use current/ for the current manuscript and figures. Public source datasets retain their attribution and terms.",
   "creators": [
     {
       "name": "Feng, Yuan",
@@ -24,15 +24,15 @@
   ],
   "keywords": [
     "Guillain-Barre syndrome",
-    "chronic inflammatory demyelinating polyradiculoneuropathy",
-    "cerebrospinal fluid",
-    "blood-nerve barrier",
-    "single-nucleus RNA sequencing",
-    "genetic anchoring"
+    "CIDP",
+    "immune recruitment",
+    "macrophage composition",
+    "peripheral nerve",
+    "transcriptomics"
   ],
   "license": "MIT",
   "upload_type": "software",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "related_identifiers": [
     {
       "identifier": "https://github.com/applepie567/gbs-cidp-blood-nerve-barrier",
