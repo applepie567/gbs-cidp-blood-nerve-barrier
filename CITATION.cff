@@ -2,6 +2,8 @@ cff-version: 1.2.0
 message: "Please cite the associated article and the archived version of this repository."
 title: "Immune recruitment across blood cohorts and macrophage composition in inflammatory neuropathies"
 version: 2.5.0
+doi: "10.5281/zenodo.22996923"
+date-released: "2026-09-27"
 type: software
 authors:
   - family-names: Feng

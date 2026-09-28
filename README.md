@@ -2,6 +2,8 @@
 
 This directory contains the final editorial revision dated 27 September 2026. The two Word files at this level are clean copies, with no review highlighting. They contain five main figures, twelve supplementary figures, two main tables and six supplementary tables.
 
+The current materials are located at the repository root. Use the two Word documents and the capitalised `Figures/`, `Source_data/`, `Reproduction/` and `Supplementary_Data_6/` directories here. The lowercase `current/` directory and other older manuscript files retain historical material.
+
 ## Current files
 
 - `Manuscript_refocused.docx`: main manuscript.
@@ -22,7 +24,7 @@ The independent whole nerve comparison is CIDP versus vasculitic neuropathy. It 
 
 Supplementary Data 1–6 retain their numerical contents and historical scope. Their README files give the scientific reconstruction commands. Use the current source index and outer `Figures/` directory for this manuscript's labels and displays. Older wording and figures inside historical reproduction archives are retained for provenance.
 
-The previous v2.4.0 archive is https://doi.org/10.5281/zenodo.22885750. It predates the later external blood and composition analyses. The accompanying packages provide those extensions. A new version DOI should be cited after the corresponding release has been archived. This file does not assert that a new record has already been published.
+Version 2.5.0 was published on 27 September 2026 and is archived at https://doi.org/10.5281/zenodo.22996923. The record can also be opened at https://zenodo.org/records/22996923. It includes the later external blood and macrophage composition analyses. The previous v2.4.0 archive remains at https://doi.org/10.5281/zenodo.22885750. A subsequent documentation update adds the assigned DOI to the two Word documents and citation metadata without changing scientific results.
 
 Public source datasets retain their original attribution and terms. Analysis code retains the licence stated in the relevant packages. `SHA256SUMS.txt` lists the files in this distribution.
 
